@@ -88,7 +88,7 @@
   <!--//header-->
 
   <div class="docs-wrapper">
-    <div id="docs-sidebar" class="docs-sidebar">
+    <div id="docs-sidebar" class="docs-sidebar" style="padding: 0 10px;">
       <div class="top-search-box d-lg-none p-3">
         <form class="search-form">
           <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input" />
@@ -103,100 +103,118 @@
             <a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder me-2"><i
                   class="fas fa-map-signs"></i></span>Introduction</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="#item-1-1">Getting Started</a>
+          <li class="nav-item ms-3">
+            <a class="nav-link scrollto" href="#item-1-1" style="font-size: small; word-break: break-word;"><span
+                class="theme-icon-holder me-3"><i class="fas fa-play-circle"></i></span>Getting Started</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="#item-1-2">Installation</a>
+          <li class="nav-item ms-3">
+            <a class="nav-link scrollto" href="#item-1-2" style="font-size: small; word-break: break-word;"><span
+                class="theme-icon-holder me-3"><i class="fas fa-download"></i></span>Installation</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="#item-1-3">Configuration</a>
+          <li class="nav-item ms-3">
+            <a class="nav-link scrollto" href="#item-1-3" style="font-size: small; word-break: break-word;"><span
+                class="theme-icon-holder me-3"><i class="fas fa-cogs"></i></span>Configuration</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="#bundleza-modules">Bundleza Modules</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="#bundleza-bundles">Bundleza Bundles</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="#bundleza-sections">Bundleza Sections</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="#bundleza-upsell">Bundleza Upsell</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="#bundleza-banner">Bundleza Banner</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="#bundleza-gifts">Bundleza Gifts</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="#bundleza-reviews">Bundleza Reviews</a>
+
+          <li class="nav-item section-title mt-3">
+            <a class="nav-link scrollto" href="#section-2" data-bs-toggle="collapse" data-bs-target="#bundle-submenu"
+              aria-expanded="false" aria-controls="bundle-submenu"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-box"></i></span>Bundle <i class="fas fa-chevron-right ms-2 submenu-icon"></i></a>
+            <ul class="collapse list-unstyled" id="bundle-submenu">
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-2-1" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-list"></i></span>Bundle Management</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-2-2" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-edit"></i></span>Creating and Updating Bundles</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-2-3" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus"></i></span>Adding Bundle to Your Theme</a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item section-title mt-3">
-            <a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i
-                  class="fas fa-box"></i></span>Bundle</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="#item-2-1">Bundle Management</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="#item-2-2">Creating and Updating Bundles</a>
-          </li>
-          <li class="nav-item section-title mt-3">
-            <a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i
-                  class="fas fa-arrow-up"></i></span>Upsell</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="#item-3-1">Upsell Configuration</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="#item-3-2">Single Upsell Management</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="#item-3-3">Create Single Upsell</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="#item-3-4">Multiple Upsell Management</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="#item-3-5">Create Multiple Upsell</a>
-          </li>
-          <li class="nav-item section-title mt-3">
-            <a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder me-2"><i
-                  class="fas fa-gift"></i></span>Gift</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="#item-4-1">Gift Options</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="#item-4-2">Gift Messages</a>
+            <a class="nav-link scrollto" href="#section-3" data-bs-toggle="collapse" data-bs-target="#upsell-submenu"
+              aria-expanded="false" aria-controls="upsell-submenu"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-arrow-up"></i></span>Upsell <i class="fas fa-chevron-right ms-2 submenu-icon"></i></a>
+            <ul class="collapse list-unstyled" id="upsell-submenu">
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-1" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-cog"></i></span>Upsell Configuration</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-2" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-list"></i></span>Single Upsell Management</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-3" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus"></i></span>Create Single Upsell</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-4" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-th-list"></i></span>Multiple Upsell Management</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-5" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus-circle"></i></span>Create Multiple Upsell</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-6" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus-square"></i></span>Adding Upsell to Your
+                  Theme</a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item section-title mt-3">
-            <a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder me-2"><i
-                  class="fas fa-th-large"></i></span>Sections</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="#item-5-1">How to Import a Section</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="#item-5-2">Product Page Sections</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="#item-5-3">Shop Sections</a>
+            <a class="nav-link scrollto" href="#section-4" data-bs-toggle="collapse" data-bs-target="#gift-submenu"
+              aria-expanded="false" aria-controls="gift-submenu"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-gift"></i></span>Gift <i class="fas fa-chevron-right ms-2 submenu-icon"></i></a>
+            <ul class="collapse list-unstyled" id="gift-submenu">
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-4-1" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-cogs"></i></span>Gift Options</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-4-2" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-envelope"></i></span>Gift Messages</a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item section-title mt-3">
-            <a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder me-2"><i
-                  class="fas fa-flag"></i></span>Banner</a>
+            <a class="nav-link scrollto" href="#section-5" data-bs-toggle="collapse" data-bs-target="#sections-submenu"
+              aria-expanded="false" aria-controls="sections-submenu"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-th-large"></i></span>Sections <i class="fas fa-chevron-right ms-2 submenu-icon"></i></a>
+            <ul class="collapse list-unstyled" id="sections-submenu">
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-5-1" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-download"></i></span>How to Import a Section</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-5-2" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-th"></i></span>Product Page Sections</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-5-3" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-store"></i></span>Shop Sections</a>
+              </li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="#item-6-1">Banner Design</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="#item-6-2">Banner Placement</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="#item-6-3">Banner Preview & Create/Update</a>
+          <li class="nav-item section-title mt-3">
+            <a class="nav-link scrollto" href="#section-6" data-bs-toggle="collapse" data-bs-target="#banner-submenu"
+              aria-expanded="false" aria-controls="banner-submenu"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-flag"></i></span>Banner <i class="fas fa-chevron-right ms-2 submenu-icon"></i></a>
+            <ul class="collapse list-unstyled" id="banner-submenu">
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-6-1" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-list"></i></span>Banner Management</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-6-2" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus"></i></span>Create New Banner</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>
@@ -395,9 +413,8 @@
             <h3>Quick Start Checklist</h3>
             <div class="simplelightbox-gallery row mb-3">
               <div class="col-12 mb-3">
-                <a href="assets/images/quick-start-checklist.png"><img class="figure-img img-fluid shadow rounded"
-                    src="assets/images/quick-start-checklist.png" alt="Quick Start Checklist"
-                    title="Quick Start Checklist" /></a>
+                <a href="assets/images/check-list.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/check-list.png" alt="Quick Start Checklist" title="Quick Start Checklist" /></a>
               </div>
             </div>
 
@@ -552,7 +569,6 @@
               Create a new bundle offer for your store or update existing bundles. This page allows you to configure all
               aspects of your bundle, from basic details to advanced styling and product selection.
             </p>
-
             <h3>How to Create a New Bundle</h3>
             <ol>
               <li><strong>Enter Bundle Name:</strong> Provide a descriptive and appealing name for your bundle that will
@@ -566,8 +582,6 @@
               <li><strong>Select Products:</strong> Use the product selection modal to choose main products and variants
                 for the bundle.</li>
               <li><strong>Set Up Variant Offers:</strong> Configure dynamic offers for different bundle variants.</li>
-              <li><strong>Preview and Save:</strong> Review your bundle configuration and save it as Draft or Active.
-              </li>
             </ol>
 
             <div class="callout-block callout-block-info">
@@ -782,6 +796,40 @@
                 <p>
                   All style settings are dynamic and can be adjusted to fit your brand. Defaults are provided as
                   starting points, but everything is customizable for merchants.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="docs-section" id="item-2-3">
+            <h2 class="section-heading">Adding Bundle to Your Theme</h2>
+            <p>
+              To display your created bundles on your store's product pages, you need to add the Bundleza Bundle section
+              to your Shopify theme. This allows customers to see and interact with your bundle offers directly on
+              product pages.
+            </p>
+            <h3>Steps to Add Bundle Section</h3>
+            <ol>
+              <li><strong>Go to Online Store:</strong> From your Shopify admin, navigate to <strong>Online Store >
+                  Themes</strong>.</li>
+              <li><strong>Customize Your Theme:</strong> Click on the <strong>Customize</strong> button next to your
+                live theme.</li>
+              <li><strong>Select a Product Page:</strong> In the theme editor, use the page selector at the top to
+                choose a product page template (e.g., Default product).</li>
+              <li><strong>Add Section:</strong> In the left sidebar, click <strong>Add section</strong>, then search for
+                and select <strong>Bundleza Bundle</strong> from the Apps section.</li>
+              <li><strong>Configure the Section:</strong> Once added, select the specific bundle you want to display
+                from the dropdown in the section settings.</li>
+              <li><strong>Save Changes:</strong> Click <strong>Save</strong> to apply the changes to your theme.</li>
+            </ol>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1"><i class="fas fa-info-circle"></i></span>
+                  Tip
+                </h4>
+                <p>
+                  You can add the Bundleza Bundle section to multiple product templates or even collection pages for
+                  broader visibility. Test the placement to ensure it complements your store's design.
                 </p>
               </div>
             </div>
@@ -1009,28 +1057,12 @@
               </div>
             </div>
 
-            <div class="mb-3">
-              <input type="text" class="form-control" placeholder="Search by upsell name..." />
-            </div>
-            <div class="table-responsive my-4">
-              <table class="table table-bordered">
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Selection Type</th>
-                    <th>Status</th>
-                    <th>Actions</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Test Upsell name</td>
-                    <td>all-products</td>
-                    <td><span class="badge badge-success">Success</span></td>
-                    <td>Active</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/upsell-list.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/upsell-list.png" alt="Upsell List Screenshot"
+                    title="Upsell List Screenshot" /></a>
+              </div>
             </div>
 
             <div class="callout-block callout-block-info">
@@ -1113,8 +1145,9 @@
             </p>
             <div class="simplelightbox-gallery row mb-3">
               <div class="col-12 mb-3">
-                <a href="assets/images/multiple-upsell.png"><img class="figure-img img-fluid shadow rounded"
-                    src="assets/images/multiple-upsell.png" alt="Multiple Upsell Table" title="Multiple Upsell Table" /></a>
+                <a href="assets/images/multipleupsell-list.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/multipleupsell-list.png" alt="Multiple Upsell Table"
+                    title="Multiple Upsell Table" /></a>
               </div>
             </div>
 
@@ -1463,6 +1496,41 @@
             </div>
           </section>
           <!--//section-->
+          <section class="docs-section" id="item-3-6">
+            <h2 class="section-heading">Adding Upsell to Your Theme</h2>
+            <p>
+              To display your configured upsell offers on your store's product pages, you need to add the appropriate
+              Bundleza Upsell section to your Shopify theme. This enables upsell prompts to appear at strategic points
+              in the customer journey.
+            </p>
+            <h3>Steps to Add Upsell Section</h3>
+            <ol>
+              <li><strong>Go to Online Store:</strong> From your Shopify admin, navigate to <strong>Online Store >
+                  Themes</strong>.</li>
+              <li><strong>Customize Your Theme:</strong> Click on the <strong>Customize</strong> button next to your
+                live theme.</li>
+              <li><strong>Select a Product Page:</strong> In the theme editor, use the page selector at the top to
+                choose a product page template.</li>
+              <li><strong>Add Section:</strong> In the left sidebar, click <strong>Add section</strong>, then search for
+                and select <strong>Bundleza Upsell</strong> (choose Single or Multi based on your upsell type) from the
+                Apps section.</li>
+              <li><strong>Configure the Section:</strong> Once added, select the specific upsell you want to display
+                from the dropdown in the section settings.</li>
+              <li><strong>Save Changes:</strong> Click <strong>Save</strong> to apply the changes to your theme.</li>
+            </ol>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1"><i class="fas fa-info-circle"></i></span>
+                  Tip
+                </h4>
+                <p>
+                  Position the upsell section above the Add to Cart button for maximum effectiveness. You can add it to
+                  cart pages or other templates as well for cross-selling opportunities.
+                </p>
+              </div>
+            </div>
+          </section>
 
         </article>
         <!--//docs-article-->
@@ -1715,8 +1783,8 @@
               </p>
               <div class="simplelightbox-gallery row mb-3">
                 <div class="col-12 mb-3">
-                  <a href="assets/images/sections-overview.png"><img class="figure-img img-fluid shadow rounded"
-                      src="assets/images/sections-overview-thumb.png" alt="Bundleza Sections Overview"
+                  <a href="assets/images/section-overview.png"><img class="figure-img img-fluid shadow rounded"
+                      src="assets/images/section-overview.png" alt="Bundleza Sections Overview"
                       title="Sections Overview" /></a>
                 </div>
               </div>
@@ -1804,89 +1872,114 @@
             <h1 class="docs-heading">Banner</h1>
             <section class="docs-intro">
               <p>
-                Create engaging banners for your shop - from announcements to
-                discount promotions. Design eye-catching promotional banners
-                to highlight special offers, announcements, and important
-                information that drive customer engagement and boost sales.
+                Boost your conversions with Bundleza Banners
               </p>
             </section>
             <!--//docs-intro-->
           </header>
           <section class="docs-section" id="item-6-1">
-            <h2 class="section-heading">Banner Design</h2>
+            <h2 class="section-heading">Banner Management</h2>
             <p>
-              Design stunning promotional banners with customizable templates,
-              colors, and typography. Add images, call-to-action buttons, and
-              animations to create compelling marketing messages that convert
-              visitors into customers.
+              Manage all your banners from the central dashboard. View, edit, and monitor banner performance to optimize
+              your promotional strategies.
             </p>
 
-            <h3>How to Design a Banner</h3>
+            <h3>Create Your First Banner Module</h3>
             <ol>
-              <li>Access the Banner Design section in Bundleza.</li>
-              <li>Select a pre-built template or start with a blank canvas.</li>
-              <li>Add promotional text, images, and call-to-action buttons.</li>
-              <li>Customize colors, fonts, and layout to match your brand.</li>
-              <li>Preview the banner and make adjustments as needed.</li>
-              <li>Save the design.</li>
+              <li>Set your banner settings</li>
+              <li>Customize Styles/Colors</li>
+              <li>Save and add as a section</li>
             </ol>
 
-            <p>Effective banner design captures customer attention and drives engagement, leading to higher
-              click-through rates and increased sales.</p>
+            <h3>Banner List</h3>
+            <p>
+              The banner list displays all your created banners with key information and available actions. Search by
+              banner name to find specific banners quickly.
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/banner-table.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/banner-table.png" alt="Banner Management" title="Banner Management" /></a>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  Review Request
+                </h4>
+                <p>
+                  Do you like our app? We would appreciate a review!
+                </p>
+              </div>
+            </div>
           </section>
           <!--//section-->
 
           <section class="docs-section" id="item-6-2">
-            <h2 class="section-heading">Banner Placement</h2>
+            <h2 class="section-heading">Create New Banner</h2>
             <p>
-              Control where and when your banners appear with advanced
-              targeting options. Set up banners for specific pages, customer
-              segments, or time periods to maximize their effectiveness and
-              impact on your sales.
+              Design and customize your banner with templates, themes, scheduling, and content options to create
+              engaging promotions that boost conversions.
             </p>
 
-            <h3>How to Set Banner Placement</h3>
-            <ol>
-              <li>Navigate to the Banner Placement settings.</li>
-              <li>Select the pages where the banner should appear (e.g., homepage, product pages).</li>
-              <li>Define targeting rules, such as customer segments or cart values.</li>
-              <li>Set time-based conditions, like start and end dates.</li>
-              <li>Activate the banner to start displaying.</li>
-            </ol>
-
-            <p>Strategic banner placement ensures your promotions reach the most relevant audience, optimizing
-              visibility and driving targeted traffic to your offers.</p>
-
-            <div class="simplelightbox-gallery row mb-3">
-              <div class="col-12 mb-3">
-                <a href="assets/images/banner-table.png"><img class="figure-img img-fluid shadow rounded"
-                    src="assets/images/banner-table.png" alt="Banner Table" title="Banner Table" /></a>
-              </div>
-            </div>
-          </section>
-          <!--//section-->
-
-          <section class="docs-section" id="item-6-3">
-            <h2 class="section-heading">Banner Preview & Create/Update</h2>
+            <h3>Templates</h3>
             <p>
-              Preview your banner before publishing. Easily create or update banners with the following options:
+              Choose a pre-designed template for your banner to get started quickly.
             </p>
-            <div class="simplelightbox-gallery row mb-3">
-              <div class="col-12 mb-3">
-                <a href="assets/images/banner-preview.png"><img class="figure-img img-fluid shadow rounded"
-                    src="assets/images/banner-preview.png" alt="Banner Preview" title="Banner Preview" /></a>
-              </div>
-            </div>
-            <h3>Design and Customize Your Banner</h3>
+
+            <h3>Theme</h3>
+            <p>
+              Select from themes like Black Friday, Christmas, New Year 2025, Compact Mode, Valentine, and more to match
+              seasonal promotions.
+            </p>
+
+            <h3>Schedule</h3>
+            <p>
+              Set when your banner should be active with start and end dates/times. For example, start on 09/23/2025 at
+              09:00 AM and end on 09/23/2025 at 09:00 AM.
+            </p>
+
+            <h3>Language</h3>
+            <p>
+              Customize banner content for different languages to reach a global audience.
+            </p>
+
+            <h3>Banner Content</h3>
+            <p>
+              Design the texts for your banner here:
+            </p>
             <ul>
-              <li><strong>Templates:</strong> Choose a pre-designed template for your banner.</li>
-              <li><strong>Theme:</strong> Select from Black Friday, Christmas, New Year, Compact Mode, Valentine, and more.</li>
-              <li><strong>Schedule:</strong> Set start and end dates/times for banner activity.</li>
-              <li><strong>Language:</strong> Customize banner content for different languages.</li>
-              <li><strong>Banner Content:</strong> Edit main text, call to action, countdown label, discount announcement, and close button behavior.</li>
-              <li><strong>Design:</strong> Adjust colors, text, backgrounds, code radius, and more to match your brand.</li>
-              <li><strong>Status:</strong> View planned/active status and schedule details.</li>
+              <li><strong>Main Text:</strong> BLACK FRIDAY - Appears prominently on the left side of the banner.</li>
+              <li><strong>Call To Action:</strong> BUNDLEZA50 - The discount code that customers can use, e.g. SALE50.
+              </li>
+              <li><strong>Countdown Label:</strong> Countdown - Text above the countdown timer.</li>
+              <li><strong>Discount Announcement:</strong> Save up to 50% with the code: - e.g. 'Save up to {{50%}} on
+                everything'.</li>
+              <li><strong>Close Button:</strong> Define the behavior after closing the banner, such as display interval
+                (Show always).</li>
             </ul>
+
+            <h3>Design</h3>
+            <p>
+              Customize the appearance of your banner to match your brand design:
+            </p>
+            <ul>
+              <li><strong>Banner:</strong> Banner Text (left), Banner Accent Color, Banner Background.</li>
+              <li><strong>Countdown:</strong> Text, Counter Text, Counter Background.</li>
+              <li><strong>Discount:</strong> Code Text, Code Background, Code Radius (e.g., 4).</li>
+            </ul>
+
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/create-banner.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/create-banner.png" alt="Create New Banner" title="Create New Banner" /></a>
+              </div>
+            </div>
+
             <div class="callout-block callout-block-success">
               <div class="content">
                 <h4 class="callout-title">
@@ -1895,7 +1988,9 @@
                   </span>
                   Success
                 </h4>
-                <p>Banner will be active from 2025-09-23 at 09:00 until 2025-09-23 at 09:00</p>
+                <p>
+                  Banner will be active from 2025-09-23 at 09:00 until 2025-09-23 at 09:00
+                </p>
               </div>
             </div>
           </section>
@@ -1950,6 +2045,19 @@
   <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
   <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
   <script src="assets/js/docs.js"></script>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/6784a716af5bfec1dbeaa295/1ihf2pcag';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
 </body>
 
 </html>
