@@ -1,680 +1,1955 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
+
 <head>
-    <title>Bundleza - Bootstrap Documentation Template For Software Projects</title>
-    
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <meta name="description" content="Bootstrap Documentation Template For Software Developers">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <link rel="shortcut icon" href="favicon.ico"> 
-    
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome JS-->
-    <script defer src="assets/fontawesome/js/all.min.js"></script>
-    
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
-    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+  <title>
+    Bundleza - Bootstrap Documentation Template For Software Projects
+  </title>
 
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bootstrap Documentation Template For Software Developers" />
+  <meta name="author" content="Xiaoying Riley at 3rd Wave Media" />
+  <link rel="shortcut icon" href="favicon.ico" />
 
-</head> 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet" />
 
-<body class="docs-page">    
-    <header class="header fixed-top">	    
-        <div class="branding docs-branding">
-            <div class="container-fluid position-relative py-2">
-                <div class="docs-logo-wrapper">
-					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
-	                    <span></span>
-	                    <span></span>
-	                    <span></span>
-	                </button>
-	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="assets/images/coderdocs-logo.svg" alt="logo"><span class="logo-text">Bundl<span class="text-alt">eza</span></span></a></div>    
-                </div><!--//docs-logo-wrapper-->
-	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
-	                <div class="top-search-box d-none d-lg-flex">
-		                <form class="search-form">
-				            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
-				            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-				        </form>
-	                </div>
-	
-					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
-						<li class="list-inline-item"><a href="#"><i class="fa-brands fa-github fa-fw"></i></a></li>
-			            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-x-twitter fa-fw"></i></a></li>
-		                <li class="list-inline-item"><a href="#"><i class="fa-brands fa-slack fa-fw"></i></a></li>
-		                <li class="list-inline-item"><a href="#"><i class="fa-brands fa-product-hunt fa-fw"></i></a></li>
-		            </ul><!--//social-list-->
-		            <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderdocs-free-bootstrap-5-documentation-template-for-software-projects/" class="btn btn-primary d-none d-lg-flex">Download</a>
-	            </div><!--//docs-top-utilities-->
-            </div><!--//container-->
-        </div><!--//branding-->
-    </header><!--//header-->
-    
-    
-    <div class="docs-wrapper">
-	    <div id="docs-sidebar" class="docs-sidebar">
-		    <div class="top-search-box d-lg-none p-3">
-                <form class="search-form">
-		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
-		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-		        </form>
+  <!-- FontAwesome JS-->
+  <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css" />
+  <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css" />
+
+  <!-- Theme CSS -->
+  <link id="theme-style" rel="stylesheet" href="assets/css/theme.css" />
+
+  <style>
+    img {
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body class="docs-page">
+  <header class="header fixed-top">
+    <div class="branding docs-branding">
+      <div class="container-fluid position-relative py-2">
+        <div class="docs-logo-wrapper">
+          <button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+            type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="site-logo">
+            <a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="assets/images/coderdocs-logo.svg"
+                alt="logo" /><span class="logo-text">Bundl<span class="text-alt">eza</span></span></a>
+          </div>
+        </div>
+        <!--//docs-logo-wrapper-->
+        <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+          <div class="top-search-box d-none d-lg-flex">
+            <form class="search-form">
+              <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input" />
+              <button type="submit" class="btn search-btn" value="Search">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+
+          <ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+            <li class="list-inline-item">
+              <a href="#"><i class="fa-brands fa-github fa-fw"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#"><i class="fa-brands fa-x-twitter fa-fw"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#"><i class="fa-brands fa-slack fa-fw"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#"><i class="fa-brands fa-product-hunt fa-fw"></i></a>
+            </li>
+          </ul>
+          <!--//social-list-->
+          <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderdocs-free-bootstrap-5-documentation-template-for-software-projects/"
+            class="btn btn-primary d-none d-lg-flex">Download</a>
+        </div>
+        <!--//docs-top-utilities-->
+      </div>
+      <!--//container-->
+    </div>
+    <!--//branding-->
+  </header>
+  <!--//header-->
+
+  <div class="docs-wrapper">
+    <div id="docs-sidebar" class="docs-sidebar">
+      <div class="top-search-box d-lg-none p-3">
+        <form class="search-form">
+          <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input" />
+          <button type="submit" class="btn search-btn" value="Search">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+      <nav id="docs-nav" class="docs-nav navbar">
+        <ul class="section-items list-unstyled nav flex-column pb-3">
+          <li class="nav-item section-title">
+            <a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-map-signs"></i></span>Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#item-1-1">Getting Started</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#item-1-2">Installation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#item-1-3">Configuration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#bundleza-modules">Bundleza Modules</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#bundleza-bundles">Bundleza Bundles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#bundleza-sections">Bundleza Sections</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#bundleza-upsell">Bundleza Upsell</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#bundleza-banner">Bundleza Banner</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#bundleza-gifts">Bundleza Gifts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#bundleza-reviews">Bundleza Reviews</a>
+          </li>
+          <li class="nav-item section-title mt-3">
+            <a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-box"></i></span>Bundle</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#item-2-1">Bundle Management</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#item-2-2">Creating and Updating Bundles</a>
+          </li>
+          <li class="nav-item section-title mt-3">
+            <a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-arrow-up"></i></span>Upsell</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#item-3-1">Upsell Configuration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#item-3-2">Single Upsell Management</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#item-3-3">Create Single Upsell</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#item-3-4">Multiple Upsell Management</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#item-3-5">Create Multiple Upsell</a>
+          </li>
+          <li class="nav-item section-title mt-3">
+            <a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-gift"></i></span>Gift</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#item-4-1">Gift Options</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#item-4-2">Gift Messages</a>
+          </li>
+          <li class="nav-item section-title mt-3">
+            <a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-th-large"></i></span>Sections</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#item-5-1">How to Import a Section</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#item-5-2">Product Page Sections</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#item-5-3">Shop Sections</a>
+          </li>
+          <li class="nav-item section-title mt-3">
+            <a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-flag"></i></span>Banner</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#item-6-1">Banner Design</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#item-6-2">Banner Placement</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#item-6-3">Banner Preview & Create/Update</a>
+          </li>
+        </ul>
+      </nav>
+      <!--//docs-nav-->
+    </div>
+    <!--//docs-sidebar-->
+    <div class="docs-content">
+      <div class="container">
+        <article class="docs-article" id="section-1">
+          <header class="docs-header">
+            <h1 class="docs-heading">
+              Introduction
+              <span class="docs-time">Last updated: 3 days ago</span>
+            </h1>
+            <section class="docs-intro">
+              <p>
+                Welcome to Bundleza - Learn the future. Pre-built.
+                Configurable. Easy in Themebuilder. Create custom bundles of
+                your products and configure pre-built sections like review or
+                benefit boxes for your product page.
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 mb-3">
+                  <a href="assets/images/welcome-overviews.png">
+                    <img class="figure-img img-fluid shadow rounded" src="assets/images/welcome-overviews.png"
+                      alt="Bundleza Modules Overview" title="Bundleza Modules Overview" />
+                  </a>
+                </div>
+              </div>
+
+              <h3 id="bundleza-modules">Bundleza Modules</h3>
+              <div class="row">
+                <div class="col-12 col-md-6 mb-4" id="bundleza-bundles">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/bundle.png" class="img-fluid mr-3"
+                        alt="Bundleza Bundles" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Bundleza Bundles</h5>
+                        <p class="card-text">Easily create bundles and quantity discounts for your products</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4" id="bundleza-sections">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/section.png" class="img-fluid mr-3"
+                        alt="Bundleza Sections" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Bundleza Sections</h5>
+                        <p class="card-text">Easily customize pre-built sections for your shop</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4" id="bundleza-upsell">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/upsell.png" class="img-fluid mr-3"
+                        alt="Bundleza Upsell" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Bundleza Upsell</h5>
+                        <p class="card-text">Increase your revenue with our popups, boxes, & sliders for product
+                          upgrades</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4" id="bundleza-banner">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/banner.png" class="img-fluid mr-3"
+                        alt="Bundleza Banner" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Bundleza Banner</h5>
+                        <p class="card-text">Create engaging banners for your shop - from announcements to discount
+                          promotions</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4" id="bundleza-gifts">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/gift.png" class="img-fluid mr-3"
+                        alt="Bundleza Gifts" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Bundleza Gifts</h5>
+                        <p class="card-text">Create attractive gifts for your shop. Flexibly customizable and perfect
+                          for any occasion</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4" id="bundleza-reviews">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/review.png" class="img-fluid mr-3"
+                        alt="Bundleza Reviews" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Bundleza Reviews</h5>
+                        <p class="card-text">Create engaging review widgets with photos and videos. Available as box,
+                          carousel slider, or stories</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="callout-block callout-block-info">
+                <div class="content">
+                  <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                      <i class="fas fa-info-circle"></i>
+                    </span>
+                    More modules coming soon
+                  </h4>
+                  <p>
+                    Join our <a href="https://discord.gg/bundleza" target="_blank">Discord community</a> and connect
+                    with other shop
+                    owners to get early access to new features.
+                  </p>
+                </div>
+              </div>
+            </section>
+            <!--//docs-intro-->
+          </header>
+          <section class="docs-section" id="item-1-1">
+            <h2 class="section-heading">Getting Started</h2>
+            <p>
+              Welcome to Bundleza! This guide will help you get up and running
+              with our powerful Shopify app that enables you to create bundle
+              discount offers, upsell products, multi-upsell products, gift
+              products, banners, and custom sections for your store.
+            </p>
+
+            <h3>Prerequisites</h3>
+            <p>Before installing Bundleza, ensure you have:</p>
+            <ul>
+              <li>An active Shopify store (any plan)</li>
+              <li>Admin access to your Shopify dashboard</li>
+              <li>At least one product with stock and variants in your store</li>
+            </ul>
+
+            <h3 id="item-1-2">Installation</h3>
+            <p>
+              Follow these steps to install Bundleza on your Shopify store:
+            </p>
+            <h4>Step 1: Log in to your Shopify admin dashboard</h4>
+            <p>Log in to your Shopify admin dashboard at <a href="https://admin.shopify.com"
+                target="_blank">admin.shopify.com</a>.</p>
+            <h4>Step 2: Find and Install Bundleza</h4>
+            <p>Search for Bundleza in the Shopify App Store:</p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 col-md-6 mb-3">
+                <a href="/assets/images/search-app.png"><img class="figure-img img-fluid shadow rounded"
+                    src="/assets/images/search-app.png" alt="Searching for Bundleza in Shopify App Store"
+                    title="Shopify App Store Search" /></a>
+              </div>
+              <div class="col-12 col-md-6 mb-3">
+                <a href="assets/images/shopify-search.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/shopify-search.png" alt="Bundleza app page in Shopify App Store"
+                    title="Bundleza App Page" /></a>
+              </div>
             </div>
-		    <nav id="docs-nav" class="docs-nav navbar">
-			    <ul class="section-items list-unstyled nav flex-column pb-3">
-				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Introduction</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Getting Started</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Installation</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Configuration</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>Bundle</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Creating Bundles</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Bundle Settings</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Bundle Pricing</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-up"></i></span>Upsell</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Upsell Configuration</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Upsell Rules</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Upsell Analytics</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder me-2"><i class="fas fa-gift"></i></span>Gift</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Gift Options</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Gift Messages</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Gift Wrapping</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder me-2"><i class="fas fa-th-large"></i></span>Sections</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Section Management</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Section Templates</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">Section Customization</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder me-2"><i class="fas fa-flag"></i></span>Banner</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">Banner Setup</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">Banner Design</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Banner Analytics</a></li>
-			    </ul>
+            <ol start="1">
+              <li>In the App Store search bar, type "Bundleza"</li>
+              <li>Locate the Bundleza app in the search results</li>
+              <li>Click on the Bundleza app card to view details</li>
+              <li>Review the app description, features, and pricing</li>
+              <li>Click <strong>Add app</strong></li>
+            </ol>
 
-		    </nav><!--//docs-nav-->
-	    </div><!--//docs-sidebar-->
-	    <div class="docs-content">
-		    <div class="container">
-			    <article class="docs-article" id="section-1">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 3 days ago</span></h1>
-					    <section class="docs-intro">
-						    <p>Welcome to Bundleza documentation. This comprehensive guide will help you understand and implement all the powerful features of our Shopify app, including product bundles, upsells, gift options, custom sections, and promotional banners.</p>
-						</section><!--//docs-intro-->
-						
-						<h5>Github Code Example:</h5>
-						<p>You can <a class="theme-link" href="https://gist.github.com/"  target="_blank">embed your code snippets using Github gists</a></p>
-						<div class="docs-code-block">
-							<!-- ** Embed github code starts ** -->
-							<script src="https://gist.github.com/xriley/fce6cf71edfd2dadc7919eb9c98f3f17.js"></script>
-							<!-- ** Embed github code ends ** -->
-						</div><!--//docs-code-block-->
-						
-					     <h5>Highlight.js Example:</h5>
-						<p>You can <a class="theme-link" href="https://github.com/highlightjs/highlight.js" target="_blank">embed your code snippets using highlight.js</a> It supports <a class="theme-link" href="https://highlightjs.org/static/demo/" target="_blank">185 languages and 89 styles</a>.</p>
-						<p>This template uses <a class="theme-link" href="https://highlightjs.org/static/demo/" target="_blank">Atom One Dark</a> style for the code blocks: <br><code>&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css&#x22;&#x3E;</code></p>
-						<div class="docs-code-block">
-							<pre class="shadow-lg rounded"><code class="json hljs">[
-  {
-    <span class="hljs-attr">"title"</span>: <span class="hljs-string">"apples"</span>,
-    <span class="hljs-attr">"count"</span>: [<span class="hljs-number">12000</span>, <span class="hljs-number">20000</span>],
-    <span class="hljs-attr">"description"</span>: {<span class="hljs-attr">"text"</span>: <span class="hljs-string">"..."</span>, <span class="hljs-attr">"sensitive"</span>: <span class="hljs-literal">false</span>}
-  },
-  {
-    <span class="hljs-attr">"title"</span>: <span class="hljs-string">"oranges"</span>,
-    <span class="hljs-attr">"count"</span>: [<span class="hljs-number">17500</span>, <span class="hljs-literal">null</span>],
-    <span class="hljs-attr">"description"</span>: {<span class="hljs-attr">"text"</span>: <span class="hljs-string">"..."</span>, <span class="hljs-attr">"sensitive"</span>: <span class="hljs-literal">false</span>}
-  }
-]
+            <h4>Step 3: Grant Permissions</h4>
+            <p>Review and approve the required permissions:</p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/permisssion.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/permisssion.png" alt="Bundleza app permissions screen"
+                    title="App Permissions" /></a>
+              </div>
+            </div>
+            <ol start="1">
+              <li>Review the requested permissions carefully</li>
+              <li>Click <strong>Install app</strong> to grant permissions</li>
+              <li>Wait for the installation to complete</li>
+            </ol>
 
 
-</code></pre>
-						</div><!--//docs-code-block-->
-						
-						
-				    </header>
-				    <section class="docs-section" id="item-1-1">
-						<h2 class="section-heading">Getting Started</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. </p>
-						<p>Code Example: <code>npm install &lt;package&gt;</code></p>
-						<h5>Unordered List Examples:</h5>
-						<ul>
-						    <li><strong class="me-1">HTML5:</strong> <code>&lt;div id="foo"&gt;</code></li>
-						    <li><strong class="me-1">CSS:</strong> <code>#foo { color: red }</code></li>
-						    <li><strong class="me-1">JavaScript:</strong> <code>console.log(&#x27;#foo\bar&#x27;);</code></li>
-						</ul>
-						<h5>Ordered List Examples:</h5>
-						<ol>
-							<li>Download lorem ipsum dolor sit amet.</li>
-							<li>Click ipsum faucibus venenatis.</li>
-							<li>Configure fermentum malesuada nunc.</li>
-							<li>Deploy donec non ante libero.</li>
-						</ol>
-                        <h5>Callout Examples:</h5>
-                        <div class="callout-block callout-block-info">
-                            
-                            <div class="content">
-                                <h4 class="callout-title">
-	                                <span class="callout-icon-holder me-1">
-		                                <i class="fas fa-info-circle"></i>
-		                            </span><!--//icon-holder-->
-	                                Note
-	                            </h4>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <code>&lt;code&gt;</code> , Nemo enim ipsam voluptatem quia voluptas <a href="#">link example</a> sit aspernatur aut odit aut fugit.</p>
-                            </div><!--//content-->
-                        </div><!--//callout-block-->
-                        
-                        <div class="callout-block callout-block-warning">
-                            <div class="content">
-                                <h4 class="callout-title">
-	                                <span class="callout-icon-holder me-1">
-		                                <i class="fas fa-bullhorn"></i>
-		                            </span><!--//icon-holder-->
-	                                Warning
-	                            </h4>
-                                <p>Nunc hendrerit odio quis dignissim efficitur. Proin ut finibus libero. Morbi posuere fringilla felis eget sagittis. Fusce sem orci, cursus in tortor <a href="#">link example</a> tellus vel diam viverra elementum.</p>
-                            </div><!--//content-->
-                        </div><!--//callout-block-->
-                        
-                        <div class="callout-block callout-block-success">
-                            <div class="content">
-                                <h4 class="callout-title">
-	                                <span class="callout-icon-holder me-1">
-		                                <i class="fas fa-thumbs-up"></i>
-		                            </span><!--//icon-holder-->
-	                                Tip
-	                            </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <a href="#">Link example</a> aenean commodo ligula eget dolor.</p>
-                            </div><!--//content-->
-                        </div><!--//callout-block-->
-                        
-                        <div class="callout-block callout-block-danger me-1">
-                            <div class="content">
-                                <h4 class="callout-title">
-	                                <span class="callout-icon-holder">
-		                                <i class="fas fa-exclamation-triangle"></i>
-		                            </span><!--//icon-holder-->
-	                                Danger
-	                            </h4>
-                                <p>Morbi eget interdum sapien. Donec sed turpis sed nulla lacinia accumsan vitae ut tellus. Aenean vestibulum <a href="#">Link example</a> maximus ipsum vel dignissim. Morbi ornare elit sit amet massa feugiat, viverra dictum ipsum pellentesque. </p>
-                            </div><!--//content-->
-                        </div><!--//callout-block-->
-                        
-                        <h5 class="mt-5">Alert Examples:</h5>
-                        <div class="alert alert-primary" role="alert">
-						  This is a primary alert—check it out!
-						</div>
-						<div class="alert alert-secondary" role="alert">
-						  This is a secondary alert—check it out!
-						</div>
-						<div class="alert alert-success" role="alert">
-						  This is a success alert—check it out!
-						</div>
-						<div class="alert alert-danger" role="alert">
-						  This is a danger alert—check it out!
-						</div>
-						<div class="alert alert-warning" role="alert">
-						  This is a warning alert—check it out!
-						</div>
-						<div class="alert alert-info" role="alert">
-						  This is a info alert—check it out!
-						</div>
-						<div class="alert alert-light" role="alert">
-						  This is a light alert—check it out!
-						</div>
-						<div class="alert alert-dark" role="alert">
-						  This is a dark alert—check it out!
-						</div>
-                        
-                       
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-1-2">
-						<h2 class="section-heading">Installation</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-						<h5 class="mt-5">Lightbox Example:</h5>
-						
-						<p>The example below uses the <i class="fas fa-external-link-alt"></i> <a class="theme-link" href="https://github.com/andreknieriem/simplelightbox" target="_blank">simplelightbox plugin</a>. </p>
-						
-						<div class="simplelightbox-gallery row mb-3">
-							<div class="col-12 col-md-4 mb-3">
-						        <a href="assets/images/coderpro-home.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/coderpro-home-thumb.png" alt="" title="CoderPro Home Page"/></a>
-							</div>
-							<div class="col-12 col-md-4 mb-3">
-						        <a href="assets/images/coderpro-features.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/coderpro-features-thumb.png" alt="" title="CoderPro Features Page"/></a>
-							</div><!--//col-->
-							<div class="col-12 col-md-4 mb-3">
-						        <a href="assets/images/coderpro-pricing.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/coderpro-pricing-thumb.png" alt="" title="CoderPro Pricing Page"/></a>
-							</div><!--//col-->
-							
-						</div><!--//gallery-->
-						
-						<h5>Custom Table:</h5>
-						<div class="table-responsive my-4">
-							<table class="table table-bordered">
-								<tbody>
-								    <tr>
-									    <th class="theme-bg-light"><a class="theme-link" href="#">Option 1</a></th>
-									    <td>Option 1 desc lorem ipsum dolor sit amet, consectetur adipiscing elit. </td>
-									</tr>
-									<tr>
-									      <th class="theme-bg-light"><a class="theme-link" href="#">Option 2</a></th>
-									      <td>Option 2 desc lorem ipsum dolor sit amet, consectetur adipiscing elit. </td>
-									</tr>
-									
-									<tr>
-									    <th class="theme-bg-light"><a class="theme-link" href="#">Option 3</a></th>
-									    <td>Option 3 desc lorem ipsum dolor sit amet, consectetur adipiscing elit. </td>
-									</tr>
-									
-									<tr>
-									    <th class="theme-bg-light"><a class="theme-link" href="#">Option 4</a></th>
-									    <td>Option 4 desc lorem ipsum dolor sit amet, consectetur adipiscing elit. </td>
-									</tr>
-								</tbody>
-							</table>
-						</div><!--//table-responsive-->
-						<h5>Stripped Table:</h5>
-						<div class="table-responsive my-4">
-							<table class="table table-striped">
-								<thead>
-									<tr>
-										<th scope="col">#</th>
-										<th scope="col">First</th>
-										<th scope="col">Last</th>
-										<th scope="col">Handle</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<th scope="row">1</th>
-										<td>Mark</td>
-										<td>Otto</td>
-										<td>@mdo</td>
-									</tr>
-									<tr>
-										<th scope="row">2</th>
-										<td>Jacob</td>
-										<td>Thornton</td>
-										<td>@fat</td>
-									</tr>
-									<tr>
-										<th scope="row">3</th>
-										<td>Larry</td>
-										<td>the Bird</td>
-										<td>@twitter</td>
-									</tr>
-								</tbody>
-							</table>
-						</div><!--//table-responsive-->
-						<h5>Bordered Dark Table:</h5>
-						<div class="table-responsive my-4">
-							<table class="table table-bordered table-dark">
-								<thead>
-									<tr>
-										<th scope="col">#</th>
-										<th scope="col">First</th>
-										<th scope="col">Last</th>
-										<th scope="col">Handle</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<th scope="row">1</th>
-										<td>Mark</td>
-										<td>Otto</td>
-										<td>@mdo</td>
-									</tr>
-									<tr>
-										<th scope="row">2</th>
-										<td>Jacob</td>
-										<td>Thornton</td>
-										<td>@fat</td>
-									</tr>
-									<tr>
-										<th scope="row">3</th>
-										<td>Larry</td>
-										<td>the Bird</td>
-										<td>@twitter</td>
-									</tr>
-								</tbody>
-							</table>
-						</div><!--//table-responsive-->
-						
-						
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-1-3">
-						<h2 class="section-heading">Configuration</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-						<h5>Badges Examples:</h5>
-						<div class="my-4">
-						    <span class="badge badge-primary">Primary</span>
-							<span class="badge badge-secondary">Secondary</span>
-							<span class="badge badge-success">Success</span>
-							<span class="badge badge-danger">Danger</span>
-							<span class="badge badge-warning">Warning</span>
-							<span class="badge badge-info">Info</span>
-							<span class="badge badge-light">Light</span>
-							<span class="badge badge-dark">Dark</span>
-						</div>
-						<h5>Button Examples:</h5>
-						<div class="row my-3">
-                        <div class="col-md-6 col-12">
-                                <ul class="list list-unstyled pl-0">
-                                    <li><a href="#" class="btn btn-primary">Primary Button</a></li>
-                                    <li><a href="#" class="btn btn-secondary">Secondary Button</a></li>
-                                    <li><a href="#" class="btn btn-light">Light Button</a></li>
-                                    <li><a href="#" class="btn btn-success">Succcess Button</a></li>
-                                    <li><a href="#" class="btn btn-info">Info Button</a></li>
-                                    <li><a href="#" class="btn btn-warning">Warning Button</a></li>
-                                    <li><a href="#" class="btn btn-danger">Danger Button</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6 col-12">
-                                <ul class="list list-unstyled pl-0">
-                                    <li><a href="#" class="btn btn-primary"><i class="fas fa-download me-2"></i> Download Now</a></li>
-                                    <li><a href="#" class="btn btn-secondary"><i class="fas fa-book me-2"></i> View Docs</a></li>
-                                    <li><a href="#" class="btn btn-light"><i class="fas fa-arrow-alt-circle-right me-2"></i> View Features</a></li>
-                                    <li><a href="#" class="btn btn-success"><i class="fas fa-code-branch me-2"></i> Fork Now</a></li>
-                                    <li><a href="#" class="btn btn-info"><i class="fas fa-play-circle me-2"></i> Find Out Now</a></li>
-                                    <li><a href="#" class="btn btn-warning"><i class="fas fa-bug me-2"></i> Report Bugs</a></li>
-                                    <li><a href="#" class="btn btn-danger"><i class="fas fa-exclamation-circle me-2"></i> Submit Issues</a></li>
-                                </ul>
-                            </div>
-                        </div><!--//row-->
-                        
-                        <h5>Progress Examples:</h5>
-                        <div class="my-4">
-	                        <div class="progress my-4">
-								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-							<div class="progress my-4">
-							    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-							<div class="progress my-4">
-							    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-							<div class="progress my-4">
-							    <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-                        </div>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-1-4">
-						<h2 class="section-heading">Section Item 1.4</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-						
-						
-						<h5>Pagination Example:</h5>
-						<nav aria-label="Page navigation example">
-						    <ul class="pagination pl-0">
-							    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
-							    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-							    <li class="page-item"><a class="page-link" href="#">2</a></li>
-							    <li class="page-item"><a class="page-link" href="#">3</a></li>
-							    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-						    </ul>
-						</nav>
-						
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-						
-					</section><!--//section-->
-					<section class="docs-section" id="item-1-5">
-						<h2 class="section-heading">Section Item 1.5</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-					<section class="docs-section" id="item-1-6">
-						<h2 class="section-heading">Section Item 1.6</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-					
-			    </article>
-			    
-			    <article class="docs-article" id="section-2">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Bundle</h1>
-					    <section class="docs-intro">
-						    <p>Create powerful product bundles to increase your average order value. Bundle feature allows you to group related products together and offer them at discounted prices, encouraging customers to purchase more items.</p>
-						</section><!--//docs-intro-->
-				    </header>
-				     <section class="docs-section" id="item-2-1">
-						<h2 class="section-heading">Creating Bundles</h2>
-						<p>Learn how to create effective product bundles that drive sales. You can combine complementary products, set bundle pricing, and configure display options to maximize conversion rates.</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-2-2">
-						<h2 class="section-heading">Bundle Settings</h2>
-						<p>Configure your bundle settings including inventory management, shipping options, and display preferences. Control how bundles appear on your store and manage stock levels effectively.</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-2-3">
-						<h2 class="section-heading">Bundle Pricing</h2>
-						<p>Set up flexible pricing strategies for your bundles. Offer percentage discounts, fixed amount savings, or tiered pricing based on quantity. Track performance and optimize pricing for better results.</p>
-					</section><!--//section-->
-			    </article><!--//docs-article-->
-			    
-			    
-			    <article class="docs-article" id="section-3">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Upsell</h1>
-					    <section class="docs-intro">
-						    <p>Boost your revenue with intelligent upsell recommendations. Show customers relevant products at the right moment to increase their purchase value and improve their shopping experience.</p>
-						</section><!--//docs-intro-->
-				    </header>
-				     <section class="docs-section" id="item-3-1">
-						<h2 class="section-heading">Upsell Configuration</h2>
-						<p>Set up your upsell campaigns with smart targeting rules. Configure when and where upsell offers appear, customize the display design, and set up A/B testing to optimize performance.</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-3-2">
-						<h2 class="section-heading">Upsell Rules</h2>
-						<p>Create sophisticated rules to determine which products to recommend. Use customer behavior, purchase history, and product relationships to show the most relevant upsell offers.</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-3-3">
-						<h2 class="section-heading">Upsell Analytics</h2>
-						<p>Track the performance of your upsell campaigns with detailed analytics. Monitor conversion rates, revenue impact, and customer engagement to continuously improve your upsell strategy.</p>
-					</section><!--//section-->
-			    </article><!--//docs-article-->
-			    
-			    <article class="docs-article" id="section-4">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Gift</h1>
-					    <section class="docs-intro">
-						    <p>Enhance your customers' gifting experience with comprehensive gift options. Enable gift messages, gift wrapping, and special gift configurations to make every purchase feel special.</p>
-						</section><!--//docs-intro-->
-				    </header>
-				     <section class="docs-section" id="item-4-1">
-						<h2 class="section-heading">Gift Options</h2>
-						<p>Configure various gift options for your products. Enable customers to mark items as gifts, set up gift certificates, and create special gift product variants with unique pricing and presentation.</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-4-2">
-						<h2 class="section-heading">Gift Messages</h2>
-						<p>Allow customers to add personalized gift messages to their orders. Customize message fields, set character limits, and control how gift messages appear on receipts and packing slips.</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-4-3">
-						<h2 class="section-heading">Section Item 4.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-			    </article><!--//docs-article-->
-			    
-			    <article class="docs-article" id="section-5">
-			    <header class="docs-header">
-				    <h1 class="docs-heading">Sections</h1>
-				    <section class="docs-intro">
-					    <p>Create custom sections to organize your store content and enhance the shopping experience. Build flexible layouts with drag-and-drop functionality and responsive design elements.</p>
-					</section><!--//docs-intro-->
-			    </header>
-			     <section class="docs-section" id="item-5-1">
-					<h2 class="section-heading">Section Builder</h2>
-					<p>Use the intuitive section builder to create custom layouts for your store. Add text blocks, images, buttons, and other elements to design unique sections that match your brand aesthetic.</p>
-				</section><!--//section-->
-				
-				<section class="docs-section" id="item-5-2">
-					<h2 class="section-heading">Section Templates</h2>
-					<p>Choose from pre-built section templates including hero banners, feature grids, testimonials, and product showcases. Customize colors, fonts, and spacing to match your store design.</p>
-				</section><!--//section-->
-					
-					<section class="docs-section" id="item-5-3">
-							<h2 class="section-heading">Section Item 5.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-			    </article><!--//docs-article-->
-			    
-			    
-		        <article class="docs-article" id="section-6">
-			    <header class="docs-header">
-				    <h1 class="docs-heading">Banner</h1>
-				    <section class="docs-intro">
-					    <p>Create eye-catching promotional banners to highlight special offers, announcements, and important information. Design responsive banners that display perfectly across all devices and drive customer engagement.</p>
-					</section><!--//docs-intro-->
-			    </header>
-			     <section class="docs-section" id="item-6-1">
-					<h2 class="section-heading">Banner Design</h2>
-					<p>Design stunning promotional banners with customizable templates, colors, and typography. Add images, call-to-action buttons, and animations to create compelling marketing messages that convert visitors into customers.</p>
-				</section><!--//section-->
-				
-				<section class="docs-section" id="item-6-2">
-					<h2 class="section-heading">Banner Placement</h2>
-					<p>Control where and when your banners appear with advanced targeting options. Set up banners for specific pages, customer segments, or time periods to maximize their effectiveness and impact on your sales.</p>
-				</section><!--//section-->
-					
-					<section class="docs-section" id="item-6-3">
-							<h2 class="section-heading">Section Item 6.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-			    </article><!--//docs-article-->
-			    
-			    
-			    <article class="docs-article" id="section-7">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Mobile</h1>
-					    <section class="docs-intro">
-						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
-						</section><!--//docs-intro-->
-				    </header>
-				     <section class="docs-section" id="item-7-1">
-						<h2 class="section-heading">Section Item 7.1</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-7-2">
-						<h2 class="section-heading">Section Item 7.2</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-7-3">
-							<h2 class="section-heading">Section Item 7.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-			    </article><!--//docs-article-->
-			    
-			    
-			    <article class="docs-article" id="section-8">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Resources</h1>
-					    <section class="docs-intro">
-						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
-						</section><!--//docs-intro-->
-				    </header>
-				     <section class="docs-section" id="item-8-1">
-						<h2 class="section-heading">Section Item 8.1</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-8-2">
-						<h2 class="section-heading">Section Item 8.2</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-8-3">
-							<h2 class="section-heading">Section Item 8.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-			    </article><!--//docs-article-->
-			    
-			    
-			    <article class="docs-article" id="section-9">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">FAQs</h1>
-					    <section class="docs-intro">
-						    <p>Section intro goes here. You can list all your FAQs using the format below.</p>
-						</section><!--//docs-intro-->
-				    </header>
-				     <section class="docs-section" id="item-9-1">
-						<h2 class="section-heading">Section Item 9.1 <small>(FAQ Category One)</small></h2>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What's sit amet quam eget lacinia?</h5>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to ipsum dolor sit amet quam tortor?</h5>
-						<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I  bibendum sodales?</h5>
-						<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where arcu sed urna gravida?</h5>
-						<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo. Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-9-2">
-						<h2 class="section-heading">Section Item 9.2 <small>(FAQ Category Two)</small></h2>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What's sit amet quam eget lacinia?</h5>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to ipsum dolor sit amet quam tortor?</h5>
-						<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I  bibendum sodales?</h5>
-						<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where arcu sed urna gravida?</h5>
-						<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo. Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-9-3">
-							<h2 class="section-heading">Section Item 9.3 <small>(FAQ Category Three)</small></h2>
-						    <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to dapibus sollicitudin justo vel fermentum?</h5>
-							<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-							<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How long bibendum sodales?</h5>
-							<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-							<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where dapibus sollicitudin?</h5>
-							<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo. Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
-					</section><!--//section-->
-			    </article><!--//docs-article-->
 
-			    <footer class="footer">
-				    <div class="container text-center py-5">
-				        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-			            <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart" style="color: #fb866a;"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-				        <ul class="social-list list-unstyled pt-4 mb-0">
-						    <li class="list-inline-item"><a href="#"><i class="fa-brands fa-github fa-fw"></i></a></li> 
-				            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-x-twitter fa-fw"></i></a></li>
-				            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-slack fa-fw"></i></a></li>
-				            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-product-hunt fa-fw"></i></a></li>
-				            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-facebook-f fa-fw"></i></a></li>
-				            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-instagram fa-fw"></i></a></li>
-				        </ul><!--//social-list-->
-				    </div>
-			    </footer>
-		    </div> 
-	    </div>
-    </div><!--//docs-wrapper-->
-   
-       
-    <!-- Javascript -->          
-    <script src="assets/plugins/popper.min.js"></script>
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
-    
-    
-    <!-- Page Specific JS -->
-    <script src="assets/plugins/smoothscroll.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
-    <script src="assets/js/highlight-custom.js"></script> 
-    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>      
-    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
-    <script src="assets/js/docs.js"></script> 
 
+
+
+
+            <h3>Quick Start Checklist</h3>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/quick-start-checklist.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/quick-start-checklist.png" alt="Quick Start Checklist"
+                    title="Quick Start Checklist" /></a>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  Tip
+                </h4>
+                <p>
+                  Start with creating one bundle and one upsell offer to test
+                  the functionality. Once you're comfortable, expand to more
+                  complex configurations.
+                </p>
+              </div>
+            </div>
+
+            <h3>Need Help?</h3>
+            <p>If you encounter any issues during setup:</p>
+            <ul>
+              <li>Check our detailed documentation for each feature</li>
+              <li>Contact our support team via the app dashboard</li>
+              <li>Join our community forum for tips and best practices</li>
+              <li>Watch our tutorial videos for visual guidance</li>
+            </ul>
+
+            <p>
+              You're now ready to start boosting your store's revenue with
+              Bundleza's powerful features!
+            </p>
+          </section>
+          <!--//section-->
+
+
+        </article>
+
+        <article class="docs-article" id="section-2">
+          <header class="docs-header">
+            <h1 class="docs-heading">Bundle</h1>
+            <section class="docs-intro">
+              <p>
+                As a Shopify merchant, the Bundle feature in Bundleza empowers you to create compelling product bundles
+                that significantly boost your average order value. By strategically combining complementary products and
+                offering attractive discounts, you can encourage customers to purchase more items, increasing your
+                revenue while enhancing their shopping experience.
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 mb-3">
+                  <a href="assets/images/bundleza-management.png"><img class="figure-img img-fluid shadow rounded"
+                      src="assets/images/bundleza-management.png" alt="Bundle Management"
+                      title="Bundle Management" /></a>
+                </div>
+              </div>
+            </section>
+            <!--//docs-intro-->
+          </header>
+          <section class="docs-section" id="item-2-1">
+            <h2 class="section-heading">Bundle Management</h2>
+            <p>
+              The Bundle Management page is your central hub for overseeing all your created bundles. Here, you can
+              edit, delete, duplicate, and update the status of your bundles to keep your store's offerings
+              organized and up-to-date.
+            </p>
+
+            <h3>Accessing Bundle Management</h3>
+            <p>
+              From the Bundleza dashboard, navigate to the Bundles section to access the Bundle Management page.
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/bundleza-menu.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/bundleza-menu.png" alt="Bundle Management" title="Bundle Management" /></a>
+              </div>
+            </div>
+
+            <h3>Bundle List and Actions</h3>
+            <p>
+              The bundle list displays all your created bundles with key information and available actions. You can
+              perform the following actions on each bundle:
+            </p>
+            <ul>
+              <li><strong>Edit:</strong> Modify the bundle's details, products, and settings.</li>
+              <li><strong>Delete:</strong> Permanently remove the bundle from your store.</li>
+              <li><strong>Duplicate:</strong> Create a copy of the bundle for quick setup of similar offers.</li>
+              <li><strong>Update Status:</strong> Toggle between Draft (hidden from customers) and Active (visible on
+                your store).</li>
+            </ul>
+
+            <div class="callout-block callout-block-warning">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                  Important
+                </h4>
+                <p>
+                  To edit any bundle, you must first update its status to Draft.
+                </p>
+              </div>
+            </div>
+
+            <h4>Bundle Table</h4>
+            <p>
+              The bundle table displays all your created bundles with the
+              following information:
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/bundle-table.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/bundle-table.png" alt="Bundle Table" title="Bundle Table" /></a>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Tip
+                </h4>
+                <p>
+                  Use the status toggle to temporarily hide bundles during off-seasons or when updating offers, without
+                  deleting them.
+                </p>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  Review Request
+                </h4>
+                <p>
+                  If you love Bundleza, please leave us a review in the
+                  Shopify App Store!
+                </p>
+              </div>
+            </div>
+          </section>
+          <!--//section-->
+
+          <section class="docs-section" id="item-2-2">
+            <h2 class="section-heading">Creating and Updating Bundles</h2>
+            <p>
+              Create a new bundle offer for your store or update existing bundles. This page allows you to configure all
+              aspects of your bundle, from basic details to advanced styling and product selection.
+            </p>
+
+            <h3>How to Create a New Bundle</h3>
+            <ol>
+              <li><strong>Enter Bundle Name:</strong> Provide a descriptive and appealing name for your bundle that will
+                attract customers.</li>
+              <li><strong>Select Selection Type:</strong> Choose how products are included in the bundle (All Products,
+                Specific Products, or Specific Collections).</li>
+              <li><strong>Configure Settings:</strong> Set up bundle settings, variant offers, and discount options to
+                create compelling pricing tiers.</li>
+              <li><strong>Customize Styles:</strong> Adjust colors, fonts, and layouts to match your store's branding.
+              </li>
+              <li><strong>Select Products:</strong> Use the product selection modal to choose main products and variants
+                for the bundle.</li>
+              <li><strong>Set Up Variant Offers:</strong> Configure dynamic offers for different bundle variants.</li>
+              <li><strong>Preview and Save:</strong> Review your bundle configuration and save it as Draft or Active.
+              </li>
+            </ol>
+
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Tip
+                </h4>
+                <p>
+                  Start with a simple bundle and test its performance before adding complex configurations. This allows
+                  you to optimize based on customer feedback.
+                </p>
+              </div>
+            </div>
+
+            <h3>Bundle Name</h3>
+            <p>
+              Enter a descriptive and appealing name for your bundle. This name will be displayed to customers on your
+              product pages and in the cart.
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/bundle-name.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/bundle-name.png" alt="Bundle Name Configuration"
+                    title="Bundle Name Configuration" /></a>
+              </div>
+            </div>
+
+            <h3>Selection Type</h3>
+            <p>
+              Choose how products will be selected for the bundle. You can include all products, specific products, or
+              products from specific collections.
+            </p>
+            <ul>
+              <li><strong>All Products:</strong> Include any product from your store in the bundle.</li>
+              <li><strong>Specific Products:</strong> Manually select individual products.</li>
+              <li><strong>Specific Collections:</strong> Include all products from selected collections.</li>
+            </ul>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/product-selection.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/product-selection.png" alt="Selection Type Options"
+                    title="Selection Type Options" /></a>
+              </div>
+            </div>
+
+            <h3>Settings</h3>
+            <p>
+              Configure the core settings for your bundle, including pricing, availability, and display options.
+            </p>
+
+            <h4>Bundle Settings</h4>
+            <ul>
+              <li><strong>ONLY TODAY:</strong> Enable a special "Only Today" promotion for the bundle.</li>
+              <li><strong>Variant Comparison Prices:</strong> Show comparison prices for different variants.</li>
+              <li><strong>Direct to Checkout:</strong> Allow customers to go directly to checkout from the bundle.</li>
+              <li><strong>Hide Variant Picker:</strong> Hide the variant selection options on the bundle page.</li>
+            </ul>
+
+            <h4>Bundle Variant Offers</h4>
+            <p>Configure dynamic offers for bundle variants. Set quantities, discount types (e.g., Fixed Amount,
+              Percentage, Fixed Price), and discount values. Options can be default selected, and you can add multiple
+              new offers to create various pricing tiers.</p>
+            <ul>
+              <li><strong>Quantity:</strong> Specify the number of items in the offer (fully customizable).</li>
+              <li><strong>Discount Type:</strong> Choose from Fixed Amount, Percentage, or Fixed Price.</li>
+              <li><strong>Discount Value:</strong> Set the discount amount or percentage (dynamic and adjustable).</li>
+              <li><strong>Default Selected:</strong> Mark an offer as pre-selected for customers.</li>
+              <li><strong>Add New Offer:</strong> Easily add additional offers with different configurations.</li>
+            </ul>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Tip
+                </h4>
+                <p>
+                  All quantities, discount types, and values are fully customizable. Experiment with different offers to
+                  find what works best for your customers.
+                </p>
+              </div>
+            </div>
+
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/bundle-settings.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/bundle-settings.png" alt="Bundle Settings Configuration"
+                    title="Bundle Settings Configuration" /></a>
+              </div>
+            </div>
+
+            <h3>Styles</h3>
+            <p>
+              Customize the visual appearance of your bundle to match your store's theme. Adjust colors, fonts, layouts,
+              and other styling elements.
+            </p>
+            <h4>Title Styles</h4>
+            <ul>
+              <li><strong>Text Size:</strong> Set the font size for the bundle title (e.g., 18px).</li>
+              <li><strong>Font Weight:</strong> Choose font weight (Bold or Regular).</li>
+              <li><strong>Color:</strong> Select the color for the title text.</li>
+            </ul>
+            <h4>Sub-Title Styles</h4>
+            <ul>
+              <li><strong>Text Size:</strong> Set the font size for the sub-title (e.g., 16px).</li>
+              <li><strong>Font Weight:</strong> Choose font weight (Bold or Regular).</li>
+              <li><strong>Color:</strong> Select the color for the sub-title text.</li>
+            </ul>
+            <h4>Price Colors</h4>
+            <ul>
+              <li><strong>Color:</strong> Set the color for regular prices.</li>
+              <li><strong>Compare Price Color:</strong> Set the color for crossed-out compare prices.</li>
+            </ul>
+            <h4>Badge Colors</h4>
+            <ul>
+              <li><strong>Background:</strong> Background color for badges.</li>
+              <li><strong>Text:</strong> Text color for badges.</li>
+            </ul>
+            <h4>Label Colors</h4>
+            <ul>
+              <li><strong>Background:</strong> Background color for labels.</li>
+              <li><strong>Text:</strong> Text color for labels.</li>
+            </ul>
+            <h4>Gift Colors</h4>
+            <ul>
+              <li><strong>Background:</strong> Background color for gift elements.</li>
+              <li><strong>Text:</strong> Text color for gift elements.</li>
+            </ul>
+            <h4>Box Colors</h4>
+            <ul>
+              <li><strong>Border Color:</strong> Color for box borders.</li>
+              <li><strong>Box Color:</strong> Background color for boxes.</li>
+              <li><strong>Selected Box Color:</strong> Background color for selected boxes.</li>
+              <li><strong>Box Border Width:</strong> Width of box borders (e.g., 1px).</li>
+              <li><strong>Box Border Radius:</strong> Corner radius for boxes (e.g., 0px).</li>
+            </ul>
+            <h4>Image Settings</h4>
+            <ul>
+              <li><strong>Image Size:</strong> Set the size for product images (e.g., 2).</li>
+              <li><strong>Radius:</strong> Corner radius for images (e.g., 0px).</li>
+            </ul>
+            <h4>Gift Product - Image Settings</h4>
+            <ul>
+              <li><strong>Image Size:</strong> Set the size for gift product images (e.g., 2).</li>
+              <li><strong>Radius:</strong> Corner radius for gift images (e.g., 0px).</li>
+            </ul>
+            <h4>Additional Options</h4>
+            <ul>
+              <li><strong>ONLY TODAY:</strong> Enable special "Only Today" messaging.</li>
+              <li><strong>Most Popular:</strong> Mark the bundle as most popular.</li>
+              <li><strong>Single:</strong> Standard price for single purchases.</li>
+              <li><strong>Duo:</strong> Standard price for duo purchases.</li>
+              <li><strong>🌐:</strong> Internationalization settings.</li>
+            </ul>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                class="figure-img img-fluid shadow rounded"
+                src="assets/images/bundle-styles-thumb.png"
+                alt="Bundle Styles Customization"
+                title="Bundle Styles Customization"
+                /></a>
+              </div>
+            </div>
+
+            <h3>Product Selection Modal</h3>
+            <p>
+              Use the product selection modal to choose products for your bundle. You can select main products or
+              specific variants.
+            </p>
+            <ul>
+              <li><strong>Main Product:</strong> Select the primary product for the bundle.</li>
+              <li><strong>Variants:</strong> Choose specific variants (e.g., size, color) for more precise control.</li>
+            </ul>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/product-modal.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/product-modal.png" alt="Product Selection Modal"
+                    title="Product Selection Modal" /></a>
+              </div>
+            </div>
+
+            <h3>Variant Offers</h3>
+            <p>
+              Set up variant-specific offers within your bundle. This allows customers to choose different options for
+              products in the bundle.
+            </p>
+            <ul>
+              <li><strong>Variant Selection:</strong> Enable customers to select product variants in the bundle.</li>
+              <li><strong>Pricing Adjustments:</strong> Apply different discounts based on selected variants.</li>
+              <li><strong>Availability Rules:</strong> Set rules for which variants are available in the bundle.</li>
+            </ul>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/bundle-preview.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/bundle-preview.png" alt="Variant Offers Setup"
+                    title="Variant Offers Setup" /></a>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Note
+                </h4>
+                <p>
+                  All style settings are dynamic and can be adjusted to fit your brand. Defaults are provided as
+                  starting points, but everything is customizable for merchants.
+                </p>
+              </div>
+            </div>
+          </section>
+
+
+        </article>
+        <!--//docs-article-->
+
+        <article class="docs-article" id="section-3">
+          <header class="docs-header">
+            <h1 class="docs-heading">Upsell</h1>
+            <section class="docs-intro">
+              <p>
+                As a merchant, the Upsell feature in Bundleza helps you maximize revenue by presenting intelligent
+                product recommendations to customers at strategic points in their shopping journey. By suggesting
+                relevant add-ons or upgrades, you can increase average order values and enhance customer satisfaction.
+              </p>
+              <p>
+                When you click on the <strong>Upsell</strong> menu, it will take you to the <strong>Add Upsells</strong>
+                page. First, choose the upsell type:
+              </p>
+              <div class="row">
+                <div class="col-12 col-md-6 mb-4">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/upsell.png" class="img-fluid mr-3"
+                        alt="Product Single Upsells" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Product Single Upsells</h5>
+                        <p class="card-text">Show a related product as an upsell above Shopify's 'Add to Cart' button.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/upsell.png" class="img-fluid mr-3"
+                        alt="Product Multi Upsells" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Product Multi Upsells</h5>
+                        <p class="card-text">Show multiple related products as upsell or bundle above Shopify's 'Add to
+                          Cart' button.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p>
+                Click on either <strong>Single Upsell</strong> or <strong>Multi Upsell</strong> to proceed to the
+                respective configuration page.
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 mb-3">
+                  <a href="assets/images/all-upsell.png"><img class="figure-img img-fluid shadow rounded"
+                      src="assets/images/all-upsell.png" alt="Add Upsells Page Screenshot"
+                      title="Add Upsells Page" /></a>
+                </div>
+              </div>
+            </section>
+            <!--//docs-intro-->
+          </header>
+          <section class="docs-section" id="item-3-1">
+            <h2 class="section-heading">Upsell Configuration</h2>
+            <p>
+              As a merchant, you can easily configure upsell offers to increase your store's revenue. All settings are
+              fully customizable and can be changed at any time to optimize your sales strategy.
+            </p>
+
+
+            <h3>Create or Update an Upsell</h3>
+            <p>
+              Follow these steps to create a new upsell offer:
+            </p>
+            <ol>
+              <li>Navigate to the Upsells section in your Bundleza dashboard.</li>
+              <li>Click "Create New Upsell".</li>
+              <li>Select the upsell type (Popup, Box, or Slider).</li>
+              <li>Choose the trigger product(s) that will display the upsell.</li>
+              <li>Select the recommended product(s) to upsell.</li>
+              <li>Configure pricing and discount options.</li>
+              <li>Customize the display settings and styling.</li>
+              <li>Set targeting rules and conditions.</li>
+              <li>Save and activate the upsell.</li>
+            </ol>
+
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1"><i class="fas fa-info-circle"></i></span>
+                  Tip
+                </h4>
+                <p>
+                  Start with one upsell type and test its performance before adding more. All settings can be adjusted
+                  later based on customer feedback and analytics.
+                </p>
+              </div>
+            </div>
+
+            <h3>Upsell Settings</h3>
+            <p>
+              Customize every aspect of your upsell offers to match your brand and maximize conversions.
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/upsell-settings.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/upsell-settings.png" alt="Upsell Settings" title="Upsell Settings" /></a>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1"><i class="fas fa-thumbs-up"></i></span>
+                  Best Practice
+                </h4>
+                <p>
+                  Use A/B testing to compare different upsell designs and messaging. All settings are changeable, so you
+                  can quickly iterate based on performance data.
+                </p>
+              </div>
+            </div>
+
+            <h3>Styles</h3>
+            <p>
+              Customize the visual appearance of your upsell offers to match your store's theme. Adjust colors, fonts,
+              layouts,
+              and other styling elements.
+            </p>
+            <h4>Title Styles</h4>
+            <ul>
+              <li><strong>Text Size:</strong> Set the font size for the upsell title (e.g., 18px).</li>
+              <li><strong>Font Weight:</strong> Choose font weight (Bold or Regular).</li>
+              <li><strong>Color:</strong> Select the color for the title text.</li>
+            </ul>
+            <h4>Sub-Title Styles</h4>
+            <ul>
+              <li><strong>Text Size:</strong> Set the font size for the sub-title (e.g., 16px).</li>
+              <li><strong>Font Weight:</strong> Choose font weight (Bold or Regular).</li>
+              <li><strong>Color:</strong> Select the color for the sub-title text.</li>
+            </ul>
+            <h4>Price Colors</h4>
+            <ul>
+              <li><strong>Color:</strong> Set the color for regular prices.</li>
+              <li><strong>Compare Price Color:</strong> Set the color for crossed-out compare prices.</li>
+            </ul>
+            <h4>Button Styles</h4>
+            <ul>
+              <li><strong>Background:</strong> Background color for buttons.</li>
+              <li><strong>Text:</strong> Text color for buttons.</li>
+              <li><strong>Border Radius:</strong> Corner radius for buttons.</li>
+            </ul>
+            <h4>Box Colors</h4>
+            <ul>
+              <li><strong>Border Color:</strong> Color for box borders.</li>
+              <li><strong>Box Color:</strong> Background color for boxes.</li>
+              <li><strong>Selected Box Color:</strong> Background color for selected boxes.</li>
+              <li><strong>Box Border Width:</strong> Width of box borders (e.g., 1px).</li>
+              <li><strong>Box Border Radius:</strong> Corner radius for boxes (e.g., 0px).</li>
+            </ul>
+            <h4>Image Settings</h4>
+            <ul>
+              <li><strong>Image Size:</strong> Set the size for product images (e.g., 2).</li>
+              <li><strong>Radius:</strong> Corner radius for images (e.g., 0px).</li>
+            </ul>
+            <h4>Additional Options</h4>
+            <ul>
+              <li><strong>Popup Overlay:</strong> Customize the background overlay for popup upsells.</li>
+              <li><strong>Animation:</strong> Enable or disable animations for upsell display.</li>
+              <li><strong>Close Button:</strong> Style the close button for upsell modals.</li>
+            </ul>
+          </section>
+          <!--//section-->
+
+          <section class="docs-section" id="item-3-2">
+            <h2 class="section-heading">Single Upsell Management</h2>
+            <p>
+              The Upsell Management page allows you to oversee all your created single upsell offers. Here, you can
+              edit, delete, duplicate, and update the status of your upsells to keep your store's offerings
+              organized and up-to-date.
+            </p>
+
+            <p>As a merchant, effective management of your upsells ensures they remain relevant and profitable, allowing
+              you to quickly adapt to changing customer preferences and maximize revenue opportunities.</p>
+
+            <h3>Accessing Upsell Management</h3>
+            <p>
+              From the Bundleza dashboard, navigate to the Upsells section and select Single Upsell to access the Upsell
+              Management page.
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/all-upsell.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/all-upsell.png" alt="Upsell Management" title="Upsell Management" /></a>
+              </div>
+            </div>
+
+            <h3>Upsell List and Actions</h3>
+            <p>
+              The upsell list displays all your created single upsells with key information and available actions. You
+              can
+              perform the following actions on each upsell:
+            </p>
+            <ul>
+              <li><strong>Edit:</strong> Modify the upsell's details, products, and settings.</li>
+              <li><strong>Delete:</strong> Permanently remove the upsell from your store.</li>
+              <li><strong>Duplicate:</strong> Create a copy of the upsell for quick setup of similar offers.</li>
+              <li><strong>Update Status:</strong> Toggle between Draft (hidden from customers) and Active (visible on
+                your store).</li>
+            </ul>
+
+            <div class="callout-block callout-block-warning">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                  Important
+                </h4>
+                <p>
+                  To edit any upsell, you must first update its status to Draft.
+                </p>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Search by upsell name..." />
+            </div>
+            <div class="table-responsive my-4">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Selection Type</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Test Upsell name</td>
+                    <td>all-products</td>
+                    <td><span class="badge badge-success">Success</span></td>
+                    <td>Active</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Tip
+                </h4>
+                <p>
+                  Use the status toggle to temporarily hide upsells during promotions or when updating offers, without
+                  deleting them.
+                </p>
+              </div>
+            </div>
+          </section>
+          <!--//section-->
+
+          <section class="docs-section" id="item-3-3">
+            <h2 class="section-heading">Multiple Upsell Management</h2>
+            <p>
+              The Multiple Upsell Management page allows you to oversee all your created multiple upsell offers. Here,
+              you can edit, delete, duplicate, and update the status of your multiple upsells to keep your store's
+              offerings
+              organized and up-to-date.
+            </p>
+
+            <p>As a merchant, effective management of your multiple upsells ensures they remain relevant and profitable,
+              allowing you to quickly adapt to changing customer preferences and maximize revenue opportunities.
+              Multiple upsells complement bundles by offering additional product suggestions, creating a seamless
+              shopping experience that encourages higher cart values.</p>
+
+            <h3>Accessing Multiple Upsell Management</h3>
+            <p>
+              From the Bundleza dashboard, navigate to the Upsells section and select Multiple Upsell to access the
+              Multiple Upsell Management page.
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/all-upsell.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/all-upsell.png" alt="Multiple Upsell Management"
+                    title="Multiple Upsell Management" /></a>
+              </div>
+            </div>
+
+            <h3>Multiple Upsell List and Actions</h3>
+            <p>
+              The multiple upsell list displays all your created multiple upsells with key information and available
+              actions. You can
+              perform the following actions on each multiple upsell:
+            </p>
+            <ul>
+              <li><strong>Edit:</strong> Modify the multiple upsell's details, products, and settings.</li>
+              <li><strong>Delete:</strong> Permanently remove the multiple upsell from your store.</li>
+              <li><strong>Duplicate:</strong> Create a copy of the multiple upsell for quick setup of similar offers.
+              </li>
+              <li><strong>Update Status:</strong> Toggle between Draft (hidden from customers) and Active (visible on
+                your store).</li>
+            </ul>
+
+            <div class="callout-block callout-block-warning">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                  Important
+                </h4>
+                <p>
+                  To edit any multiple upsell, you must first update its status to Draft.
+                </p>
+              </div>
+            </div>
+
+            <h4>Multiple Upsell Table</h4>
+            <p>
+              The multiple upsell table displays all your created multiple upsells with the
+              following information:
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/multiple-upsell.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/multiple-upsell.png" alt="Multiple Upsell Table" title="Multiple Upsell Table" /></a>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Tip
+                </h4>
+                <p>
+                  Use the status toggle to temporarily hide multiple upsells during promotions or when updating offers,
+                  without
+                  deleting them.
+                </p>
+              </div>
+            </div>
+          </section>
+          <!--//section-->
+
+          <section class="docs-section" id="item-3-4">
+            <h2 class="section-heading">Create Multiple Upsell</h2>
+            <p>Create Multiple Upsell. This page is ready</p>
+            <p>Create Multiple Upsell</p>
+            <p>Select products and create upsell</p>
+            <h3>Upsell Name</h3>
+            <p>Upsell</p>
+            <h3>Settings</h3>
+            <h4>Upsell Settings</h4>
+            <ul>
+              <li><strong>ONLY TODAY:</strong> Enable a special "Only Today" promotion for the multiple upsell.</li>
+              <li><strong>Variant Comparison Prices:</strong> Show comparison prices for different variants.</li>
+              <li><strong>Direct to Checkout:</strong> Allow customers to go directly to checkout from the multiple
+                upsell.</li>
+              <li><strong>Hide Variant Picker:</strong> Hide the variant selection options on the multiple upsell page.
+              </li>
+            </ul>
+            <h4>Upsell Variant Offers</h4>
+            <p>Configure dynamic offers for multiple upsell variants. Set quantities, discount types (e.g., Fixed
+              Amount, Percentage, Fixed Price), and discount values. Options can be default selected, and you can add
+              multiple new offers to create various pricing tiers.</p>
+            <ul>
+              <li><strong>Quantity:</strong> Specify the number of items in the offer (fully customizable).</li>
+              <li><strong>Discount Type:</strong> Choose from Fixed Amount, Percentage, or Fixed Price.</li>
+              <li><strong>Discount Value:</strong> Set the discount amount or percentage (dynamic and adjustable).</li>
+              <li><strong>Default Selected:</strong> Mark an offer as pre-selected for customers.</li>
+              <li><strong>Add New Offer:</strong> Easily add additional offers with different configurations.</li>
+            </ul>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Tip
+                </h4>
+                <p>
+                  All quantities, discount types, and values are fully customizable. Experiment with different offers to
+                  find what works best for your customers.
+                </p>
+              </div>
+            </div>
+            <h3>Styles</h3>
+            <h4>Multiple Upsell Style:</h4>
+            <p>Select how your multiple upsells will be displayed</p>
+            <p>Normal layout1</p>
+            <p>Boxed layout2</p>
+            <h4>Add to Cart Behavior:</h4>
+            <p>Choose either to use the theme's ATC button or your own</p>
+            <p>Theme Button layout3</p>
+            <p>Own Button layout4</p>
+            <p>Choose either to use the theme's ATC button or your own</p>
+            <h4>Block Settings</h4>
+            <p>Settings for the block of upsells</p>
+            <h4>Block Title</h4>
+            <p>Example Variant</p>
+            <h4>Footer Text:</h4>
+            <p>Total:</p>
+            <p>Show + icons between upsells</p>
+            <h4>Multiple Upsells</h4>
+            <p>No Product Selected Yet</p>
+            <h4>Visibility:</h4>
+            <p>Where should the upsell be displayed?</p>
+            <p>Product or Collection Selection:</p>
+            <ul>
+              <li>All products</li>
+              <li>Certain products</li>
+              <li>Certain collections</li>
+            </ul>
+            <p>Skip to checkout</p>
+            <h4>preview</h4>
+            <p>No upsell products</p>
+            <p>🌐</p>
+            <p>Create Multiple Upsell. This page is ready</p>
+            <p>Create Multiple Upsell</p>
+            <p>Select products and create upsell</p>
+            <h3>Upsell Name</h3>
+            <p>Upsell</p>
+            <h3>Settings</h3>
+            <h3>Styles</h3>
+            <h4>Block Title</h4>
+            <p>Text Size 20</p>
+            <p>Font Weight Bold Bold</p>
+            <p>Text Align Left Left</p>
+            <p>Color</p>
+            <h4>Product Title</h4>
+            <p>Text Size 20</p>
+            <p>Font Weight Bold Bold</p>
+            <p>Color</p>
+            <h4>Sub-Title</h4>
+            <p>Text Size 14</p>
+            <p>Font Weight Thin Thin</p>
+            <p>Color</p>
+            <h4>Price</h4>
+            <p>Text Size 14</p>
+            <p>Font Weight Bold Bold</p>
+            <p>Color</p>
+            <h4>Compare Price</h4>
+            <p>Text Size 14</p>
+            <p>Font Weight Thin Thin</p>
+            <p>Color</p>
+            <h4>Badge Colors</h4>
+            <p>Background</p>
+            <p>Text</p>
+            <h4>Checkbox Colors</h4>
+            <p>Background</p>
+            <p>Checkmark Color</p>
+            <h4>Box Colors</h4>
+            <p>Box Color</p>
+            <p>Box Border Color</p>
+            <p>Box Hover Color</p>
+            <p>Box Border Width 1</p>
+            <p>Box Border Width</p>
+            <p>Box Border Radius 0</p>
+            <p>Box Border Radius</p>
+            <h4>Image Settings</h4>
+            <p>Image Size 5</p>
+            <p>Image Size</p>
+            <p>Radius 0</p>
+            <p>Radius</p>
+            <p>Screen Protector</p>
+            <p>best seller</p>
+            <p>Screen Protector</p>
+            <p>upsell</p>
+            <p>Blue</p>
+            <p>$ 10.00</p>
+            <p>$ 10.00</p>
+            <p>Apple IPhone 15 Pro Max In Natural Titanium- upsell</p>
+            <p>best seller</p>
+            <p>Apple IPhone 15 Pro Max In Natural Titanium- upsell</p>
+            <p>upsell</p>
+            <p>Orange</p>
+            <p>$ 30.00</p>
+            <p>$ 30.00</p>
+            <p>Add to Cart</p>
+            <p>🌐</p>
+          </section>
+
+          <section class="docs-section" id="item-3-5">
+            <h2 class="section-heading">Add Upsells</h2>
+            <p>After clicking on <strong>Upsell</strong>, you will be redirected to the Add Upsells page. Here, you can
+              choose the type of upsell you want to create:</p>
+            <div class="row">
+              <div class="col-12 col-md-6 mb-4">
+                <div class="card shadow-sm">
+                  <div class="card-body d-flex gap-2 align-items-center">
+                    <img src="https://bundleza-114feb79b169.herokuapp.com/upsell.png" class="img-fluid mr-3"
+                      alt="Product Single Upsells" style="max-width: 150px; max-height: 150px;">
+                    <div>
+                      <h5 class="card-title">Product Single Upsells</h5>
+                      <p class="card-text">Show a related product as an upsell above Shopify's 'Add to Cart' button.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 mb-4">
+                <div class="card shadow-sm">
+                  <div class="card-body d-flex gap-2 align-items-center">
+                    <img src="https://bundleza-114feb79b169.herokuapp.com/upsell.png" class="img-fluid mr-3"
+                      alt="Product Multi Upsells" style="max-width: 150px; max-height: 150px;">
+                    <div>
+                      <h5 class="card-title">Product Multi Upsells</h5>
+                      <p class="card-text">Show multiple related products as upsell or bundle above Shopify's 'Add to
+                        Cart' button.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>Choose either <strong>Single Upsell</strong> or <strong>Multiple Upsell</strong> to proceed to the
+              respective homepage.</p>
+            <hr>
+            <h3>Upsells Homepage</h3>
+            <p><strong>Upsells. This page is ready</strong></p>
+            <p>Boost your conversions with Appaza Upsells.</p>
+            <ul>
+              <li>Click 'Create Upsell' to start a new upsell offer.</li>
+              <li>Choose products or collections to target.</li>
+              <li>Configure your upsell offer details and save.</li>
+            </ul>
+            <p>Upsells (0)</p>
+            <p><strong>Create your first upsell</strong></p>
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1"><i class="fas fa-thumbs-up"></i></span>
+                  Do you like our app?
+                </h4>
+                <p>We would appreciate a review!</p>
+              </div>
+            </div>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1"><i class="fas fa-info-circle"></i></span>
+                  More modules coming soon
+                </h4>
+                <p>Join our <a href="https://discord.gg/bundleza" target="_blank">Discord community</a> and connect with
+                  other shop owners.</p>
+              </div>
+            </div>
+            <hr>
+            <h3>Multiple Upsells Homepage</h3>
+            <p><strong>Multiple Upsells. This page is ready</strong></p>
+            <p>Boost your conversions with Appaza Multiple Upsells.</p>
+            <ul>
+              <li>Click 'Create Upsell' to start a new multiple upsell offer.</li>
+              <li>Choose products or collections to target.</li>
+              <li>Configure your upsell offer details and save.</li>
+            </ul>
+            <p>Multiple Upsells (0)</p>
+            <p><strong>Create your first Multiple upsell</strong></p>
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1"><i class="fas fa-thumbs-up"></i></span>
+                  Do you like our app?
+                </h4>
+                <p>We would appreciate a review!</p>
+              </div>
+            </div>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1"><i class="fas fa-info-circle"></i></span>
+                  More modules coming soon
+                </h4>
+                <p>Join our <a href="https://discord.gg/bundleza" target="_blank">Discord community</a> and connect with
+                  other shop owners.</p>
+              </div>
+            </div>
+          </section>
+          <!--//section-->
+
+          <section class="docs-section" id="item-3-6">
+            <h2 class="section-heading">Create Single Upsell</h2>
+            <p>This page allows you to create a single upsell offer by selecting a product and configuring settings.</p>
+
+            <h3>Upsell Name</h3>
+            <p>Enter a name for your single upsell offer.</p>
+
+            <h3>Settings</h3>
+            <p>Configure the basic settings for the single upsell.</p>
+
+            <h3>Styling</h3>
+            <p>Customize the appearance of the single upsell.</p>
+
+            <h4>Select Product</h4>
+            <p>Choose the product to be displayed as an upsell offer.</p>
+
+            <h4>Select Layout</h4>
+            <p>Select from available layouts: layout1, layout2, layout3, layout4.</p>
+
+            <h4>Product Details</h4>
+            <ul>
+              <li><strong>Product Name:</strong> Display name of the product.</li>
+              <li><strong>Subtitle:</strong> Additional text, e.g., "Upsell".</li>
+              <li><strong>Badge:</strong> e.g., "Best Seller".</li>
+              <li><strong>Preselected by default:</strong> Option to preselect.</li>
+              <li><strong>Show Image:</strong> Toggle to display product image.</li>
+            </ul>
+
+            <h4>Visibility</h4>
+            <p>Choose where the upsell is displayed: All products, Certain products, or Certain collections.</p>
+
+            <h4>Skip to checkout</h4>
+            <p>Option to skip directly to checkout.</p>
+
+            <h3>Preview</h3>
+            <p>Preview the upsell with the selected product.</p>
+
+            <h3>Styling Options</h3>
+            <p>Detailed styling for text, colors, boxes, images, etc., including:</p>
+            <ul>
+              <li><strong>Product Title:</strong> Text size (20), font weight (Bold), color.</li>
+              <li><strong>Sub-Title:</strong> Text size (14), font weight (Thin), color.</li>
+              <li><strong>Price:</strong> Text size (14), font weight (Bold), color.</li>
+              <li><strong>Compare Price:</strong> Text size (14), font weight (Thin), color.</li>
+              <li><strong>Badge Colors:</strong> Background and text colors.</li>
+              <li><strong>Checkbox Colors:</strong> Background and checkmark color.</li>
+              <li><strong>Box Colors:</strong> Box color, border color, border width (1), border radius (0).</li>
+              <li><strong>Image Settings:</strong> Image size (5), radius (0).</li>
+            </ul>
+
+            <h4>Upsell Settings</h4>
+            <ul>
+              <li><strong>ONLY TODAY:</strong> Enable a special "Only Today" promotion for the upsell.</li>
+              <li><strong>Variant Comparison Prices:</strong> Show comparison prices for different variants.</li>
+              <li><strong>Direct to Checkout:</strong> Allow customers to go directly to checkout from the upsell.</li>
+              <li><strong>Hide Variant Picker:</strong> Hide the variant selection options on the upsell page.</li>
+            </ul>
+
+            <h4>Upsell Variant Offers</h4>
+            <p>Configure dynamic offers for upsell variants. Set quantities, discount types (e.g., Fixed Amount,
+              Percentage, Fixed Price), and discount values. Options can be default selected, and you can add multiple
+              new offers to create various pricing tiers.</p>
+            <ul>
+              <li><strong>Quantity:</strong> Specify the number of items in the offer (fully customizable).</li>
+              <li><strong>Discount Type:</strong> Choose from Fixed Amount, Percentage, or Fixed Price.</li>
+              <li><strong>Discount Value:</strong> Set the discount amount or percentage (dynamic and adjustable).</li>
+              <li><strong>Default Selected:</strong> Mark an offer as pre-selected for customers.</li>
+              <li><strong>Add New Offer:</strong> Easily add additional offers with different configurations.</li>
+            </ul>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Tip
+                </h4>
+                <p>
+                  All quantities, discount types, and values are fully customizable. Experiment with different offers to
+                  find what works best for your customers.
+                </p>
+              </div>
+            </div>
+
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/upsell-settings.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/upsell-settings.png" alt="Upsell Settings Configuration"
+                    title="Upsell Settings Configuration" /></a>
+              </div>
+            </div>
+          </section>
+          <!--//section-->
+
+        </article>
+        <!--//docs-article-->
+
+        <article class="docs-article" id="section-4">
+          <header class="docs-header">
+            <h1 class="docs-heading">Gift</h1>
+            <section class="docs-intro">
+              <p>
+                Increase your conversions with Bundleza Gifts. Create attractive gift modules that encourage customers
+                to add complementary items, boosting average order values and enhancing the shopping experience.
+              </p>
+            </section>
+            <!--//docs-intro-->
+          </header>
+          <section class="docs-section" id="item-4-1">
+            <h2 class="section-heading">Gift Management</h2>
+            <p>
+              The Gift Management page is your central hub for overseeing all your created gift modules. Here, you can
+              edit, delete, duplicate, and update the status of your gifts to keep your store's offerings
+              organized and up-to-date.
+            </p>
+
+            <h3>Accessing Gift Management</h3>
+            <p>
+              From the Bundleza dashboard, navigate to the Gifts section to access the Gift Management page.
+            </p>
+
+            <h3>Gift List and Actions</h3>
+            <p>
+              The gift list displays all your created gifts with key information and available actions. You can
+              perform the following actions on each gift:
+            </p>
+            <ul>
+              <li><strong>Edit:</strong> Modify the gift's details, products, and settings.</li>
+              <li><strong>Delete:</strong> Permanently remove the gift from your store.</li>
+              <li><strong>Duplicate:</strong> Create a copy of the gift for quick setup of similar offers.</li>
+              <li><strong>Update Status:</strong> Toggle between Draft (hidden from customers) and Active (visible on
+                your store).</li>
+            </ul>
+
+            <div class="callout-block callout-block-warning">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                  Important
+                </h4>
+                <p>
+                  To edit any gift, you must first update its status to Draft.
+                </p>
+              </div>
+            </div>
+
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/gift-table.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/gift-table.png" alt="Gift Table" title="Gift Table" /></a>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Tip
+                </h4>
+                <p>
+                  Use the status toggle to temporarily hide gifts during off-seasons or when updating offers, without
+                  deleting them.
+                </p>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  Review Request
+                </h4>
+                <p>
+                  If you love Bundleza, please leave us a review in the Shopify App Store!
+                </p>
+              </div>
+            </div>
+          </section>
+          <!--//section-->
+
+          <section class="docs-section" id="item-4-2">
+            <h2 class="section-heading">Creating and Updating Gifts</h2>
+            <p>
+              Create a new gift module for your store or update existing gifts. This page allows you to configure all
+              aspects of your gift, from basic details to advanced styling and product selection.
+            </p>
+
+            <h3>How to Create a New Gift</h3>
+            <ol>
+              <li><strong>Enter Gift Name:</strong> Provide a descriptive and appealing name for your gift that will
+                attract customers.</li>
+              <li><strong>Set Visibility:</strong> Choose where the gift should be displayed (e.g., on specific products
+                or collections).</li>
+              <li><strong>Select Products:</strong> Choose the product to be displayed as a gift and configure its
+                details.</li>
+              <li><strong>Configure Settings:</strong> Set up pricing, discounts, and display options.</li>
+              <li><strong>Customize Styles:</strong> Adjust colors, fonts, and layouts to match your store's branding.
+              </li>
+              <li><strong>Preview and Save:</strong> Review your gift configuration and save it as Draft or Active.</li>
+            </ol>
+
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Tip
+                </h4>
+                <p>
+                  Start with a simple gift and test its performance before adding complex configurations. This allows
+                  you to optimize based on customer feedback.
+                </p>
+              </div>
+            </div>
+
+            <h3>Gift Name</h3>
+            <p>
+              Enter a descriptive and appealing name for your gift. This name will be displayed to customers on your
+              product pages.
+            </p>
+
+            <h3>Visibility</h3>
+            <p>
+              Choose where the gift should be displayed. Options include all products, certain products, or certain
+              collections.
+            </p>
+            <ul>
+              <li><strong>All Products:</strong> Display the gift on any product in your store.</li>
+              <li><strong>Certain Products:</strong> Select specific products for the gift display.</li>
+              <li><strong>Certain Collections:</strong> Display the gift on products from selected collections.</li>
+            </ul>
+
+            <h3>Product or Collection Selection</h3>
+            <p>
+              Select the products or collections where the gift will appear.
+            </p>
+
+            <h3>Settings</h3>
+            <p>
+              Configure the core settings for your gift, including pricing and display options.
+            </p>
+            <ul>
+              <li><strong>Show Image:</strong> Enable or disable the product image display.</li>
+              <li><strong>Skip to Checkout:</strong> Allow direct checkout from the gift.</li>
+              <li><strong>Strike Through Product Compare Price:</strong> Show crossed-out compare prices.</li>
+              <li><strong>Limited per Order:</strong> Set limits on gift quantities per order.</li>
+            </ul>
+
+            <h3>Styles</h3>
+            <p>
+              Customize the visual appearance of your gift to match your store's theme. Adjust colors, fonts, layouts,
+              and other styling elements.
+            </p>
+            <h4>Title Styles</h4>
+            <ul>
+              <li><strong>Text Size:</strong> Set the font size for the gift title (e.g., 18px).</li>
+              <li><strong>Font Weight:</strong> Choose font weight (Bold or Regular).</li>
+              <li><strong>Color:</strong> Select the color for the title text.</li>
+            </ul>
+            <h4>Subtitle Styles</h4>
+            <ul>
+              <li><strong>Text Size:</strong> Set the font size for the subtitle (e.g., 16px).</li>
+              <li><strong>Font Weight:</strong> Choose font weight (Bold or Regular).</li>
+              <li><strong>Color:</strong> Select the color for the subtitle text.</li>
+            </ul>
+            <h4>Price Styles</h4>
+            <ul>
+              <li><strong>Color:</strong> Set the color for prices.</li>
+              <li><strong>Discount Name:</strong> Customize the discount label.</li>
+            </ul>
+            <h4>Badge Styles</h4>
+            <ul>
+              <li><strong>Background:</strong> Background color for badges.</li>
+              <li><strong>Text:</strong> Text color for badges.</li>
+            </ul>
+            <h4>Button Styles</h4>
+            <ul>
+              <li><strong>Background:</strong> Background color for buttons.</li>
+              <li><strong>Text:</strong> Text color for buttons.</li>
+            </ul>
+            <h4>Image Settings</h4>
+            <ul>
+              <li><strong>Show Image:</strong> Toggle image visibility.</li>
+              <li><strong>Alt Text:</strong> Set alternative text for images.</li>
+            </ul>
+
+            <h3>Select Product</h3>
+            <p>
+              Choose the product to be displayed as a gift. Configure its name, subtitle, badge, price, and other
+              details.
+            </p>
+            <ul>
+              <li><strong>Gift Name:</strong> e.g., Apple Watch SE 2024</li>
+              <li><strong>Subtitle:</strong> e.g., 100% Natural</li>
+              <li><strong>Badge:</strong> e.g., best seller</li>
+              <li><strong>Price Text:</strong> e.g., $0</li>
+              <li><strong>Discount Name:</strong> e.g., gift discount</li>
+            </ul>
+          </section>
+          <!--//section-->
+
+          <section class="docs-section" id="item-4-3">
+            <h2 class="section-heading">Gift Messages</h2>
+            <p>
+              Allow customers to add personalized gift messages to their
+              orders. Customize message fields, set character limits, and
+              control how gift messages appear on receipts and packing slips.
+            </p>
+
+            <h3>How to Set Up Gift Messages</h3>
+            <ol>
+              <li>Navigate to the Gift Messages subsection in the Gift section.</li>
+              <li>Enable gift messages for relevant products or orders.</li>
+              <li>Set character limits and make fields required or optional.</li>
+              <li>Customize how messages display on receipts and packing slips.</li>
+              <li>Save the configuration.</li>
+            </ol>
+
+            <p>Personalized gift messages add a thoughtful touch to purchases, making your store the preferred choice
+              for gifting and increasing customer loyalty.</p>
+          </section>
+          <!--//section-->
+
+        </article>
+        <!--//docs-article-->
+
+        <article class="docs-article" id="section-5">
+          <header class="docs-header">
+            <h1 class="docs-heading">Sections</h1>
+            <section class="docs-intro">
+              <p>
+                Add and manage custom sections for your Shopify store.
+                Pre-built. Configurable. Easy in Themebuilder. Create custom
+                bundles of your products and configure pre-built sections like
+                review or benefit boxes for your product page.
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 mb-3">
+                  <a href="assets/images/sections-overview.png"><img class="figure-img img-fluid shadow rounded"
+                      src="assets/images/sections-overview-thumb.png" alt="Bundleza Sections Overview"
+                      title="Sections Overview" /></a>
+                </div>
+              </div>
+            </section>
+            <!--//docs-intro-->
+          </header>
+          <section class="docs-section" id="item-5-1">
+
+
+            <section class="docs-section" id="item-5-2">
+
+              <h3>Select Theme</h3>
+              <p>
+                <strong>Choose a theme:</strong> Select your Shopify theme to
+                add sections to product pages.
+              </p>
+
+              <h3>Steps to Select a Theme</h3>
+              <ol>
+                <li>Navigate to the Sections area in your Bundleza dashboard.</li>
+                <li>From the available options, select your active Shopify theme.</li>
+                <li>Confirm the selection to enable section additions for that theme.</li>
+              </ol>
+
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 mb-3">
+                  <a href="assets/images/select-theme.png"><img class="figure-img img-fluid shadow rounded"
+                      src="assets/images/select-theme.png" alt="Select theme for product page sections"
+                      title="Select Theme" /></a>
+                </div>
+              </div>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-5-3">
+              <h2 class="section-heading">Add Sections</h2>
+              <p>After selecting your theme, click the "Add" button for the section you like to add. Alternatively, you
+                can watch a video tutorial for guidance.</p>
+
+              <h3>How to Add Sections</h3>
+              <ol>
+                <li>Review the list of pre-built sections available for your theme.</li>
+                <li>Click the "Add" button next to the section you want to include (e.g., review boxes, benefit boxes).
+                </li>
+                <li>Configure the section's settings, such as content and styling.</li>
+                <li>Save the changes and preview the section on your product page.</li>
+              </ol>
+
+              <p>As a merchant, adding custom sections to your product pages allows you to highlight key benefits,
+                customer reviews, and bundle offers, directly influencing purchase decisions and improving conversion
+                rates.</p>
+
+              <img class="figure-img img-fluid shadow rounded" src="assets/images/add-section.png"
+                alt="Customize section step 2" />
+              <!--//section-->
+
+
+              <div class="callout-block callout-block-success">
+                <div class="content">
+                  <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                      <i class="fas fa-thumbs-up"></i>
+                    </span>
+                    Do you like our app?
+                  </h4>
+                  <p>
+                    We would appreciate a review! Help other merchants discover
+                    Bundleza.
+                  </p>
+                </div>
+              </div>
+
+              <h3>More Modules Coming Soon</h3>
+              <p>
+                Join our Discord community and connect with other shop owners to
+                get early access to new features.
+              </p>
+            </section>
+            <!--//section-->
+        </article>
+        <!--//docs-article-->
+
+        <article class="docs-article" id="section-6">
+          <header class="docs-header">
+            <h1 class="docs-heading">Banner</h1>
+            <section class="docs-intro">
+              <p>
+                Create engaging banners for your shop - from announcements to
+                discount promotions. Design eye-catching promotional banners
+                to highlight special offers, announcements, and important
+                information that drive customer engagement and boost sales.
+              </p>
+            </section>
+            <!--//docs-intro-->
+          </header>
+          <section class="docs-section" id="item-6-1">
+            <h2 class="section-heading">Banner Design</h2>
+            <p>
+              Design stunning promotional banners with customizable templates,
+              colors, and typography. Add images, call-to-action buttons, and
+              animations to create compelling marketing messages that convert
+              visitors into customers.
+            </p>
+
+            <h3>How to Design a Banner</h3>
+            <ol>
+              <li>Access the Banner Design section in Bundleza.</li>
+              <li>Select a pre-built template or start with a blank canvas.</li>
+              <li>Add promotional text, images, and call-to-action buttons.</li>
+              <li>Customize colors, fonts, and layout to match your brand.</li>
+              <li>Preview the banner and make adjustments as needed.</li>
+              <li>Save the design.</li>
+            </ol>
+
+            <p>Effective banner design captures customer attention and drives engagement, leading to higher
+              click-through rates and increased sales.</p>
+          </section>
+          <!--//section-->
+
+          <section class="docs-section" id="item-6-2">
+            <h2 class="section-heading">Banner Placement</h2>
+            <p>
+              Control where and when your banners appear with advanced
+              targeting options. Set up banners for specific pages, customer
+              segments, or time periods to maximize their effectiveness and
+              impact on your sales.
+            </p>
+
+            <h3>How to Set Banner Placement</h3>
+            <ol>
+              <li>Navigate to the Banner Placement settings.</li>
+              <li>Select the pages where the banner should appear (e.g., homepage, product pages).</li>
+              <li>Define targeting rules, such as customer segments or cart values.</li>
+              <li>Set time-based conditions, like start and end dates.</li>
+              <li>Activate the banner to start displaying.</li>
+            </ol>
+
+            <p>Strategic banner placement ensures your promotions reach the most relevant audience, optimizing
+              visibility and driving targeted traffic to your offers.</p>
+
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/banner-table.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/banner-table.png" alt="Banner Table" title="Banner Table" /></a>
+              </div>
+            </div>
+          </section>
+          <!--//section-->
+
+          <section class="docs-section" id="item-6-3">
+            <h2 class="section-heading">Banner Preview & Create/Update</h2>
+            <p>
+              Preview your banner before publishing. Easily create or update banners with the following options:
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/banner-preview.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/banner-preview.png" alt="Banner Preview" title="Banner Preview" /></a>
+              </div>
+            </div>
+            <h3>Design and Customize Your Banner</h3>
+            <ul>
+              <li><strong>Templates:</strong> Choose a pre-designed template for your banner.</li>
+              <li><strong>Theme:</strong> Select from Black Friday, Christmas, New Year, Compact Mode, Valentine, and more.</li>
+              <li><strong>Schedule:</strong> Set start and end dates/times for banner activity.</li>
+              <li><strong>Language:</strong> Customize banner content for different languages.</li>
+              <li><strong>Banner Content:</strong> Edit main text, call to action, countdown label, discount announcement, and close button behavior.</li>
+              <li><strong>Design:</strong> Adjust colors, text, backgrounds, code radius, and more to match your brand.</li>
+              <li><strong>Status:</strong> View planned/active status and schedule details.</li>
+            </ul>
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  Success
+                </h4>
+                <p>Banner will be active from 2025-09-23 at 09:00 until 2025-09-23 at 09:00</p>
+              </div>
+            </div>
+          </section>
+          <!--//section-->
+        </article>
+        <!--//docs-article-->
+
+
+
+        <footer class="footer">
+          <div class="container text-center py-5">
+            <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+            <small class="copyright">Developed<i class="fas fa-heart" style="color: #fb866a"></i> by
+              <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Bundleza</a>
+            </small>
+            <ul class="social-list list-unstyled pt-4 mb-0">
+              <li class="list-inline-item">
+                <a href="#"><i class="fa-brands fa-github fa-fw"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa-brands fa-x-twitter fa-fw"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa-brands fa-slack fa-fw"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa-brands fa-product-hunt fa-fw"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa-brands fa-facebook-f fa-fw"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa-brands fa-instagram fa-fw"></i></a>
+              </li>
+            </ul>
+
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <!--//docs-wrapper-->
+
+  <!-- Javascript -->
+  <script src="assets/plugins/popper.min.js"></script>
+  <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Page Specific JS -->
+  <script src="assets/plugins/smoothscroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+  <script src="assets/js/highlight-custom.js"></script>
+  <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+  <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+  <script src="assets/js/docs.js"></script>
 </body>
-</html>
 
+</html>
