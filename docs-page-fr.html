@@ -1,0 +1,2304 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>
+    Bundleza - Les paquets de produits
+  </title>
+
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bundleza - Les paquets de produits" />
+  <meta name="author" content="Xiaoying Riley at 3rd Wave Media" />
+  <link rel="shortcut icon" href="favicon.ico" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome JS-->
+  <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css" />
+  <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css" />
+
+  <!-- Theme CSS -->
+  <link id="theme-style" rel="stylesheet" href="assets/css/theme.css" />
+
+  <style>
+    img {
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body class="docs-page">
+  <header class="header fixed-top">
+    <div class="branding docs-branding">
+      <div class="container-fluid position-relative py-2">
+        <div class="docs-logo-wrapper">
+          <button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+            type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="site-logo">
+            <a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="assets/images/coderdocs-logo.svg"
+                alt="logo" /><span class="logo-text">Bundl<span class="text-alt">eza</span></span></a>
+          </div>
+        </div>
+        <!--//docs-logo-wrapper-->
+        <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+          <div class="top-search-box d-none d-lg-flex">
+            <form class="search-form">
+              <input type="text" placeholder="Rechercher dans la documentation..." name="search"
+                class="form-control search-input" />
+              <button type="submit" class="btn search-btn" value="Rechercher">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+
+          <ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+            <li class="list-inline-item">
+              <a href="#"><i class="fa-brands fa-github fa-fw"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#"><i class="fa-brands fa-x-twitter fa-fw"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#"><i class="fa-brands fa-slack fa-fw"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#"><i class="fa-brands fa-product-hunt fa-fw"></i></a>
+            </li>
+          </ul>
+          <label for="language-select" style="margin-right: 10px;"><i class="fas fa-globe"></i> </label>
+          <select id="language-select" onchange="window.location.href=this.value;"
+            style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; background-color: #fff; margin-right: 5px;">
+            <option value="docs-page-en.html">English</option>
+            <option value="docs-page-de.html">German</option>
+            <option value="docs-page-es.html">Spanish</option>
+            <option value="docs-page-fr.html">French</option>
+            <option value="docs-page-it.html">Italian</option>
+            <option value="docs-page-ja.html">Japanese</option>
+            <option value="docs-page-nl.html">Dutch</option>
+          </select>
+          <!--//social-list-->
+          <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderdocs-free-bootstrap-5-documentation-template-for-software-projects/"
+            class="btn btn-primary d-none d-lg-flex">Télécharger</a>
+        </div>
+        <!--//docs-top-utilities-->
+      </div>
+      <!--//container-->
+    </div>
+    <!--//branding-->
+  </header>
+  <!--//header-->
+
+  <div class="docs-wrapper">
+    <div id="docs-sidebar" class="docs-sidebar" style="padding: 0 10px;">
+      <div class="top-search-box d-lg-none p-3">
+        <form class="search-form">
+          <input type="text" placeholder="Rechercher dans la documentation..." name="search"
+            class="form-control search-input" />
+          <button type="submit" class="btn search-btn" value="Rechercher">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+      <nav id="docs-nav" class="docs-nav navbar">
+        <ul class="section-items list-unstyled nav flex-column pb-3">
+          <li class="nav-item section-title">
+            <a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-map-signs"></i></span>Introduction</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link scrollto" href="#item-1-1" style="font-size: small; word-break: break-word;"><span
+                class="theme-icon-holder me-3"><i class="fas fa-play-circle"></i></span>Premiers pas</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link scrollto" href="#item-1-2" style="font-size: small; word-break: break-word;"><span
+                class="theme-icon-holder me-3"><i class="fas fa-download"></i></span>Installation</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link scrollto" href="#item-1-3" style="font-size: small; word-break: break-word;"><span
+                class="theme-icon-holder me-3"><i class="fas fa-cogs"></i></span>Configuration</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link scrollto" href="#item-1-3" style="font-size: small; word-break: break-word;"><span
+                class="theme-icon-holder me-3"><i class="fas fa-cogs"></i></span>Configuration</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link scrollto" href="#item-1-4" style="font-size: small; word-break: break-word;"><span
+                class="theme-icon-holder me-3"><i class="fas fa-th-large"></i></span>Comment utiliser les blocs ou
+              sections Bundleza</a>
+          </li>
+
+          <li class="nav-item section-title mt-3">
+            <a class="nav-link scrollto" href="#section-2" data-bs-toggle="collapse" data-bs-target="#bundle-submenu"
+              aria-expanded="false" aria-controls="bundle-submenu"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-box"></i></span>Paquet <i class="fas fa-chevron-right ms-2 submenu-icon"></i></a>
+            <ul class="collapse list-unstyled" id="bundle-submenu">
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-2-1" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-list"></i></span>Gestion des paquets</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-2-2" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-edit"></i></span>Création et mise à jour des
+                  paquets</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-2-3" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus"></i></span>Ajout du paquet à votre thème</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item section-title mt-3">
+            <a class="nav-link scrollto" href="#section-3" data-bs-toggle="collapse" data-bs-target="#upsell-submenu"
+              aria-expanded="false" aria-controls="upsell-submenu"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-arrow-up"></i></span>Montée en gamme <i
+                class="fas fa-chevron-right ms-2 submenu-icon"></i></a>
+            <ul class="collapse list-unstyled" id="upsell-submenu">
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-1" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-cog"></i></span>Configuration de la montée en
+                  gamme</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-2" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus-square"></i></span>Ajout de la montée en gamme
+                  à votre thème</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-3" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-list"></i></span>Gestion de la montée en gamme
+                  unique</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-4" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus"></i></span>Créer une montée en gamme
+                  unique</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-5" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-th-list"></i></span>Gestion de la montée en gamme
+                  multiple</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-6" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus-circle"></i></span>Créer une montée en gamme
+                  multiple</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-7" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus-square"></i></span>Ajout de la montée en gamme
+                  multiple à votre thème</a>
+              </li>
+
+            </ul>
+          </li>
+          <li class="nav-item section-title mt-3">
+            <a class="nav-link scrollto" href="#section-4" data-bs-toggle="collapse" data-bs-target="#gift-submenu"
+              aria-expanded="false" aria-controls="gift-submenu"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-gift"></i></span>Cadeau <i class="fas fa-chevron-right ms-2 submenu-icon"></i></a>
+            <ul class="collapse list-unstyled" id="gift-submenu">
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-4-1" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-cogs"></i></span>Gestion des cadeaux</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-4-2" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-envelope"></i></span>Création ou mise à jour de
+                  cadeaux</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-4-4" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus"></i></span>Ajout du cadeau à votre thème</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item section-title mt-3">
+            <a class="nav-link scrollto" href="#section-5" data-bs-toggle="collapse" data-bs-target="#sections-submenu"
+              aria-expanded="false" aria-controls="sections-submenu"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-th-large"></i></span>Sections <i class="fas fa-chevron-right ms-2 submenu-icon"></i></a>
+            <ul class="collapse list-unstyled" id="sections-submenu">
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-5-1" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-download"></i></span>Comment importer une
+                  section</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-5-2" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-th"></i></span>Sections de page produit</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-5-3" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-store"></i></span>Sections de boutique</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item section-title mt-3">
+            <a class="nav-link scrollto" href="#section-6" data-bs-toggle="collapse" data-bs-target="#banner-submenu"
+              aria-expanded="false" aria-controls="banner-submenu"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-flag"></i></span>Bannière <i class="fas fa-chevron-right ms-2 submenu-icon"></i></a>
+            <ul class="collapse list-unstyled" id="banner-submenu">
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-6-1" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-list"></i></span>Gestion des bannières</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-6-2" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus"></i></span>Créer une nouvelle bannière</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-6-3" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus-square"></i></span>Ajout de la bannière à votre
+                  thème</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!--//docs-nav-->
+    </div>
+    <!--//docs-sidebar-->
+    <div class="docs-content">
+      <div class="container">
+        <article class="docs-article" id="section-1">
+          <header class="docs-header">
+            <h1 class="docs-heading">
+              Introduction
+              <span class="docs-time">Dernière mise à jour : il y a 3 jours</span>
+            </h1>
+            <section class="docs-intro">
+              <p>
+                Bienvenue sur Bundleza - Apprenez l'avenir. Pré-construit.
+                Configurable. Facile dans Themebuilder. Créez des paquets personnalisés de
+                vos produits et configurez des sections pré-construites comme des boîtes d'avis ou
+                d'avantages pour votre page produit.
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 mb-3">
+                  <a href="assets/images/welcome-overviews.png">
+                    <img class="figure-img img-fluid shadow rounded" src="assets/images/welcome-overviews.png"
+                      alt="Aperçu des modules Bundleza" title="Aperçu des modules Bundleza" />
+                  </a>
+                </div>
+              </div>
+
+              <h3 id="bundleza-modules">Modules Bundleza</h3>
+              <div class="row">
+                <div class="col-12 col-md-6 mb-4" id="bundleza-bundles">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/bundle.png" class="img-fluid mr-3"
+                        alt="Paquets Bundleza" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Paquets Bundleza</h5>
+                        <p class="card-text">Créez facilement des paquets et des remises sur quantité pour vos produits
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4" id="bundleza-sections">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/section.png" class="img-fluid mr-3"
+                        alt="Sections Bundleza" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Sections Bundleza</h5>
+                        <p class="card-text">Personnalisez facilement des sections pré-construites pour votre boutique
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4" id="bundleza-upsell">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/upsell.png" class="img-fluid mr-3"
+                        alt="Montée en gamme Bundleza" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Montée en gamme Bundleza</h5>
+                        <p class="card-text">Augmentez vos revenus avec nos popups, boîtes et sliders pour les mises à
+                          niveau de produits</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4" id="bundleza-banner">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/banner.png" class="img-fluid mr-3"
+                        alt="Bannière Bundleza" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Bannière Bundleza</h5>
+                        <p class="card-text">Créez des bannières attrayantes pour votre boutique - des annonces aux
+                          promotions de remise</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4" id="bundleza-gifts">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/gift.png" class="img-fluid mr-3"
+                        alt="Cadeaux Bundleza" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Cadeaux Bundleza</h5>
+                        <p class="card-text">Créez des cadeaux attrayants pour votre boutique. Flexiblement
+                          personnalisable et parfait pour toute occasion</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4" id="bundleza-reviews">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/review.png" class="img-fluid mr-3"
+                        alt="Avis Bundleza" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Avis Bundleza</h5>
+                        <p class="card-text">Créez des widgets d'avis attrayants avec photos et vidéos. Disponible comme
+                          boîte, slider carrousel ou histoires</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="callout-block callout-block-info">
+                <div class="content">
+                  <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                      <i class="fas fa-info-circle"></i>
+                    </span>
+                    Plus de modules bientôt disponibles
+                  </h4>
+                  <p>
+                    Rejoignez notre communauté Discord et connectez-vous avec d'autres propriétaires de boutiques pour
+                    obtenir un accès anticipé aux nouvelles fonctionnalités.
+                  </p>
+                </div>
+              </div>
+            </section>
+            <!--//docs-intro-->
+          </header>
+          <section class="docs-section" id="item-1-1">
+            <h2 class="section-heading">Premiers pas</h2>
+            <p>
+              Bienvenue sur Bundleza ! Ce guide vous aidera à vous lancer
+              avec notre puissante application Shopify qui vous permet de créer des offres de remise sur paquets, des
+              produits de montée en gamme, des produits de montée en gamme multiple, des produits cadeaux, des bannières
+              et des sections personnalisées pour votre boutique.
+            </p>
+
+            <h3>Prérequis</h3>
+            <p>Avant d'installer Bundleza, assurez-vous d'avoir :</p>
+            <ul>
+              <li>Une boutique Shopify active (tout plan)</li>
+              <li>Accès administrateur au tableau de bord Shopify</li>
+              <li>Au moins un produit avec stock et variantes dans votre boutique</li>
+            </ul>
+
+            <h3 id="item-1-2">Installation</h3>
+            <p>
+              Suivez ces étapes pour installer Bundleza sur votre boutique Shopify :
+            </p>
+            <h4>Étape 1 : Connectez-vous à votre tableau de bord administrateur Shopify</h4>
+            <p>Connectez-vous à votre tableau de bord administrateur Shopify sur <a href="https://admin.shopify.com"
+                target="_blank">admin.shopify.com</a>.</p>
+            <h4>Étape 2 : Trouvez et installez Bundleza</h4>
+            <p>Recherchez Bundleza dans la boutique d'applications Shopify :</p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 col-md-6 mb-3">
+                <a href="/assets/images/search-app.png"><img class="figure-img img-fluid shadow rounded"
+                    src="/assets/images/search-app.png"
+                    alt="Recherche de Bundleza dans la boutique d'applications Shopify"
+                    title="Boutique d'applications Shopify Recherche" /></a>
+              </div>
+              <div class="col-12 col-md-6 mb-3">
+                <a href="assets/images/shopify-search.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/shopify-search.png"
+                    alt="Page de l'application Bundleza dans la boutique d'applications Shopify"
+                    title="Page de l'application Bundleza" /></a>
+              </div>
+            </div>
+            <ol start="1">
+              <li>Dans la barre de recherche de la boutique d'applications, tapez "Bundleza"</li>
+              <li>Localisez l'application Bundleza dans les résultats de recherche</li>
+              <li>Cliquez sur la carte de l'application Bundleza pour voir les détails</li>
+              <li>Examinez la description de l'application, les fonctionnalités et les prix</li>
+              <li>Cliquez sur <strong>Ajouter l'application</strong></li>
+            </ol>
+
+            <h4>Étape 3 : Accordez les permissions</h4>
+            <p>Examinez et approuvez les permissions requises :</p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/permisssion.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/permisssion.png" alt="Écran de permissions de l'application Bundleza"
+                    title="Permissions de l'application" /></a>
+              </div>
+            </div>
+            <ol start="1">
+              <li>Examinez attentivement les permissions demandées</li>
+              <li>Cliquez sur <strong>Installer l'application</strong> pour accorder les permissions</li>
+              <li>Attendez que l'installation se termine</li>
+            </ol>
+
+
+
+
+
+            <h3>Liste de contrôle de démarrage rapide</h3>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/check-list.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/check-list.png" alt="Liste de contrôle de démarrage rapide"
+                    title="Liste de contrôle de démarrage rapide" /></a>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  Astuce
+                </h4>
+                <p>
+                  Commencez par créer un paquet et une offre de montée en gamme pour tester la fonctionnalité. Une fois
+                  que vous êtes à l'aise, étendez à des configurations plus complexes.
+                </p>
+              </div>
+            </div>
+
+            <h3>Besoin d'aide ?</h3>
+            <p>Si vous rencontrez des problèmes lors de la configuration :</p>
+            <ul>
+              <li>Vérifiez notre documentation détaillée pour chaque fonctionnalité</li>
+              <li>Contactez notre équipe de support via le tableau de bord de l'application</li>
+              <li>Rejoignez notre forum communautaire pour des conseils et des meilleures pratiques</li>
+              <li>Regardez nos vidéos tutoriels pour un guidage visuel</li>
+            </ul>
+
+            <p>
+              Vous êtes maintenant prêt à commencer à booster les revenus de votre boutique avec les puissantes
+              fonctionnalités de Bundleza !
+            </p>
+          </section>
+          <!--//section-->
+          <section id="item-1-4">
+            <h3>Comment utiliser les blocs/sections Bundleza sur votre thème</h3>
+            <p>
+              Suivez ces étapes communes pour ajouter des sections Bundleza (Paquet, Montée en gamme, Montée en gamme
+              multiple, Cadeau, Bannière) à votre thème Shopify. Cela vous permet d'afficher vos modules configurés sur
+              les pages produit ou d'autres modèles.
+            </p>
+            <h3>Étape 1</h3>
+            <p>Allez à la personnalisation du thème en ligne</p>
+            <img src="assets/images/customization-page.png" class="figure-img img-fluid shadow rounded"
+              alt="page de personnalisation" style="max-width: 100%; max-height: 100%;">
+            <h3>Étape 2</h3>
+            <p>Sélectionnez la page produit par défaut</p>
+            <img src="assets/images/default-productaopage.png" class="figure-img img-fluid shadow rounded"
+              alt="sélectionner la page produit" style="max-width: 100%; max-height: 100%;">
+            <h3>Étape 3</h3>
+            <p>Sélectionnez Bloc et section ici</p>
+            <img src="assets/images/selectsectionandblock.png" class="figure-img img-fluid shadow rounded"
+              alt="sélectionner la page produit" style="max-width: 100%; max-height: 100%;">
+            <h3>Étape 4</h3>
+            <p>Résultats finaux</p>
+            <p>Bannière sur votre boutique</p>
+            <img src="assets/images/banner-resutl.png" class="figure-img img-fluid shadow rounded" alt="bannière"
+              style="max-width: 100%; max-height: 100%;">
+            <p>Blocs sur votre boutique</p>
+            <img src="assets/images/blocs.png" class="figure-img img-fluid shadow rounded"
+              alt="sélectionner la page produit" style="max-width: 100%; max-height: 100%;">
+          </section>
+
+        </article>
+
+        <article class="docs-article" id="section-2">
+          <header class="docs-header">
+            <h1 class="docs-heading">Paquet</h1>
+            <section class="docs-intro">
+              <p>
+                En tant que marchand Shopify, la fonctionnalité Paquet dans Bundleza vous permet de créer des paquets de
+                produits convaincants qui augmentent considérablement la valeur moyenne de commande. En combinant
+                stratégiquement des produits complémentaires et en offrant des remises attractives, vous pouvez
+                encourager les clients à acheter plus d'articles, augmentant vos revenus tout en améliorant leur
+                expérience d'achat.
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 mb-3">
+                  <a href="assets/images/bundleza-management.png"><img class="figure-img img-fluid shadow rounded"
+                      src="assets/images/bundleza-management.png" alt="Gestion des paquets"
+                      title="Gestion des paquets" /></a>
+                </div>
+              </div>
+            </section>
+            <!--//docs-intro-->
+          </header>
+          <section class="docs-section" id="item-2-1">
+            <h2 class="section-heading">Gestion des paquets</h2>
+            <p>
+              La page Gestion des paquets est votre centre central pour superviser tous vos paquets créés. Ici, vous
+              pouvez modifier, supprimer, dupliquer et mettre à jour le statut de vos paquets pour garder les offres de
+              votre boutique organisées et à jour.
+            </p>
+
+            <h3>Accès à la Gestion des paquets</h3>
+            <p>
+              Depuis le tableau de bord Bundleza, naviguez vers la section Paquets pour accéder à la page Gestion des
+              paquets.
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/bundleza-menu.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/bundleza-menu.png" alt="Gestion des paquets" title="Gestion des paquets" /></a>
+              </div>
+            </div>
+
+            <h3>Liste des paquets et actions</h3>
+            <p>
+              La liste des paquets affiche tous vos paquets créés avec des informations clés et des actions disponibles.
+              Vous pouvez effectuer les actions suivantes sur chaque paquet :
+            </p>
+            <ul>
+              <li><strong>Modifier :</strong> Modifiez les détails du paquet, produits et paramètres.</li>
+              <li><strong>Supprimer :</strong> Supprimez définitivement le paquet de votre boutique.</li>
+              <li><strong>Dupliquer :</strong> Créez une copie du paquet pour une configuration rapide d'offres
+                similaires.</li>
+              <li><strong>Mettre à jour le statut :</strong> Basculez entre Brouillon (caché aux clients) et Actif
+                (visible sur votre boutique).</li>
+            </ul>
+
+            <div class="callout-block callout-block-warning">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                  Important
+                </h4>
+                <p>
+                  Pour modifier tout paquet, vous devez d'abord mettre à jour son statut à Brouillon.
+                </p>
+              </div>
+            </div>
+
+            <h4>Tableau des paquets</h4>
+            <p>
+              Le tableau des paquets affiche tous vos paquets créés avec les informations suivantes :
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/bundle-table.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/bundle-table.png" alt="Tableau des paquets" title="Tableau des paquets" /></a>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Astuce
+                </h4>
+                <p>
+                  Utilisez le bouton de statut pour masquer temporairement les paquets pendant les périodes creuses ou
+                  lors de la mise à jour des offres, sans les supprimer.
+                </p>
+              </div>
+            </div>
+            <div class="callout-block callout-block-warning">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                  Important
+                </h4>
+                <p>
+                  Pour modifier tout paquet, vous devez d'abord mettre à jour son statut à Brouillon.
+                </p>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  Demande d'avis
+                </h4>
+                <p>
+                  Si vous aimez Bundleza, laissez-nous un avis dans la boutique d'applications Shopify !
+                </p>
+              </div>
+            </div>
+          </section>
+          <!--//section-->
+
+          <section class="docs-section" id="item-2-2">
+            <h2 class="section-heading">Création et mise à jour des paquets</h2>
+            <p>
+              Créez une nouvelle offre de paquet pour votre boutique ou mettez à jour les paquets existants. Cette page
+              vous permet de configurer tous les aspects de votre paquet, des détails de base aux styles avancés et à la
+              sélection de produits.
+            </p>
+            <h3>Comment créer un nouveau paquet</h3>
+            <ol>
+              <li><strong>Saisissez le nom du paquet :</strong> Fournissez un nom descriptif et attrayant pour votre
+                paquet qui attire les clients.</li>
+              <li><strong>Sélectionnez le type de sélection :</strong> Choisissez comment les produits sont inclus dans
+                le paquet (Tous les produits, Produits spécifiques ou Collections spécifiques).</li>
+              <li><strong>Configurez les paramètres :</strong> Configurez les paramètres du paquet, les offres de
+                variantes et les options de remise pour créer des niveaux de prix convaincants.</li>
+              <li><strong>Personnalisez les styles :</strong> Ajustez les couleurs, polices et mises en page pour
+                correspondre à l'image de marque de votre boutique.</li>
+              <li><strong>Sélectionnez les produits :</strong> Utilisez la modal de sélection de produits pour choisir
+                les produits principaux et les variantes pour le paquet.</li>
+              <li><strong>Configurez les offres de variantes :</strong> Configurez des offres dynamiques pour
+                différentes variantes de paquet.</li>
+            </ol>
+            <h3>7. Sélectionnez une image personnalisée et un cadeau gratuit pour chaque offre</h3>
+            <a href="assets/images/giftandimg-select.png"><img class="figure-img img-fluid shadow rounded"
+                src="assets/images/giftandimg-select.png" alt="Modal de sélection de produits"
+                title="Modal de sélection de produits" /></a>
+            <p>
+              Pour sélectionner un cadeau gratuit avec le paquet, utilisez le bouton "cadeau gratuit" vers "sélectionner
+              cadeau". Cela ouvre une modal où vous pouvez choisir des produits et leurs variantes.
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/select-gift.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/select-gift.png" alt="Modal de sélection de produits"
+                    title="Modal de sélection de produits" /></a>
+
+              </div>
+            </div>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Astuce
+                </h4>
+                <p>
+                  Commencez avec un paquet simple et testez ses performances avant d'ajouter des configurations
+                  complexes. Cela vous permet d'optimiser en fonction des commentaires des clients.
+                </p>
+              </div>
+            </div>
+
+            <h3>Nom du paquet</h3>
+            <p>
+              Saisissez un nom descriptif et attrayant pour votre paquet. (Requis)
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/bundle-name.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/bundle-name.png" alt="Configuration du nom du paquet"
+                    title="Configuration du nom du paquet" /></a>
+              </div>
+            </div>
+
+            <h3>Type de sélection</h3>
+            <p>
+              Choisissez comment les produits seront sélectionnés pour le paquet. Vous pouvez inclure tous les produits,
+              des produits spécifiques ou des produits de collections spécifiques.
+            </p>
+            <ul>
+              <li><strong>Tous les produits :</strong> Incluez tout produit de votre boutique dans le paquet.</li>
+              <li><strong>Produits spécifiques :</strong> Sélectionnez manuellement des produits individuels.</li>
+              <li><strong>Collections spécifiques :</strong> Incluez tous les produits des collections sélectionnées.
+              </li>
+            </ul>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/product-selection.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/product-selection.png" alt="Options de type de sélection"
+                    title="Options de type de sélection" /></a>
+              </div>
+            </div>
+
+            <h3>Paramètres</h3>
+            <p>
+              Configurez les paramètres de base de votre paquet, y compris les prix, la disponibilité et les options
+              d'affichage.
+            </p>
+
+            <h4>Paramètres du paquet</h4>
+            <ul>
+              <li><strong>UNIQUEMENT AUJOURD'HUI :</strong> Activez une promotion spéciale "Uniquement aujourd'hui" pour
+                le paquet.</li>
+              <li><strong>Prix de comparaison des variantes :</strong> Affichez les prix de comparaison pour différentes
+                variantes.</li>
+              <li><strong>Directement à la caisse :</strong> Permettez aux clients d'aller directement à la caisse
+                depuis le paquet.</li>
+              <li><strong>Masquer le sélecteur de variantes :</strong> Masquez les options de sélection de variantes sur
+                la page du paquet.</li>
+            </ul>
+
+            <h4>Offres de variantes de paquet</h4>
+            <p>Configurez des offres dynamiques pour les variantes de paquet. Définissez les quantités, les types de
+              remise (par exemple, Montant fixe, Pourcentage, Prix fixe), et les valeurs de remise. Les options peuvent
+              être sélectionnées par défaut, et vous pouvez ajouter plusieurs nouvelles offres pour créer divers niveaux
+              de prix.</p>
+            <ul>
+              <li><strong>Quantité :</strong> Spécifiez le nombre d'articles dans l'offre (entièrement personnalisable).
+              </li>
+              <li><strong>Type de remise :</strong> Choisissez parmi Montant fixe, Pourcentage ou Prix fixe.</li>
+              <li><strong>Valeur de remise :</strong> Définissez le montant ou le pourcentage de remise (dynamique et
+                ajustable).</li>
+              <li><strong>Sélectionné par défaut :</strong> Marquez une offre comme pré-sélectionnée pour les clients.
+                Lorsqu'elle est pré-sélectionnée, l'offre sera automatiquement ajoutée au panier lorsque le client
+                clique sur Ajouter au panier ou Acheter maintenant. Si non sélectionnée, le client doit cocher la case
+                pour l'inclure.</li>
+            </ul>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Astuce
+                </h4>
+                <p>
+                  Toutes les quantités, types de remise et valeurs sont entièrement personnalisables. Expérimentez avec
+                  différentes offres pour trouver ce qui fonctionne le mieux pour vos clients.
+                </p>
+              </div>
+            </div>
+
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/bundle-settings.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/bundle-settings.png" alt="Configuration des paramètres du paquet"
+                    title="Configuration des paramètres du paquet" /></a>
+              </div>
+            </div>
+
+            <h3>Styles</h3>
+            <p>
+              Personnalisez l'apparence visuelle de votre paquet pour correspondre au thème de votre boutique. Ajustez
+              les couleurs, polices, mises en page et autres éléments de style.
+            </p>
+            <h4>Styles de titre</h4>
+            <ul>
+              <li><strong>Taille du texte :</strong> Définissez la taille de police pour le titre du paquet (par
+                exemple, 18px).</li>
+              <li><strong>Poids de la police :</strong> Choisissez le poids de la police (Gras ou Normal).</li>
+              <li><strong>Couleur :</strong> Sélectionnez la couleur pour le texte du titre.</li>
+            </ul>
+            <h4>Styles de sous-titre</h4>
+            <ul>
+              <li><strong>Taille du texte :</strong> Définissez la taille de police pour le sous-titre (par exemple,
+                16px).</li>
+              <li><strong>Poids de la police :</strong> Choisissez le poids de la police (Gras ou Normal).</li>
+              <li><strong>Couleur :</strong> Sélectionnez la couleur pour le texte du sous-titre.</li>
+            </ul>
+            <h4>Couleurs de prix</h4>
+            <ul>
+              <li><strong>Couleur :</strong> Définissez la couleur pour les prix réguliers.</li>
+              <li><strong>Couleur du prix de comparaison :</strong> Définissez la couleur pour les prix de comparaison
+                barrés.</li>
+            </ul>
+            <h4>Couleurs de badge</h4>
+            <ul>
+              <li><strong>Arrière-plan :</strong> Couleur d'arrière-plan pour les badges.</li>
+              <li><strong>Texte :</strong> Couleur du texte pour les badges.</li>
+            </ul>
+            <h4>Couleurs d'étiquette</h4>
+            <ul>
+              <li><strong>Arrière-plan :</strong> Couleur d'arrière-plan pour les étiquettes.</li>
+              <li><strong>Texte :</strong> Couleur du texte pour les étiquettes.</li>
+            </ul>
+            <h4>Couleurs de cadeau</h4>
+            <ul>
+              <li><strong>Arrière-plan :</strong> Couleur d'arrière-plan pour les éléments de cadeau.</li>
+              <li><strong>Texte :</strong> Couleur du texte pour les éléments de cadeau.</li>
+            </ul>
+            <h4>Couleurs de boîte</h4>
+            <ul>
+              <li><strong>Couleur de bordure :</strong> Couleur pour les bordures de boîte.</li>
+              <li><strong>Couleur de boîte :</strong> Couleur d'arrière-plan pour les boîtes.</li>
+              <li><strong>Couleur de boîte sélectionnée :</strong> Couleur d'arrière-plan pour les boîtes sélectionnées.
+              </li>
+              <li><strong>Largeur de bordure de boîte :</strong> Largeur des bordures de boîte (par exemple, 1px).</li>
+              <li><strong>Rayon de bordure de boîte :</strong> Rayon des coins pour les boîtes (par exemple, 0px).</li>
+            </ul>
+            <h4>Paramètres d'image</h4>
+            <ul>
+              <li><strong>Taille d'image :</strong> Définissez la taille pour les images de produits (par exemple, 2).
+              </li>
+              <li><strong>Rayon :</strong> Rayon des coins pour les images (par exemple, 0px).</li>
+            </ul>
+            <h4>Paramètres d'image de produit de cadeau</h4>
+            <ul>
+              <li><strong>Taille d'image :</strong> Définissez la taille pour les images de produit de cadeau (par
+                exemple, 2).</li>
+              <li><strong>Rayon :</strong> Rayon des coins pour les images de cadeau (par exemple, 0px).</li>
+            </ul>
+            <h4>Options supplémentaires</h4>
+            <ul>
+              <li><strong>UNIQUEMENT AUJOURD'HUI :</strong> Activez les messages spéciaux "Uniquement aujourd'hui".</li>
+              <li><strong>Le plus populaire :</strong> Marquez le paquet comme le plus populaire.</li>
+              <li><strong>Unique :</strong> Prix standard pour les achats uniques.</li>
+              <li><strong>Duo :</strong> Prix standard pour les achats duo.</li>
+              <li><strong>🌐 :</strong> Paramètres d'internationalisation.</li>
+              <p>Les paramètres d'internationalisation vous permettent de traduire le texte du paquet dans une langue
+                personnalisée ou de le garder en anglais par défaut.</p>
+            </ul>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/bundle-styles.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/bundle-styles.png" alt="Personnalisation des styles de paquet"
+                    title="Personnalisation des styles de paquet" /></a>
+              </div>
+            </div>
+
+            <h3>Sélection de produits : Où afficher ce paquet</h3>
+            <p>
+              Utilisez la modal de sélection de produits pour choisir les produits pour votre paquet. Vous pouvez
+              sélectionner des produits principaux ou des variantes spécifiques.
+            </p>
+            <ul>
+              <li><strong>Produit principal :</strong> Sélectionnez le produit primaire pour le paquet.</li>
+              <li><strong>Variantes :</strong> Choisissez des variantes spécifiques (par exemple, taille, couleur) pour
+                un contrôle plus précis.</li>
+            </ul>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/product-modal.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/product-modal.png" alt="Modal de sélection de produits"
+                    title="Modal de sélection de produits" /></a>
+              </div>
+            </div>
+
+            <h3>Offres de variantes</h3>
+            <p>
+              Configurez des offres spécifiques aux variantes dans votre paquet. Cela permet aux clients de choisir
+              différentes options pour les produits dans le paquet.
+            </p>
+            <ul>
+              <li><strong>Sélection de variante :</strong> Permettez aux clients de sélectionner des variantes de
+                produit dans le paquet.</li>
+              <li><strong>Ajustements de prix :</strong> Appliquez différentes remises basées sur les variantes
+                sélectionnées.</li>
+              <li><strong>Règles de disponibilité :</strong> Définissez des règles pour quelles variantes sont
+                disponibles dans le paquet.</li>
+            </ul>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/bundle-preview.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/bundle-preview.png" alt="Configuration des offres de variantes"
+                    title="Configuration des offres de variantes" /></a>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Note
+                </h4>
+                <p>
+                  Tous les paramètres de style sont dynamiques et peuvent être ajustés pour s'adapter à votre marque.
+                  Les valeurs par défaut sont fournies comme points de départ, mais tout est personnalisable pour les
+                  marchands.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="docs-section" id="item-2-3">
+            <h2 class="section-heading">Ajout du paquet à votre thème</h2>
+            <p>
+              Pour afficher vos paquets créés sur les pages produit de votre boutique, vous devez ajouter la section
+              Paquet Bundleza à votre thème Shopify. Cela permet aux clients de voir et d'interagir avec vos offres de
+              paquets directement sur les pages produit.
+            </p>
+            <h3>Étapes pour ajouter la section paquet</h3>
+            <ol>
+              <li><strong>Allez à Boutique en ligne :</strong> Depuis votre administrateur Shopify, naviguez vers
+                <strong>Boutique en ligne > Thèmes</strong>.
+              </li>
+              <li><strong>Personnalisez votre thème :</strong> Cliquez sur le bouton <strong>Personnaliser</strong> à
+                côté de votre thème en direct.</li>
+              <li><strong>Sélectionnez une page produit :</strong> Dans l'éditeur de thème, utilisez le sélecteur de
+                page en haut pour choisir un modèle de page produit (par exemple, Produit par défaut).</li>
+              <li><strong>Ajoutez une section :</strong> Dans la barre latérale gauche, cliquez sur <strong>Ajouter une
+                  section</strong>, puis recherchez et sélectionnez <strong>Paquet Bundleza</strong> dans la section
+                Applications.</li>
+              <li><strong>Configurez la section :</strong> Une fois ajoutée, sélectionnez le paquet spécifique que vous
+                voulez afficher dans le menu déroulant des paramètres de section.</li>
+              <li><strong>Enregistrez les modifications :</strong> Cliquez sur <strong>Enregistrer</strong> pour
+                appliquer les modifications à votre thème.</li>
+            </ol>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-2"><i class="fas fa-info-circle"></i></span>
+                  Astuce
+                </h4>
+                <p>
+                  Vous pouvez ajouter la section Paquet Bundleza à plusieurs modèles de page produit ou même à des pages
+                  de collection pour une plus grande visibilité. Testez le placement pour vous assurer qu'il complète le
+                  design de votre boutique.
+                </p>
+              </div>
+            </div>
+          </section>
+
+
+        </article>
+        <!--//docs-article-->
+
+        <article class="docs-article" id="section-3">
+          <header class="docs-header">
+            <h1 class="docs-heading">Montée en gamme</h1>
+            <section class="docs-intro">
+              <p>
+                En tant que marchand, la fonctionnalité Montée en gamme dans Bundleza vous aide à maximiser les revenus
+                en présentant des recommandations de produits intelligentes aux clients à des points stratégiques de
+                leur parcours d'achat. En suggérant des add-ons ou des mises à niveau pertinents, vous pouvez augmenter
+                les valeurs de commande moyennes et améliorer la satisfaction client.
+              </p>
+              <p>
+                Lorsque vous cliquez sur le menu <strong>Montée en gamme</strong>, cela vous emmène à la page
+                <strong>Ajouter des montées en gamme</strong>. Tout d'abord, choisissez le type de montée en gamme :
+              </p>
+              <div class="row">
+                <div class="col-12 col-md-6 mb-4">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/upsell.png" class="img-fluid mr-3"
+                        alt="Montées en gamme de produit unique" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Montées en gamme de produit unique</h5>
+                        <p class="card-text">Montrez un produit connexe comme montée en gamme au-dessus du bouton
+                          'Ajouter au panier' de Shopify.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/upsell.png" class="img-fluid mr-3"
+                        alt="Montées en gamme de produit multi" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Montées en gamme de produit multi</h5>
+                        <p class="card-text">Montrez plusieurs produits connexes comme montée en gamme ou paquet
+                          au-dessus du bouton 'Ajouter au panier' de Shopify.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p>
+                Cliquez sur <strong>Montée en gamme unique</strong> ou <strong>Montée en gamme multi</strong> pour
+                procéder à la page de configuration respective.
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 mb-3">
+                  <a href="assets/images/all-upsell.png"><img class="figure-img img-fluid shadow rounded"
+                      src="assets/images/all-upsell.png" alt="Capture d'écran de la page Ajouter des montées en gamme"
+                      title="Page Ajouter des montées en gamme" /></a>
+                </div>
+              </div>
+            </section>
+            <!--//docs-intro-->
+          </header>
+
+          <!--//section-->
+
+
+          <!--//section-->
+          <section class="docs-section" id="item-3-3">
+            <h2 class="section-heading">Gestion de la montée en gamme unique</h2>
+            <p>
+              La page Gestion de la montée en gamme unique est votre centre central pour superviser toutes vos offres de
+              montée en gamme unique créées. Ici, vous pouvez modifier, supprimer, dupliquer et mettre à jour le statut
+              de vos montées en gamme pour garder les offres de votre boutique organisées et à jour.
+            </p>
+            <h3>Accès à la Gestion de la montée en gamme unique</h3>
+            <p>
+              Depuis le tableau de bord Bundleza, naviguez vers la section Montées en gamme pour accéder à la page
+              Gestion de la montée en gamme unique.
+            </p>
+            <h3>Liste des montées en gamme et actions</h3>
+            <p>
+              La liste des montées en gamme affiche toutes vos montées en gamme unique créées avec des informations clés
+              et des actions disponibles. Vous pouvez effectuer les actions suivantes sur chaque montée en gamme :
+            </p>
+            <ul>
+              <li><strong>Modifier :</strong> Modifiez les détails de la montée en gamme, produits et paramètres.</li>
+              <li><strong>Supprimer :</strong> Supprimez définitivement la montée en gamme de votre boutique.</li>
+              <li><strong>Dupliquer :</strong> Créez une copie de la montée en gamme pour une configuration rapide
+                d'offres similaires.</li>
+              <li><strong>Mettre à jour le statut :</strong> Basculez entre Brouillon (caché aux clients) et Actif
+                (visible sur votre boutique).</li>
+            </ul>
+            <div class="callout-block callout-block-warning">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                  Important
+                </h4>
+                <p>
+                  Pour modifier toute montée en gamme, vous devez d'abord mettre à jour son statut à Brouillon.
+                </p>
+              </div>
+            </div>
+            <h4>Tableau des montées en gamme</h4>
+            <p>
+              Le tableau des montées en gamme affiche toutes vos montées en gamme unique créées avec les informations
+              suivantes :
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/upsell-list.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/upsell-list.png" alt="Tableau des montées en gamme"
+                    title="Tableau des montées en gamme" /></a>
+              </div>
+            </div>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Astuce
+                </h4>
+                <p>
+                  Utilisez le bouton de statut pour masquer temporairement les montées en gamme pendant les périodes
+                  creuses ou lors de la mise à jour des offres, sans les supprimer.
+                </p>
+              </div>
+            </div>
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  Demande d'avis
+                </h4>
+                <p>
+                  Si vous aimez Bundleza, laissez-nous un avis dans la boutique d'applications Shopify !
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="docs-section" id="item-3-4">
+            <h2 class="section-heading">Créer une montée en gamme unique</h2>
+            <p>
+              Créez une nouvelle offre de montée en gamme unique pour votre boutique ou mettez à jour les montées en
+              gamme existantes. Cette page vous permet de configurer tous les aspects de votre montée en gamme, des
+              détails de base aux styles avancés et à la sélection de produits.
+            </p>
+            <h3>Comment créer une nouvelle montée en gamme unique</h3>
+            <ol>
+              <li><strong>Saisissez le nom de la montée en gamme :</strong> Fournissez un nom descriptif et attrayant
+                pour votre montée en gamme qui attire les clients.</li>
+              <li><strong>Définissez la visibilité :</strong> Choisissez où la montée en gamme devrait être affichée
+                (par exemple, sur des produits ou collections spécifiques).</li>
+              <li><strong>Sélectionnez le produit :</strong> Choisissez le produit à afficher comme montée en gamme et
+                configurez ses détails.</li>
+              <li><strong>Configurez les paramètres :</strong> Définissez les prix, remises et options d'affichage.</li>
+              <li><strong>Personnalisez les styles :</strong> Ajustez les couleurs, polices et mises en page pour
+                correspondre à l'image de marque de votre boutique.</li>
+              <li><strong>Aperçu et sauvegarde :</strong> Examinez votre configuration de montée en gamme et
+                sauvegardez-la comme Brouillon ou Actif.</li>
+            </ol>
+            <h3>Sélectionnez une variante ou des produits</h3>
+            <a href="assets/images/seelctvarient.png"><img class="figure-img img-fluid shadow rounded"
+                src="assets/images/seelctvarient.png" alt="Modal de sélection de produits"
+                title="Modal de sélection de produits" /></a>
+            <p>
+              Pour sélectionner des produits pour votre montée en gamme, utilisez le bouton "Sélectionner
+              variante/Produits". Cela ouvre une modal où vous pouvez choisir des produits et leurs variantes. Il y a
+              aussi un bouton pour sélectionner tous les produits de variante de montée en gamme pour plus de commodité.
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/varientselect-modal.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/varientselect-modal.png" alt="Modal de sélection de produits"
+                    title="Modal de sélection de produits" /></a>
+              </div>
+            </div>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Astuce
+                </h4>
+                <p>
+                  Commencez avec une montée en gamme simple et testez sa performance avant d'ajouter des configurations
+                  complexes. Cela vous permet d'optimiser en fonction des commentaires des clients.
+                </p>
+              </div>
+            </div>
+            <h3>Nom de la montée en gamme</h3>
+            <p>
+              Saisissez un nom descriptif et attrayant pour votre montée en gamme. (Requis)
+            </p>
+            <h3>Visibilité</h3>
+            <p>
+              Choisissez où la montée en gamme devrait être affichée. Les options incluent tous les produits, certains
+              produits ou certaines collections.
+            </p>
+            <ul>
+              <li><strong>Tous les produits :</strong> Affichez la montée en gamme sur tout produit de votre boutique.
+              </li>
+              <li><strong>Certains produits :</strong> Sélectionnez des produits spécifiques pour l'affichage de la
+                montée en gamme.</li>
+              <li><strong>Certaines collections :</strong> Affichez la montée en gamme sur les produits de collections
+                sélectionnées.</li>
+            </ul>
+            <h3>Sélection de produits : Où afficher cette montée en gamme</h3>
+            <p>
+              Sélectionnez les produits ou collections où la montée en gamme apparaîtra.
+            </p>
+            <h3>Paramètres</h3>
+            <p>
+              Configurez les paramètres de base de votre montée en gamme, y compris les prix et les options d'affichage.
+            </p>
+            <ul>
+              <li><strong>Montrer l'image :</strong> Activez ou désactivez l'affichage de l'image du produit.</li>
+              <li><strong>Aller directement à la caisse :</strong> Permettez la caisse directe depuis la montée en
+                gamme.</li>
+              <li><strong>Barrer le prix de comparaison du produit :</strong> Montrez les prix de comparaison barrés.
+              </li>
+              <li><strong>Limité par commande :</strong> Définissez des limites sur les quantités de montée en gamme par
+                commande.</li>
+            </ul>
+            <h3>Styles</h3>
+            <p>
+              Personnalisez l'apparence visuelle de votre montée en gamme pour correspondre au thème de votre boutique.
+              Ajustez les couleurs, polices, mises en page et autres éléments de style.
+            </p>
+            <h4>Styles de titre</h4>
+            <ul>
+              <li><strong>Taille du texte :</strong> Définissez la taille de police pour le titre de la montée en gamme
+                (par exemple, 18px).</li>
+              <li><strong>Poids de la police :</strong> Choisissez le poids de la police (Gras ou Normal).</li>
+              <li><strong>Couleur :</strong> Sélectionnez la couleur pour le texte du titre.</li>
+            </ul>
+            <h4>Styles de sous-titre</h4>
+            <ul>
+              <li><strong>Taille du texte :</strong> Définissez la taille de police pour le sous-titre (par exemple,
+                16px).</li>
+              <li><strong>Poids de la police :</strong> Choisissez le poids de la police (Gras ou Normal).</li>
+              <li><strong>Couleur :</strong> Sélectionnez la couleur pour le texte du sous-titre.</li>
+            </ul>
+            <h4>Styles de prix</h4>
+            <ul>
+              <li><strong>Couleur :</strong> Définissez la couleur pour les prix.</li>
+              <li><strong>Nom de remise :</strong> Personnalisez l'étiquette de remise.</li>
+            </ul>
+            <h4>Styles de badge</h4>
+            <ul>
+              <li><strong>Arrière-plan :</strong> Couleur d'arrière-plan pour les badges.</li>
+              <li><strong>Texte :</strong> Couleur du texte pour les badges.</li>
+            </ul>
+            <h4>Styles de bouton</h4>
+            <ul>
+              <li><strong>Arrière-plan :</strong> Couleur d'arrière-plan pour les boutons.</li>
+              <li><strong>Texte :</strong> Couleur du texte pour les boutons.</li>
+            </ul>
+            <h4>Paramètres d'image</h4>
+            <ul>
+              <li><strong>Montrer l'image :</strong> Basculez la visibilité de l'image.</li>
+              <li><strong>Texte alternatif :</strong> Définissez le texte alternatif pour les images.</li>
+            </ul>
+            <h3>Sélectionner le produit</h3>
+            <p>
+              Choisissez le produit à afficher comme montée en gamme. Configurez son nom, sous-titre, badge, prix et
+              autres détails.
+            </p>
+            <ul>
+              <li><strong>Nom de la montée en gamme :</strong> par exemple, Apple Watch Series 10</li>
+              <li><strong>Sous-titre :</strong> par exemple, Montée en gamme</li>
+              <li><strong>Badge :</strong> par exemple, Best Seller</li>
+              <li><strong>Texte de prix :</strong> par exemple, $20000.00</li>
+              <li><strong>Nom de remise :</strong> par exemple, remise de montée en gamme</li>
+            </ul>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/create-upsell.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/create-upsell.png" alt="Créer une montée en gamme unique"
+                    title="Créer une montée en gamme unique" /></a>
+              </div>
+            </div>
+          </section>
+          <section class="docs-section" id="item-3-5">
+            <h2 class="section-heading">Gestion de la montée en gamme multiple</h2>
+            <p>
+              La page Gestion de la montée en gamme multiple est votre centre central pour superviser toutes vos offres
+              de montée en gamme multiple créées. Ici, vous pouvez modifier, supprimer, dupliquer et mettre à jour le
+              statut de vos montées en gamme multiple pour garder les offres de votre boutique organisées et à jour.
+            </p>
+            <h3>Accès à la Gestion de la montée en gamme multiple</h3>
+            <p>
+              Depuis le tableau de bord Bundleza, naviguez vers la section Montées en gamme pour accéder à la page
+              Gestion de la montée en gamme multiple.
+            </p>
+            <h3>Liste des montées en gamme et actions</h3>
+            <p>
+              La liste des montées en gamme affiche toutes vos montées en gamme multiple créées avec des informations
+              clés et des actions disponibles. Vous pouvez effectuer les actions suivantes sur chaque montée en gamme :
+            </p>
+            <ul>
+              <li><strong>Modifier :</strong> Modifiez les détails de la montée en gamme, produits et paramètres.</li>
+              <li><strong>Supprimer :</strong> Supprimez définitivement la montée en gamme de votre boutique.</li>
+              <li><strong>Dupliquer :</strong> Créez une copie de la montée en gamme pour une configuration rapide
+                d'offres similaires.</li>
+              <li><strong>Mettre à jour le statut :</strong> Basculez entre Brouillon (caché aux clients) et Actif
+                (visible sur votre boutique).</li>
+            </ul>
+            <div class="callout-block callout-block-warning">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                  Important
+                </h4>
+                <p>
+                  Pour modifier toute montée en gamme, vous devez d'abord mettre à jour son statut à Brouillon.
+                </p>
+              </div>
+            </div>
+            <h4>Tableau des montées en gamme</h4>
+            <p>
+              Le tableau des montées en gamme affiche toutes vos montées en gamme multiple créées avec les informations
+              suivantes :
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/multipleupsell-list.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/multipleupsell-list.png" alt="Tableau des montées en gamme multiple"
+                    title="Tableau des montées en gamme multiple" /></a>
+              </div>
+            </div>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Astuce
+                </h4>
+                <p>
+                  Utilisez le bouton de statut pour masquer temporairement les montées en gamme pendant les périodes
+                  creuses ou lors de la mise à jour des offres, sans les supprimer.
+                </p>
+              </div>
+            </div>
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  Demande d'avis
+                </h4>
+                <p>
+                  Si vous aimez Bundleza, laissez-nous un avis dans la boutique d'applications Shopify !
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="docs-section" id="item-3-6">
+            <h2 class="section-heading">Créer une montée en gamme multiple</h2>
+            <p>
+              Créez une nouvelle offre de montée en gamme multiple pour votre boutique ou mettez à jour les montées en
+              gamme multiple existantes. Cette page vous permet de configurer tous les aspects de votre montée en gamme
+              multiple, des détails de base aux styles avancés et à la sélection de produits.
+            </p>
+            <h3>Comment créer une nouvelle montée en gamme multiple</h3>
+            <ol>
+              <li><strong>Saisissez le nom de la montée en gamme :</strong> Fournissez un nom descriptif et attrayant
+                pour votre montée en gamme qui attire les clients.</li>
+              <li><strong>Sélectionnez le style de montée en gamme multiple :</strong> Choisissez comment vos montées en
+                gamme multiple seront affichées (Normal, En boîte, etc.).</li>
+              <li><strong>Configurez les paramètres de bloc :</strong> Définissez le titre du bloc, le texte du pied de
+                page et autres options d'affichage.</li>
+              <li><strong>Définissez la visibilité :</strong> Choisissez où la montée en gamme devrait être affichée
+                (par exemple, sur des produits ou collections spécifiques).</li>
+              <li><strong>Sélectionnez les produits :</strong> Choisissez les produits à afficher comme montées en gamme
+                et configurez leurs détails.</li>
+              <li><strong>Personnalisez les styles :</strong> Ajustez les couleurs, polices et mises en page pour
+                correspondre à l'image de marque de votre boutique.</li>
+              <li><strong>Aperçu et sauvegarde :</strong> Examinez votre configuration de montée en gamme et
+                sauvegardez-la comme Brouillon ou Actif.</li>
+            </ol>
+            <h3>Sélectionnez une variante ou des produits</h3>
+            <a href="assets/images/multipleupsell-proeuctselect.png"><img class="figure-img img-fluid shadow rounded"
+                src="assets/images/multipleupsell-proeuctselect.png" alt="Modal de sélection de produits"
+                title="Modal de sélection de produits" /></a>
+            <p>
+              Pour sélectionner des produits pour votre montée en gamme multiple, utilisez le bouton "Ajouter des
+              produits de montée en gamme". Cela ouvre une modal où vous pouvez choisir des produits et leurs variantes.
+              Il y a aussi un bouton pour sélectionner tous les produits de variante de montée en gamme pour plus de
+              commodité.
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/varientselect-modal.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/varientselect-modal.png" alt="Modal de sélection de produits"
+                    title="Modal de sélection de produits" /></a>
+              </div>
+            </div>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Astuce
+                </h4>
+                <p>
+                  Commencez avec une montée en gamme multiple simple et testez sa performance avant d'ajouter des
+                  configurations complexes. Cela vous permet d'optimiser en fonction des commentaires des clients.
+                </p>
+              </div>
+            </div>
+            <h3>Nom de la montée en gamme</h3>
+            <p>
+              Saisissez un nom descriptif et attrayant pour votre montée en gamme multiple. Cela sera affiché aux
+              clients sur vos pages produit.
+            </p>
+            <h3>Style de montée en gamme multiple</h3>
+            <p>
+              Sélectionnez comment vos montées en gamme multiple seront affichées. Les options incluent Normal
+              (layout1), En boîte (layout2), Bouton de thème (layout3), Bouton propre (layout4).
+            </p>
+            <h3>Comportement d'ajout au panier</h3>
+            <p>
+              Choisissez d'utiliser le bouton Ajouter au panier du thème ou votre propre bouton personnalisé.
+            </p>
+            <h3>Paramètres de bloc</h3>
+            <p>
+              Configurez les paramètres pour le bloc de montées en gamme, y compris le titre du bloc, le texte du pied
+              de page et l'affichage des icônes + entre les montées en gamme.
+            </p>
+            <ul>
+              <li><strong>Titre du bloc :</strong> par exemple, Montées en gamme multiples</li>
+              <li><strong>Texte du pied de page :</strong> par exemple, Total :</li>
+              <li><strong>Montrer les icônes + entre les montées en gamme :</strong> Activez pour séparer visuellement
+                les éléments de montée en gamme.</li>
+            </ul>
+            <h3>Visibilité</h3>
+            <p>
+              Choisissez où la montée en gamme devrait être affichée. Les options incluent tous les produits, certains
+              produits ou certaines collections.
+            </p>
+            <ul>
+              <li><strong>Tous les produits :</strong> Affichez la montée en gamme sur tout produit de votre boutique.
+              </li>
+              <li><strong>Certains produits :</strong> Sélectionnez des produits spécifiques pour l'affichage de la
+                montée en gamme.</li>
+              <li><strong>Certaines collections :</strong> Affichez la montée en gamme sur les produits de collections
+                sélectionnées.</li>
+            </ul>
+            <h3>Sélection de produits : Où afficher cette montée en gamme multiple</h3>
+            <p>
+              Choisissez où la montée en gamme devrait être affichée. Les options incluent tous les produits, certains
+              produits ou certaines collections. Vous devez sélectionner une des options suivantes : Tous les produits,
+              Certains produits ou Certaines collections. Cette sélection est requise.
+            </p>
+            <h3>Aller directement à la caisse</h3>
+            <p>
+              Activez pour permettre la caisse directe depuis la montée en gamme.
+            </p>
+            <h3>Styles</h3>
+            <p>
+              Personnalisez l'apparence visuelle de votre montée en gamme multiple pour correspondre au thème de votre
+              boutique. Ajustez les couleurs, polices, mises en page et autres éléments de style.
+            </p>
+            <h4>Titre du bloc</h4>
+            <ul>
+              <li><strong>Taille du texte :</strong> Définissez la taille de police (par exemple, 20px).</li>
+              <li><strong>Poids de la police :</strong> Choisissez le poids de la police (Gras ou Fin).</li>
+              <li><strong>Alignement du texte :</strong> Définissez l'alignement (Gauche).</li>
+              <li><strong>Couleur :</strong> Sélectionnez la couleur pour le texte du titre.</li>
+            </ul>
+            <h4>Titre du produit</h4>
+            <ul>
+              <li><strong>Taille du texte :</strong> Définissez la taille de police (par exemple, 20px).</li>
+              <li><strong>Poids de la police :</strong> Choisissez le poids de la police (Gras ou Fin).</li>
+              <li><strong>Couleur :</strong> Sélectionnez la couleur pour le texte du titre du produit.</li>
+            </ul>
+            <h4>Sous-titre</h4>
+            <ul>
+              <li><strong>Taille du texte :</strong> Définissez la taille de police (par exemple, 14px).</li>
+              <li><strong>Poids de la police :</strong> Choisissez le poids de la police (Fin).</li>
+              <li><strong>Couleur :</strong> Sélectionnez la couleur pour le texte du sous-titre.</li>
+            </ul>
+            <h4>Prix</h4>
+            <ul>
+              <li><strong>Taille du texte :</strong> Définissez la taille de police (par exemple, 14px).</li>
+              <li><strong>Poids de la police :</strong> Choisissez le poids de la police (Gras).</li>
+              <li><strong>Couleur :</strong> Sélectionnez la couleur pour les prix.</li>
+            </ul>
+            <h4>Prix de comparaison</h4>
+            <ul>
+              <li><strong>Taille du texte :</strong> Définissez la taille de police (par exemple, 14px).</li>
+              <li><strong>Poids de la police :</strong> Choisissez le poids de la police (Fin).</li>
+              <li><strong>Couleur :</strong> Sélectionnez la couleur pour les prix de comparaison.</li>
+            </ul>
+            <h4>Couleurs de badge</h4>
+            <ul>
+              <li><strong>Arrière-plan :</strong> Couleur d'arrière-plan pour les badges.</li>
+              <li><strong>Texte :</strong> Couleur du texte pour les badges.</li>
+            </ul>
+            <h4>Couleurs de case à cocher</h4>
+            <ul>
+              <li><strong>Arrière-plan :</strong> Couleur d'arrière-plan pour les cases à cocher.</li>
+              <li><strong>Couleur du marqueur :</strong> Couleur pour les marqueurs.</li>
+            </ul>
+            <h4>Couleurs de boîte</h4>
+            <ul>
+              <li><strong>Couleur de boîte :</strong> Couleur d'arrière-plan pour les boîtes.</li>
+              <li><strong>Couleur de bordure de boîte :</strong> Couleur pour les bordures de boîte.</li>
+              <li><strong>Couleur de survol de boîte :</strong> Couleur d'arrière-plan au survol.</li>
+              <li><strong>Largeur de bordure de boîte :</strong> Largeur des bordures (par exemple, 1px).</li>
+              <li><strong>Rayon de bordure de boîte :</strong> Rayon des coins (par exemple, 0px).</li>
+            </ul>
+            <h4>Paramètres d'image</h4>
+            <ul>
+              <li><strong>Taille d'image :</strong> Définissez la taille pour les images de produits (par exemple, 5).
+              </li>
+              <li><strong>Rayon :</strong> Rayon des coins pour les images (par exemple, 0px).</li>
+            </ul>
+
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 mb-3">
+                  <a href="assets/images/create-multipleupsell.png"><img class="figure-img img-fluid shadow rounded"
+                      src="assets/images/create-multipleupsell.png" alt="Créer une montée en gamme multiple"
+                      title="Créer une montée en gamme multiple" /></a>
+                </div>
+              </div>
+          </section>
+          <section class="docs-section" id="item-3-2">
+            <h2 class="section-heading">Ajout de la montée en gamme à votre thème</h2>
+            <p>
+              Pour afficher vos offres de montée en gamme configurées sur les pages produit de votre boutique, vous
+              devez ajouter la section appropriée de Montée en gamme Bundleza à votre thème Shopify. Cela permet aux
+              invites de montée en gamme d'apparaître à des points stratégiques du parcours client.
+            </p>
+            <h3>Étapes pour ajouter la section de montée en gamme</h3>
+            <ol>
+              <li><strong>Allez à Boutique en ligne :</strong> Depuis votre administrateur Shopify, naviguez vers
+                <strong>Boutique en ligne > Thèmes</strong>.
+              </li>
+              <li><strong>Personnalisez votre thème :</strong> Cliquez sur le bouton <strong>Personnaliser</strong> à
+                côté de votre thème en direct.</li>
+              <li><strong>Sélectionnez une page produit :</strong> Dans l'éditeur de thème, utilisez le sélecteur de
+                page en haut pour choisir un modèle de page produit.</li>
+              <li><strong>Ajoutez une section :</strong> Dans la barre latérale gauche, cliquez sur <strong>Ajouter une
+                  section</strong>, puis recherchez et sélectionnez <strong>Montée en gamme Bundleza</strong>
+                (choisissez Unique ou Multi selon votre type de montée en gamme) dans la section Applications.</li>
+              <li><strong>Configurez la section :</strong> Une fois ajoutée, sélectionnez la montée en gamme spécifique
+                que vous voulez afficher dans le menu déroulant des paramètres de section.</li>
+              <li><strong>Enregistrez les modifications :</strong> Cliquez sur <strong>Enregistrer</strong> pour
+                appliquer les modifications à votre thème.</li>
+            </ol>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1"><i class="fas fa-info-circle"></i></span>
+                  Astuce
+                </h4>
+                <p>
+                  Positionnez la section de montée en gamme au-dessus du bouton Ajouter au panier pour une efficacité
+                  maximale. Vous pouvez l'ajouter à des pages de panier ou d'autres modèles également pour des
+                  opportunités de vente croisée.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="docs-section" id="item-3-7">
+            <h2 class="section-heading">Ajout de la montée en gamme multiple à votre thème</h3>
+              <p>
+                Pour afficher vos offres de montée en gamme multiple configurées sur les pages produit de votre
+                boutique, vous devez ajouter la section Montée en gamme multiple Bundleza à votre thème Shopify. Cela
+                permet aux invites de montée en gamme multiple d'apparaître à des points stratégiques du parcours
+                client.
+              </p>
+              <h3>Étapes pour ajouter la section de montée en gamme multiple</h3>
+              <ol>
+                <li><strong>Allez à Boutique en ligne :</strong> Depuis votre administrateur Shopify, naviguez vers
+                  <strong>Boutique en ligne > Thèmes</strong>.
+                </li>
+                <li><strong>Personnalisez votre thème :</strong> Cliquez sur le bouton <strong>Personnaliser</strong> à
+                  côté de votre thème en direct.</li>
+                <li><strong>Sélectionnez une page produit :</strong> Dans l'éditeur de thème, utilisez le sélecteur de
+                  page en haut pour choisir un modèle de page produit.</li>
+                <li><strong>Ajoutez une section :</strong> Dans la barre latérale gauche, cliquez sur <strong>Ajouter
+                    une section</strong> (ou <strong>Ajouter un bloc</strong>), puis recherchez et sélectionnez
+                  <strong>Montée en gamme multiple Bundleza</strong> dans la section Applications.
+                </li>
+                <li><strong>Configurez la section :</strong> Une fois ajoutée, sélectionnez la montée en gamme multiple
+                  spécifique que vous voulez afficher dans le menu déroulant des paramètres de section.</li>
+                <li><strong>Enregistrez les modifications :</strong> Cliquez sur <strong>Enregistrer</strong> pour
+                  appliquer les modifications à votre thème.</li>
+              </ol>
+              <div class="callout-block callout-block-info">
+                <div class="content">
+                  <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1"><i class="fas fa-info-circle"></i></span>
+                    Astuce
+                  </h4>
+                  <p>
+                    Positionnez la section de montée en gamme multiple au-dessus du bouton Ajouter au panier pour une
+                    efficacité maximale. Vous pouvez l'ajouter à des pages de panier ou d'autres modèles également pour
+                    des opportunités de vente croisée.
+                  </p>
+                </div>
+              </div>
+          </section>
+
+        </article>
+        </article>
+        <!--//docs-article-->
+
+        <article class="docs-article" id="section-4">
+          <header class="docs-header">
+            <h1 class="docs-heading">Cadeau</h1>
+            <section class="docs-intro">
+              <p>
+                Augmentez vos conversions avec les cadeaux Bundleza. Créez des modules de cadeau attrayants qui
+                encouragent les clients à ajouter des articles complémentaires, augmentant les valeurs de commande
+                moyennes et améliorant l'expérience d'achat.
+              </p>
+            </section>
+            <!--//docs-intro-->
+          </header>
+          <section class="docs-section" id="item-4-1">
+            <h2 class="section-heading">Gestion des cadeaux</h2>
+            <p>
+              La page Gestion des cadeaux est votre centre central pour superviser tous vos modules de cadeau créés.
+              Ici, vous pouvez modifier, supprimer, dupliquer et mettre à jour le statut de vos cadeaux pour garder les
+              offres de votre boutique organisées et à jour.
+            </p>
+
+            <h3>Accès à la Gestion des cadeaux</h3>
+            <p>
+              Depuis le tableau de bord Bundleza, naviguez vers la section Cadeaux pour accéder à la page Gestion des
+              cadeaux.
+            </p>
+
+            <h3>Liste des cadeaux et actions</h3>
+            <p>
+              La liste des cadeaux affiche tous vos cadeaux créés avec des informations clés et des actions disponibles.
+              Vous pouvez effectuer les actions suivantes sur chaque cadeau :
+            </p>
+            <ul>
+              <li><strong>Modifier :</strong> Modifiez les détails du cadeau, produits et paramètres.</li>
+              <li><strong>Supprimer :</strong> Supprimez définitivement le cadeau de votre boutique.</li>
+              <li><strong>Dupliquer :</strong> Créez une copie du cadeau pour une configuration rapide d'offres
+                similaires.</li>
+              <li><strong>Mettre à jour le statut :</strong> Basculez entre Brouillon (caché aux clients) et Actif
+                (visible sur votre boutique).</li>
+            </ul>
+
+            <div class="callout-block callout-block-warning">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                  Important
+                </h4>
+                <p>
+                  Pour modifier tout cadeau, vous devez d'abord mettre à jour son statut à Brouillon.
+                </p>
+              </div>
+            </div>
+
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/gift-table.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/gift-table.png" alt="Tableau des cadeaux" title="Tableau des cadeaux" /></a>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Astuce
+                </h4>
+                <p>
+                  Utilisez le bouton de statut pour masquer temporairement les cadeaux pendant les périodes creuses ou
+                  lors de la mise à jour des offres, sans les supprimer.
+                </p>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  Demande d'avis
+                </h4>
+                <p>
+                  Si vous aimez Bundleza, laissez-nous un avis dans la boutique d'applications Shopify !
+                </p>
+              </div>
+            </div>
+          </section>
+          <!--//section-->
+
+          <section class="docs-section" id="item-4-2">
+            <h2 class="section-heading">Création et mise à jour de cadeaux</h2>
+            <p>
+              Créez un nouveau module de cadeau pour votre boutique ou mettez à jour les cadeaux existants. Cette page
+              vous permet de configurer tous les aspects de votre cadeau, des détails de base aux styles avancés et à la
+              sélection de produits.
+            </p>
+
+            <h3>Comment créer un nouveau cadeau</h3>
+            <ol>
+              <li><strong>Saisissez le nom du cadeau :</strong> Fournissez un nom descriptif et attrayant pour votre
+                cadeau qui attire les clients.</li>
+              <li><strong>Définissez la visibilité :</strong> Choisissez où le cadeau devrait être affiché (par exemple,
+                sur des produits ou collections spécifiques).</li>
+              <li><strong>Sélectionnez les produits :</strong> Choisissez le produit à afficher comme cadeau et
+                configurez ses détails.</li>
+              <li><strong>Configurez les paramètres :</strong> Définissez les prix, remises et options d'affichage.</li>
+              <li><strong>Personnalisez les styles :</strong> Ajustez les couleurs, polices et mises en page pour
+                correspondre à l'image de marque de votre boutique.</li>
+              <li><strong>Aperçu et sauvegarde :</strong> Examinez votre configuration de cadeau et sauvegardez-la comme
+                Brouillon ou Actif.</li>
+            </ol>
+            <h3>Sélectionnez une variante ou des produits</h3>
+            <a href="assets/images/giftselect.png"><img class="figure-img img-fluid shadow rounded"
+                src="assets/images/giftselect.png" alt="Modal de sélection de produits"
+                title="Modal de sélection de produits" /></a>
+            <p>
+              Pour sélectionner des produits pour votre cadeau, utilisez le bouton "sélectionner variante Produits".
+              Cela ouvre une modal où vous pouvez choisir des produits et leurs variantes. Il y a aussi un bouton pour
+              sélectionner tous les produits de variante de cadeau pour plus de commodité.
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/varientselect-modal.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/varientselect-modal.png" alt="Modal de sélection de produits"
+                    title="Modal de sélection de produits" /></a>
+              </div>
+            </div>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Astuce
+                </h4>
+                <p>
+                  Commencez avec un cadeau simple et testez sa performance avant d'ajouter des configurations complexes.
+                  Cela vous permet d'optimiser en fonction des commentaires des clients.
+                </p>
+              </div>
+            </div>
+
+            <h3>Nom du cadeau</h3>
+            <p>
+              Saisissez un nom descriptif et attrayant pour votre cadeau. (Requis)
+            </p>
+
+            <h3>Visibilité</h3>
+            <p>
+              Choisissez où le cadeau devrait être affiché. Les options incluent tous les produits, certains produits ou
+              certaines collections.
+            </p>
+            <ul>
+              <li><strong>Tous les produits :</strong> Affichez le cadeau sur tout produit de votre boutique.</li>
+              <li><strong>Certains produits :</strong> Sélectionnez des produits spécifiques pour l'affichage du cadeau.
+              </li>
+              <li><strong>Certaines collections :</strong> Affichez le cadeau sur les produits de collections
+                sélectionnées.</li>
+            </ul>
+
+            <h3>Sélection de produits : Où afficher ce cadeau</h3>
+            <p>
+              Choisissez où le cadeau devrait être affiché. Les options incluent tous les produits, certains produits ou
+              certaines collections. Vous devez sélectionner une des options suivantes : Tous les produits, Certains
+              produits ou Certaines collections. Cette sélection est requise.
+            </p>
+
+            <h3>Paramètres</h3>
+            <p>
+              Configurez les paramètres de base de votre cadeau, y compris les prix et les options d'affichage.
+            </p>
+            <ul>
+              <li><strong>Montrer l'image :</strong> Activez ou désactivez l'affichage de l'image du produit.</li>
+              <li><strong>Aller directement à la caisse :</strong> Permettez la caisse directe depuis le cadeau.</li>
+              <li><strong>Barrer le prix de comparaison du produit :</strong> Montrez les prix de comparaison barrés.
+              </li>
+              <li><strong>Limité par commande :</strong> Définissez des limites sur les quantités de cadeau par
+                commande.</li>
+            </ul>
+
+            <h3>Styles</h3>
+            <p>
+              Personnalisez l'apparence visuelle de votre cadeau pour correspondre au thème de votre boutique. Ajustez
+              les couleurs, polices, mises en page et autres éléments de style.
+            </p>
+            <h4>Styles de titre</h4>
+            <ul>
+              <li><strong>Taille du texte :</strong> Définissez la taille de police pour le titre du cadeau (par
+                exemple, 18px).</li>
+              <li><strong>Poids de la police :</strong> Choisissez le poids de la police (Gras ou Normal).</li>
+              <li><strong>Couleur :</strong> Sélectionnez la couleur pour le texte du titre.</li>
+            </ul>
+            <h4>Styles de sous-titre</h4>
+            <ul>
+              <li><strong>Taille du texte :</strong> Définissez la taille de police pour le sous-titre (par exemple,
+                16px).</li>
+              <li><strong>Poids de la police :</strong> Choisissez le poids de la police (Gras ou Normal).</li>
+              <li><strong>Couleur :</strong> Sélectionnez la couleur pour le texte du sous-titre.</li>
+            </ul>
+            <h4>Styles de prix</h4>
+            <ul>
+              <li><strong>Couleur :</strong> Définissez la couleur pour les prix.</li>
+              <li><strong>Nom de remise :</strong> Personnalisez l'étiquette de remise.</li>
+            </ul>
+            <h4>Styles de badge</h4>
+            <ul>
+              <li><strong>Arrière-plan :</strong> Couleur d'arrière-plan pour les badges.</li>
+              <li><strong>Texte :</strong> Couleur du texte pour les badges.</li>
+            </ul>
+            <h4>Styles de bouton</h4>
+            <ul>
+              <li><strong>Arrière-plan :</strong> Couleur d'arrière-plan pour les boutons.</li>
+              <li><strong>Texte :</strong> Couleur du texte pour les boutons.</li>
+            </ul>
+            <h4>Paramètres d'image</h4>
+            <ul>
+              <li><strong>Montrer l'image :</strong> Basculez la visibilité de l'image.</li>
+              <li><strong>Texte alternatif :</strong> Définissez le texte alternatif pour les images.</li>
+            </ul>
+
+            <h3>Sélectionner le produit</h3>
+            <p>
+              Choisissez le produit à afficher comme cadeau. Configurez son nom, sous-titre, badge, prix et autres
+              détails.
+            </p>
+            <ul>
+              <li><strong>Nom du cadeau :</strong> par exemple, Apple Watch SE 2024</li>
+              <li><strong>Sous-titre :</strong> par exemple, 100% Naturel</li>
+              <li><strong>Badge :</strong> par exemple, best seller</li>
+              <li><strong>Texte de prix :</strong> par exemple, $0</li>
+              <li><strong>Nom de remise :</strong> par exemple, remise de cadeau</li>
+            </ul>
+          </section>
+          <!--//section-->
+
+          <section class="docs-section" id="item-4-3">
+            <h2 class="section-heading">Messages de cadeau</h2>
+            <p>
+              Permettez aux clients d'ajouter des messages de cadeau personnalisés à leurs commandes. Personnalisez les
+              champs de message, définissez des limites de caractères et contrôlez comment les messages de cadeau
+              apparaissent sur les reçus et les bordereaux de ramassage.
+            </p>
+
+            <h3>Comment configurer les messages de cadeau</h3>
+            <ol>
+              <li>Naviguez vers la sous-section Messages de cadeau dans la section Cadeau.</li>
+              <li>Activez les messages de cadeau pour les produits pertinents ou commandes.</li>
+              <li>Définissez des limites de caractères et rendez les champs requis ou optionnels.</li>
+              <li>Personnalisez comment les messages s'affichent sur les reçus et bordereaux de ramassage.</li>
+              <li>Sauvegardez la configuration.</li>
+            </ol>
+
+            <p>Les messages de cadeau personnalisés ajoutent une touche réfléchie aux achats, faisant de votre boutique
+              le choix préféré pour les cadeaux et augmentant la fidélité client.</p>
+          </section>
+          <!--//section-->
+          <section class="docs-section" id="item-4-4">
+            <h2 class="section-heading">Ajout du cadeau à votre thème</h2>
+            <p>
+              Pour afficher vos modules de cadeau configurés sur les pages produit de votre boutique, vous devez ajouter
+              la section Cadeau Bundleza à votre thème Shopify. Cela permet aux invites de cadeau d'apparaître à des
+              points stratégiques du parcours client.
+            </p>
+            <h3>Étapes pour ajouter la section cadeau</h3>
+            <ol>
+              <li><strong>Allez à Boutique en ligne :</strong> Depuis votre administrateur Shopify, naviguez vers
+                <strong>Boutique en ligne > Thèmes</strong>.
+              </li>
+              <li><strong>Personnalisez votre thème :</strong> Cliquez sur le bouton <strong>Personnaliser</strong> à
+                côté de votre thème en direct.</li>
+              <li><strong>Sélectionnez une page produit :</strong> Dans l'éditeur de thème, utilisez le sélecteur de
+                page en haut pour choisir un modèle de page produit.</li>
+              <li><strong>Ajoutez une section :</strong> Dans la barre latérale gauche, cliquez sur <strong>Ajouter une
+                  section</strong> (ou <strong>Ajouter un bloc</strong>), puis recherchez et sélectionnez <strong>Cadeau
+                  Bundleza</strong> dans la section Applications.</li>
+              <li><strong>Configurez la section :</strong> Une fois ajoutée, sélectionnez le cadeau spécifique que vous
+                voulez afficher dans le menu déroulant des paramètres de section.</li>
+              <li><strong>Enregistrez les modifications :</strong> Cliquez sur <strong>Enregistrer</strong> pour
+                appliquer les modifications à votre thème.</li>
+            </ol>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1"><i class="fas fa-info-circle"></i></span>
+                  Astuce
+                </h4>
+                <p>
+                  Positionnez la section cadeau au-dessus du bouton Ajouter au panier pour une efficacité maximale. Vous
+                  pouvez l'ajouter à des pages de panier ou d'autres modèles également pour des opportunités de cadeaux.
+                </p>
+              </div>
+            </div>
+          </section>
+        </article>
+        <!--//docs-article-->
+
+        <article class="docs-article" id="section-5">
+          <header class="docs-header">
+            <h1 class="docs-heading">Sections</h1>
+            <section class="docs-intro">
+              <p>
+                Ajoutez et gérez des sections personnalisées pour votre boutique Shopify.
+                Pré-construit. Configurable. Facile dans Themebuilder. Créez des paquets personnalisés de
+                vos produits et configurez des sections pré-construites comme des boîtes d'avis ou
+                d'avantages pour votre page produit.
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 mb-3">
+                  <a href="assets/images/section-overview.png"><img class="figure-img img-fluid shadow rounded"
+                      src="assets/images/section-overview.png" alt="Aperçu des sections Bundleza"
+                      title="Aperçu des sections" /></a>
+                </div>
+              </div>
+            </section>
+            <!--//docs-intro-->
+          </header>
+          <section class="docs-section" id="item-5-1">
+
+
+            <section class="docs-section" id="item-5-2">
+
+              <h3>Sélectionner le thème</h3>
+              <p>
+                <strong>Choisissez un thème :</strong> Sélectionnez votre thème Shopify pour
+                ajouter des sections aux pages produit.
+              </p>
+
+              <h3>Étapes pour sélectionner un thème</h3>
+              <ol>
+                <li>Naviguez vers la zone Sections dans votre tableau de bord Bundleza.</li>
+                <li>Depuis les options disponibles, sélectionnez votre thème actif Shopify.</li>
+                <li>Confirmez la sélection pour activer les ajouts de section pour ce thème.</li>
+              </ol>
+
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 mb-3">
+                  <a href="assets/images/select-theme.png"><img class="figure-img img-fluid shadow rounded"
+                      src="assets/images/select-theme.png" alt="Sélectionner le thème pour les sections de page produit"
+                      title="Sélectionner le thème" /></a>
+                </div>
+              </div>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-5-3">
+              <h2 class="section-heading">Ajouter des sections</h2>
+              <p>Après avoir sélectionné votre thème, cliquez sur le bouton "Ajouter" pour la section que vous aimez
+                ajouter. Alternativement, vous pouvez regarder une vidéo tutorielle pour obtenir des conseils.</p>
+
+              <h3>Comment ajouter des sections</h3>
+              <ol>
+                <li>Examinez la liste des sections pré-construites disponibles pour votre thème.</li>
+                <li>Cliquez sur le bouton "Ajouter" à côté de la section que vous voulez inclure (par exemple, boîtes
+                  d'avis, boîtes d'avantages).</li>
+                <li>Configurez les paramètres de la section, tels que le contenu et le style.</li>
+                <li>Sauvegardez les modifications et prévisualisez la section sur votre page produit.</li>
+              </ol>
+
+              <p>En tant que marchand, ajouter des sections personnalisées à vos pages produit vous permet de mettre en
+                évidence les avantages clés, les avis des clients et les offres de paquets, influençant directement les
+                décisions d'achat et améliorant les taux de conversion.</p>
+
+              <img class="figure-img img-fluid shadow rounded" src="assets/images/add-section.png"
+                alt="Personnaliser l'étape 2 de la section" />
+              <!--//section-->
+
+
+              <div class="callout-block callout-block-success">
+                <div class="content">
+                  <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                      <i class="fas fa-thumbs-up"></i>
+                    </span>
+                    Vous aimez notre application ?
+                  </h4>
+                  <p>
+                    Nous apprécierions un avis ! Aidez d'autres marchands à découvrir
+                    Bundleza.
+                  </p>
+                </div>
+              </div>
+
+              <h3>Plus de modules bientôt disponibles</h3>
+              <p>
+                Rejoignez notre communauté Discord et connectez-vous avec d'autres propriétaires de boutiques pour
+                obtenir un accès anticipé aux nouvelles fonctionnalités.
+              </p>
+            </section>
+            <!--//section-->
+
+        </article>
+
+        <!--//docs-article-->
+
+        <article class="docs-article" id="section-6">
+          <header class="docs-header">
+            <h1 class="docs-heading">Bannière</h1>
+            <section class="docs-intro">
+              <p>
+                Boostez vos conversions avec les bannières Bundleza
+              </p>
+            </section>
+            <!--//docs-intro-->
+          </header>
+          <section class="docs-section" id="item-6-1">
+            <h2 class="section-heading">Gestion des bannières</h2>
+            <p>
+              Gérez toutes vos bannières depuis le tableau de bord central. Affichez, modifiez et surveillez les
+              performances des bannières pour optimiser vos stratégies promotionnelles.
+            </p>
+
+            <h3>Créez votre premier module de bannière</h3>
+            <ol>
+              <li>Définissez vos paramètres de bannière</li>
+              <li>Personnalisez les styles/couleurs</li>
+              <li>Sauvegardez et ajoutez comme section</li>
+            </ol>
+
+            <h3>Liste des bannières</h3>
+            <p>
+              La liste des bannières affiche toutes vos bannières créées avec des informations clés et des actions
+              disponibles. Recherchez par nom de bannière pour trouver des bannières spécifiques rapidement.
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/banner-table.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/banner-table.png" alt="Gestion des bannières"
+                    title="Gestion des bannières" /></a>
+              </div>
+            </div>
+            <div class="callout-block callout-block-warning">
+              <div class="callout-title">
+                <span class="callout-icon-holder me-1">
+                  <i class="fas fa-exclamation-triangle"></i>
+                </span>
+                Important
+              </div>
+              <p>
+                Pour modifier toute bannière, vous devez d'abord mettre à jour son statut à Brouillon.
+              </p>
+            </div>
+
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  Demande d'avis
+                </h4>
+                <p>
+                  Vous aimez notre application ? Nous apprécierions un avis !
+                </p>
+              </div>
+            </div>
+          </section>
+          <!--//section-->
+
+          <section class="docs-section" id="item-6-2">
+            <h2 class="section-heading">Créer une nouvelle bannière</h2>
+            <div class="callout-block callout-block-warning">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                  Important
+                </h4>
+                <p>
+                  Avant de créer une bannière, vous devez aller à la section et sélectionner votre thème et l'ajouter à
+                  votre thème
+                </p>
+              </div>
+            </div>
+            <a href="assets/images/banner-select.png"><img class="figure-img img-fluid shadow rounded"
+                src="assets/images/banner-select.png" alt="Aperçu de la bannière" title="Aperçu de la bannière" /></a>
+            <h2>Aperçu</h2>
+            <p>La page de création de bannière inclut une fonctionnalité d'aperçu en direct qui vous permet de voir
+              comment votre bannière apparaîtra sur ordinateur, mobile et tablette. Cela vous aide à vous assurer que la
+              bannière est optimisée pour toutes les tailles d'écran avant de sauvegarder.</p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/banner-preview.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/banner-preview.png" alt="Aperçu de la bannière"
+                    title="Aperçu de la bannière" /></a>
+              </div>
+            </div>
+            <p>
+              Concevez et personnalisez votre bannière avec des modèles, thèmes, planification et options de contenu
+              pour créer des promotions attrayantes qui boostent les conversions.
+            </p>
+
+            <h3>Modèles</h3>
+            <p>
+              Choisissez un modèle pré-conçu pour votre bannière pour commencer rapidement.
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/template.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/template.png" alt="Modèles de bannière" title="Modèles de bannière" /></a>
+              </div>
+            </div>
+
+            <h3>Thème</h3>
+            <p>
+              Sélectionnez parmi des thèmes comme Black Friday, Noël, Nouvel An 2025, Mode compact, Saint-Valentin et
+              plus pour correspondre aux promotions saisonnières. Chaque thème inclut un aperçu pour voir comment il
+              apparaîtra.
+            </p>
+            <ul>
+              <li><strong>Black Friday :</strong> Aperçu du thème Black Friday</li>
+              <li><strong>Noël :</strong> Aperçu du thème Noël</li>
+              <li><strong>Nouvel An 2025 :</strong> Aperçu du thème Nouvel An 2025</li>
+              <li><strong>Mode compact :</strong> Aperçu du thème Mode compact</li>
+              <li><strong>Saint-Valentin :</strong> Aperçu du thème Saint-Valentin</li>
+            </ul>
+
+            <h3>Planifier</h3>
+            <p>
+              Définissez quand votre bannière devrait être active avec des dates/heures de début et de fin. Par exemple,
+              commencer le 23/09/2025 à 09:00 et finir le 23/09/2025 à 09:00. Souvenez-vous, la bannière commencera
+              quand l'heure de début est sélectionnée.
+            </p>
+
+            <h3>Langue</h3>
+            <p>
+              Personnalisez le contenu de la bannière pour différentes langues pour atteindre un public global.
+            </p>
+
+            <h3>Contenu de la bannière</h3>
+            <p>
+              Concevez les textes pour votre bannière ici :
+            </p>
+            <ul>
+              <li><strong>Texte principal :</strong> BLACK FRIDAY - Apparaît de manière proéminente sur le côté gauche
+                de la bannière.</li>
+              <li><strong>Appel à l'action :</strong> BUNDLEZA50 - Le code de remise que les clients peuvent utiliser,
+                par exemple SALE50.</li>
+              <li><strong>Étiquette de compte à rebours :</strong> Compte à rebours - Texte au-dessus du minuteur de
+                compte à rebours.</li>
+              <li><strong>Annonce de remise :</strong> Économisez jusqu'à 50% avec le code : - par exemple 'Économisez
+                jusqu'à {{50%}} sur tout'.</li>
+              <li><strong>Bouton de fermeture :</strong> Définissez le comportement après la fermeture de la bannière.
+              </li>
+              <li><strong>Intervalle d'affichage :</strong> Définissez quand la bannière devrait réapparaître après
+                avoir été fermée (Afficher toujours).</li>
+            </ul>
+
+            <h3>Design</h3>
+            <p>
+              Personnalisez l'apparence de votre bannière pour correspondre à votre marque :
+            </p>
+            <ul>
+              <li><strong>Bannière :</strong> Texte de bannière (gauche), Accent de bannière, Arrière-plan de bannière.
+              </li>
+              <li><strong>Compte à rebours :</strong> Texte, Texte du compteur, Arrière-plan du compteur.</li>
+              <li><strong>Remise :</strong> Texte du code (pour le bouton de copie du code de remise), Texte du code
+                d'annonce, Arrière-plan du code, Rayon du code (par exemple, 4).</li>
+            </ul>
+            <h4>Styles</h4>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/style.png"><img class="banner style" src="assets/images/style.png"
+                    alt="style de bannière" /></a>
+              </div>
+            </div>
+            <p>
+              Personnalisez davantage les styles de la bannière, y compris les couleurs. Ces paramètres permettent un
+              contrôle précis sur les éléments visuels pour créer un look cohérent et professionnel.
+            </p>
+            <ul>
+              <li><strong>Couleurs de texte :</strong> Ajustez la couleur du texte principal, du minuteur de compte à
+                rebours et du code de remise pour correspondre à votre palette de marque. Par exemple, utilisez votre
+                couleur primaire de marque pour les titres et une couleur contrastante pour le texte secondaire.</li>
+              <li><strong>Couleurs d'arrière-plan :</strong> Définissez des arrière-plans personnalisés pour la
+                bannière, la section de compte à rebours et la zone de code de remise. Choisissez des couleurs solides,
+                des dégradés ou même des arrière-plans transparents pour s'adapter à votre thème de design.</li>
+
+              <li><strong>Rayon de bordure :</strong> Définissez le rayon des coins pour les éléments comme la boîte de
+                code de remise ou les boutons. Un rayon plus élevé crée des coins arrondis pour un look moderne, tandis
+                que 0px donne des bords nets pour un style classique.</li>
+
+            </ul>
+
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/create-banner.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/create-banner.png" alt="Créer une nouvelle bannière"
+                    title="Créer une nouvelle bannière" /></a>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  Succès
+                </h4>
+                <p>
+                  La bannière sera active du 2025-09-23 à 09:00 jusqu'au 2025-09-23 à 09:00
+                </p>
+              </div>
+            </div>
+          </section>
+          <!--//section-->
+          <section class="docs-section" id="item-6-3">
+            <h2 class="section-heading">Ajout de la bannière à votre thème</h2>
+            <p>
+              Pour afficher vos bannières configurées sur les pages de votre boutique, vous devez ajouter la section
+              Bannière Bundleza à votre thème Shopify. Cela permet l'affichage des bannières sur les pages produit, la
+              page d'accueil ou d'autres modèles.
+            </p>
+            <h3>Étapes pour ajouter la section bannière</h3>
+            <ol>
+              <li><strong>Allez à Boutique en ligne :</strong> Depuis votre administrateur Shopify, naviguez vers
+                <strong>Boutique en ligne > Thèmes</strong>.
+              </li>
+              <li><strong>Personnalisez votre thème :</strong> Cliquez sur le bouton <strong>Personnaliser</strong> à
+                côté de votre thème en direct.</li>
+              <li><strong>Sélectionnez un modèle ou section :</strong> Dans l'éditeur de thème, utilisez le sélecteur de
+                page en haut pour choisir la page modèle (par exemple, Page d'accueil, Page produit) ou sélectionnez
+                l'En-tête depuis la barre latérale gauche pour ajouter la bannière à l'en-tête du site.</li>
+              <li><strong>Ajoutez une section :</strong> Dans la barre latérale gauche, cliquez sur <strong>Ajouter une
+                  section</strong> (ou <strong>Ajouter un bloc</strong>), puis recherchez et sélectionnez
+                <strong>Bannière Bundleza</strong> dans la section Applications.
+              </li>
+              <li><strong>Configurez la section :</strong> Une fois ajoutée, sélectionnez la bannière spécifique que
+                vous voulez afficher dans le menu déroulant des paramètres de section.</li>
+              <li><strong>Enregistrez les modifications :</strong> Cliquez sur <strong>Enregistrer</strong> pour
+                appliquer les modifications à votre thème.</li>
+            </ol>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1"><i class="fas fa-info-circle"></i></span>
+                  Astuce
+                </h4>
+                <p>
+                  Les bannières peuvent être ajoutées à diverses pages comme la page d'accueil pour les promotions, les
+                  pages produit pour les offres spéciales, ou les pages de collection pour les bannières spécifiques à
+                  la catégorie, ou à l'en-tête pour une visibilité site-wide.
+                </p>
+              </div>
+            </div>
+          </section>
+        </article>
+        <!--//docs-article-->
+
+
+
+        <footer class="footer">
+          <div class="container text-center py-5">
+            <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+            <small class="copyright">Développé <i class="fas fa-heart" style="color: #fb866a"></i> par
+              <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Bundleza</a>
+            </small>
+            <ul class="social-list list-inline pt-4 mb-0">
+              <li class="list-inline-item">
+                <a href="#"><i class="fa-brands fa-github fa-fw"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa-brands fa-x-twitter fa-fw"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa-brands fa-slack fa-fw"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa-brands fa-product-hunt fa-fw"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa-brands fa-facebook-f fa-fw"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa-brands fa-instagram fa-fw"></i></a>
+              </li>
+            </ul>
+
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <!--//docs-wrapper-->
+
+  <!-- Javascript -->
+  <script src="assets/plugins/popper.min.js"></script>
+  <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Page Specific JS -->
+  <script src="assets/plugins/smoothscroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+  <script src="assets/js/highlight-custom.js"></script>
+  <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+  <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+  <script src="assets/js/docs.js"></script>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/6784a716af5bfec1dbeaa295/1ihf2pcag';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+
+</html>

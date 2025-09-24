@@ -1,0 +1,2218 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <title>
+    Bundleza - De Productbundels
+  </title>
+
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bundleza - De Productbundels" />
+  <meta name="author" content="Xiaoying Riley at 3rd Wave Media" />
+  <link rel="shortcut icon" href="favicon.ico" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome JS-->
+  <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css" />
+  <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css" />
+
+  <!-- Theme CSS -->
+  <link id="theme-style" rel="stylesheet" href="assets/css/theme.css" />
+
+  <style>
+    img {
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body class="docs-page">
+  <header class="header fixed-top">
+    <div class="branding docs-branding">
+      <div class="container-fluid position-relative py-2">
+        <div class="docs-logo-wrapper">
+          <button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+            type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="site-logo">
+            <a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="assets/images/coderdocs-logo.svg"
+                alt="logo" /><span class="logo-text">Bundl<span class="text-alt">eza</span></span></a>
+          </div>
+        </div>
+        <!--//docs-logo-wrapper-->
+        <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+          <div class="top-search-box d-none d-lg-flex">
+            <form class="search-form">
+              <input type="text" placeholder="Zoek in de documenten..." name="search"
+                class="form-control search-input" />
+              <button type="submit" class="btn search-btn" value="Zoeken">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+
+          <ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+            <li class="list-inline-item">
+              <a href="#"><i class="fa-brands fa-github fa-fw"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#"><i class="fa-brands fa-x-twitter fa-fw"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#"><i class="fa-brands fa-slack fa-fw"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#"><i class="fa-brands fa-product-hunt fa-fw"></i></a>
+            </li>
+          </ul>
+          <label for="language-select" style="margin-right: 10px;"><i class="fas fa-globe"></i> </label>
+          <select id="language-select" onchange="window.location.href=this.value;"
+            style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; background-color: #fff; margin-right: 5px;">
+            <option value="docs-page-en.html">English</option>
+            <option value="docs-page-de.html">German</option>
+            <option value="docs-page-es.html">Spanish</option>
+            <option value="docs-page-fr.html">French</option>
+            <option value="docs-page-it.html">Italian</option>
+            <option value="docs-page-ja.html">Japanese</option>
+            <option value="docs-page-nl.html">Dutch</option>
+          </select>
+          <!--//social-list-->
+          <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderdocs-free-bootstrap-5-documentation-template-for-software-projects/"
+            class="btn btn-primary d-none d-lg-flex">Downloaden</a>
+        </div>
+        <!--//docs-top-utilities-->
+      </div>
+      <!--//container-->
+    </div>
+    <!--//branding-->
+  </header>
+  <!--//header-->
+
+  <div class="docs-wrapper">
+    <div id="docs-sidebar" class="docs-sidebar" style="padding: 0 10px;">
+      <div class="top-search-box d-lg-none p-3">
+        <form class="search-form">
+          <input type="text" placeholder="Zoek in de documenten..." name="search" class="form-control search-input" />
+          <button type="submit" class="btn search-btn" value="Zoeken">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+      <nav id="docs-nav" class="docs-nav navbar">
+        <ul class="section-items list-unstyled nav flex-column pb-3">
+          <li class="nav-item section-title">
+            <a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-map-signs"></i></span>Inleiding</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link scrollto" href="#item-1-1" style="font-size: small; word-break: break-word;"><span
+                class="theme-icon-holder me-3"><i class="fas fa-play-circle"></i></span>Aan de slag</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link scrollto" href="#item-1-2" style="font-size: small; word-break: break-word;"><span
+                class="theme-icon-holder me-3"><i class="fas fa-download"></i></span>Installatie</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link scrollto" href="#item-1-3" style="font-size: small; word-break: break-word;"><span
+                class="theme-icon-holder me-3"><i class="fas fa-cogs"></i></span>Configuratie</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link scrollto" href="#item-1-3" style="font-size: small; word-break: break-word;"><span
+                class="theme-icon-holder me-3"><i class="fas fa-cogs"></i></span>Configuratie</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link scrollto" href="#item-1-4" style="font-size: small; word-break: break-word;"><span
+                class="theme-icon-holder me-3"><i class="fas fa-th-large"></i></span>Hoe Bundleza-blokken of -secties te
+              gebruiken</a>
+          </li>
+
+          <li class="nav-item section-title mt-3"></li>
+          <a class="nav-link scrollto" href="#section-2" data-bs-toggle="collapse" data-bs-target="#bundle-submenu"
+            aria-expanded="false" aria-controls="bundle-submenu"><span class="theme-icon-holder me-2"><i
+                class="fas fa-box"></i></span>Bundel <i class="fas fa-chevron-right ms-2 submenu-icon"></i></a>
+          <ul class="collapse list-unstyled" id="bundle-submenu">
+            <li class="nav-item ms-4">
+              <a class="nav-link scrollto" href="#item-2-1" style="font-size: small; word-break: break-word;"><span
+                  class="theme-icon-holder me-3"><i class="fas fa-list"></i></span>Bundelbeheer</a>
+            </li>
+            <li class="nav-item ms-4">
+              <a class="nav-link scrollto" href="#item-2-2" style="font-size: small; word-break: break-word;"><span
+                  class="theme-icon-holder me-3"><i class="fas fa-edit"></i></span>Bundels maken en bijwerken</a>
+            </li>
+            <li class="nav-item ms-4">
+              <a class="nav-link scrollto" href="#item-2-3" style="font-size: small; word-break: break-word;"><span
+                  class="theme-icon-holder me-3"><i class="fas fa-plus"></i></span>Bundel toevoegen aan je thema</a>
+            </li>
+          </ul>
+          </li>
+          <li class="nav-item section-title mt-3">
+            <a class="nav-link scrollto" href="#section-3" data-bs-toggle="collapse" data-bs-target="#upsell-submenu"
+              aria-expanded="false" aria-controls="upsell-submenu"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-arrow-up"></i></span>Upsell <i class="fas fa-chevron-right ms-2 submenu-icon"></i></a>
+            <ul class="collapse list-unstyled" id="upsell-submenu">
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-1" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-cog"></i></span>Upsell-configuratie</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-2" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus-square"></i></span>Upsell toevoegen aan je
+                  thema</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-3" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-list"></i></span>Beheer enkele upsell</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-4" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus"></i></span>Enkele upsell maken</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-5" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-th-list"></i></span>Beheer meerdere upsells</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-6" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus-circle"></i></span>Meerdere upsells maken</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-7" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus-square"></i></span>Meerdere upsells toevoegen
+                  aan
+                  je thema</a>
+              </li>
+
+            </ul>
+          </li>
+          <li class="nav-item section-title mt-3">
+            <a class="nav-link scrollto" href="#section-4" data-bs-toggle="collapse" data-bs-target="#gift-submenu"
+              aria-expanded="false" aria-controls="gift-submenu"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-gift"></i></span>Cadeau <i class="fas fa-chevron-right ms-2 submenu-icon"></i></a>
+            <ul class="collapse list-unstyled" id="gift-submenu">
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-4-1" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-cogs"></i></span>Cadeaubeheer</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-4-2" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-envelope"></i></span>Cadeau maken of bijwerken</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-4-4" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus"></i></span>Cadeau toevoegen aan je thema</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item section-title mt-3">
+            <a class="nav-link scrollto" href="#section-5" data-bs-toggle="collapse" data-bs-target="#sections-submenu"
+              aria-expanded="false" aria-controls="sections-submenu"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-th-large"></i></span>Secties <i class="fas fa-chevron-right ms-2 submenu-icon"></i></a>
+            <ul class="collapse list-unstyled" id="sections-submenu">
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-5-1" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-download"></i></span>Hoe een sectie te
+                  importeren</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-5-2" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-th"></i></span>Productpaginasecties</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-5-3" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-store"></i></span>Winkelsecties</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item section-title mt-3">
+            <a class="nav-link scrollto" href="#section-6" data-bs-toggle="collapse" data-bs-target="#banner-submenu"
+              aria-expanded="false" aria-controls="banner-submenu"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-flag"></i></span>Banner <i class="fas fa-chevron-right ms-2 submenu-icon"></i></a>
+            <ul class="collapse list-unstyled" id="banner-submenu">
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-6-1" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-list"></i></span>Bannerbeheer</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-6-2" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus"></i></span>Nieuwe banner maken</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-6-3" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus-square"></i></span>Banner toevoegen aan je
+                  thema</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!--//docs-nav-->
+    </div>
+    <!--//docs-sidebar-->
+    <div class="docs-content">
+      <div class="container">
+        <article class="docs-article" id="section-1">
+          <header class="docs-header">
+            <h1 class="docs-heading">
+              Inleiding
+              <span class="docs-time">Laatst bijgewerkt: 3 dagen geleden</span>
+            </h1>
+            <section class="docs-intro">
+              <p>
+                Welkom bij Bundleza - Leer de toekomst kennen. Vooraf gebouwd.
+                Configureerbaar. Gemakkelijk in Themebuilder. Creëer aangepaste bundels van
+                je producten en configureer vooraf gebouwde secties zoals beoordelings- of
+                voordeelboxen voor je productpagina.
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 mb-3">
+                  <a href="assets/images/welcome-overviews.png">
+                    <img class="figure-img img-fluid shadow rounded" src="assets/images/welcome-overviews.png"
+                      alt="Bundleza Modules Overzicht" title="Bundleza Modules Overzicht" />
+                  </a>
+                </div>
+              </div>
+
+              <h3 id="bundleza-modules">Bundleza Modules</h3>
+              <div class="row">
+                <div class="col-12 col-md-6 mb-4" id="bundleza-bundles">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/bundle.png" class="img-fluid mr-3"
+                        alt="Bundleza Bundels" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Bundleza Bundels</h5>
+                        <p class="card-text">Maak eenvoudig bundels en hoeveelheidskortingen voor je producten</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4" id="bundleza-sections">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/section.png" class="img-fluid mr-3"
+                        alt="Bundleza Secties" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Bundleza Secties</h5>
+                        <p class="card-text">Pas eenvoudig vooraf gebouwde secties aan voor je winkel</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4" id="bundleza-upsell">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/upsell.png" class="img-fluid mr-3"
+                        alt="Bundleza Upsell" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Bundleza Upsell</h5>
+                        <p class="card-text">Verhoog je omzet met onze pop-ups, boxen en sliders voor productupgrades
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4" id="bundleza-banner">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/banner.png" class="img-fluid mr-3"
+                        alt="Bundleza Banner" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Bundleza Banner</h5>
+                        <p class="card-text">Maak aantrekkelijke banners voor je winkel - van aankondigingen tot
+                          kortingspromoties</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4" id="bundleza-gifts">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/gift.png" class="img-fluid mr-3"
+                        alt="Bundleza Cadeaus" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Bundleza Cadeaus</h5>
+                        <p class="card-text">Maak aantrekkelijke cadeaus voor je winkel. Flexibel aanpasbaar en perfect
+                          voor elke gelegenheid</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4" id="bundleza-reviews">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/review.png" class="img-fluid mr-3"
+                        alt="Bundleza Beoordelingen" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Bundleza Beoordelingen</h5>
+                        <p class="card-text">Maak aantrekkelijke beoordelingswidgets met foto's en video's. Beschikbaar
+                          als box, carrousel slider of verhalen</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="callout-block callout-block-info">
+                <div class="content">
+                  <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                      <i class="fas fa-info-circle"></i>
+                    </span>
+                    Meer modules binnenkort
+                  </h4>
+                  <p>
+                    Sluit je aan bij onze <a href="https://discord.gg/bundleza" target="_blank">Discord community</a> en
+                    verbind
+                    met andere winkel
+                    eigenaren om vroege toegang te krijgen tot nieuwe functies.
+                  </p>
+                </div>
+              </div>
+            </section>
+            <!--//docs-intro-->
+          </header>
+          <section class="docs-section" id="item-1-1">
+            <h2 class="section-heading">Aan de slag</h2>
+            <p>
+              Welkom bij Bundleza! Deze gids helpt je om aan de slag te gaan
+              met onze krachtige Shopify-app die je in staat stelt om bundel
+              kortingsaanbiedingen, upsell-producten, multi-upsell-producten, cadeau
+              producten, banners en aangepaste secties voor je winkel te maken.
+            </p>
+
+            <h3>Vereisten</h3>
+            <p>Voordat je Bundleza installeert, zorg ervoor dat je hebt:</p>
+            <ul>
+              <li>Een actieve Shopify-winkel (elk plan)</li>
+              <li>Beheerderstoegang tot je Shopify-dashboard</li>
+              <li>Minstens één product met voorraad en varianten in je winkel</li>
+            </ul>
+
+            <h3 id="item-1-2">Installatie</h3>
+            <p>
+              Volg deze stappen om Bundleza op je Shopify-winkel te installeren:
+            </p>
+            <h4>Stap 1: Log in op je Shopify-beheerdersdashboard</h4>
+            <p>Log in op je Shopify-beheerdersdashboard op <a href="https://admin.shopify.com"
+                target="_blank">admin.shopify.com</a>.</p>
+            <h4>Stap 2: Vind en installeer Bundleza</h4>
+            <p>Zoek naar Bundleza in de Shopify App Store:</p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 col-md-6 mb-3">
+                <a href="/assets/images/search-app.png"><img class="figure-img img-fluid shadow rounded"
+                    src="/assets/images/search-app.png" alt="Zoeken naar Bundleza in Shopify App Store"
+                    title="Shopify App Store Zoeken" /></a>
+              </div>
+              <div class="col-12 col-md-6 mb-3">
+                <a href="assets/images/shopify-search.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/shopify-search.png" alt="Bundleza-app pagina in Shopify App Store"
+                    title="Bundleza App Pagina" /></a>
+              </div>
+            </div>
+            <ol start="1">
+              <li>In de App Store zoekbalk, typ "Bundleza"</li>
+              <li>Zoek de Bundleza-app in de zoekresultaten</li>
+              <li>Klik op de Bundleza-app kaart om details te bekijken</li>
+              <li>Bekijk de appbeschrijving, functies en prijzen</li>
+              <li>Klik op <strong>App toevoegen</strong></li>
+            </ol>
+
+            <h4>Stap 3: Machtigingen goedkeuren</h4>
+            <p>Bekijk en keur de vereiste machtigingen goed:</p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/permisssion.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/permisssion.png" alt="Bundleza-app machtigingenscherm"
+                    title="App Machtigingen" /></a>
+              </div>
+            </div>
+            <ol start="1">
+              <li>Bekijk de gevraagde machtigingen zorgvuldig</li>
+              <li>Klik op <strong>App installeren</strong> om machtigingen te verlenen</li>
+              <li>Wacht tot de installatie is voltooid</li>
+            </ol>
+
+
+
+
+
+            <h3>Snelle start checklist</h3>
+            <div class="simplelightbox-gallery row mb-3"></div>
+            <div class="col-12 mb-3"></div>
+            <a href="assets/images/check-list.png"><img class="figure-img img-fluid shadow rounded"
+                src="assets/images/check-list.png" alt="Snelle start checklist" title="Snelle start checklist" /></a>
+      </div>
+    </div>
+
+    <div class="callout-block callout-block-success">
+      <div class="content">
+        <h4 class="callout-title">
+          <span class="callout-icon-holder me-1">
+            <i class="fas fa-thumbs-up"></i>
+          </span>
+          Tip
+        </h4>
+        <p>
+          Begin met het maken van één bundel en één upsell-aanbieding om de
+          functionaliteit te testen. Zodra je vertrouwd bent, breid uit naar meer
+          complexe configuraties.
+        </p>
+      </div>
+    </div>
+
+    <h3>Hulp nodig?</h3>
+    <p>Als je problemen ondervindt tijdens de setup:</p>
+    <ul>
+      <li>Bekijk onze gedetailleerde documentatie voor elke functie</li>
+      <li>Contacteer ons ondersteuningsteam via het app-dashboard</li>
+      <li>Sluit je aan bij ons community-forum voor tips en best practices</li>
+      <li>Bekijk onze tutorialvideo's voor visuele begeleiding</li>
+    </ul>
+
+    <p>
+      Je bent nu klaar om de omzet van je winkel te verhogen met
+      Bundleza's krachtige functies!
+    </p>
+    </section>
+    <!--//section-->
+    <section id="item-1-4"></section>
+    <h3>Hoe Bundleza-blokken/secties op je thema te gebruiken</h3>
+    <p>
+      Volg deze gemeenschappelijke stappen om Bundleza-secties (Bundel, Upsell, Meerdere Upsell, Cadeau, Banner) toe te
+      voegen aan je
+      Shopify-thema. Dit stelt je in staat om je geconfigureerde modules weer te geven op productpagina's of andere
+      sjablonen.
+    </p>
+    <h3>Stap 1</h3>
+    <p>Ga naar online themacustomisatie</p>
+    <img src="assets/images/customization-page.png" class="figure-img img-fluid shadow rounded"
+      alt="customisatie pagina" style="max-width: 100%; max-height: 100%;">
+    <h3>Stap 2</h3>
+    <p>Selecteer standaard productpagina </p>
+    <img src="assets/images/default-productaopage.png" class="figure-img img-fluid shadow rounded"
+      alt="selecteer productpagina " style="max-width: 100%; max-height: 100%;">
+    <h3>Stap 3</h3>
+    <p>Selecteer Blok en sectie hier </p>
+    <img src="assets/images/selectsectionandblock.png" class="figure-img img-fluid shadow rounded"
+      alt="selecteer productpagina " style="max-width: 100%; max-height: 100%;">
+    <h3>Stap 4</h3>
+    <p>Laatste resultaten </p>
+    <p>Banner op je winkel</p>
+    <img src="assets/images/banner-resutl.png" class="figure-img img-fluid shadow rounded" alt="banner  "
+      style="max-width: 100%; max-height: 100%;">
+    <p>Blokken op je winkel</p>
+    <img src="assets/images/blocs.png" class="figure-img img-fluid shadow rounded" alt="selecteer productpagina "
+      style="max-width: 100%; max-height: 100%;">
+    </section>
+
+    </article>
+
+    <article class="docs-article" id="section-2">
+      <header class="docs-header">
+        <h1 class="docs-heading">Bundel</h1>
+        <section class="docs-intro">
+          <p></p>
+          Als Shopify-handelaar stelt de Bundel-functie in Bundleza je in staat om aantrekkelijke productbundels te
+          maken
+          die de gemiddelde orderwaarde aanzienlijk verhogen. Door strategisch complementaire producten te combineren en
+          aantrekkelijke kortingen aan te bieden, kun je klanten aanmoedigen om meer artikelen te kopen, waardoor je
+          omzet toeneemt terwijl je hun winkelervaring verbetert.
+          </p>
+          <div class="simplelightbox-gallery row mb-3">
+            <div class="col-12 mb-3">
+              <a href="assets/images/bundleza-management.png"><img class="figure-img img-fluid shadow rounded"
+                  src="assets/images/bundleza-management.png" alt="Bundelbeheer" title="Bundelbeheer" /></a>
+            </div>
+          </div>
+        </section>
+        <!--//docs-intro-->
+      </header>
+      <section class="docs-section" id="item-2-1">
+        <h2 class="section-heading">Bundelbeheer</h2>
+        <p>
+          De Bundelbeheerpagina is je centrale hub voor het beheren van al je gemaakte bundels. Hier kun je
+          bewerken, verwijderen, dupliceren en de status bijwerken van je bundels om je winkelvoorraad
+          georganiseerd en up-to-date te houden.
+        </p>
+
+        <h3>Toegang tot Bundelbeheer</h3>
+        <p>
+          Ga vanuit het Bundleza-dashboard naar de Bundels-sectie om toegang te krijgen tot de Bundelbeheerpagina.
+        </p>
+        <div class="simplelightbox-gallery row mb-3">
+          <div class="col-12 mb-3">
+            <a href="assets/images/bundleza-menu.png"><img class="figure-img img-fluid shadow rounded"
+                src="assets/images/bundleza-menu.png" alt="Bundelbeheer" title="Bundelbeheer" /></a>
+          </div>
+        </div>
+
+        <h3>Bundellijst en acties</h3>
+        <p>
+          De bundellijst toont al je gemaakte bundels met belangrijke informatie en beschikbare acties. Je kunt
+          de volgende acties uitvoeren op elke bundel:
+        </p>
+        <ul>
+          <li><strong>Bewerken:</strong> Wijzig de details, producten en instellingen van de bundel.</li>
+          <li><strong>Verwijderen:</strong> Verwijder de bundel permanent uit je winkel.</li>
+          <li><strong>Dupliceren:</strong> Maak een kopie van de bundel voor snelle setup van vergelijkbare
+            aanbiedingen.</li>
+          <li><strong>Status bijwerken:</strong> Schakel tussen Concept (verborgen voor klanten) en Actief (zichtbaar op
+            je winkel).</li>
+        </ul>
+
+        <div class="callout-block callout-block-warning">
+          <div class="content">
+            <h4 class="callout-title">
+              <span class="callout-icon-holder me-1">
+                <i class="fas fa-exclamation-triangle"></i>
+              </span>
+              Belangrijk
+            </h4>
+            <p>
+              Om een bundel te bewerken, moet je eerst de status bijwerken naar Concept.
+            </p>
+          </div>
+        </div>
+
+        <h4>Bundeltabel</h4>
+        <p>
+          De bundeltabel toont al je gemaakte bundels met de
+          volgende informatie:
+        </p>
+        <div class="simplelightbox-gallery row mb-3">
+          <div class="col-12 mb-3">
+            <a href="assets/images/bundle-table.png"><img class="figure-img img-fluid shadow rounded"
+                src="assets/images/bundle-table.png" alt="Bundeltabel" title="Bundeltabel" /></a>
+          </div>
+        </div>
+
+        <div class="callout-block callout-block-info">
+          <div class="content">
+            <h4 class="callout-title">
+              <span class="callout-icon-holder me-1">
+                <i class="fas fa-info-circle"></i>
+              </span>
+              Tip
+            </h4>
+            <p>
+              Gebruik de statustoggle om bundels tijdelijk te verbergen tijdens off-seasons of bij het bijwerken van
+              aanbiedingen, zonder ze te verwijderen.
+            </p>
+          </div>
+        </div>
+        <div class="callout-block callout-block-warning">
+          <div class="content">
+            <h4 class="callout-title">
+              <span class="callout-icon-holder me-1">
+                <i class="fas fa-exclamation-triangle"></i>
+              </span>
+              Belangrijk
+            </h4>
+            <p>
+              Om een bundel te bewerken, moet je eerst de status bijwerken naar Concept.
+            </p>
+          </div>
+        </div>
+
+        <div class="callout-block callout-block-success">
+          <div class="content">
+            <h4 class="callout-title">
+              <span class="callout-icon-holder me-1">
+                <i class="fas fa-thumbs-up"></i>
+              </span>
+              Beoordelingsverzoek
+            </h4>
+            <p></p>
+            Als je Bundleza leuk vindt, laat ons dan een beoordeling achter in de
+            Shopify App Store!
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--//section-->
+
+      <section class="docs-section" id="item-2-2">
+        <h2 class="section-heading">Bundels maken en bijwerken</h2>
+        <p>
+          Maak een nieuwe bundelaanbieding voor je winkel of werk bestaande bundels bij. Deze pagina stelt je in staat
+          om alle
+          aspecten van je bundel te configureren, van basisdetails tot geavanceerde styling en productselectie.
+        </p>
+        <h3>Hoe een nieuwe bundel te maken</h3>
+        <ol>
+          <li><strong>Bundelnaam invoeren:</strong> Geef een beschrijvende en aantrekkelijke naam voor je bundel die
+            klanten aantrekt.</li>
+          <li><strong>Selectietype kiezen:</strong> Kies hoe producten in de bundel worden opgenomen (Alle Producten,
+            Specifieke Producten of Specifieke Collecties).</li>
+          <li><strong>Instellingen configureren:</strong> Stel bundelinstellingen, variantaanbiedingen en kortingsopties
+            in om aantrekkelijke prijstiers te creëren.</li>
+          <li><strong>Stijlen aanpassen:</strong> Pas kleuren, lettertypen en lay-outs aan om bij je winkelthema te
+            passen.</li>
+          <li><strong>Producten selecteren:</strong> Gebruik de productselectiemodal om hoofdproducten en varianten voor
+            de bundel te kiezen.</li>
+          <li><strong>Variantaanbiedingen instellen:</strong> Configureer dynamische aanbiedingen voor verschillende
+            bundelvarianten.</li>
+        </ol>
+        <h3>7. Selecteer aangepaste afbeelding en gratis cadeau voor elke aanbieding</h3>
+        <a href="assets/images/giftandimg-select.png"><img class="figure-img img-fluid shadow rounded"
+            src="assets/images/giftandimg-select.png" alt="Producten selecteren Modal"
+            title="Producten selecteren Modal" /></a>
+        <p>
+          Om gratis cadeau met bundel te selecteren, gebruik de "gratis cadeau" naar "cadeau selecteren" knop. Dit opent
+          een modal
+          waar je producten en hun varianten kunt kiezen.
+        </p>
+        <div class="simplelightbox-gallery row mb-3">
+          <div class="col-12 mb-3">
+            <a href="assets/images/select-gift.png"><img class="figure-img img-fluid shadow rounded"
+                src="assets/images/select-gift.png" alt="Producten selecteren Modal"
+                title="Producten selecteren Modal" /></a>
+
+          </div>
+        </div>
+        <div class="callout-block callout-block-info">
+          <div class="content">
+            <h4 class="callout-title">
+              <span class="callout-icon-holder me-1">
+                <i class="fas fa-info-circle"></i>
+              </span>
+              Tip
+            </h4>
+            <p>
+              Begin met een eenvoudige bundel en test de prestaties voordat je complexe configuraties toevoegt. Dit
+              stelt je in staat om te optimaliseren op basis van klantfeedback.
+            </p>
+          </div>
+        </div>
+
+        <h3>Bundelnaam</h3>
+        <p>
+          Voer een beschrijvende en aantrekkelijke naam in voor je bundel. (Vereist)
+        </p>
+        <div class="simplelightbox-gallery row mb-3">
+          <div class="col-12 mb-3">
+            <a href="assets/images/bundle-name.png"><img class="figure-img img-fluid shadow rounded"
+                src="assets/images/bundle-name.png" alt="Bundelnaam Configuratie" title="Bundelnaam Configuratie" /></a>
+          </div>
+        </div>
+
+        <h3>Selectietype</h3>
+        <p>
+          Kies hoe producten voor de bundel worden geselecteerd. Je kunt alle producten, specifieke producten of
+          producten uit specifieke collecties opnemen.
+        </p>
+        <ul>
+          <li><strong>Alle Producten:</strong> Neem elk product uit je winkel op in de bundel.</li>
+          <li><strong>Specifieke Producten:</strong> Selecteer handmatig individuele producten.</li>
+          <li><strong>Specifieke Collecties:</strong> Neem alle producten uit geselecteerde collecties op.</li>
+        </ul>
+        <div class="simplelightbox-gallery row mb-3">
+          <div class="col-12 mb-3">
+            <a href="assets/images/product-selection.png"><img class="figure-img img-fluid shadow rounded"
+                src="assets/images/product-selection.png" alt="Selectietype Opties" title="Selectietype Opties" /></a>
+          </div>
+        </div>
+
+        <h3>Instellingen</h3>
+        <p>
+          Configureer de kerninstellingen voor je bundel, inclusief prijzen, beschikbaarheid en weergaveopties.
+        </p>
+
+        <h4>Bundelinstellingen</h4>
+        <ul>
+          <li><strong>ALLEEN VANDAAG:</strong> Schakel een speciale "Alleen Vandaag" promotie in voor de bundel.</li>
+          <li><strong>Variant Vergelijkings Prijzen:</strong> Toon vergelijkings prijzen voor verschillende varianten.
+          </li>
+          <li><strong>Direct naar Afrekenen:</strong> Sta klanten toe om direct naar afrekenen te gaan vanuit de bundel.
+          </li>
+          <li><strong>Variant Kiezer Verbergen:</strong> Verberg de variantselectieopties op de bundelpagina.</li>
+        </ul>
+
+        <h4>Bundel Variant Aanbiedingen</h4>
+        <p>Configureer dynamische aanbiedingen voor bundelvarianten. Stel hoeveelheden, kortingstypes in (bijv. Vast
+          Bedrag, Percentage, Vast Prijs) en kortingswaarden. Opties kunnen standaard geselecteerd zijn, en je kunt
+          meerdere nieuwe aanbiedingen toevoegen om verschillende prijstiers te creëren.</p>
+        <ul>
+          <li><strong>Hoeveelheid:</strong> Geef het aantal artikelen in de aanbieding op (volledig aanpasbaar).</li>
+          <li><strong>Kortingstype:</strong> Kies uit Vast Bedrag, Percentage of Vast Prijs.</li>
+          <li><strong>Kortingswaarde:</strong> Stel het kortingsbedrag of percentage in (dynamisch en aanpasbaar).</li>
+          <li><strong>Standaard Geselecteerd:</strong> Markeer een aanbieding als vooraf geselecteerd voor klanten.
+            Wanneer vooraf geselecteerd, wordt de aanbieding automatisch toegevoegd aan de winkelwagen wanneer de klant
+            op de knop Toevoegen aan Winkelwagen of Nu Kopen klikt. Als niet geselecteerd, moet de klant het vakje
+            aanvinken om het op te nemen.</li>
+        </ul>
+        <div class="callout-block callout-block-info">
+          <div class="content">
+            <h4 class="callout-title">
+              <span class="callout-icon-holder me-1">
+                <i class="fas fa-info-circle"></i>
+              </span>
+              Tip
+            </h4>
+            <p></p>
+            Alle hoeveelheden, kortingstypes en waarden zijn volledig aanpasbaar. Experimenteer met verschillende
+            aanbiedingen om te vinden wat het beste werkt voor je klanten.
+            </p>
+          </div>
+        </div>
+
+        <div class="simplelightbox-gallery row mb-3">
+          <div class="col-12 mb-3">
+            <a href="assets/images/bundle-settings.png"><img class="figure-img img-fluid shadow rounded"
+                src="assets/images/bundle-settings.png" alt="Bundelinstellingen Configuratie"
+                title="Bundelinstellingen Configuratie" /></a>
+          </div>
+        </div>
+
+        <h3>Stijlen</h3>
+        <p>
+          Pas het visuele uiterlijk van je bundel aan om bij je winkelthema te passen. Pas kleuren, lettertypen,
+          lay-outs en andere stylingelementen aan.
+        </p>
+        <h4>Titelstijlen</h4>
+        <ul>
+          <li><strong>Tekstgrootte:</strong> Stel de lettergrootte in voor de bundeltitel (bijv. 18px).</li>
+          <li><strong>Lettergewicht:</strong> Kies lettergewicht (Vet of Normaal).</li>
+          <li><strong>Kleur:</strong> Selecteer de kleur voor de titeltekst.</li>
+        </ul>
+        <h4>Subtitelstijlen</h4>
+        <ul>
+          <li><strong>Tekstgrootte:</strong> Stel de lettergrootte in voor de subtitel (bijv. 16px).</li>
+          <li><strong>Lettergewicht:</strong> Kies lettergewicht (Vet of Normaal).</li>
+          <li><strong>Kleur:</strong> Selecteer de kleur voor de subtiteltekst.</li>
+        </ul>
+        <h4>Prijskleuren</h4>
+        <ul>
+          <li><strong>Kleur:</strong> Stel de kleur in voor reguliere prijzen.</li>
+          <li><strong>Vergelijk Prijs Kleur:</strong> Stel de kleur in voor doorgestreepte vergelijk prijzen.</li>
+        </ul>
+        <h4>Badgekleuren</h4>
+        <ul>
+          <li><strong>Achtergrond:</strong> Achtergrondkleur voor badges.</li>
+          <li><strong>Tekst:</strong> Tekstkleur voor badges.</li>
+        </ul>
+        <h4>Labelkleuren</h4>
+        <ul>
+          <li><strong>Achtergrond:</strong> Achtergrondkleur voor labels.</li>
+          <li><strong>Tekst:</strong> Tekstkleur voor labels.</li>
+        </ul>
+        <h4>Cadeau Kleuren</h4>
+        <ul>
+          <li><strong>Achtergrond:</strong> Achtergrondkleur voor cadeauelementen.</li>
+          <li><strong>Tekst:</strong> Tekstkleur voor cadeauelementen.</li>
+        </ul>
+        <h4>Boxkleuren</h4>
+        <ul>
+          <li><strong>Randkleur:</strong> Kleur voor boxranden.</li>
+          <li><strong>Boxkleur:</strong> Achtergrondkleur voor boxes.</li>
+          <li><strong>Geselecteerde Boxkleur:</strong> Achtergrondkleur voor geselecteerde boxes.</li>
+          <li><strong>Box Randbreedte:</strong> Breedte van boxranden (bijv. 1px).</li>
+          <li><strong>Box Randradius:</strong> Hoekradius voor boxes (bijv. 0px).</li>
+        </ul>
+        <h4>Afbeeldingsinstellingen</h4>
+        <ul>
+          <li><strong>Afbeeldingsgrootte:</strong> Stel de grootte in voor productafbeeldingen (bijv. 2).</li>
+          <li><strong>Radius:</strong> Hoekradius voor afbeeldingen (bijv. 0px).</li>
+        </ul>
+        <h4>Cadeau Product - Afbeeldingsinstellingen</h4>
+        <ul>
+          <li><strong>Afbeeldingsgrootte:</strong> Stel de grootte in voor cadeau productafbeeldingen (bijv. 2).</li>
+          <li><strong>Radius:</strong> Hoekradius voor cadeauafbeeldingen (bijv. 0px).</li>
+        </ul>
+        <h4>Aanvullende Opties</h4>
+        <ul>
+          <li><strong>ALLEEN VANDAAG:</strong> Schakel speciale "Alleen Vandaag" berichten in.</li>
+          <li><strong>Meest Populair:</strong> Markeer de bundel als meest populair.</li>
+          <li><strong>Enkel:</strong> Standaardprijs voor enkele aankopen.</li>
+          <li><strong>Duo:</strong> Standaardprijs voor duo-aankopen.</li>
+          <li><strong>🌐:</strong> Internationalisatie instellingen.</li>
+          <p>Internationalisatie instellingen stellen je in staat om de bundeltekst te vertalen naar één aangepaste taal
+            of houd het in standaard Engels.</p>
+        </ul>
+        <div class="simplelightbox-gallery row mb-3">
+          <div class="col-12 mb-3">
+            <a href="assets/images/bundle-styles.png"><img class="figure-img img-fluid shadow rounded"
+                src="assets/images/bundle-styles.png" alt="Bundelstijlen Aanpassing"
+                title="Bundelstijlen Aanpassing" /></a>
+          </div>
+        </div>
+
+        <h3>Productselectie: Waar deze bundel te tonen</h3>
+        <p>
+          Gebruik de productselectiemodal om producten voor je bundel te kiezen. Je kunt hoofdproducten of specifieke
+          varianten selecteren.
+        </p>
+        <ul>
+          <li><strong>Hoofdproduct:</strong> Selecteer het primaire product voor de bundel.</li>
+          <li><strong>Varianten:</strong> Kies specifieke varianten (bijv. maat, kleur) voor meer precieze controle.
+          </li>
+        </ul>
+        <div class="simplelightbox-gallery row mb-3">
+          <div class="col-12 mb-3">
+            <a href="assets/images/product-modal.png"><img class="figure-img img-fluid shadow rounded"
+                src="assets/images/product-modal.png" alt="Productselectie Modal" title="Productselectie Modal" /></a>
+          </div>
+        </div>
+
+        <h3>Variantaanbiedingen</h3>
+        <p>
+          Stel variant-specifieke aanbiedingen in binnen je bundel. Dit stelt klanten in staat om verschillende opties
+          voor producten in de bundel te kiezen.
+        </p>
+        <ul>
+          <li><strong>Variantselectie:</strong> Sta klanten toe om productvarianten in de bundel te selecteren.</li>
+          <li><strong>Prijsaanpassingen:</strong> Pas verschillende kortingen toe gebaseerd op geselecteerde varianten.
+          </li>
+          <li><strong>Beschikbaarheidsregels:</strong> Stel regels in voor welke varianten beschikbaar zijn in de
+            bundel.</li>
+        </ul>
+        <div class="simplelightbox-gallery row mb-3">
+          <div class="col-12 mb-3">
+            <a href="assets/images/bundle-preview.png"><img class="figure-img img-fluid shadow rounded"
+                src="assets/images/bundle-preview.png" alt="Variantaanbiedingen Setup"
+                title="Variantaanbiedingen Setup" /></a>
+          </div>
+        </div>
+
+        <div class="callout-block callout-block-info">
+          <div class="content">
+            <h4 class="callout-title">
+              <span class="callout-icon-holder me-1">
+                <i class="fas fa-info-circle"></i>
+              </span>
+              Opmerking
+            </h4>
+            <p>
+              Alle stijlinstellingen zijn dynamisch en kunnen worden aangepast om bij je merk te passen. Standaarden
+              worden verstrekt als startpunten, maar alles is aanpasbaar voor handelaren.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="docs-section" id="item-2-3">
+        <h2 class="section-heading">Bundel toevoegen aan je thema</h2>
+        <p>
+          Om je gemaakte bundels weer te geven op je winkel's productpagina's, moet je de Bundleza Bundel-sectie
+          toevoegen aan je Shopify-thema. Dit stelt klanten in staat om direct op productpagina's met je
+          bundelaanbiedingen te interageren.
+        </p>
+        <h3>Stappen om Bundelsectie toe te voegen</h3>
+        <ol>
+          <li><strong>Ga naar Online Winkel:</strong> Ga vanuit je Shopify-beheerder naar <strong>Online Winkel >
+              Thema's</strong>.</li>
+          <li><strong>Je Thema Aanpassen:</strong> Klik op de <strong>Aanpassen</strong> knop naast je live thema.</li>
+          <li><strong>Selecteer een Productpagina:</strong> Gebruik in de thema-editor de paginaselector bovenaan om een
+            productpaginatemplate te kiezen (bijv. Standaard product).</li>
+          <li><strong>Sectie Toevoegen:</strong> Klik in de linker zijbalk op <strong>Sectie toevoegen</strong>, zoek
+            dan en selecteer <strong>Bundleza Bundel</strong> uit de Apps-sectie.</li>
+          <li><strong>De Sectie Configureren:</strong> Zodra toegevoegd, selecteer de specifieke bundel die je wilt
+            weergeven uit de dropdown in de sectie-instellingen.</li>
+          <li><strong>Wijzigingen Opslaan:</strong> Klik op <strong>Opslaan</strong> om de wijzigingen toe te passen op
+            je thema.</li>
+        </ol>
+        <div class="callout-block callout-block-info">
+          <div class="content">
+            <h4 class="callout-title">
+              <span class="callout-icon-holder me-2"><i class="fas fa-info-circle"></i></span>
+              Tip
+            </h4>
+            <p>
+              Je kunt de Bundleza Bundel-sectie toevoegen aan meerdere producttemplates of zelfs collectiepagina's voor
+              bredere zichtbaarheid. Test de plaatsing om ervoor te zorgen dat het aansluit bij je winkelontwerp.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+    </article>
+    <!--//docs-article-->
+
+    <article class="docs-article" id="section-3">
+      <header class="docs-header">
+        <h1 class="docs-heading">Upsell</h1>
+        <section class="docs-intro">
+          <p>
+            Als handelaar helpt de Upsell-functie in Bundleza je om omzet te maximaliseren door intelligente
+            productaanbevelingen te presenteren aan klanten op strategische punten in hun winkelreis. Door relevante
+            add-ons of upgrades voor te stellen, kun je gemiddelde orderwaarden verhogen en klanttevredenheid
+            verbeteren.
+          </p>
+          <p>
+            Wanneer je klikt op de <strong>Upsell</strong> menu, gaat het naar de <strong>Upsells Toevoegen</strong>
+            pagina. Kies eerst het upsell-type:
+          </p>
+          <div class="row">
+            <div class="col-12 col-md-6 mb-4">
+              <div class="card shadow-sm">
+                <div class="card-body d-flex gap-2 align-items-center">
+                  <img src="https://bundleza-114feb79b169.herokuapp.com/upsell.png" class="img-fluid mr-3"
+                    alt="Product Enkele Upsells" style="max-width: 150px; max-height: 150px;">
+                  <div>
+                    <h5 class="card-title">Product Enkele Upsells</h5>
+                    <p class="card-text">Toon een gerelateerd product als upsell boven Shopify's 'Toevoegen aan
+                      Winkelwagen' knop.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+              <div class="card shadow-sm">
+                <div class="card-body d-flex gap-2 align-items-center">
+                  <img src="https://bundleza-114feb79b169.herokuapp.com/upsell.png" class="img-fluid mr-3"
+                    alt="Product Multi Upsells" style="max-width: 150px; max-height: 150px;">
+                  <div>
+                    <h5 class="card-title">Product Multi Upsells</h5>
+                    <p class="card-text">Toon meerdere gerelateerde producten als upsell of bundel boven Shopify's
+                      'Toevoegen aan Winkelwagen' knop.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>
+            Klik op <strong>Enkele Upsell</strong> of <strong>Multi Upsell</strong> om door te gaan naar de respectieve
+            configuratiepagina.
+          </p>
+          <div class="simplelightbox-gallery row mb-3">
+            <div class="col-12 mb-3">
+              <a href="assets/images/all-upsell.png"><img class="figure-img img-fluid shadow rounded"
+                  src="assets/images/all-upsell.png" alt="Upsells Toevoegen Pagina Screenshot"
+                  title="Upsells Toevoegen Pagina" /></a>
+            </div>
+          </div>
+        </section>
+        <!--//docs-intro-->
+      </header>
+
+      <!--//section-->
+
+
+
+      <!--//section-->
+      <section class="docs-section" id="item-3-3">
+        <h2 class="section-heading">Enkele Upsell Beheer</h2>
+        <p>
+          De Enkele Upsell Beheerpagina is je centrale hub voor het beheren van al je gemaakte enkele
+          upsellaanbiedingen. Hier kun je bewerken, verwijderen, dupliceren en de status bijwerken van je upsells om je
+          winkelvoorraad georganiseerd en up-to-date te houden.
+        </p>
+        <h3>Toegang tot Enkele Upsell Beheer</h3>
+        <p>
+          Ga vanuit het Bundleza-dashboard naar de Upsells-sectie om toegang te krijgen tot de Enkele Upsell
+          Beheerpagina.
+        </p>
+        <h3>Upsellijst en Acties</h3>
+        <p>
+          De upsellijst toont al je gemaakte enkele upsells met belangrijke informatie en beschikbare acties. Je kunt de
+          volgende acties uitvoeren op elke upsell:
+        </p>
+        <ul>
+          <li><strong>Bewerken:</strong> Wijzig de upsell's details, producten en instellingen.</li>
+          <li><strong>Verwijderen:</strong> Verwijder de upsell permanent uit je winkel.</li>
+          <li><strong>Dupliceren:</strong> Maak een kopie van de upsell voor snelle setup van vergelijkbare
+            aanbiedingen.</li>
+          <li><strong>Status Bijwerken:</strong> Schakel tussen Concept (verborgen voor klanten) en Actief (zichtbaar op
+            je winkel).</li>
+        </ul>
+        <div class="callout-block callout-block-warning">
+          <div class="content">
+            <h4 class="callout-title">
+              <span class="callout-icon-holder me-1">
+                <i class="fas fa-exclamation-triangle"></i>
+              </span>
+              Belangrijk
+            </h4>
+            <p>
+              Om een upsell te bewerken, moet je eerst de status bijwerken naar Concept.
+            </p>
+          </div>
+        </div>
+        <h4>Upselltabel</h4>
+        <p>
+          De upselltabel toont al je gemaakte enkele upsells met de volgende informatie:
+        </p>
+        <div class="simplelightbox-gallery row mb-3">
+          <div class="col-12 mb-3"></div>
+          <a href="assets/images/upsell-list.png"><img class="figure-img img-fluid shadow rounded"
+              src="assets/images/upsell-list.png" alt="Upselltabel" title="Upselltabel" /></a>
+        </div>
+  </div>
+  <div class="callout-block callout-block-info">
+    <div class="content">
+      <h4 class="callout-title">
+        <span class="callout-icon-holder me-1">
+          <i class="fas fa-info-circle"></i>
+        </span>
+        Tip
+      </h4>
+      <p>
+        Gebruik de statustoggle om upsells tijdelijk te verbergen tijdens off-seasons of bij het bijwerken van
+        aanbiedingen, zonder ze te verwijderen.
+      </p>
+    </div>
+  </div>
+  <div class="callout-block callout-block-success">
+    <div class="content">
+      <h4 class="callout-title">
+        <span class="callout-icon-holder me-1">
+          <i class="fas fa-thumbs-up"></i>
+        </span>
+        Beoordelingsverzoek
+      </h4>
+      <p>
+        Als je Bundleza leuk vindt, laat ons dan een beoordeling achter in de Shopify App Store!
+      </p>
+    </div>
+  </div>
+  </section>
+  <section class="docs-section" id="item-3-4">
+    <h2 class="section-heading">Enkele Upsell Maken</h2>
+    <p>
+      Maak een nieuwe enkele upsellaanbieding voor je winkel of werk bestaande upsells bij. Deze pagina stelt je in
+      staat om alle aspecten van je upsell te configureren, van basisdetails tot geavanceerde styling en
+      productselectie.
+    </p>
+    <h3>Hoe een Nieuwe Enkele Upsell te Maken</h3>
+    <ol>
+      <li><strong>Upsellnaam Invoeren:</strong> Geef een beschrijvende en aantrekkelijke naam voor je upsell die klanten
+        aantrekt.</li>
+      <li><strong>Zichtbaarheid Instellen:</strong> Kies waar de upsell moet worden weergegeven (bijv. op specifieke
+        producten of collecties).</li>
+      <li><strong>Product Selecteren:</strong> Kies het product dat als upsell moet worden weergegeven en configureer
+        zijn details.</li>
+      <li><strong>Instellingen Configureren:</strong> Stel prijzen, kortingen en weergaveopties in.</li>
+      <li><strong>Stijlen Aanpassen:</strong> Pas kleuren, lettertypen en lay-outs aan om bij je winkelthema te passen.
+      </li>
+      <li><strong>Voorbeeld en Opslaan:</strong> Bekijk je upsellconfiguratie en sla het op als Concept of Actief.</li>
+    </ol>
+    <h3>Selecteer variant of Producten</h3>
+    <a href="assets/images/seelctvarient.png"><img class="figure-img img-fluid shadow rounded"
+        src="assets/images/seelctvarient.png" alt="Producten Selecteren Modal" title="Producten Selecteren Modal" /></a>
+    <p>
+      Om producten voor je upsell te selecteren, gebruik de "Selecteer variant/Producten" knop. Dit opent een modal waar
+      je producten en hun varianten kunt kiezen. Er is ook een knop om alle upsell variant producten te selecteren voor
+      gemak.
+    </p>
+    <div class="simplelightbox-gallery row mb-3">
+      <div class="col-12 mb-3">
+        <a href="assets/images/varientselect-modal.png"><img class="figure-img img-fluid shadow rounded"
+            src="assets/images/varientselect-modal.png" alt="Producten Selecteren Modal"
+            title="Producten Selecteren Modal" /></a>
+      </div>
+    </div>
+    <div class="callout-block callout-block-info">
+      <div class="content">
+        <h4 class="callout-title">
+          <span class="callout-icon-holder me-1">
+            <i class="fas fa-info-circle"></i>
+          </span>
+          Tip
+        </h4>
+        <p>
+          Begin met een eenvoudige upsell en test de prestaties voordat je complexe configuraties toevoegt. Dit stelt je
+          in staat om te optimaliseren op basis van klantfeedback.
+        </p>
+      </div>
+    </div>
+    <h3>Upsellnaam</h3>
+    <p>
+      Voer een beschrijvende en aantrekkelijke naam in voor je upsell. (Vereist)
+    </p>
+    <h3>Zichtbaarheid</h3>
+    <p>
+      Kies waar de upsell moet worden weergegeven. Opties omvatten alle producten, bepaalde producten of bepaalde
+      collecties.
+    </p>
+    <ul>
+      <li><strong>Alle Producten:</strong> Geef de upsell weer op elk product in je winkel.</li>
+      <li><strong>Bepaalde Producten:</strong> Selecteer specifieke producten voor de upsell weergave.</li>
+      <li><strong>Bepaalde Collecties:</strong> Geef de upsell weer op producten uit geselecteerde collecties.</li>
+    </ul>
+    <h3>Productselectie: Waar deze Upsell te Tonen</h3>
+    <p>
+      Selecteer de producten of collecties waar de upsell zal verschijnen.
+    </p>
+    <h3>Instellingen</h3>
+    <p>
+      Configureer de kerninstellingen voor je upsell, inclusief prijzen en weergaveopties.
+    </p>
+    <ul>
+      <li><strong>Afbeelding Tonen:</strong> Schakel de productafbeelding weergave in of uit.</li>
+      <li><strong>Naar Afrekenen Overslaan:</strong> Sta direct afrekenen toe vanuit de upsell.</li>
+      <li><strong>Product Vergelijk Prijs Doorstrepen:</strong> Toon doorgestreepte vergelijk prijzen.</li>
+      <li><strong>Beperkt per Order:</strong> Stel limieten in op upsell hoeveelheden per order.</li>
+    </ul>
+    <h3>Stijlen</h3>
+    <p>
+      Pas het visuele uiterlijk van je upsell aan om bij je winkelthema te passen. Pas kleuren, lettertypen, lay-outs en
+      andere stylingelementen aan.
+    </p>
+    <h4>Titelstijlen</h4>
+    <ul>
+      <li><strong>Tekstgrootte:</strong> Stel de lettergrootte in voor de upselltitel (bijv. 18px).</li>
+      <li><strong>Lettergewicht:</strong> Kies lettergewicht (Vet of Normaal).</li>
+      <li><strong>Kleur:</strong> Selecteer de kleur voor de titeltekst.</li>
+    </ul>
+    <h4>Subtitelstijlen</h4>
+    <ul>
+      <li><strong>Tekstgrootte:</strong> Stel de lettergrootte in voor de subtitel (bijv. 16px).</li>
+      <li><strong>Lettergewicht:</strong> Kies lettergewicht (Vet of Normaal).</li>
+      <li><strong>Kleur:</strong> Selecteer de kleur voor de subtiteltekst.</li>
+    </ul>
+    <h4>Prijstijlen</h4>
+    <ul>
+      <li><strong>Kleur:</strong> Stel de kleur in voor prijzen.</li>
+      <li><strong>Kortingsnaam:</strong> Pas het kortingslabel aan.</li>
+    </ul>
+    <h4>Badgestijlen</h4>
+    <ul>
+      <li><strong>Achtergrond:</strong> Achtergrondkleur voor badges.</li>
+      <li><strong>Tekst:</strong> Tekstkleur voor badges.</li>
+    </ul>
+    <h4>Knopstijlen</h4>
+    <ul>
+      <li><strong>Achtergrond:</strong> Achtergrondkleur voor knoppen.</li>
+      <li><strong>Tekst:</strong> Tekstkleur voor knoppen.</li>
+    </ul>
+    <h4>Afbeeldingsinstellingen</h4>
+    <ul>
+      <li><strong>Afbeelding Tonen:</strong> Schakel afbeelding zichtbaarheid in.</li>
+      <li><strong>Alt Tekst:</strong> Stel alternatieve tekst in voor afbeeldingen.</li>
+    </ul>
+    <h3>Product Selecteren</h3>
+    <p>
+      Kies het product dat als upsell moet worden weergegeven. Configureer zijn naam, subtitel, badge, prijs en andere
+      details.
+    </p>
+    <ul>
+      <li><strong>Upsellnaam:</strong> bijv. Apple Watch Series 10</li>
+      <li><strong>Subtitel:</strong> bijv. Upsell</li>
+      <li><strong>Badge:</strong> bijv. Best Seller</li>
+      <li><strong>Prijs Tekst:</strong> bijv. $20000.00</li>
+      <li><strong>Kortingsnaam:</strong> bijv. upsell korting</li>
+    </ul>
+    <div class="simplelightbox-gallery row mb-3">
+      <div class="col-12 mb-3">
+        <a href="assets/images/create-upsell.png"><img class="figure-img img-fluid shadow rounded"
+            src="assets/images/create-upsell.png" alt="Enkele Upsell Maken" title="Enkele Upsell Maken" /></a>
+      </div>
+    </div>
+  </section>
+  <section class="docs-section" id="item-3-5">
+    <h2 class="section-heading">Meerdere Upsells Beheer</h2>
+    <p>
+      De Meerdere Upsells Beheerpagina is je centrale hub voor het beheren van al je gemaakte meerdere
+      upsellaanbiedingen. Hier kun je bewerken, verwijderen, dupliceren en de status bijwerken van je meerdere upsells
+      om je winkelvoorraad georganiseerd en up-to-date te houden.
+    </p>
+    <h3>Toegang tot Meerdere Upsells Beheer</h3>
+    <p>
+      Ga vanuit het Bundleza-dashboard naar de Upsells-sectie om toegang te krijgen tot de Meerdere Upsells
+      Beheerpagina.
+    </p>
+    <h3>Upsellijst en Acties</h3>
+    <p>
+      De upsellijst toont al je gemaakte meerdere upsells met belangrijke informatie en beschikbare acties. Je kunt de
+      volgende acties uitvoeren op elke upsell:
+    </p>
+    <ul>
+      <li><strong>Bewerken:</strong> Wijzig de upsell's details, producten en instellingen.</li>
+      <li><strong>Verwijderen:</strong> Verwijder de upsell permanent uit je winkel.</li>
+      <li><strong>Dupliceren:</strong> Maak een kopie van de upsell voor snelle setup van vergelijkbare aanbiedingen.
+      </li>
+      <li><strong>Status Bijwerken:</strong> Schakel tussen Concept (verborgen voor klanten) en Actief (zichtbaar op je
+        winkel).</li>
+    </ul>
+    <div class="callout-block callout-block-warning">
+      <div class="content">
+        <h4 class="callout-title">
+          <span class="callout-icon-holder me-1">
+            <i class="fas fa-exclamation-triangle"></i>
+          </span>
+          Belangrijk
+        </h4>
+        <p>
+          Om een upsell te bewerken, moet je eerst de status bijwerken naar Concept.
+        </p>
+      </div>
+    </div>
+    <h4>Upselltabel</h4>
+    <p>
+      De upselltabel toont al je gemaakte meerdere upsells met de volgende informatie:
+    </p>
+    <div class="simplelightbox-gallery row mb-3">
+      <div class="col-12 mb-3">
+        <a href="assets/images/multipleupsell-list.png"><img class="figure-img img-fluid shadow rounded"
+            src="assets/images/multipleupsell-list.png" alt="Meerdere Upsell Tabel" title="Meerdere Upsell Tabel" /></a>
+      </div>
+    </div>
+    <div class="callout-block callout-block-info">
+      <div class="content">
+        <h4 class="callout-title">
+          <span class="callout-icon-holder me-1">
+            <i class="fas fa-info-circle"></i>
+          </span>
+          Tip
+        </h4>
+        <p>
+          Gebruik de statustoggle om upsells tijdelijk te verbergen tijdens off-seasons of bij het bijwerken van
+          aanbiedingen, zonder ze te verwijderen.
+        </p>
+      </div>
+    </div>
+    <div class="callout-block callout-block-success">
+      <div class="content">
+        <h4 class="callout-title">
+          <span class="callout-icon-holder me-1">
+            <i class="fas fa-thumbs-up"></i>
+          </span>
+          Beoordelingsverzoek
+        </h4>
+        <p>
+          Als je Bundleza leuk vindt, laat ons dan een beoordeling achter in de Shopify App Store!
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="docs-section" id="item-3-6">
+    <h2 class="section-heading">Meerdere Upsells Maken</h2>
+    <p>
+      Maak een nieuwe meerdere upsellaanbieding voor je winkel of werk bestaande meerdere upsells bij. Deze pagina stelt
+      je in staat om alle aspecten van je meerdere upsell te configureren, van basisdetails tot geavanceerde styling en
+      productselectie.
+    </p>
+    <h3>Hoe een Nieuwe Meerdere Upsell te Maken</h3>
+    <ol>
+      <li><strong>Upsellnaam Invoeren:</strong> Geef een beschrijvende en aantrekkelijke naam voor je upsell die klanten
+        aantrekt.</li>
+      <li><strong>Meerdere Upsell Stijl Selecteren:</strong> Kies hoe je meerdere upsells worden weergegeven (Normaal,
+        Boxed, etc.).</li>
+      <li><strong>Blokinstellingen Configureren:</strong> Stel bloktitel, voettekst en andere weergaveopties in.</li>
+      <li><strong>Zichtbaarheid Instellen:</strong> Kies waar de upsell moet worden weergegeven (bijv. op specifieke
+        producten of collecties).</li>
+      <li><strong>Producten Selecteren:</strong> Kies de producten die als upsells moeten worden weergegeven en
+        configureer hun details.</li>
+      <li><strong>Stijlen Aanpassen:</strong> Pas kleuren, lettertypen en lay-outs aan om bij je winkelthema te passen.
+      </li>
+      <li><strong>Voorbeeld en Opslaan:</strong> Bekijk je upsellconfiguratie en sla het op als Concept of Actief.</li>
+    </ol>
+    <h3>Selecteer variant of Producten</h3>
+    <a href="assets/images/multipleupsell-proeuctselect.png"><img class="figure-img img-fluid shadow rounded"
+        src="assets/images/multipleupsell-proeuctselect.png" alt="Producten Selecteren Modal"
+        title="Producten Selecteren Modal" /></a>
+    <p>
+      Om producten voor je meerdere upsell te selecteren, gebruik de "Upsell Producten Toevoegen" knop. Dit opent een
+      modal waar je producten en hun varianten kunt kiezen. Er is ook een knop om alle upsell variant producten te
+      selecteren voor gemak.
+    </p>
+    <div class="simplelightbox-gallery row mb-3">
+      <div class="col-12 mb-3">
+        <a href="assets/images/varientselect-modal.png"><img class="figure-img img-fluid shadow rounded"
+            src="assets/images/varientselect-modal.png" alt="Producten Selecteren Modal"
+            title="Producten Selecteren Modal" /></a>
+      </div>
+    </div>
+    <div class="callout-block callout-block-info">
+      <div class="content">
+        <h4 class="callout-title">
+          <span class="callout-icon-holder me-1">
+            <i class="fas fa-info-circle"></i>
+          </span>
+          Tip
+        </h4>
+        <p>
+          Begin met een eenvoudige meerdere upsell en test de prestaties voordat je complexe configuraties toevoegt. Dit
+          stelt je in staat om te optimaliseren op basis van klantfeedback.
+        </p>
+      </div>
+    </div>
+    <h3>Upsellnaam</h3>
+    <p>
+      Voer een beschrijvende en aantrekkelijke naam in voor je meerdere upsell. Deze naam wordt weergegeven aan klanten
+      op je productpagina's.
+    </p>
+    <h3>Meerdere Upsell Stijl</h3>
+    <p>
+      Selecteer hoe je meerdere upsells worden weergegeven. Opties omvatten Normaal (layout1), Boxed (layout2), Thema
+      Knop (layout3), Eigen Knop (layout4).
+    </p>
+    <h3>Toevoegen aan Winkelwagen Gedrag</h3>
+    <p>
+      Kies of je de thema's Toevoegen aan Winkelwagen knop wilt gebruiken of je eigen aangepaste knop.
+    </p>
+    <h3>Blokinstellingen</h3>
+    <p>
+      Configureer instellingen voor het blok van upsells, inclusief bloktitel, voettekst en weergaveopties zoals tonen
+      van + iconen tussen upsells.
+    </p>
+    <ul>
+      <li><strong>Bloktitel:</strong> bijv. Meerdere Upsells</li>
+      <li><strong>Voettekst:</strong> bijv. Totaal:</li>
+      <li><strong>+ iconen tussen upsells tonen:</strong> Schakel in om upsell items visueel te scheiden.</li>
+    </ul>
+    <h3>Zichtbaarheid</h3>
+    <p>
+      Kies waar de upsell moet worden weergegeven. Opties omvatten alle producten, bepaalde producten of bepaalde
+      collecties.
+    </p>
+    <ul>
+      <li><strong>Alle Producten:</strong> Geef de upsell weer op elk product in je winkel.</li>
+      <li><strong>Bepaalde Producten:</strong> Selecteer specifieke producten voor de upsell weergave.</li>
+      <li><strong>Bepaalde Collecties:</strong> Geef de upsell weer op producten uit geselecteerde collecties.</li>
+    </ul>
+    <h3>Productselectie: Waar deze Meerdere Upsell te Tonen</h3>
+    <p>
+      Kies waar de upsell moet worden weergegeven. Opties omvatten alle producten, bepaalde producten of bepaalde
+      collecties. Je moet één van de volgende opties selecteren: Alle Producten, Bepaalde Producten of Bepaalde
+      Collecties. Deze selectie is vereist.
+    </p>
+    <h3>Naar Afrekenen Overslaan</h3>
+    <p>
+      Schakel in om direct afrekenen toe te staan vanuit de upsell.
+    </p>
+    <h3>Stijlen</h3>
+    <p>
+      Pas het visuele uiterlijk van je meerdere upsell aan om bij je winkelthema te passen. Pas kleuren, lettertypen,
+      lay-outs en andere stylingelementen aan.
+    </p>
+    <h4>Bloktitel</h4>
+    <ul>
+      <li><strong>Tekstgrootte:</strong> Stel de lettergrootte in (bijv. 20px).</li>
+      <li><strong>Lettergewicht:</strong> Kies lettergewicht (Vet of Dun).</li>
+      <li><strong>Tekst Uitlijnen:</strong> Stel uitlijning in (Links).</li>
+      <li><strong>Kleur:</strong> Selecteer de kleur voor de titeltekst.</li>
+    </ul>
+    <h4>Producttitel</h4>
+    <ul>
+      <li><strong>Tekstgrootte:</strong> Stel de lettergrootte in (bijv. 20px).</li>
+      <li><strong>Lettergewicht:</strong> Kies lettergewicht (Vet of Dun).</li>
+      <li><strong>Kleur:</strong> Selecteer de kleur voor de producttiteltekst.</li>
+    </ul>
+    <h4>Sub-Titel</h4>
+    <ul>
+      <li><strong>Tekstgrootte:</strong> Stel de lettergrootte in (bijv. 14px).</li>
+      <li><strong>Lettergewicht:</strong> Kies lettergewicht (Dun).</li>
+      <li><strong>Kleur:</strong> Selecteer de kleur voor de subtiteltekst.</li>
+    </ul>
+    <h4>Prijs</h4>
+    <ul>
+      <li><strong>Tekstgrootte:</strong> Stel de lettergrootte in (bijv. 14px).</li>
+      <li><strong>Lettergewicht:</strong> Kies lettergewicht (Vet).</li>
+      <li><strong>Kleur:</strong> Selecteer de kleur voor prijzen.</li>
+    </ul>
+    <h4>Vergelijk Prijs</h4>
+    <ul>
+      <li><strong>Tekstgrootte:</strong> Stel de lettergrootte in (bijv. 14px).</li>
+      <li><strong>Lettergewicht:</strong> Kies lettergewicht (Dun).</li>
+      <li><strong>Kleur:</strong> Selecteer de kleur voor vergelijk prijzen.</li>
+    </ul>
+    <h4>Badge Kleuren</h4>
+    <ul>
+      <li><strong>Achtergrond:</strong> Achtergrondkleur voor badges.</li>
+      <li><strong>Tekst:</strong> Tekstkleur voor badges.</li>
+    </ul>
+    <h4>Checkbox Kleuren</h4>
+    <ul>
+      <li><strong>Achtergrond:</strong> Achtergrondkleur voor checkboxes.</li>
+      <li><strong>Vinkje Kleur:</strong> Kleur voor vinkjes.</li>
+    </ul>
+    <h4>Box Kleuren</h4>
+    <ul>
+      <li><strong>Box Kleur:</strong> Achtergrondkleur voor boxes.</li>
+      <li><strong>Box Rand Kleur:</strong> Kleur voor box randen.</li>
+      <li><strong>Box Hover Kleur:</strong> Achtergrondkleur bij hover.</li>
+      <li><strong>Box Rand Breedte:</strong> Breedte van randen (bijv. 1px).</li>
+      <li><strong>Box Rand Radius:</strong> Hoekradius (bijv. 0px).</li>
+    </ul>
+    <h4>Afbeeldingsinstellingen</h4>
+    <ul>
+      <li><strong>Afbeeldingsgrootte:</strong> Stel de grootte in voor productafbeeldingen (bijv. 5).</li>
+      <li><strong>Radius:</strong> Hoekradius voor afbeeldingen (bijv. 0px).</li>
+    </ul>
+
+    <div class="simplelightbox-gallery row mb-3">
+      <div class="simplelightbox-gallery row mb-3">
+        <div class="col-12 mb-3">
+          <a href="assets/images/create-multipleupsell.png"><img class="figure-img img-fluid shadow rounded"
+              src="assets/images/create-multipleupsell.png" alt="Meerdere Upsell Maken"
+              title="Meerdere Upsell Maken" /></a>
+        </div>
+      </div>
+  </section>
+  <section class="docs-section" id="item-3-2">
+    <h2 class="section-heading">Upsell Toevoegen aan je Thema</h2>
+    <p>
+      Om je geconfigureerde upsellaanbiedingen weer te geven op je winkel's productpagina's, moet je de juiste Bundleza
+      Upsell-sectie toevoegen aan je Shopify-thema. Dit stelt upsell prompts in staat om op strategische punten in de
+      klantreis te verschijnen.
+    </p>
+    <h3>Stappen om Upsell Sectie toe te Voegen</h3>
+    <ol>
+      <li><strong>Ga naar Online Winkel:</strong> Ga vanuit je Shopify-beheerder naar <strong>Online Winkel >
+          Thema's</strong>.</li>
+      <li><strong>Je Thema Aanpassen:</strong> Klik op de <strong>Aanpassen</strong> knop naast je live thema.</li>
+      <li><strong>Selecteer een Productpagina:</strong> Gebruik in de thema-editor de paginaselector bovenaan om een
+        productpaginatemplate te kiezen.</li>
+      <li><strong>Sectie Toevoegen:</strong> Klik in de linker zijbalk op <strong>Sectie toevoegen</strong>, zoek dan en
+        selecteer <strong>Bundleza Upsell</strong> (kies Enkel of Multi gebaseerd op je upsell type) uit de Apps-sectie.
+      </li>
+      <li><strong>De Sectie Configureren:</strong> Zodra toegevoegd, selecteer de specifieke upsell die je wilt
+        weergeven uit de dropdown in de sectie-instellingen.</li>
+      <li><strong>Wijzigingen Opslaan:</strong> Klik op <strong>Opslaan</strong> om de wijzigingen toe te passen op je
+        thema.</li>
+    </ol>
+    <div class="callout-block callout-block-info">
+      <div class="content">
+        <h4 class="callout-title">
+          <span class="callout-icon-holder me-1"><i class="fas fa-info-circle"></i></span>
+          Tip
+        </h4>
+        <p>
+          Positioneer de upsell sectie boven de Toevoegen aan Winkelwagen knop voor maximale effectiviteit. Je kunt het
+          ook toevoegen aan winkelwagenpagina's of andere templates voor cross-selling kansen.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="docs-section" id="item-3-7">
+    <h2 class="section-heading">Meerdere Upsell Toevoegen aan je Thema</h2>
+    <p>
+      Om je geconfigureerde meerdere upsellaanbiedingen weer te geven op je winkel's productpagina's, moet je de
+      Bundleza Meerdere Upsell-sectie toevoegen aan je Shopify-thema. Dit stelt meerdere upsell prompts in staat om op
+      strategische punten in de klantreis te verschijnen.
+    </p>
+    <h3>Stappen om Meerdere Upsell Sectie toe te Voegen</h3>
+    <ol>
+      <li><strong>Ga naar Online Winkel:</strong> Ga vanuit je Shopify-beheerder naar <strong>Online Winkel >
+          Thema's</strong>.</li>
+      <li><strong>Je Thema Aanpassen:</strong> Klik op de <strong>Aanpassen</strong> knop naast je live thema.</li>
+      <li><strong>Selecteer een Productpagina:</strong> Gebruik in de thema-editor de paginaselector bovenaan om een
+        productpaginatemplate te kiezen.</li>
+      <li><strong>Sectie Toevoegen:</strong> Klik in de linker zijbalk op <strong>Sectie toevoegen</strong> (of
+        <strong>Blok toevoegen</strong>), zoek dan en selecteer <strong>Bundleza Meerdere Upsell</strong> uit de
+        Apps-sectie.
+      </li>
+      <li><strong>De Sectie Configureren:</strong> Zodra toegevoegd, selecteer de specifieke meerdere upsell die je wilt
+        weergeven uit de dropdown in de sectie-instellingen.</li>
+      <li><strong>Wijzigingen Opslaan:</strong> Klik op <strong>Opslaan</strong> om de wijzigingen toe te passen op je
+        thema.</li>
+    </ol>
+    <div class="callout-block callout-block-info">
+      <div class="content">
+        <h4 class="callout-title">
+          <span class="callout-icon-holder me-1"><i class="fas fa-info-circle"></i></span>
+          Tip
+        </h4>
+        <p>
+          Positioneer de meerdere upsell sectie boven de Toevoegen aan Winkelwagen knop voor maximale effectiviteit. Je
+          kunt het ook toevoegen aan winkelwagenpagina's of andere templates voor cross-selling kansen.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  </article>
+  </article>
+  <!--//docs-article-->
+
+  <article class="docs-article" id="section-4">
+    <header class="docs-header">
+      <h1 class="docs-heading">Cadeau</h1>
+      <section class="docs-intro">
+        <p>
+          Verhoog je conversies met Bundleza Cadeaus. Maak aantrekkelijke cadeau modules die klanten aanmoedigen om
+          complementaire items toe te voegen, waardoor gemiddelde orderwaarden toenemen en de winkelervaring verbetert.
+        </p>
+      </section>
+      <!--//docs-intro-->
+    </header>
+    <section class="docs-section" id="item-4-1">
+      <h2 class="section-heading">Cadeau Beheer</h2>
+      <p>
+        De Cadeau Beheerpagina is je centrale hub voor het beheren van al je gemaakte cadeau modules. Hier kun je
+        bewerken, verwijderen, dupliceren en de status bijwerken van je cadeaus om je winkelvoorraad georganiseerd en
+        up-to-date te houden.
+      </p>
+
+      <h3>Toegang tot Cadeau Beheer</h3>
+      <p>
+        Ga vanuit het Bundleza-dashboard naar de Cadeaus-sectie om toegang te krijgen tot de Cadeau Beheerpagina.
+      </p>
+
+      <h3>Cadeaulijst en Acties</h3>
+      <p>
+        De cadeaulijst toont al je gemaakte cadeaus met belangrijke informatie en beschikbare acties. Je kunt de
+        volgende acties uitvoeren op elke cadeau:
+      </p>
+      <ul>
+        <li><strong>Bewerken:</strong> Wijzig de cadeau's details, producten en instellingen.</li>
+        <li><strong>Verwijderen:</strong> Verwijder de cadeau permanent uit je winkel.</li>
+        <strong>Dupliceren:</strong> Maak een kopie van de cadeau voor snelle setup van vergelijkbare aanbiedingen.</li>
+        <li><strong>Status Bijwerken:</strong> Schakel tussen Concept (verborgen voor klanten) en Actief (zichtbaar op
+          je winkel).</li>
+      </ul>
+
+      <div class="callout-block callout-block-warning">
+        <div class="content">
+          <h4 class="callout-title">
+            <span class="callout-icon-holder me-1">
+              <i class="fas fa-exclamation-triangle"></i>
+            </span>
+            Belangrijk
+          </h4>
+          <p>
+            Om een cadeau te bewerken, moet je eerst de status bijwerken naar Concept.
+          </p>
+        </div>
+      </div>
+
+      <div class="simplelightbox-gallery row mb-3">
+        <div class="col-12 mb-3">
+          <a href="assets/images/gift-table.png"><img class="figure-img img-fluid shadow rounded"
+              src="assets/images/gift-table.png" alt="Cadeau Tabel" title="Cadeau Tabel" /></a>
+        </div>
+      </div>
+
+      <div class="callout-block callout-block-info">
+        <div class="content">
+          <h4 class="callout-icon-holder me-1">
+            <i class="fas fa-info-circle"></i>
+            </span>
+            Tip
+          </h4>
+          <p>
+            Gebruik de statustoggle om cadeaus tijdelijk te verbergen tijdens off-seasons of bij het bijwerken van
+            aanbiedingen, zonder ze te verwijderen.
+          </p>
+        </div>
+      </div>
+
+      <div class="callout-block callout-block-success">
+        <div class="content">
+          <h4 class="callout-title">
+            <span class="callout-icon-holder me-1">
+              <i class="fas fa-thumbs-up"></i>
+            </span>
+            Beoordelingsverzoek
+          </h4>
+          <p>
+            Als je Bundleza leuk vindt, laat ons dan een beoordeling achter in de Shopify App Store!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--//section-->
+
+    <section class="docs-section" id="item-4-2">
+      <h2 class="section-heading">Cadeaus Maken en Bijwerken</h2>
+      <p>
+        Maak een nieuwe cadeau module voor je winkel of werk bestaande cadeaus bij. Deze pagina stelt je in staat om
+        alle aspecten van je cadeau te configureren, van basisdetails tot geavanceerde styling en productselectie.
+      </p>
+
+      <h3>Hoe een Nieuwe Cadeau te Maken</h3>
+      <ol>
+        <li><strong>Cadeau Naam Invoeren:</strong> Geef een beschrijvende en aantrekkelijke naam voor je cadeau die
+          klanten aantrekt.</li>
+        <li><strong>Zichtbaarheid Instellen:</strong> Kies waar de cadeau moet worden weergegeven (bijv. op specifieke
+          producten of collecties).</li>
+        <li><strong>Producten Selecteren:</strong> Kies het product dat als cadeau moet worden weergegeven en
+          configureer zijn details.</li>
+        <li><strong>Instellingen Configureren:</strong> Stel prijzen, kortingen en weergaveopties in.</li>
+        <li><strong>Stijlen Aanpassen:</strong> Pas kleuren, lettertypen en lay-outs aan om bij je winkelthema te
+          passen.</li>
+        <li><strong>Voorbeeld en Opslaan:</strong> Bekijk je cadeauconfiguratie en sla het op als Concept of Actief.
+        </li>
+      </ol>
+      <h3>Selecteer variant of Producten</h3>
+      <a href="assets/images/giftselect.png"><img class="figure-img img-fluid shadow rounded"
+          src="assets/images/giftselect.png" alt="Producten Selecteren Modal" title="Producten Selecteren Modal" /></a>
+      <p>
+        Om producten voor je cadeau te selecteren, gebruik de "selecteer variant Producten" knop. Dit opent een modal
+        waar je producten en hun varianten kunt kiezen. Er is ook een knop om alle cadeau variant producten te
+        selecteren voor gemak.
+      </p>
+      <div class="simplelightbox-gallery row mb-3">
+        <div class="col-12 mb-3">
+          <a href="assets/images/varientselect-modal.png"><img class="figure-img img-fluid shadow rounded"
+              src="assets/images/varientselect-modal.png" alt="Producten Selecteren Modal"
+              title="Producten Selecteren Modal" /></a>
+        </div>
+      </div>
+      <div class="callout-block callout-block-info">
+        <div class="content">
+          <h4 class="callout-title">
+            <span class="callout-icon-holder me-1">
+              <i class="fas fa-info-circle"></i>
+            </span>
+            Tip
+          </h4>
+          <p>
+            Begin met een eenvoudige cadeau en test de prestaties voordat je complexe configuraties toevoegt. Dit stelt
+            je in staat om te optimaliseren op basis van klantfeedback.
+          </p>
+        </div>
+      </div>
+
+      <h3>Cadeau Naam</h3>
+      <p>
+        Voer een beschrijvende en aantrekkelijke naam in voor je cadeau. (Vereist)
+      </p>
+
+      <h3>Zichtbaarheid</h3>
+      <p>
+        Kies waar de cadeau moet worden weergegeven. Opties omvatten alle producten, bepaalde producten of bepaalde
+        collecties.
+      </p>
+      <ul>
+        <li><strong>Alle Producten:</strong> Geef de cadeau weer op elk product in je winkel.</li>
+        <li><strong>Bepaalde Producten:</strong> Selecteer specifieke producten voor de cadeau weergave.</li>
+        <li><strong>Bepaalde Collecties:</strong> Geef de cadeau weer op producten uit geselecteerde collecties.</li>
+      </ul>
+
+      <h3>Productselectie: Waar deze Cadeau te Tonen</h3>
+      <p>
+        Kies waar de cadeau moet worden weergegeven. Opties omvatten alle producten, bepaalde producten of bepaalde
+        collecties. Je moet één van de volgende opties selecteren: Alle Producten, Bepaalde Producten of Bepaalde
+        Collecties. Deze selectie is vereist.
+      </p>
+
+      <h3>Instellingen</h3>
+      <p>
+        Configureer de kerninstellingen voor je cadeau, inclusief prijzen en weergaveopties.
+      </p>
+      <ul>
+        <li><strong>Afbeelding Tonen:</strong> Schakel de productafbeelding weergave in of uit.</li>
+        <li><strong>Naar Afrekenen Overslaan:</strong> Sta direct afrekenen toe vanuit de cadeau.</li>
+        <li><strong>Product Vergelijk Prijs Doorstrepen:</strong> Toon doorgestreepte vergelijk prijzen.</li>
+        <li><strong>Beperkt per Order:</strong> Stel limieten in op cadeau hoeveelheden per order.</li>
+      </ul>
+
+      <h3>Stijlen</h3>
+      <p>
+        Pas het visuele uiterlijk van je cadeau aan om bij je winkelthema te passen. Pas kleuren, lettertypen, lay-outs
+        en andere stylingelementen aan.
+      </p>
+      <h4>Titelstijlen</h4>
+      <ul>
+        <li><strong>Tekstgrootte:</strong> Stel de lettergrootte in voor de cadeautitel (bijv. 18px).</li>
+        <li><strong>Lettergewicht:</strong> Kies lettergewicht (Vet of Normaal).</li>
+        <li><strong>Kleur:</strong> Selecteer de kleur voor de titeltekst.</li>
+      </ul>
+      <h4>Subtitelstijlen</h4>
+      <ul>
+        <li><strong>Tekstgrootte:</strong> Stel de lettergrootte in voor de subtitel (bijv. 16px).</li>
+        <li><strong>Lettergewicht:</strong> Kies lettergewicht (Vet of Normaal).</li>
+        <li><strong>Kleur:</strong> Selecteer de kleur voor de subtiteltekst.</li>
+      </ul>
+      <h4>Prijstijlen</h4>
+      <ul>
+        <li><strong>Kleur:</strong> Stel de kleur in voor prijzen.</li>
+        <li><strong>Kortingsnaam:</strong> Pas het kortingslabel aan.</li>
+      </ul>
+      <h4>Badgestijlen</h4>
+      <ul>
+        <li><strong>Achtergrond:</strong> Achtergrondkleur voor badges.</li>
+        <li><strong>Tekst:</strong> Tekstkleur voor badges.</li>
+      </ul>
+      <h4>Knopstijlen</h4>
+      <ul>
+        <li><strong>Achtergrond:</strong> Achtergrondkleur voor knoppen.</li>
+        <li><strong>Tekst:</strong> Tekstkleur voor knoppen.</li>
+      </ul>
+      <h4>Afbeeldingsinstellingen</h4>
+      <ul>
+        <li><strong>Afbeelding Tonen:</strong> Schakel afbeelding zichtbaarheid in.</li>
+        <li><strong>Alt Tekst:</strong> Stel alternatieve tekst in voor afbeeldingen.</li>
+      </ul>
+
+      <h3>Product Selecteren</h3>
+      <p>
+        Kies het product dat als cadeau moet worden weergegeven. Configureer zijn naam, subtitel, badge, prijs en andere
+        details.
+      </p>
+      <ul>
+        <li><strong>Cadeau Naam:</strong> bijv. Apple Watch SE 2024</li>
+        <li><strong>Subtitel:</strong> bijv. 100% Natuurlijk</li>
+        <li><strong>Badge:</strong> bijv. best seller</li>
+        <li><strong>Prijs Tekst:</strong> bijv. $0</li>
+        <li><strong>Kortingsnaam:</strong> bijv. cadeau korting</li>
+      </ul>
+    </section>
+    <!--//section-->
+
+    <section class="docs-section" id="item-4-3">
+      <h2 class="section-heading">Cadeau Berichten</h2>
+      <p>
+        Sta klanten toe om gepersonaliseerde cadeau berichten toe te voegen aan hun
+        orders. Pas bericht velden aan, stel karakter limieten in en
+        controleer hoe cadeau berichten verschijnen op ontvangstbewijzen en pakbonnen.
+      </p>
+
+      <h3>Hoe Cadeau Berichten in te Stellen</h3>
+      <ol>
+        <li>Navigeer naar de Cadeau Berichten subsectie in de Cadeau sectie.</li>
+        <li>Schakel cadeau berichten in voor relevante producten of orders.</li>
+        <li>Stel karakter limieten in en maak velden vereist of optioneel.</li>
+        <li>Pas aan hoe berichten verschijnen op ontvangstbewijzen en pakbonnen.</li>
+        <li>Sla de configuratie op.</li>
+      </ol>
+
+      <p>Gepersonaliseerde cadeau berichten voegen een attente touch toe aan aankopen, waardoor je winkel de
+        voorkeurskeuze wordt voor gifting en klantloyaliteit verhoogt.</p>
+    </section>
+    <!--//section-->
+    <section class="docs-section" id="item-4-4">
+      <h2 class="section-heading">Cadeau Toevoegen aan je Thema</h2>
+      <p>
+        Om je geconfigureerde cadeau modules weer te geven op je winkel's productpagina's, moet je de Bundleza
+        Cadeau-sectie toevoegen aan je Shopify-thema. Dit stelt cadeau prompts in staat om op strategische punten in de
+        klantreis te verschijnen.
+      </p>
+      <h3>Stappen om Cadeau Sectie toe te Voegen</h3>
+      <ol>
+        <li><strong>Ga naar Online Winkel:</strong> Ga vanuit je Shopify-beheerder naar <strong>Online Winkel >
+            Thema's</strong>.</li>
+        <li><strong>Je Thema Aanpassen:</strong> Klik op de <strong>Aanpassen</strong> knop naast je live thema.</li>
+        <li><strong>Selecteer een Productpagina:</strong> Gebruik in de thema-editor de paginaselector bovenaan om een
+          productpaginatemplate te kiezen.</li>
+        <li><strong>Sectie Toevoegen:</strong> Klik in de linker zijbalk op <strong>Sectie toevoegen</strong> (of
+          <strong>Blok toevoegen</strong>), zoek dan en selecteer <strong>Bundleza Cadeau</strong> uit de Apps-sectie.
+        </li>
+        <li><strong>De Sectie Configureren:</strong> Zodra toegevoegd, selecteer de specifieke cadeau die je wilt
+          weergeven uit de dropdown in de sectie-instellingen.</li>
+        <li><strong>Wijzigingen Opslaan:</strong> Klik op <strong>Opslaan</strong> om de wijzigingen toe te passen op je
+          thema.</li>
+      </ol>
+      <div class="callout-block callout-block-info">
+        <div class="content">
+          <h4 class="callout-title">
+            <span class="callout-icon-holder me-1"><i class="fas fa-info-circle"></i></span>
+            Tip
+          </h4>
+          <p>
+            Positioneer de cadeau sectie boven de Toevoegen aan Winkelwagen knop voor maximale effectiviteit. Je kunt
+            het ook toevoegen aan winkelwagenpagina's of andere templates voor gifting kansen.
+          </p>
+        </div>
+      </div>
+    </section>
+  </article>
+  <!--//docs-article-->
+
+  <article class="docs-article" id="section-5">
+    <header class="docs-header">
+      <h1 class="docs-heading">Secties</h1>
+      <section class="docs-intro">
+        <p>
+          Voeg en beheer aangepaste secties voor je Shopify winkel toe.
+          Vooraf gebouwd. Configureerbaar. Gemakkelijk in Themebuilder. Creëer aangepaste
+          bundels van je producten en configureer vooraf gebouwde secties zoals
+          beoordelings- of voordeelboxen voor je productpagina.
+        </p>
+        <div class="simplelightbox-gallery row mb-3">
+          <div class="col-12 mb-3">
+            <a href="assets/images/section-overview.png"><img class="figure-img img-fluid shadow rounded"
+                src="assets/images/section-overview.png" alt="Bundleza Secties Overzicht"
+                title="Secties Overzicht" /></a>
+          </div>
+        </div>
+      </section>
+      <!--//docs-intro-->
+    </header>
+    <section class="docs-section" id="item-5-1">
+
+
+      <section class="docs-section" id="item-5-2">
+
+        <h3>Selecteer Thema</h3>
+        <p>
+          <strong>Kies een thema:</strong> Selecteer je Shopify-thema om
+          secties toe te voegen aan productpagina's.
+        </p>
+
+        <h3>Stappen om een Thema te Selecteren</h3>
+        <ol>
+          <li>Navigeer naar de Secties gebied in je Bundleza-dashboard.</li>
+          <li>Selecteer vanuit de beschikbare opties je actieve Shopify-thema.</li>
+          <li>Bevestig de selectie om sectie toevoegingen voor dat thema in te schakelen.</li>
+        </ol>
+
+        <div class="simplelightbox-gallery row mb-3">
+          <div class="col-12 mb-3">
+            <a href="assets/images/select-theme.png"><img class="figure-img img-fluid shadow rounded"
+                src="assets/images/select-theme.png" alt="Selecteer thema voor productpagina secties"
+                title="Selecteer Thema" /></a>
+          </div>
+        </div>
+      </section>
+      <!--//section-->
+
+      <section class="docs-section" id="item-5-3">
+        <h2 class="section-heading">Secties Toevoegen</h2>
+        <p>Na het selecteren van je thema, klik de "Toevoegen" knop voor de sectie die je leuk vindt om toe te voegen.
+          Alternatief kun je een videotutorial bekijken voor begeleiding.</p>
+
+        <h3>Hoe Secties toe te Voegen</h3>
+        <ol>
+          <li>Bekijk de lijst van vooraf gebouwde secties beschikbaar voor je thema.</li>
+          <li>Klik de "Toevoegen" knop naast de sectie die je wilt opnemen (bijv. beoordelingsboxen, voordeelboxen).
+          </li>
+          <li>Configureer de sectie's instellingen, zoals inhoud en styling.</li>
+          <li>Sla de wijzigingen op en bekijk de sectie op je productpagina.</li>
+        </ol>
+
+        <p>Als handelaar stelt het toevoegen van aangepaste secties aan je productpagina's je in staat om belangrijke
+          voordelen te benadrukken, klantbeoordelingen en bundelaanbiedingen, die direct aankoopbeslissingen beïnvloeden
+          en conversierates verbeteren.</p>
+
+        <img class="figure-img img-fluid shadow rounded" src="assets/images/add-section.png"
+          alt="Sectie toevoegen stap 2" />
+        <!--//section-->
+
+
+        <div class="callout-block callout-block-success">
+          <div class="content">
+            <h4 class="callout-title">
+              <span class="callout-icon-holder me-1">
+                <i class="fas fa-thumbs-up"></i>
+              </span>
+              Vind je onze app leuk?
+            </h4>
+            <p>
+              We zouden een beoordeling waarderen! Help andere handelaren om
+              Bundleza te ontdekken.
+            </p>
+          </div>
+        </div>
+
+        <h3>Meer Modules Binnenkort</h3>
+        <p>
+          Sluit je aan bij onze Discord community en verbind met andere winkel
+          eigenaren om vroege toegang te krijgen tot nieuwe functies.
+        </p>
+      </section>
+      <!--//section-->
+
+  </article>
+
+  <!--//docs-article-->
+
+  <article class="docs-article" id="section-6">
+    <header class="docs-header">
+      <h1 class="docs-heading">Banner</h1>
+      <section class="docs-intro">
+        <p>
+          Verhoog je conversies met Bundleza Banners
+        </p>
+      </section>
+      <!--//docs-intro-->
+    </header>
+    <section class="docs-section" id="item-6-1">
+      <h2 class="section-heading">Banner Beheer</h2>
+      <p>
+        Beheer al je banners vanuit het centrale dashboard. Bekijk, bewerk en monitor banner prestaties om je
+        promotionele strategieën te optimaliseren.
+      </p>
+
+      <h3>Maak je Eerste Banner Module</h3>
+      <ol>
+        <li>Stel je banner instellingen in</li>
+        <li>Pas Stijlen/Kleuren aan</li>
+        <li>Sla op en voeg toe als sectie</li>
+      </ol>
+
+      <h3>Banner Lijst</h3>
+      <p>
+        De banner lijst toont al je gemaakte banners met belangrijke informatie en beschikbare acties. Zoek op banner
+        naam om specifieke banners snel te vinden.
+      </p>
+      <div class="simplelightbox-gallery row mb-3">
+        <div class="col-12 mb-3">
+          <a href="assets/images/banner-table.png"><img class="figure-img img-fluid shadow rounded"
+              src="assets/images/banner-table.png" alt="Banner Beheer" title="Banner Beheer" /></a>
+        </div>
+      </div>
+      <div class="callout-block callout-block-warning">
+        <div class="content">
+          <h4 class="callout-title">
+            <span class="callout-icon-holder me-1">
+              <i class="fas fa-exclamation-triangle"></i>
+            </span>
+            Belangrijk
+        </div>
+        <p>
+          Om een banner te bewerken, moet je eerst de status bijwerken naar Concept.
+        </p>
+      </div>
+      </div>
+
+      <div class="callout-block callout-block-success">
+        <div class="content">
+          <h4 class="callout-title">
+            <span class="callout-icon-holder me-1">
+              <i class="fas fa-thumbs-up"></i>
+            </span>
+            Beoordelingsverzoek
+          </h4>
+          <p>
+            Vind je onze app leuk? We zouden een beoordeling waarderen!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--//section-->
+
+    <section class="docs-section" id="item-6-2">
+      <h2 class="section-heading">Nieuwe Banner Maken</h2>
+      <div class="callout-block callout-block-warning">
+        <div class="content">
+          <h4 class="callout-title">
+            <span class="callout-icon-holder me-1">
+              <i class="fas fa-exclamation-triangle"></i>
+            </span>
+            Belangrijk
+          </h4>
+          <p>
+            Voordat je banner maakt, moet je naar secties gaan en het toevoegen aan je thema.
+          </p>
+        </div>
+      </div>
+      <a href="assets/images/banner-select.png"><img class="figure-img img-fluid shadow rounded"
+          src="assets/images/banner-select.png" alt="Banner Voorbeeld" title="Banner Voorbeeld" /></a>
+      <h2>Voorbeeld</h2>
+      <p>De banner creatie pagina bevat een live voorbeeld functie die je in staat stelt om te zien hoe je banner eruit
+        zal zien op desktop, mobiel en tablet apparaten. Dit helpt je om ervoor te zorgen dat de banner geoptimaliseerd
+        is voor alle schermgroottes voordat je opslaat.</p>
+      <div class="simplelightbox-gallery row mb-3">
+        <div class="col-12 mb-3">
+          <a href="assets/images/banner-preview.png"><img class="figure-img img-fluid shadow rounded"
+              src="assets/images/banner-preview.png" alt="Banner Voorbeeld" title="Banner Voorbeeld" /></a>
+        </div>
+      </div>
+      <p>
+        Ontwerp en pas je banner aan met templates, thema's, planning en inhoud opties om aantrekkelijke promoties te
+        creëren die conversies verhogen.
+      </p>
+
+      <h3>Templates</h3>
+      <p>
+        Kies een vooraf ontworpen template voor je banner om snel aan de slag te gaan.
+      </p>
+      <div class="simplelightbox-gallery row mb-3">
+        <div class="col-12 mb-3">
+          <a href="assets/images/template.png"><img class="figure-img img-fluid shadow rounded"
+              src="assets/images/template.png" alt="Banner Templates" title="Banner Templates" /></a>
+        </div>
+      </div>
+
+      <h3>Thema</h3>
+      <p>
+        Selecteer uit thema's zoals Black Friday, Kerstmis, Nieuw Jaar 2025, Compact Mode, Valentijnsdag en meer om
+        seizoensgebonden promoties aan te passen. Elk thema bevat een voorbeeld om te zien hoe het eruit zal zien.
+      </p>
+      <ul></ul>
+      <li><strong>Black Friday:</strong> Voorbeeld van Black Friday thema</li>
+      <li><strong>Kerstmis:</strong> Voorbeeld van Kerstmis thema</li>
+      <li><strong>Nieuw Jaar 2025:</strong> Voorbeeld van Nieuw Jaar 2025 thema</li>
+      <li><strong>Compact Mode:</strong> Voorbeeld van Compact Mode thema</li>
+      <li><strong>Valentijnsdag:</strong> Voorbeeld van Valentijnsdag thema</li>
+      </ul>
+
+      <h3>Planning</h3>
+      <p>
+        Stel wanneer je banner actief moet zijn in met start- en einddatums/tijden. Bijvoorbeeld, start op 09/23/2025 om
+        09:00 AM en eindig op 09/23/2025 om 09:00 AM. Onthoud, de banner start wanneer de starttijd is geselecteerd.
+      </p>
+
+      <h3>Taal</h3>
+      <p>
+        Pas banner inhoud aan voor verschillende talen om een wereldwijd publiek te bereiken.
+      </p>
+
+      <h3>Banner Inhoud</h3>
+      <p>
+        Ontwerp de teksten voor je banner hier:
+      </p>
+      <ul>
+        <li><strong>Hoofdtekst:</strong> BLACK FRIDAY - Verschijnt prominent aan de linkerkant van de banner.</li>
+        <li><strong>Call To Action:</strong> BUNDLEZA50 - De kortingscode die klanten kunnen gebruiken, bijv. SALE50.
+        </li>
+        <li><strong>Countdown Label:</strong> Countdown - Tekst boven de countdown timer.</li>
+        <li><strong>Kortingsaankondiging:</strong> Bespaar tot 50% met de code: - bijv. 'Bespaar tot {{50%}} op alles'.
+        </li>
+        <li><strong>Sluitknop:</strong> Definieer het gedrag na het sluiten van de banner.</li>
+        <li><strong>Weergave Interval:</strong> Definieer wanneer de banner opnieuw moet verschijnen na het sluiten
+          (Toon altijd).</li>
+      </ul>
+
+      <h3>Ontwerp</h3>
+      <p>
+        Pas het uiterlijk van je banner aan om bij je merkontwerp te passen:
+      </p>
+      <ul>
+        <li><strong>Banner:</strong> Banner Tekst (links), Banner Accent Kleur, Banner Achtergrond.</li>
+        <li><strong>Countdown:</strong> Tekst, Teller Tekst, Teller Achtergrond.</li>
+        <li><strong>Korting:</strong> Code Tekst (voor kopieerknop van kortingscode), Aankondiging Code Tekst, Code
+          Achtergrond, Code Radius (bijv. 4).</li>
+      </ul>
+      <h4>Stijlen</h4>
+      <div class="simplelightbox-gallery row mb-3">
+        <div class="col-12 mb-3">
+          <a href="assets/images/style.png"><img class="banner style" src="assets/images/style.png"
+              alt="banner stijl" /></a>
+        </div>
+      </div>
+      <p>
+        Pas verder de stijlen van de banner aan, inclusief kleuren. Deze instellingen stellen je in staat om precieze
+        controle te hebben over de visuele elementen om een coherente en professionele look te creëren.
+      </p>
+      <ul>
+        <li><strong>Tekst Kleuren:</strong> Pas de kleur aan van hoofdtekst, countdown timer en kortingscode tekst om
+          bij je merkpalet te passen. Bijvoorbeeld, gebruik je primaire merk kleur voor koppen en een contrasterende
+          kleur voor secundaire tekst.</li>
+        <li><strong>Achtergrond Kleuren:</strong> Stel aangepaste achtergronden in voor de banner, countdown sectie en
+          kortingscode gebied. Kies vaste kleuren, gradients of zelfs transparante achtergronden om bij je ontwerp thema
+          te passen.</li>
+
+        <li><strong>Rand Radius:</strong> Stel de hoekradius in voor elementen zoals de kortingscode box of knoppen. Een
+          hogere radius creëert afgeronde hoeken voor een moderne look, terwijl 0px scherpe randen geeft voor een
+          klassieke stijl.</li>
+
+      </ul>
+
+      <div class="simplelightbox-gallery row mb-3">
+        <div class="col-12 mb-3">
+          <a href="assets/images/create-banner.png"><img class="figure-img img-fluid shadow rounded"
+              src="assets/images/create-banner.png" alt="Nieuwe Banner Maken" title="Nieuwe Banner Maken" /></a>
+        </div>
+      </div>
+
+      <div class="callout-block callout-block-success">
+        <div class="content">
+          <h4 class="callout-title">
+            <span class="callout-icon-holder me-1">
+              <i class="fas fa-thumbs-up"></i>
+            </span>
+            Succes
+          </h4>
+          <p>
+            Banner zal actief zijn van 2025-09-23 om 09:00 tot 2025-09-23 om 09:00
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--//section-->
+    <section class="docs-section" id="item-6-3">
+      <h2 class="section-heading">Banner Toevoegen aan je Thema</h2>
+      <p>
+        Om je geconfigureerde banners weer te geven op je winkel's pagina's, moet je de Bundleza Banner-sectie toevoegen
+        aan je Shopify-thema. Dit stelt banner weergaven in op productpagina's, home pagina of andere templates.
+      </p>
+      <h3>Stappen om Banner Sectie toe te Voegen</h3>
+      <ol>
+        <li><strong>Ga naar Online Winkel:</strong> Ga vanuit je Shopify-beheerder naar <strong>Online Winkel >
+            Thema's</strong>.</li>
+        <li><strong>Selecteer een Template of Sectie:</strong> Gebruik in de thema-editor de paginaselector bovenaan om
+          de paginatemplate te kiezen (bijv. Home pagina, Product pagina) of selecteer de Header uit de linker zijbalk
+          om de banner toe te voegen aan de site header.</li>
+        <li><strong>Sectie Toevoegen:</strong> Klik in de linker zijbalk op <strong>Sectie toevoegen</strong> (of
+          <strong>Blok toevoegen</strong>), zoek dan en selecteer <strong>Bundleza Banner</strong> uit de Apps-sectie.
+        </li>
+        <li><strong>De Sectie Configureren:</strong> Zodra toegevoegd, selecteer de specifieke banner die je wilt
+          weergeven uit de dropdown in de sectie-instellingen.</li>
+        <li><strong>Wijzigingen Opslaan:</strong> Klik op <strong>Opslaan</strong> om de wijzigingen toe te passen op je
+          thema.</li>
+      </ol>
+      <div class="callout-block callout-block-info">
+        <div class="content">
+          <h4 class="callout-title">
+            <span class="callout-icon-holder me-1"><i class="fas fa-info-circle"></i></span>
+            Tip
+          </h4>
+          <p>
+            Banners kunnen worden toegevoegd aan verschillende pagina's zoals home pagina voor promoties,
+            productpagina's voor speciale aanbiedingen, of collectiepagina's voor categorie-specifieke banners, of aan
+            de header voor site-brede zichtbaarheid.
+          </p>
+        </div>
+      </div>
+    </section>
+  </article>
+  <!--//docs-article-->
+
+
+
+  <footer class="footer">
+    <div class="container text-center py-5">
+      <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+      <small class="copyright">Ontwikkeld<i class="fas fa-heart" style="color: #fb866a"></i> door
+        <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Bundleza</a>
+      </small>
+      <ul class="social-list list-unstyled pt-4 mb-0">
+        <li class="list-inline-item">
+          <a href="#"><i class="fa-brands fa-github fa-fw"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#"><i class="fa-brands fa-x-twitter fa-fw"></i></a>
+        </li>
+        <li class="list-inline-item"></li>
+        <a href="#"><i class="fa-brands fa-slack fa-fw"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#"><i class="fa-brands fa-product-hunt fa-fw"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#"><i class="fa-brands fa-facebook-f fa-fw"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#"><i class="fa-brands fa-instagram fa-fw"></i></a>
+        </li>
+      </ul>
+
+    </div>
+  </footer>
+  </div>
+  </div>
+  </div>
+  <!--//docs-wrapper-->
+
+  <!-- Javascript -->
+  <script src="assets/plugins/popper.min.js"></script>
+  <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Page Specific JS -->
+  <script src="assets/plugins/smoothscroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+  <script src="assets/js/highlight-custom.js"></script>
+  <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+  <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+  <script src="assets/js/docs.js"></script>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/6784a716af5bfec1dbeaa295/1ihf2pcag';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+
+</html>

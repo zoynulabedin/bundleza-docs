@@ -1,0 +1,2289 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>
+    Bundleza - Los paquetes de productos
+  </title>
+
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bundleza - Los paquetes de productos" />
+  <meta name="author" content="Xiaoying Riley at 3rd Wave Media" />
+  <link rel="shortcut icon" href="favicon.ico" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome JS-->
+  <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css" />
+  <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css" />
+
+  <!-- Theme CSS -->
+  <link id="theme-style" rel="stylesheet" href="assets/css/theme.css" />
+
+  <style>
+    img {
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body class="docs-page">
+  <header class="header fixed-top">
+    <div class="branding docs-branding">
+      <div class="container-fluid position-relative py-2">
+        <div class="docs-logo-wrapper">
+          <button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+            type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="site-logo">
+            <a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="assets/images/coderdocs-logo.svg"
+                alt="logo" /><span class="logo-text">Bundl<span class="text-alt">eza</span></span></a>
+          </div>
+        </div>
+        <!--//docs-logo-wrapper-->
+        <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+          <div class="top-search-box d-none d-lg-flex">
+            <form class="search-form">
+              <input type="text" placeholder="Buscar en la documentación..." name="search"
+                class="form-control search-input" />
+              <button type="submit" class="btn search-btn" value="Buscar">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+
+          <ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+            <li class="list-inline-item">
+              <a href="#"><i class="fa-brands fa-github fa-fw"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#"><i class="fa-brands fa-x-twitter fa-fw"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#"><i class="fa-brands fa-slack fa-fw"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#"><i class="fa-brands fa-product-hunt fa-fw"></i></a>
+            </li>
+          </ul>
+          <label for="language-select" style="margin-right: 10px;"><i class="fas fa-globe"></i> </label>
+          <select id="language-select" onchange="window.location.href=this.value;"
+            style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; background-color: #fff; margin-right: 5px;">
+            <option value="docs-page-en.html">English</option>
+            <option value="docs-page-de.html">German</option>
+            <option value="docs-page-es.html">Spanish</option>
+            <option value="docs-page-fr.html">French</option>
+            <option value="docs-page-it.html">Italian</option>
+            <option value="docs-page-ja.html">Japanese</option>
+            <option value="docs-page-nl.html">Dutch</option>
+          </select>
+          <!--//social-list-->
+          <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderdocs-free-bootstrap-5-documentation-template-for-software-projects/"
+            class="btn btn-primary d-none d-lg-flex">Descargar</a>
+        </div>
+        <!--//docs-top-utilities-->
+      </div>
+      <!--//container-->
+    </div>
+    <!--//branding-->
+  </header>
+  <!--//header-->
+
+  <div class="docs-wrapper">
+    <div id="docs-sidebar" class="docs-sidebar" style="padding: 0 10px;">
+      <div class="top-search-box d-lg-none p-3">
+        <form class="search-form">
+          <input type="text" placeholder="Buscar en la documentación..." name="search"
+            class="form-control search-input" />
+          <button type="submit" class="btn search-btn" value="Buscar">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+      <nav id="docs-nav" class="docs-nav navbar">
+        <ul class="section-items list-unstyled nav flex-column pb-3">
+          <li class="nav-item section-title">
+            <a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-map-signs"></i></span>Introducción</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link scrollto" href="#item-1-1" style="font-size: small; word-break: break-word;"><span
+                class="theme-icon-holder me-3"><i class="fas fa-play-circle"></i></span>Primeros pasos</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link scrollto" href="#item-1-2" style="font-size: small; word-break: break-word;"><span
+                class="theme-icon-holder me-3"><i class="fas fa-download"></i></span>Instalación</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link scrollto" href="#item-1-3" style="font-size: small; word-break: break-word;"><span
+                class="theme-icon-holder me-3"><i class="fas fa-cogs"></i></span>Configuración</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link scrollto" href="#item-1-3" style="font-size: small; word-break: break-word;"><span
+                class="theme-icon-holder me-3"><i class="fas fa-cogs"></i></span>Configuración</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link scrollto" href="#item-1-4" style="font-size: small; word-break: break-word;"><span
+                class="theme-icon-holder me-3"><i class="fas fa-th-large"></i></span>Cómo usar bloques o secciones de
+              Bundleza</a>
+          </li>
+
+          <li class="nav-item section-title mt-3">
+            <a class="nav-link scrollto" href="#section-2" data-bs-toggle="collapse" data-bs-target="#bundle-submenu"
+              aria-expanded="false" aria-controls="bundle-submenu"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-box"></i></span>Paquete <i class="fas fa-chevron-right ms-2 submenu-icon"></i></a>
+            <ul class="collapse list-unstyled" id="bundle-submenu">
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-2-1" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-list"></i></span>Gestión de paquetes</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-2-2" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-edit"></i></span>Creando y actualizando paquetes</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-2-3" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus"></i></span>Agregando paquete a tu tema</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item section-title mt-3">
+            <a class="nav-link scrollto" href="#section-3" data-bs-toggle="collapse" data-bs-target="#upsell-submenu"
+              aria-expanded="false" aria-controls="upsell-submenu"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-arrow-up"></i></span>Venta adicional <i
+                class="fas fa-chevron-right ms-2 submenu-icon"></i></a>
+            <ul class="collapse list-unstyled" id="upsell-submenu">
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-1" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-cog"></i></span>Configuración de venta adicional</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-2" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus-square"></i></span>Agregando venta adicional a
+                  tu tema</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-3" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-list"></i></span>Gestión de venta adicional
+                  única</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-4" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus"></i></span>Crear venta adicional única</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-5" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-th-list"></i></span>Gestión de venta adicional
+                  múltiple</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-6" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus-circle"></i></span>Crear venta adicional
+                  múltiple</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-7" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus-square"></i></span>Agregando venta adicional
+                  múltiple a tu tema</a>
+              </li>
+
+            </ul>
+          </li>
+          <li class="nav-item section-title mt-3">
+            <a class="nav-link scrollto" href="#section-4" data-bs-toggle="collapse" data-bs-target="#gift-submenu"
+              aria-expanded="false" aria-controls="gift-submenu"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-gift"></i></span>Regalo <i class="fas fa-chevron-right ms-2 submenu-icon"></i></a>
+            <ul class="collapse list-unstyled" id="gift-submenu">
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-4-1" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-cogs"></i></span>Gestión de regalos</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-4-2" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-envelope"></i></span>Crear o actualizar regalo</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-4-4" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus"></i></span>Agregando regalo a tu tema</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item section-title mt-3">
+            <a class="nav-link scrollto" href="#section-5" data-bs-toggle="collapse" data-bs-target="#sections-submenu"
+              aria-expanded="false" aria-controls="sections-submenu"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-th-large"></i></span>Secciones <i
+                class="fas fa-chevron-right ms-2 submenu-icon"></i></a>
+            <ul class="collapse list-unstyled" id="sections-submenu">
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-5-1" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-download"></i></span>Cómo importar una sección</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-5-2" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-th"></i></span>Secciones de página de producto</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-5-3" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-store"></i></span>Secciones de tienda</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item section-title mt-3">
+            <a class="nav-link scrollto" href="#section-6" data-bs-toggle="collapse" data-bs-target="#banner-submenu"
+              aria-expanded="false" aria-controls="banner-submenu"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-flag"></i></span>Banner <i class="fas fa-chevron-right ms-2 submenu-icon"></i></a>
+            <ul class="collapse list-unstyled" id="banner-submenu">
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-6-1" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-list"></i></span>Gestión de banners</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-6-2" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus"></i></span>Crear nuevo banner</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-6-3" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus-square"></i></span>Agregando banner a tu
+                  tema</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!--//docs-nav-->
+    </div>
+    <!--//docs-sidebar-->
+    <div class="docs-content">
+      <div class="container">
+        <article class="docs-article" id="section-1">
+          <header class="docs-header">
+            <h1 class="docs-heading">
+              Introducción
+              <span class="docs-time">Última actualización: hace 3 días</span>
+            </h1>
+            <section class="docs-intro">
+              <p>
+                Bienvenido a Bundleza - Aprende el futuro. Preconstruido.
+                Configurable. Fácil en Themebuilder. Crea paquetes personalizados de
+                tus productos y configura secciones preconstruidas como cajas de reseñas o
+                beneficios para tu página de producto.
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 mb-3">
+                  <a href="assets/images/welcome-overviews.png">
+                    <img class="figure-img img-fluid shadow rounded" src="assets/images/welcome-overviews.png"
+                      alt="Resumen de módulos de Bundleza" title="Resumen de módulos de Bundleza" />
+                  </a>
+                </div>
+              </div>
+
+              <h3 id="bundleza-modules">Módulos de Bundleza</h3>
+              <div class="row">
+                <div class="col-12 col-md-6 mb-4" id="bundleza-bundles">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/bundle.png" class="img-fluid mr-3"
+                        alt="Paquetes de Bundleza" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Paquetes de Bundleza</h5>
+                        <p class="card-text">Crea fácilmente paquetes y descuentos por cantidad para tus productos</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4" id="bundleza-sections">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/section.png" class="img-fluid mr-3"
+                        alt="Secciones de Bundleza" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Secciones de Bundleza</h5>
+                        <p class="card-text">Personaliza fácilmente secciones preconstruidas para tu tienda</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4" id="bundleza-upsell">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/upsell.png" class="img-fluid mr-3"
+                        alt="Venta adicional de Bundleza" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Venta adicional de Bundleza</h5>
+                        <p class="card-text">Aumenta tus ingresos con nuestros popups, cajas y deslizadores para mejoras
+                          de productos</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4" id="bundleza-banner">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/banner.png" class="img-fluid mr-3"
+                        alt="Banner de Bundleza" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Banner de Bundleza</h5>
+                        <p class="card-text">Crea banners atractivos para tu tienda - desde anuncios hasta promociones
+                          de descuento</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4" id="bundleza-gifts">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/gift.png" class="img-fluid mr-3"
+                        alt="Regalos de Bundleza" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Regalos de Bundleza</h5>
+                        <p class="card-text">Crea regalos atractivos para tu tienda. Flexiblemente personalizable y
+                          perfecto para cualquier ocasión</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4" id="bundleza-reviews">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/review.png" class="img-fluid mr-3"
+                        alt="Reseñas de Bundleza" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Reseñas de Bundleza</h5>
+                        <p class="card-text">Crea widgets de reseñas atractivos con fotos y videos. Disponible como
+                          caja, deslizador de carrusel o historias</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="callout-block callout-block-info">
+                <div class="content">
+                  <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                      <i class="fas fa-info-circle"></i>
+                    </span>
+                    Más módulos próximamente
+                  </h4>
+                  <p>
+                    Únete a nuestra <a href="https://discord.gg/bundleza" target="_blank">comunidad de Discord</a> y
+                    conecta
+                    con otros propietarios de tiendas para obtener acceso temprano a nuevas funciones.
+                  </p>
+                </div>
+              </div>
+            </section>
+            <!--//docs-intro-->
+          </header>
+          <section class="docs-section" id="item-1-1">
+            <h2 class="section-heading">Primeros pasos</h2>
+            <p>
+              ¡Bienvenido a Bundleza! Esta guía te ayudará a comenzar con nuestra poderosa aplicación de Shopify que te
+              permite crear ofertas de descuento de paquetes, productos de venta adicional, productos de venta adicional
+              múltiple, productos de regalo, banners y secciones personalizadas para tu tienda.
+            </p>
+
+            <h3>Prerrequisitos</h3>
+            <p>Antes de instalar Bundleza, asegúrate de tener:</p>
+            <ul>
+              <li>Una tienda Shopify activa (cualquier plan)</li>
+              <li>Acceso de administrador a tu panel de Shopify</li>
+              <li>Al menos un producto con stock y variantes en tu tienda</li>
+            </ul>
+
+            <h3 id="item-1-2">Instalación</h3>
+            <p>
+              Sigue estos pasos para instalar Bundleza en tu tienda Shopify:
+            </p>
+            <h4>Paso 1: Inicia sesión en tu panel de administrador de Shopify</h4>
+            <p>Inicia sesión en tu panel de administrador de Shopify en <a href="https://admin.shopify.com"
+                target="_blank">admin.shopify.com</a>.</p>
+            <h4>Paso 2: Encuentra e instala Bundleza</h4>
+            <p>Busca Bundleza en la tienda de aplicaciones de Shopify:</p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 col-md-6 mb-3">
+                <a href="/assets/images/search-app.png"><img class="figure-img img-fluid shadow rounded"
+                    src="/assets/images/search-app.png" alt="Buscando Bundleza en la tienda de aplicaciones de Shopify"
+                    title="Búsqueda en la tienda de aplicaciones de Shopify" /></a>
+              </div>
+              <div class="col-12 col-md-6 mb-3">
+                <a href="assets/images/shopify-search.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/shopify-search.png"
+                    alt="Página de la aplicación Bundleza en la tienda de aplicaciones de Shopify"
+                    title="Página de la aplicación Bundleza" /></a>
+              </div>
+            </div>
+            <ol start="1">
+              <li>En la barra de búsqueda de la tienda de aplicaciones, escribe "Bundleza"</li>
+              <li>Localiza la aplicación Bundleza en los resultados de búsqueda</li>
+              <li>Haz clic en la tarjeta de la aplicación Bundleza para ver detalles</li>
+              <li>Revisa la descripción de la aplicación, características y precios</li>
+              <li>Haz clic en <strong>Agregar aplicación</strong></li>
+            </ol>
+
+            <h4>Paso 3: Otorgar permisos</h4>
+            <p>Revisa y aprueba los permisos requeridos:</p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/permisssion.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/permisssion.png" alt="Pantalla de permisos de la aplicación Bundleza"
+                    title="Permisos de la aplicación" /></a>
+              </div>
+            </div>
+            <ol start="1">
+              <li>Revisa los permisos solicitados cuidadosamente</li>
+              <li>Haz clic en <strong>Instalar aplicación</strong> para otorgar permisos</li>
+              <li>Espera a que se complete la instalación</li>
+            </ol>
+
+            <h3>Lista de verificación de inicio rápido</h3>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/check-list.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/check-list.png" alt="Lista de verificación de inicio rápido"
+                    title="Lista de verificación de inicio rápido" /></a>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  Consejo
+                </h4>
+                <p>
+                  Comienza creando un paquete y una oferta de venta adicional para probar la funcionalidad. Una vez que
+                  te sientas cómodo, expande a configuraciones más complejas.
+                </p>
+              </div>
+            </div>
+
+            <h3>¿Necesitas ayuda?</h3>
+            <p>Si encuentras algún problema durante la configuración:</p>
+            <ul>
+              <li>Consulta nuestra documentación detallada para cada función</li>
+              <li>Contacta a nuestro equipo de soporte a través del panel de la aplicación</li>
+              <li>Únete a nuestro foro comunitario para obtener consejos y mejores prácticas</li>
+              <li>Mira nuestros videos tutoriales para obtener orientación visual</li>
+            </ul>
+
+            <p>
+              ¡Ahora estás listo para comenzar a aumentar los ingresos de tu tienda con las poderosas funciones de
+              Bundleza!
+            </p>
+          </section>
+          <!--//section-->
+          <section id="item-1-4">
+            <h3>Cómo usar bloques/secciones de Bundleza en tu tema</h3>
+            <p>
+              Sigue estos pasos comunes para agregar secciones de Bundleza (Paquete, Venta adicional, Venta adicional
+              múltiple, Regalo, Banner) a tu tema de Shopify. Esto te permite mostrar tus módulos configurados en
+              páginas de productos u otras plantillas.
+            </p>
+            <h3>Paso 1</h3>
+            <p>Ve a la personalización del tema en línea</p>
+            <img src="assets/images/customization-page.png" class="figure-img img-fluid shadow rounded"
+              alt="página de personalización" style="max-width: 100%; max-height: 100%;">
+            <h3>Paso 2</h3>
+            <p>Selecciona la página de producto predeterminada</p>
+            <img src="assets/images/default-productaopage.png" class="figure-img img-fluid shadow rounded"
+              alt="seleccionar página de producto" style="max-width: 100%; max-height: 100%;">
+            <h3>Paso 3</h3>
+            <p>Selecciona bloque y sección aquí</p>
+            <img src="assets/images/selectsectionandblock.png" class="figure-img img-fluid shadow rounded"
+              alt="seleccionar página de producto" style="max-width: 100%; max-height: 100%;">
+            <h3>Paso 4</h3>
+            <p>Resultados finales</p>
+            <p>Banner en tu tienda</p>
+            <img src="assets/images/banner-resutl.png" class="figure-img img-fluid shadow rounded" alt="banner"
+              style="max-width: 100%; max-height: 100%;">
+            <p>Bloques en tu tienda</p>
+            <img src="assets/images/blocs.png" class="figure-img img-fluid shadow rounded"
+              alt="seleccionar página de producto" style="max-width: 100%; max-height: 100%;">
+          </section>
+
+        </article>
+
+        <article class="docs-article" id="section-2">
+          <header class="docs-header">
+            <h1 class="docs-heading">Paquete</h1>
+            <section class="docs-intro">
+              <p>
+                Como comerciante de Shopify, la función de Paquete en Bundleza te permite crear paquetes de productos
+                atractivos que aumentan significativamente el valor promedio de los pedidos. Al combinar
+                estratégicamente productos complementarios y ofrecer descuentos atractivos, puedes alentar a los
+                clientes a comprar más artículos, aumentando tus ingresos mientras mejoras su experiencia de compra.
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 mb-3">
+                  <a href="assets/images/bundleza-management.png"><img class="figure-img img-fluid shadow rounded"
+                      src="assets/images/bundleza-management.png" alt="Gestión de paquetes"
+                      title="Gestión de paquetes" /></a>
+                </div>
+              </div>
+            </section>
+            <!--//docs-intro-->
+          </header>
+          <section class="docs-section" id="item-2-1">
+            <h2 class="section-heading">Gestión de paquetes</h2>
+            <p>
+              La página de Gestión de Paquetes es tu centro principal para supervisar todos tus paquetes creados. Aquí,
+              puedes editar, eliminar, duplicar y actualizar el estado de tus paquetes para mantener las ofertas de tu
+              tienda organizadas y actualizadas.
+            </p>
+
+            <h3>Accediendo a la Gestión de Paquetes</h3>
+            <p>
+              Desde el panel de control de Bundleza, navega a la sección de Paquetes para acceder a la página de Gestión
+              de Paquetes.
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/bundleza-menu.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/bundleza-menu.png" alt="Gestión de paquetes" title="Gestión de paquetes" /></a>
+              </div>
+            </div>
+
+            <h3>Lista de Paquetes y Acciones</h3>
+            <p>
+              La lista de paquetes muestra todos tus paquetes creados con información clave y acciones disponibles.
+              Puedes realizar las siguientes acciones en cada paquete:
+            </p>
+            <ul>
+              <li><strong>Editar:</strong> Modificar los detalles, productos y configuraciones del paquete.</li>
+              <li><strong>Eliminar:</strong> Eliminar permanentemente el paquete de tu tienda.</li>
+              <li><strong>Duplicar:</strong> Crear una copia del paquete para configurar rápidamente ofertas similares.
+              </li>
+              <li><strong>Actualizar Estado:</strong> Alternar entre Borrador (oculto para los clientes) y Activo
+                (visible en tu tienda).</li>
+            </ul>
+
+            <div class="callout-block callout-block-warning">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                  Importante
+                </h4>
+                <p>
+                  Para editar cualquier paquete, primero debes actualizar su estado a Borrador.
+                </p>
+              </div>
+            </div>
+
+            <h4>Tabla de Paquetes</h4>
+            <p>
+              La tabla de paquetes muestra todos tus paquetes creados con la siguiente información:
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/bundle-table.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/bundle-table.png" alt="Tabla de Paquetes" title="Tabla de Paquetes" /></a>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Consejo
+                </h4>
+                <p>
+                  Usa el interruptor de estado para ocultar temporalmente los paquetes durante las temporadas bajas o al
+                  actualizar ofertas, sin eliminarlos.
+                </p>
+              </div>
+            </div>
+            <div class="callout-block callout-block-warning">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                  Importante
+                </h4>
+                <p>
+                  Para editar cualquier paquete, primero debes actualizar su estado a Borrador.
+                </p>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  Solicitud de Reseña
+                </h4>
+                <p>
+                  Si te encanta Bundleza, ¡déjanos una reseña en la tienda de aplicaciones de Shopify!
+                </p>
+              </div>
+            </div>
+          </section>
+          <!--//section-->
+
+          <section class="docs-section" id="item-2-2">
+            <h2 class="section-heading">Creando y actualizando paquetes</h2>
+            <p>
+              Crea una nueva oferta de paquete para tu tienda o actualiza paquetes existentes. Esta página te permite
+              configurar todos los aspectos de tu paquete, desde detalles básicos hasta estilos avanzados y selección de
+              productos.
+            </p>
+            <h3>Cómo crear un nuevo paquete</h3>
+            <ol>
+              <li><strong>Ingresa el nombre del paquete:</strong> Proporciona un nombre descriptivo y atractivo para tu
+                paquete que atraiga a los clientes.</li>
+              <li><strong>Selecciona el tipo de selección:</strong> Elige cómo se incluirán los productos en el paquete
+                (Todos los productos, Productos específicos o Colecciones específicas).</li>
+              <li><strong>Configura las configuraciones:</strong> Configura las configuraciones del paquete, ofertas de
+                variantes y opciones de descuento para crear niveles de precios atractivos.</li>
+              <li><strong>Personaliza los estilos:</strong> Ajusta colores, fuentes y diseños para que coincidan con la
+                marca de tu tienda.</li>
+              <li><strong>Selecciona productos:</strong> Usa el modal de selección de productos para elegir productos
+                principales y variantes para el paquete.</li>
+              <li><strong>Configura ofertas de variantes:</strong> Configura ofertas dinámicas para diferentes variantes
+                del paquete.</li>
+            </ol>
+            <h3>7. Selecciona imagen personalizada y regalo gratuito para cada oferta</h3>
+            <a href="assets/images/giftandimg-select.png"><img class="figure-img img-fluid shadow rounded"
+                src="assets/images/giftandimg-select.png" alt="Modal de selección de productos"
+                title="Modal de selección de productos" /></a>
+            <p>
+              Para seleccionar un regalo gratuito con el paquete, usa el botón "seleccionar regalo". Esto abre un modal
+              donde puedes elegir productos y sus variantes.
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/select-gift.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/select-gift.png" alt="Modal de selección de productos"
+                    title="Modal de selección de productos" /></a>
+
+              </div>
+            </div>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Consejo
+                </h4>
+                <p>
+                  Comienza con un paquete simple y prueba su rendimiento antes de agregar configuraciones complejas.
+                  Esto te permite optimizar según los comentarios de los clientes.
+                </p>
+              </div>
+            </div>
+
+            <h3>Nombre del paquete</h3>
+            <p>
+              Ingresa un nombre descriptivo y atractivo para tu paquete. (Requerido)
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/bundle-name.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/bundle-name.png" alt="Configuración del nombre del paquete"
+                    title="Configuración del nombre del paquete" /></a>
+              </div>
+            </div>
+
+            <h3>Tipo de selección</h3>
+            <p>
+              Elige cómo se seleccionarán los productos para el paquete. Puedes incluir todos los productos, productos
+              específicos o productos de colecciones específicas.
+            </p>
+            <ul>
+              <li><strong>Todos los productos:</strong> Incluye cualquier producto de tu tienda en el paquete.</li>
+              <li><strong>Productos específicos:</strong> Selecciona manualmente productos individuales.</li>
+              <li><strong>Colecciones específicas:</strong> Incluye todos los productos de colecciones seleccionadas.
+              </li>
+            </ul>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/product-selection.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/product-selection.png" alt="Opciones de tipo de selección"
+                    title="Opciones de tipo de selección" /></a>
+              </div>
+            </div>
+
+            <h3>Configuraciones</h3>
+            <p>
+              Configura las configuraciones principales para tu paquete, incluyendo precios, disponibilidad y opciones
+              de visualización.
+            </p>
+
+            <h4>Configuraciones del paquete</h4>
+            <ul>
+              <li><strong>SOLO HOY:</strong> Habilita una promoción especial "Solo Hoy" para el paquete.</li>
+              <li><strong>Precios de comparación de variantes:</strong> Muestra precios de comparación para diferentes
+                variantes.</li>
+              <li><strong>Directo al pago:</strong> Permite a los clientes ir directamente al pago desde el paquete.
+              </li>
+              <li><strong>Ocultar selector de variantes:</strong> Oculta las opciones de selección de variantes en la
+                página del paquete.</li>
+            </ul>
+
+            <h4>Ofertas de variantes del paquete</h4>
+            <p>Configura ofertas dinámicas para variantes del paquete. Establece cantidades, tipos de descuento (por
+              ejemplo, Monto fijo, Porcentaje, Precio fijo) y valores de descuento. Las opciones pueden estar
+              seleccionadas por defecto, y puedes agregar múltiples nuevas ofertas para crear varios niveles de precios.
+            </p>
+            <ul>
+              <li><strong>Cantidad:</strong> Especifica el número de artículos en la oferta (totalmente personalizable).
+              </li>
+              <li><strong>Tipo de descuento:</strong> Elige entre Monto fijo, Porcentaje o Precio fijo.</li>
+              <li><strong>Valor del descuento:</strong> Establece el monto o porcentaje del descuento (dinámico y
+                ajustable).</li>
+              <li><strong>Seleccionado por defecto:</strong> Marca una oferta como preseleccionada para los clientes.
+                Cuando está preseleccionada, la oferta se agregará automáticamente al carrito cuando el cliente haga
+                clic en el botón Agregar al carrito o Comprar ahora. Si no está seleccionada, el cliente debe marcar la
+                casilla para incluirla.</li>
+            </ul>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Consejo
+                </h4>
+                <p>
+                  Todas las cantidades, tipos de descuento y valores son totalmente personalizables. Experimenta con
+                  diferentes ofertas para encontrar lo que funciona mejor para tus clientes.
+                </p>
+              </div>
+            </div>
+
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/bundle-settings.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/bundle-settings.png" alt="Configuración de paquetes"
+                    title="Configuración de paquetes" /></a>
+              </div>
+            </div>
+
+            <h3>Estilos</h3>
+            <p>
+              Personaliza la apariencia visual de tu paquete para que coincida con el tema de tu tienda. Ajusta colores,
+              fuentes, diseños y otros elementos de estilo.
+            </p>
+            <h4>Estilos de título</h4>
+            <ul>
+              <li><strong>Tamaño del texto:</strong> Establece el tamaño de la fuente para el título del paquete (por
+                ejemplo, 18px).</li>
+              <li><strong>Peso de la fuente:</strong> Elige el peso de la fuente (Negrita o Regular).</li>
+              <li><strong>Color:</strong> Selecciona el color para el texto del título.</li>
+            </ul>
+            <h4>Estilos de subtítulo</h4>
+            <ul>
+              <li><strong>Tamaño del texto:</strong> Establece el tamaño de la fuente para el subtítulo (por ejemplo,
+                16px).</li>
+              <li><strong>Peso de la fuente:</strong> Elige el peso de la fuente (Negrita o Regular).</li>
+              <li><strong>Color:</strong> Selecciona el color para el texto del subtítulo.</li>
+            </ul>
+            <h4>Colores de precios</h4>
+            <ul>
+              <li><strong>Color:</strong> Establece el color para los precios regulares.</li>
+              <li><strong>Color de precio de comparación:</strong> Establece el color para los precios de comparación
+                tachados.</li>
+            </ul>
+            <h4>Colores de insignias</h4>
+            <ul>
+              <li><strong>Fondo:</strong> Color de fondo para las insignias.</li>
+              <li><strong>Texto:</strong> Color del texto para las insignias.</li>
+            </ul>
+            <h4>Colores de etiquetas</h4>
+            <ul>
+              <li><strong>Fondo:</strong> Color de fondo para las etiquetas.</li>
+              <li><strong>Texto:</strong> Color del texto para las etiquetas.</li>
+            </ul>
+            <h4>Colores de regalo</h4>
+            <ul>
+              <li><strong>Fondo:</strong> Color de fondo para los elementos de regalo.</li>
+              <li><strong>Texto:</strong> Color del texto para los elementos de regalo.</li>
+            </ul>
+            <h4>Colores de caja</h4>
+            <ul>
+              <li><strong>Color del borde:</strong> Color para los bordes de las cajas.</li>
+              <li><strong>Color de la caja:</strong> Color de fondo para las cajas.</li>
+              <li><strong>Color de la caja seleccionada:</strong> Color de fondo para las cajas seleccionadas.</li>
+              <li><strong>Ancho del borde de la caja:</strong> Ancho de los bordes de las cajas (por ejemplo, 1px).</li>
+              <li><strong>Radio del borde de la caja:</strong> Radio de las esquinas para las cajas (por ejemplo, 0px).
+              </li>
+            </ul>
+            <h4>Configuración de imágenes</h4>
+            <ul>
+              <li><strong>Tamaño de la imagen:</strong> Establece el tamaño para las imágenes de productos (por ejemplo,
+                2).</li>
+              <li><strong>Radio:</strong> Radio de las esquinas para las imágenes (por ejemplo, 0px).</li>
+            </ul>
+            <h4>Producto de regalo - Configuración de imágenes</h4>
+            <ul>
+              <li><strong>Tamaño de la imagen:</strong> Establece el tamaño para las imágenes de productos de regalo
+                (por ejemplo, 2).</li>
+              <li><strong>Radio:</strong> Radio de las esquinas para las imágenes de regalo (por ejemplo, 0px).</li>
+            </ul>
+            <h4>Opciones adicionales</h4>
+            <ul>
+              <li><strong>SOLO HOY:</strong> Habilita mensajes especiales "Solo Hoy".</li>
+              <li><strong>Más popular:</strong> Marca el paquete como el más popular.</li>
+              <li><strong>Individual:</strong> Precio estándar para compras individuales.</li>
+              <li><strong>Dúo:</strong> Precio estándar para compras en dúo.</li>
+              <li><strong>🌐:</strong> Configuraciones de internacionalización.</li>
+              <p>Las configuraciones de internacionalización te permiten traducir el texto del paquete a un idioma
+                personalizado o mantenerlo en inglés predeterminado.</p>
+            </ul>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/bundle-styles.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/bundle-styles.png" alt="Personalización de estilos de paquetes"
+                    title="Personalización de estilos de paquetes" /></a>
+              </div>
+            </div>
+
+            <h3>Selección de productos: Dónde mostrar este paquete</h3>
+            <p>
+              Usa el modal de selección de productos para elegir productos para tu paquete. Puedes seleccionar productos
+              principales o variantes específicas.
+            </p>
+            <ul>
+              <li><strong>Producto principal:</strong> Selecciona el producto principal para el paquete.</li>
+              <li><strong>Variantes:</strong> Elige variantes específicas (por ejemplo, tamaño, color) para un control
+                más preciso.</li>
+            </ul>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/product-modal.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/product-modal.png" alt="Modal de selección de productos"
+                    title="Modal de selección de productos" /></a>
+              </div>
+            </div>
+
+            <h3>Ofertas de variantes</h3>
+            <p>
+              Configura ofertas específicas de variantes dentro de tu paquete. Esto permite a los clientes elegir
+              diferentes opciones para los productos en el paquete.
+            </p>
+            <ul>
+              <li><strong>Selección de variantes:</strong> Permite a los clientes seleccionar variantes de productos en
+                el paquete.</li>
+              <li><strong>Ajustes de precios:</strong> Aplica diferentes descuentos según las variantes seleccionadas.
+              </li>
+              <li><strong>Reglas de disponibilidad:</strong> Establece reglas para qué variantes están disponibles en el
+                paquete.</li>
+            </ul>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/bundle-preview.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/bundle-preview.png" alt="Configuración de ofertas de variantes"
+                    title="Configuración de ofertas de variantes" /></a>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Nota
+                </h4>
+                <p>
+                  Todas las configuraciones de estilo son dinámicas y se pueden ajustar para adaptarse a tu marca. Se
+                  proporcionan valores predeterminados como puntos de partida, pero todo es personalizable para los
+                  comerciantes.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="docs-section" id="item-2-3">
+            <h2 class="section-heading">Agregando paquete a tu tema</h2>
+            <p>
+              Para mostrar tus paquetes creados en las páginas de productos de tu tienda, debes agregar la sección de
+              Paquete de Bundleza a tu tema de Shopify. Esto permite que los clientes vean e interactúen con tus ofertas
+              de paquetes directamente en las páginas de productos.
+            </p>
+            <h3>Pasos para agregar la sección de paquete</h3>
+            <ol>
+              <li><strong>Ve a la tienda en línea:</strong> Desde tu panel de Shopify, navega a <strong>Tienda en línea
+                  > Temas</strong>.</li>
+              <li><strong>Personaliza tu tema:</strong> Haz clic en el botón <strong>Personalizar</strong> junto a tu
+                tema en vivo.</li>
+              <li><strong>Selecciona una página de producto:</strong> En el editor de temas, usa el selector de páginas
+                en la parte superior para elegir una plantilla de página de producto (por ejemplo, Producto
+                predeterminado).</li>
+              <li><strong>Agregar sección:</strong> En la barra lateral izquierda, haz clic en <strong>Agregar
+                  sección</strong>, luego busca y selecciona <strong>Paquete de Bundleza</strong> de la sección de
+                Aplicaciones.</li>
+              <li><strong>Configura la sección:</strong> Una vez agregada, selecciona el paquete específico que deseas
+                mostrar desde el menú desplegable en la configuración de la sección.</li>
+              <li><strong>Guardar cambios:</strong> Haz clic en <strong>Guardar</strong> para aplicar los cambios a tu
+                tema.</li>
+            </ol>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-2"><i class="fas fa-info-circle"></i></span>
+                  Consejo
+                </h4>
+                <p>
+                  Puedes agregar la sección de Paquete de Bundleza a múltiples plantillas de productos o incluso a
+                  páginas de colecciones para una mayor visibilidad. Prueba la ubicación para asegurarte de que
+                  complementa el diseño de tu tienda.
+                </p>
+              </div>
+            </div>
+          </section>
+
+
+        </article>
+        <!--//docs-article-->
+
+        <article class="docs-article" id="section-3">
+          <header class="docs-header">
+            <h1 class="docs-heading">Venta adicional</h1>
+            <section class="docs-intro">
+              <p>
+                Como comerciante, la función de Venta adicional en Bundleza te ayuda a maximizar los ingresos
+                presentando recomendaciones de productos inteligentes a los clientes en puntos estratégicos de su viaje
+                de compra. Al sugerir complementos o mejoras relevantes, puedes aumentar los valores promedio de los
+                pedidos y mejorar la satisfacción del cliente.
+              </p>
+              <p>
+                Al hacer clic en el menú <strong>Venta adicional</strong>, te llevará a la página <strong>Agregar ventas
+                  adicionales</strong>. Primero, elige el tipo de venta adicional:
+              </p>
+              <div class="row">
+                <div class="col-12 col-md-6 mb-4">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/upsell.png" class="img-fluid mr-3"
+                        alt="Ventas adicionales de producto único" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Ventas adicionales de producto único</h5>
+                        <p class="card-text">Muestra un producto relacionado como venta adicional sobre el botón
+                          'Agregar al carrito' de Shopify.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/upsell.png" class="img-fluid mr-3"
+                        alt="Ventas adicionales múltiples de producto" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Ventas adicionales múltiples de producto</h5>
+                        <p class="card-text">Muestra múltiples productos relacionados como venta adicional o paquete
+                          sobre el botón 'Agregar al carrito' de Shopify.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p>
+                Haz clic en <strong>Venta adicional única</strong> o <strong>Venta adicional múltiple</strong> para
+                proceder a la página de configuración correspondiente.
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 mb-3">
+                  <a href="assets/images/all-upsell.png"><img class="figure-img img-fluid shadow rounded"
+                      src="assets/images/all-upsell.png"
+                      alt="Captura de pantalla de la página de agregar ventas adicionales"
+                      title="Página de agregar ventas adicionales" /></a>
+                </div>
+              </div>
+            </section>
+            <!--//docs-intro-->
+          </header>
+
+          <!--//section-->
+
+
+
+          <!--//section-->
+          <section class="docs-section" id="item-3-3">
+            <h2 class="section-heading">Gestión de venta adicional única</h2>
+            <p>
+              La página de Gestión de Venta Adicional Única es tu centro principal para supervisar todas tus ofertas de
+              venta adicional única creadas. Aquí, puedes editar, eliminar, duplicar y actualizar el estado de tus
+              ventas adicionales para mantener las ofertas de tu tienda organizadas y actualizadas.
+            </p>
+            <h3>Accediendo a la Gestión de Venta Adicional Única</h3>
+            <p>
+              Desde el panel de control de Bundleza, navega a la sección de Ventas Adicionales para acceder a la página
+              de Gestión de Venta Adicional Única.
+            </p>
+            <h3>Lista de Ventas Adicionales y Acciones</h3>
+            <p>
+              La lista de ventas adicionales muestra todas tus ventas adicionales únicas creadas con información clave y
+              acciones disponibles. Puedes realizar las siguientes acciones en cada venta adicional:
+            </p>
+            <ul>
+              <li><strong>Editar:</strong> Modificar los detalles, productos y configuraciones de la venta adicional.
+              </li>
+              <li><strong>Eliminar:</strong> Eliminar permanentemente la venta adicional de tu tienda.</li>
+              <li><strong>Duplicar:</strong> Crear una copia de la venta adicional para configurar rápidamente ofertas
+                similares.</li>
+              <li><strong>Actualizar Estado:</strong> Alternar entre Borrador (oculto para los clientes) y Activo
+                (visible en tu tienda).</li>
+            </ul>
+            <div class="callout-block callout-block-warning">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                  Importante
+                </h4>
+                <p>
+                  Para editar cualquier venta adicional, primero debes actualizar su estado a Borrador.
+                </p>
+              </div>
+            </div>
+            <h4>Tabla de Ventas Adicionales</h4>
+            <p>
+              La tabla de ventas adicionales muestra todas tus ventas adicionales únicas creadas con la siguiente
+              información:
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/upsell-list.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/upsell-list.png" alt="Tabla de Ventas Adicionales"
+                    title="Tabla de Ventas Adicionales" /></a>
+              </div>
+            </div>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Consejo
+                </h4>
+                <p>
+                  Usa el interruptor de estado para ocultar temporalmente las ventas adicionales durante las temporadas
+                  bajas o al actualizar ofertas, sin eliminarlas.
+                </p>
+              </div>
+            </div>
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  Solicitud de Reseña
+                </h4>
+                <p>
+                  Si te encanta Bundleza, ¡déjanos una reseña en la tienda de aplicaciones de Shopify!
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="docs-section" id="item-3-4">
+            <h2 class="section-heading">Crear venta adicional única</h2>
+            <p>
+              Crea una nueva oferta de venta adicional única para tu tienda o actualiza ventas adicionales existentes.
+              Esta página te permite configurar todos los aspectos de tu venta adicional, desde detalles básicos hasta
+              estilos avanzados y selección de productos.
+            </p>
+            <h3>Cómo crear una nueva venta adicional única</h3>
+            <ol>
+              <li><strong>Ingresa el nombre de la venta adicional:</strong> Proporciona un nombre descriptivo y
+                atractivo para tu venta adicional que atraiga a los clientes.</li>
+              <li><strong>Establece la visibilidad:</strong> Elige dónde se debe mostrar la venta adicional (por
+                ejemplo, en productos específicos o colecciones).</li>
+              <li><strong>Selecciona el producto:</strong> Elige el producto que se mostrará como venta adicional y
+                configura sus detalles.</li>
+              <li><strong>Configura las configuraciones:</strong> Configura precios, descuentos y opciones de
+                visualización.</li>
+              <li><strong>Personaliza los estilos:</strong> Ajusta colores, fuentes y diseños para que coincidan con la
+                marca de tu tienda.</li>
+              <li><strong>Previsualiza y guarda:</strong> Revisa la configuración de tu venta adicional y guárdala como
+                Borrador o Activa.</li>
+            </ol>
+            <h3>Seleccionar variante o productos</h3>
+            <a href="assets/images/seelctvarient.png"><img class="figure-img img-fluid shadow rounded"
+                src="assets/images/seelctvarient.png" alt="Modal de selección de productos"
+                title="Modal de selección de productos" /></a>
+            <p>
+              Para seleccionar productos para tu venta adicional, usa el botón "Seleccionar variante/productos". Esto
+              abre un modal donde puedes elegir productos y sus variantes. También hay un botón para seleccionar todos
+              los productos de variante de venta adicional para mayor comodidad.
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/varientselect-modal.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/varientselect-modal.png" alt="Modal de selección de productos"
+                    title="Modal de selección de productos" /></a>
+              </div>
+            </div>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Consejo
+                </h4>
+                <p>
+                  Comienza con una venta adicional simple y prueba su rendimiento antes de agregar configuraciones
+                  complejas. Esto te permite optimizar según los comentarios de los clientes.
+                </p>
+              </div>
+            </div>
+            <h3>Nombre de la venta adicional</h3>
+            <p>
+              Ingresa un nombre descriptivo y atractivo para tu venta adicional. (Requerido)
+            </p>
+            <h3>Visibilidad</h3>
+            <p>
+              Elige dónde se debe mostrar la venta adicional. Las opciones incluyen todos los productos, ciertos
+              productos o ciertas colecciones.
+            </p>
+            <ul>
+              <li><strong>Todos los productos:</strong> Muestra la venta adicional en cualquier producto de tu tienda.
+              </li>
+              <li><strong>Ciertos productos:</strong> Selecciona productos específicos para la visualización de la venta
+                adicional.</li>
+              <li><strong>Ciertas colecciones:</strong> Muestra la venta adicional en productos de colecciones
+                seleccionadas.</li>
+            </ul>
+            <h3>Selección de productos: Dónde mostrar esta venta adicional</h3>
+            <p>
+              Selecciona los productos o colecciones donde aparecerá la venta adicional.
+            </p>
+            <h3>Configuraciones</h3>
+            <p>
+              Configura las configuraciones principales para tu venta adicional, incluyendo precios y opciones de
+              visualización.
+            </p>
+            <ul>
+              <li><strong>Mostrar imagen:</strong> Habilita o deshabilita la visualización de la imagen del producto.
+              </li>
+              <li><strong>Ir al pago:</strong> Permite el pago directo desde la venta adicional.</li>
+              <li><strong>Tachar precio de comparación del producto:</strong> Muestra precios de comparación tachados.
+              </li>
+              <li><strong>Limitado por pedido:</strong> Establece límites en las cantidades de venta adicional por
+                pedido.</li>
+            </ul>
+            <h3>Estilos</h3>
+            <p>
+              Personaliza la apariencia visual de tu venta adicional para que coincida con el tema de tu tienda. Ajusta
+              colores, fuentes, diseños y otros elementos de estilo.
+            </p>
+            <h4>Estilos de título</h4>
+            <ul>
+              <li><strong>Tamaño del texto:</strong> Establece el tamaño de la fuente para el título de la venta
+                adicional (por ejemplo, 18px).</li>
+              <li><strong>Peso de la fuente:</strong> Elige el peso de la fuente (Negrita o Regular).</li>
+              <li><strong>Color:</strong> Selecciona el color para el texto del título.</li>
+            </ul>
+            <h4>Estilos de subtítulo</h4>
+            <ul>
+              <li><strong>Tamaño del texto:</strong> Establece el tamaño de la fuente para el subtítulo (por ejemplo,
+                16px).</li>
+              <li><strong>Peso de la fuente:</strong> Elige el peso de la fuente (Negrita o Regular).</li>
+              <li><strong>Color:</strong> Selecciona el color para el texto del subtítulo.</li>
+            </ul>
+            <h4>Estilos de precios</h4>
+            <ul>
+              <li><strong>Color:</strong> Establece el color para los precios.</li>
+              <li><strong>Nombre del descuento:</strong> Personaliza la etiqueta del descuento.</li>
+            </ul>
+            <h4>Estilos de insignias</h4>
+            <ul>
+              <li><strong>Fondo:</strong> Color de fondo para las insignias.</li>
+              <li><strong>Texto:</strong> Color del texto para las insignias.</li>
+            </ul>
+            <h4>Estilos de botones</h4>
+            <ul>
+              <li><strong>Fondo:</strong> Color de fondo para los botones.</li>
+              <li><strong>Texto:</strong> Color del texto para los botones.</li>
+            </ul>
+            <h4>Configuración de imágenes</h4>
+            <ul>
+              <li><strong>Mostrar imagen:</strong> Alternar la visibilidad de la imagen.</li>
+              <li><strong>Texto alternativo:</strong> Establece el texto alternativo para las imágenes.</li>
+            </ul>
+            <h3>Seleccionar producto</h3>
+            <p>
+              Elige el producto que se mostrará como venta adicional. Configura su nombre, subtítulo, insignia, precio y
+              otros detalles.
+            </p>
+            <ul>
+              <li><strong>Nombre de la venta adicional:</strong> por ejemplo, Apple Watch Series 10</li>
+              <li><strong>Subtítulo:</strong> por ejemplo, Venta adicional</li>
+              <li><strong>Insignia:</strong> por ejemplo, Más vendido</li>
+              <li><strong>Texto del precio:</strong> por ejemplo, $20000.00</li>
+              <li><strong>Nombre del descuento:</strong> por ejemplo, descuento de venta adicional</li>
+            </ul>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/create-upsell.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/create-upsell.png" alt="Crear venta adicional única"
+                    title="Crear venta adicional única" /></a>
+              </div>
+            </div>
+          </section>
+          <section class="docs-section" id="item-3-5">
+            <h2 class="section-heading">Gestión de venta adicional múltiple</h2>
+            <p>
+              La página de Gestión de Venta Adicional Múltiple es tu centro principal para supervisar todas tus ofertas
+              de venta adicional múltiple creadas. Aquí, puedes editar, eliminar, duplicar y actualizar el estado de tus
+              ventas adicionales múltiples para mantener las ofertas de tu tienda organizadas y actualizadas.
+            </p>
+            <h3>Accediendo a la Gestión de Venta Adicional Múltiple</h3>
+            <p>
+              Desde el panel de control de Bundleza, navega a la sección de Ventas Adicionales para acceder a la página
+              de Gestión de Venta Adicional Múltiple.
+            </p>
+            <h3>Lista de Ventas Adicionales y Acciones</h3>
+            <p>
+              La lista de ventas adicionales muestra todas tus ventas adicionales múltiples creadas con información
+              clave y acciones disponibles. Puedes realizar las siguientes acciones en cada venta adicional:
+            </p>
+            <ul>
+              <li><strong>Editar:</strong> Modificar los detalles, productos y configuraciones de la venta adicional.
+              </li>
+              <li><strong>Eliminar:</strong> Eliminar permanentemente la venta adicional de tu tienda.</li>
+              <li><strong>Duplicar:</strong> Crear una copia de la venta adicional para configurar rápidamente ofertas
+                similares.</li>
+              <li><strong>Actualizar Estado:</strong> Alternar entre Borrador (oculto para los clientes) y Activo
+                (visible en tu tienda).</li>
+            </ul>
+            <div class="callout-block callout-block-warning">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                  Importante
+                </h4>
+                <p>
+                  Para editar cualquier venta adicional, primero debes actualizar su estado a Borrador.
+                </p>
+              </div>
+            </div>
+            <h4>Tabla de Ventas Adicionales</h4>
+            <p>
+              La tabla de ventas adicionales muestra todas tus ventas adicionales múltiples creadas con la siguiente
+              información:
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/multipleupsell-list.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/multipleupsell-list.png" alt="Tabla de Ventas Adicionales Múltiples"
+                    title="Tabla de Ventas Adicionales Múltiples" /></a>
+              </div>
+            </div>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Consejo
+                </h4>
+                <p>
+                  Usa el interruptor de estado para ocultar temporalmente las ventas adicionales durante las temporadas
+                  bajas o al actualizar ofertas, sin eliminarlas.
+                </p>
+              </div>
+            </div>
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  Solicitud de Reseña
+                </h4>
+                <p>
+                  Si te encanta Bundleza, ¡déjanos una reseña en la tienda de aplicaciones de Shopify!
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="docs-section" id="item-3-6">
+            <h2 class="section-heading">Crear venta adicional múltiple</h2>
+            <p>
+              Crea una nueva oferta de venta adicional múltiple para tu tienda o actualiza ventas adicionales múltiples
+              existentes. Esta página te permite configurar todos los aspectos de tu venta adicional múltiple, desde
+              detalles básicos hasta estilos avanzados y selección de productos.
+            </p>
+            <h3>Cómo crear una nueva venta adicional múltiple</h3>
+            <ol>
+              <li><strong>Ingresa el nombre de la venta adicional:</strong> Proporciona un nombre descriptivo y
+                atractivo para tu venta adicional que atraiga a los clientes.</li>
+              <li><strong>Selecciona el estilo de venta adicional múltiple:</strong> Elige cómo se mostrarán tus ventas
+                adicionales múltiples (Normal, En caja, etc.).</li>
+              <li><strong>Configura las configuraciones del bloque:</strong> Configura el título del bloque, el texto
+                del pie de página y otras opciones de visualización.</li>
+              <li><strong>Establece la visibilidad:</strong> Elige dónde se debe mostrar la venta adicional (por
+                ejemplo, en productos específicos o colecciones).</li>
+              <li><strong>Selecciona productos:</strong> Elige los productos que se mostrarán como ventas adicionales y
+                configura sus detalles.</li>
+              <li><strong>Personaliza los estilos:</strong> Ajusta colores, fuentes y diseños para que coincidan con la
+                marca de tu tienda.</li>
+              <li><strong>Previsualiza y guarda:</strong> Revisa la configuración de tu venta adicional y guárdala como
+                Borrador o Activa.</li>
+            </ol>
+            <h3>Seleccionar variante o productos</h3>
+            <a href="assets/images/multipleupsell-proeuctselect.png"><img class="figure-img img-fluid shadow rounded"
+                src="assets/images/multipleupsell-proeuctselect.png" alt="Modal de selección de productos"
+                title="Modal de selección de productos" /></a>
+            <p>
+              Para seleccionar productos para tu venta adicional múltiple, usa el botón "Agregar productos de venta
+              adicional". Esto abre un modal donde puedes elegir productos y sus variantes. También hay un botón para
+              seleccionar todos los productos de variante de venta adicional para mayor comodidad.
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/varientselect-modal.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/varientselect-modal.png" alt="Modal de selección de productos"
+                    title="Modal de selección de productos" /></a>
+              </div>
+            </div>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Consejo
+                </h4>
+                <p>
+                  Comienza con una venta adicional múltiple simple y prueba su rendimiento antes de agregar
+                  configuraciones complejas. Esto te permite optimizar según los comentarios de los clientes.
+                </p>
+              </div>
+            </div>
+            <h3>Nombre de la venta adicional</h3>
+            <p>
+              Ingresa un nombre descriptivo y atractivo para tu venta adicional múltiple. Este nombre se mostrará a los
+              clientes en tus páginas de productos.
+            </p>
+            <h3>Estilo de venta adicional múltiple</h3>
+            <p>
+              Selecciona cómo se mostrarán tus ventas adicionales múltiples. Las opciones incluyen Normal (diseño 1), En
+              caja (diseño 2), Botón de tema (diseño 3), Botón propio (diseño 4).
+            </p>
+            <h3>Comportamiento del botón Agregar al carrito</h3>
+            <p>
+              Elige si deseas usar el botón Agregar al carrito del tema o tu propio botón personalizado.
+            </p>
+            <h3>Configuraciones del bloque</h3>
+            <p>
+              Configura las configuraciones para el bloque de ventas adicionales, incluyendo el título del bloque, el
+              texto del pie de página y opciones de visualización como mostrar íconos + entre las ventas adicionales.
+            </p>
+            <ul>
+              <li><strong>Título del bloque:</strong> por ejemplo, Ventas adicionales múltiples</li>
+              <li><strong>Texto del pie de página:</strong> por ejemplo, Total:</li>
+              <li><strong>Mostrar íconos + entre las ventas adicionales:</strong> Habilita para separar visualmente los
+                elementos de venta adicional.</li>
+            </ul>
+            <h3>Visibilidad</h3>
+            <p>
+              Elige dónde se debe mostrar la venta adicional. Las opciones incluyen todos los productos, ciertos
+              productos o ciertas colecciones.
+            </p>
+            <ul>
+              <li><strong>Todos los productos:</strong> Muestra la venta adicional en cualquier producto de tu tienda.
+              </li>
+              <li><strong>Ciertos productos:</strong> Selecciona productos específicos para la visualización de la venta
+                adicional.</li>
+              <li><strong>Ciertas colecciones:</strong> Muestra la venta adicional en productos de colecciones
+                seleccionadas.</li>
+            </ul>
+            <h3>Selección de productos: Dónde mostrar esta venta adicional múltiple</h3>
+            <p>
+              Elige dónde se debe mostrar la venta adicional. Las opciones incluyen todos los productos, ciertos
+              productos o ciertas colecciones. Debes seleccionar una de las siguientes opciones: Todos los productos,
+              Ciertos productos o Ciertas colecciones. Esta selección es obligatoria.
+            </p>
+            <h3>Ir al pago</h3>
+            <p>
+              Habilita para permitir el pago directo desde la venta adicional.
+            </p>
+            <h3>Estilos</h3>
+            <p>
+              Personaliza la apariencia visual de tu venta adicional múltiple para que coincida con el tema de tu
+              tienda. Ajusta colores, fuentes, diseños y otros elementos de estilo.
+            </p>
+            <h4>Título del bloque</h4>
+            <ul>
+              <li><strong>Tamaño del texto:</strong> Establece el tamaño de la fuente (por ejemplo, 20px).</li>
+              <li><strong>Peso de la fuente:</strong> Elige el peso de la fuente (Negrita o Delgada).</li>
+              <li><strong>Alineación del texto:</strong> Establece la alineación (Izquierda).</li>
+              <li><strong>Color:</strong> Selecciona el color para el texto del título.</li>
+            </ul>
+            <h4>Título del producto</h4>
+            <ul>
+              <li><strong>Tamaño del texto:</strong> Establece el tamaño de la fuente (por ejemplo, 20px).</li>
+              <li><strong>Peso de la fuente:</strong> Elige el peso de la fuente (Negrita o Delgada).</li>
+              <li><strong>Color:</strong> Selecciona el color para el texto del título del producto.</li>
+            </ul>
+            <h4>Subtítulo</h4>
+            <ul>
+              <li><strong>Tamaño del texto:</strong> Establece el tamaño de la fuente (por ejemplo, 14px).</li>
+              <li><strong>Peso de la fuente:</strong> Elige el peso de la fuente (Delgada).</li>
+              <li><strong>Color:</strong> Selecciona el color para el texto del subtítulo.</li>
+            </ul>
+            <h4>Precio</h4>
+            <ul>
+              <li><strong>Tamaño del texto:</strong> Establece el tamaño de la fuente (por ejemplo, 14px).</li>
+              <li><strong>Peso de la fuente:</strong> Elige el peso de la fuente (Negrita).</li>
+              <li><strong>Color:</strong> Selecciona el color para los precios.</li>
+            </ul>
+            <h4>Precio de comparación</h4>
+            <ul>
+              <li><strong>Tamaño del texto:</strong> Establece el tamaño de la fuente (por ejemplo, 14px).</li>
+              <li><strong>Peso de la fuente:</strong> Elige el peso de la fuente (Delgada).</li>
+              <li><strong>Color:</strong> Selecciona el color para los precios de comparación.</li>
+            </ul>
+            <h4>Colores de insignias</h4>
+            <ul>
+              <li><strong>Fondo:</strong> Color de fondo para las insignias.</li>
+              <li><strong>Texto:</strong> Color del texto para las insignias.</li>
+            </ul>
+            <h4>Colores de casillas de verificación</h4>
+            <ul>
+              <li><strong>Fondo:</strong> Color de fondo para las casillas de verificación.</li>
+              <li><strong>Color de la marca de verificación:</strong> Color para las marcas de verificación.</li>
+            </ul>
+            <h4>Colores de caja</h4>
+            <ul>
+              <li><strong>Color de la caja:</strong> Color de fondo para las cajas.</li>
+              <li><strong>Color del borde de la caja:</strong> Color para los bordes de las cajas.</li>
+              <li><strong>Color de la caja al pasar el ratón:</strong> Color de fondo al pasar el ratón.</li>
+              <li><strong>Ancho del borde de la caja:</strong> Ancho de los bordes (por ejemplo, 1px).</li>
+              <li><strong>Radio del borde de la caja:</strong> Radio de las esquinas (por ejemplo, 0px).</li>
+            </ul>
+            <h4>Configuración de imágenes</h4>
+            <ul>
+              <li><strong>Tamaño de la imagen:</strong> Establece el tamaño para las imágenes de productos (por ejemplo,
+                5).</li>
+              <li><strong>Radio:</strong> Radio de las esquinas para las imágenes (por ejemplo, 0px).</li>
+            </ul>
+
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 mb-3">
+                  <a href="assets/images/create-multipleupsell.png"><img class="figure-img img-fluid shadow rounded"
+                      src="assets/images/create-multipleupsell.png" alt="Crear venta adicional múltiple"
+                      title="Crear venta adicional múltiple" /></a>
+                </div>
+              </div>
+          </section>
+          <section class="docs-section" id="item-3-2">
+            <h2 class="section-heading">Agregando venta adicional a tu tema</h2>
+            <p>
+              Para mostrar tus ofertas de venta adicional configuradas en las páginas de productos de tu tienda, debes
+              agregar la sección de Venta Adicional de Bundleza a tu tema de Shopify. Esto permite que las indicaciones
+              de venta adicional aparezcan en puntos estratégicos del viaje del cliente.
+            </p>
+            <h3>Pasos para agregar la sección de venta adicional</h3>
+            <ol>
+              <li><strong>Ve a la tienda en línea:</strong> Desde tu panel de Shopify, navega a <strong>Tienda en línea
+                  > Temas</strong>.</li>
+              <li><strong>Personaliza tu tema:</strong> Haz clic en el botón <strong>Personalizar</strong> junto a tu
+                tema en vivo.</li>
+              <li><strong>Selecciona una página de producto:</strong> En el editor de temas, usa el selector de páginas
+                en la parte superior para elegir una plantilla de página de producto.</li>
+              <li><strong>Agregar sección:</strong> En la barra lateral izquierda, haz clic en <strong>Agregar
+                  sección</strong>, luego busca y selecciona <strong>Venta Adicional de Bundleza</strong> (elige Única o
+                Múltiple según tu tipo de venta adicional) de la sección de Aplicaciones.</li>
+              <li><strong>Configura la sección:</strong> Una vez agregada, selecciona la venta adicional específica que
+                deseas mostrar desde el menú desplegable en la configuración de la sección.</li>
+              <li><strong>Guardar cambios:</strong> Haz clic en <strong>Guardar</strong> para aplicar los cambios a tu
+                tema.</li>
+            </ol>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1"><i class="fas fa-info-circle"></i></span>
+                  Consejo
+                </h4>
+                <p>
+                  Coloca la sección de venta adicional sobre el botón Agregar al carrito para una máxima efectividad.
+                  También puedes agregarla a las páginas del carrito u otras plantillas para oportunidades de venta
+                  cruzada.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="docs-section" id="item-3-7">
+            <h2 class="section-heading">Agregando venta adicional múltiple a tu tema</h2>
+            <p>
+              Para mostrar tus ofertas de venta adicional múltiple configuradas en las páginas de productos de tu
+              tienda, debes agregar la sección de Venta Adicional Múltiple de Bundleza a tu tema de Shopify. Esto
+              permite que las indicaciones de venta adicional múltiple aparezcan en puntos estratégicos del viaje del
+              cliente.
+            </p>
+            <h3>Pasos para agregar la sección de venta adicional múltiple</h3>
+            <ol>
+              <li><strong>Ve a la tienda en línea:</strong> Desde tu panel de Shopify, navega a <strong>Tienda en línea
+                  > Temas</strong>.</li>
+              <li><strong>Personaliza tu tema:</strong> Haz clic en el botón <strong>Personalizar</strong> junto a tu
+                tema en vivo.</li>
+              <li><strong>Selecciona una página de producto:</strong> En el editor de temas, usa el selector de páginas
+                en la parte superior para elegir una plantilla de página de producto.</li>
+              <li><strong>Agregar sección:</strong> En la barra lateral izquierda, haz clic en <strong>Agregar
+                  sección</strong> (o <strong>Agregar bloque</strong>), luego busca y selecciona <strong>Venta Adicional
+                  Múltiple de Bundleza</strong> de la sección de Aplicaciones.</li>
+              <li><strong>Configura la sección:</strong> Una vez agregada, selecciona la venta adicional múltiple
+                específica que deseas mostrar desde el menú desplegable en la configuración de la sección.</li>
+              <li><strong>Guardar cambios:</strong> Haz clic en <strong>Guardar</strong> para aplicar los cambios a tu
+                tema.</li>
+            </ol>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1"><i class="fas fa-info-circle"></i></span>
+                  Consejo
+                </h4>
+                <p>
+                  Coloca la sección de venta adicional múltiple sobre el botón Agregar al carrito para una máxima
+                  efectividad. También puedes agregarla a las páginas del carrito u otras plantillas para oportunidades
+                  de venta cruzada.
+                </p>
+              </div>
+            </div>
+          </section>
+
+        </article>
+        </article>
+        <!--//docs-article-->
+
+        <article class="docs-article" id="section-4">
+          <header class="docs-header">
+            <h1 class="docs-heading">Regalo</h1>
+            <section class="docs-intro">
+              <p>
+                Aumenta tus conversiones con los Regalos de Bundleza. Crea módulos de regalo atractivos que alienten a
+                los clientes a agregar artículos complementarios, aumentando los valores promedio de los pedidos y
+                mejorando la experiencia de compra.
+              </p>
+            </section>
+            <!--//docs-intro-->
+          </header>
+          <section class="docs-section" id="item-4-1">
+            <h2 class="section-heading">Gestión de regalos</h2>
+            <p>
+              La página de Gestión de Regalos es tu centro principal para supervisar todos tus módulos de regalo
+              creados. Aquí, puedes editar, eliminar, duplicar y actualizar el estado de tus regalos para mantener las
+              ofertas de tu tienda organizadas y actualizadas.
+            </p>
+
+            <h3>Accediendo a la Gestión de Regalos</h3>
+            <p>
+              Desde el panel de control de Bundleza, navega a la sección de Regalos para acceder a la página de Gestión
+              de Regalos.
+            </p>
+
+            <h3>Lista de Regalos y Acciones</h3>
+            <p>
+              La lista de regalos muestra todos tus regalos creados con información clave y acciones disponibles. Puedes
+              realizar las siguientes acciones en cada regalo:
+            </p>
+            <ul>
+              <li><strong>Editar:</strong> Modificar los detalles, productos y configuraciones del regalo.</li>
+              <li><strong>Eliminar:</strong> Eliminar permanentemente el regalo de tu tienda.</li>
+              <li><strong>Duplicar:</strong> Crear una copia del regalo para configurar rápidamente ofertas similares.
+              </li>
+              <li><strong>Actualizar Estado:</strong> Alternar entre Borrador (oculto para los clientes) y Activo
+                (visible en tu tienda).</li>
+            </ul>
+
+            <div class="callout-block callout-block-warning">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                  Importante
+                </h4>
+                <p>
+                  Para editar cualquier regalo, primero debes actualizar su estado a Borrador.
+                </p>
+              </div>
+            </div>
+
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/gift-table.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/gift-table.png" alt="Tabla de Regalos" title="Tabla de Regalos" /></a>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Consejo
+                </h4>
+                <p>
+                  Usa el interruptor de estado para ocultar temporalmente los regalos durante las temporadas bajas o al
+                  actualizar ofertas, sin eliminarlos.
+                </p>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  Solicitud de Reseña
+                </h4>
+                <p>
+                  Si te encanta Bundleza, ¡déjanos una reseña en la tienda de aplicaciones de Shopify!
+                </p>
+              </div>
+            </div>
+          </section>
+          <!--//section-->
+
+          <section class="docs-section" id="item-4-2">
+            <h2 class="section-heading">Creando y actualizando regalos</h2>
+            <p>
+              Crea un nuevo módulo de regalo para tu tienda o actualiza regalos existentes. Esta página te permite
+              configurar todos los aspectos de tu regalo, desde detalles básicos hasta estilos avanzados y selección de
+              productos.
+            </p>
+
+            <h3>Cómo crear un nuevo regalo</h3>
+            <ol>
+              <li><strong>Ingresa el nombre del regalo:</strong> Proporciona un nombre descriptivo y atractivo para tu
+                regalo que atraiga a los clientes.</li>
+              <li><strong>Establece la visibilidad:</strong> Elige dónde se debe mostrar el regalo (por ejemplo, en
+                productos específicos o colecciones).</li>
+              <li><strong>Selecciona productos:</strong> Elige el producto que se mostrará como regalo y configura sus
+                detalles.</li>
+              <li><strong>Configura las configuraciones:</strong> Configura precios, descuentos y opciones de
+                visualización.</li>
+              <li><strong>Personaliza los estilos:</strong> Ajusta colores, fuentes y diseños para que coincidan con la
+                marca de tu tienda.</li>
+              <li><strong>Previsualiza y guarda:</strong> Revisa la configuración de tu regalo y guárdalo como Borrador
+                o Activo.</li>
+            </ol>
+            <h3>Seleccionar variante o productos</h3>
+            <a href="assets/images/giftselect.png"><img class="figure-img img-fluid shadow rounded"
+                src="assets/images/giftselect.png" alt="Modal de selección de productos"
+                title="Modal de selección de productos" /></a>
+            <p>
+              Para seleccionar productos para tu regalo, usa el botón "Seleccionar variante/productos". Esto abre un
+              modal donde puedes elegir productos y sus variantes. También hay un botón para seleccionar todos los
+              productos de variante de regalo para mayor comodidad.
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/varientselect-modal.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/varientselect-modal.png" alt="Modal de selección de productos"
+                    title="Modal de selección de productos" /></a>
+              </div>
+            </div>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  Consejo
+                </h4>
+                <p>
+                  Comienza con un regalo simple y prueba su rendimiento antes de agregar configuraciones complejas. Esto
+                  te permite optimizar según los comentarios de los clientes.
+                </p>
+              </div>
+            </div>
+
+            <h3>Nombre del regalo</h3>
+            <p>
+              Ingresa un nombre descriptivo y atractivo para tu regalo. (Requerido)
+            </p>
+
+            <h3>Visibilidad</h3>
+            <p>
+              Elige dónde se debe mostrar el regalo. Las opciones incluyen todos los productos, ciertos productos o
+              ciertas colecciones.
+            </p>
+            <ul>
+              <li><strong>Todos los productos:</strong> Muestra el regalo en cualquier producto de tu tienda.</li>
+              <li><strong>Ciertos productos:</strong> Selecciona productos específicos para la visualización del regalo.
+              </li>
+              <li><strong>Ciertas colecciones:</strong> Muestra el regalo en productos de colecciones seleccionadas.
+              </li>
+            </ul>
+
+            <h3>Selección de productos: Dónde mostrar este regalo</h3>
+            <p>
+              Elige dónde se debe mostrar el regalo. Las opciones incluyen todos los productos, ciertos productos o
+              ciertas colecciones. Debes seleccionar una de las siguientes opciones: Todos los productos, Ciertos
+              productos o Ciertas colecciones. Esta selección es obligatoria.
+            </p>
+
+            <h3>Configuraciones</h3>
+            <p>
+              Configura las configuraciones principales para tu regalo, incluyendo precios y opciones de visualización.
+            </p>
+            <ul>
+              <li><strong>Mostrar imagen:</strong> Habilita o deshabilita la visualización de la imagen del producto.
+              </li>
+              <li><strong>Ir al pago:</strong> Permite el pago directo desde el regalo.</li>
+              <li><strong>Tachar precio de comparación del producto:</strong> Muestra precios de comparación tachados.
+              </li>
+              <li><strong>Limitado por pedido:</strong> Establece límites en las cantidades de regalo por pedido.</li>
+            </ul>
+
+            <h3>Estilos</h3>
+            <p>
+              Personaliza la apariencia visual de tu regalo para que coincida con el tema de tu tienda. Ajusta colores,
+              fuentes, diseños y otros elementos de estilo.
+            </p>
+            <h4>Estilos de título</h4>
+            <ul>
+              <li><strong>Tamaño del texto:</strong> Establece el tamaño de la fuente para el título del regalo (por
+                ejemplo, 18px).</li>
+              <li><strong>Peso de la fuente:</strong> Elige el peso de la fuente (Negrita o Regular).</li>
+              <li><strong>Color:</strong> Selecciona el color para el texto del título.</li>
+            </ul>
+            <h4>Estilos de subtítulo</h4>
+            <ul>
+              <li><strong>Tamaño del texto:</strong> Establece el tamaño de la fuente para el subtítulo (por ejemplo,
+                16px).</li>
+              <li><strong>Peso de la fuente:</strong> Elige el peso de la fuente (Negrita o Regular).</li>
+              <li><strong>Color:</strong> Selecciona el color para el texto del subtítulo.</li>
+            </ul>
+            <h4>Estilos de precios</h4>
+            <ul>
+              <li><strong>Color:</strong> Establece el color para los precios.</li>
+              <li><strong>Nombre del descuento:</strong> Personaliza la etiqueta del descuento.</li>
+            </ul>
+            <h4>Estilos de insignias</h4>
+            <ul>
+              <li><strong>Fondo:</strong> Color de fondo para las insignias.</li>
+              <li><strong>Texto:</strong> Color del texto para las insignias.</li>
+            </ul>
+            <h4>Estilos de botones</h4>
+            <ul>
+              <li><strong>Fondo:</strong> Color de fondo para los botones.</li>
+              <li><strong>Texto:</strong> Color del texto para los botones.</li>
+            </ul>
+            <h4>Configuración de imágenes</h4>
+            <ul>
+              <li><strong>Mostrar imagen:</strong> Alternar la visibilidad de la imagen.</li>
+              <li><strong>Texto alternativo:</strong> Establece el texto alternativo para las imágenes.</li>
+            </ul>
+
+            <h3>Seleccionar producto</h3>
+            <p>
+              Elige el producto que se mostrará como regalo. Configura su nombre, subtítulo, insignia, precio y otros
+              detalles.
+            </p>
+            <ul>
+              <li><strong>Nombre del regalo:</strong> por ejemplo, Apple Watch SE 2024</li>
+              <li><strong>Subtítulo:</strong> por ejemplo, 100% Natural</li>
+              <li><strong>Insignia:</strong> por ejemplo, más vendido</li>
+              <li><strong>Texto del precio:</strong> por ejemplo, $0</li>
+              <li><strong>Nombre del descuento:</strong> por ejemplo, descuento de regalo</li>
+            </ul>
+          </section>
+          <!--//section-->
+
+          <section class="docs-section" id="item-4-3">
+            <h2 class="section-heading">Mensajes de regalo</h2>
+            <p>
+              Permite a los clientes agregar mensajes de regalo personalizados a sus pedidos. Personaliza los campos de
+              mensajes, establece límites de caracteres y controla cómo aparecen los mensajes de regalo en los recibos y
+              albaranes.
+            </p>
+
+            <h3>Cómo configurar mensajes de regalo</h3>
+            <ol>
+              <li>Navega a la subsección de Mensajes de Regalo en la sección de Regalos.</li>
+              <li>Habilita mensajes de regalo para productos u órdenes relevantes.</li>
+              <li>Establece límites de caracteres y haz que los campos sean obligatorios u opcionales.</li>
+              <li>Personaliza cómo se muestran los mensajes en los recibos y albaranes.</li>
+              <li>Guarda la configuración.</li>
+            </ol>
+
+            <p>Los mensajes de regalo personalizados añaden un toque reflexivo a las compras, haciendo que tu tienda sea
+              la opción preferida para regalos y aumentando la lealtad del cliente.</p>
+          </section>
+          <!--//section-->
+          <section class="docs-section" id="item-4-4">
+            <h2 class="section-heading">Agregando regalo a tu tema</h2>
+            <p>
+              Para mostrar tus módulos de regalo configurados en las páginas de productos de tu tienda, debes agregar la
+              sección de Regalo de Bundleza a tu tema de Shopify. Esto permite que las indicaciones de regalo aparezcan
+              en puntos estratégicos del viaje del cliente.
+            </p>
+            <h3>Pasos para agregar la sección de regalo</h3>
+            <ol>
+              <li><strong>Ve a la tienda en línea:</strong> Desde tu panel de Shopify, navega a <strong>Tienda en línea
+                  > Temas</strong>.</li>
+              <li><strong>Personaliza tu tema:</strong> Haz clic en el botón <strong>Personalizar</strong> junto a tu
+                tema en vivo.</li>
+              <li><strong>Selecciona una página de producto:</strong> En el editor de temas, usa el selector de páginas
+                en la parte superior para elegir una plantilla de página de producto.</li>
+              <li><strong>Agregar sección:</strong> En la barra lateral izquierda, haz clic en <strong>Agregar
+                  sección</strong> (o <strong>Agregar bloque</strong>), luego busca y selecciona <strong>Regalo de
+                  Bundleza</strong> de la sección de Aplicaciones.</li>
+              <li><strong>Configura la sección:</strong> Una vez agregada, selecciona el regalo específico que deseas
+                mostrar desde el menú desplegable en la configuración de la sección.</li>
+              <li><strong>Guardar cambios:</strong> Haz clic en <strong>Guardar</strong> para aplicar los cambios a tu
+                tema.</li>
+            </ol>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1"><i class="fas fa-info-circle"></i></span>
+                  Consejo
+                </h4>
+                <p>
+                  Coloca la sección de regalo sobre el botón Agregar al carrito para una máxima efectividad. También
+                  puedes agregarla a las páginas del carrito u otras plantillas para oportunidades de regalo.
+                </p>
+              </div>
+            </div>
+          </section>
+        </article>
+        <!--//docs-article-->
+
+        <article class="docs-article" id="section-5">
+          <header class="docs-header">
+            <h1 class="docs-heading">Secciones</h1>
+            <section class="docs-intro">
+              <p>
+                Agrega y gestiona secciones personalizadas para tu tienda Shopify.
+                Preconstruido. Configurable. Fácil en Themebuilder. Crea paquetes personalizados de tus productos y
+                configura secciones preconstruidas como cajas de reseñas o beneficios para tu página de producto.
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 mb-3">
+                  <a href="assets/images/section-overview.png"><img class="figure-img img-fluid shadow rounded"
+                      src="assets/images/section-overview.png" alt="Resumen de secciones de Bundleza"
+                      title="Resumen de secciones" /></a>
+                </div>
+              </div>
+            </section>
+            <!--//docs-intro-->
+          </header>
+          <section class="docs-section" id="item-5-1">
+
+
+            <section class="docs-section" id="item-5-2">
+
+              <h3>Seleccionar tema</h3>
+              <p>
+                <strong>Elige un tema:</strong> Selecciona tu tema de Shopify para agregar secciones a las páginas de
+                productos.
+              </p>
+
+              <h3>Pasos para seleccionar un tema</h3>
+              <ol>
+                <li>Navega al área de Secciones en tu panel de Bundleza.</li>
+                <li>Desde las opciones disponibles, selecciona tu tema de Shopify activo.</li>
+                <li>Confirma la selección para habilitar la adición de secciones para ese tema.</li>
+              </ol>
+
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 mb-3">
+                  <a href="assets/images/select-theme.png"><img class="figure-img img-fluid shadow rounded"
+                      src="assets/images/select-theme.png" alt="Seleccionar tema para secciones de página de producto"
+                      title="Seleccionar tema" /></a>
+                </div>
+              </div>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-5-3">
+              <h2 class="section-heading">Agregar secciones</h2>
+              <p>Después de seleccionar tu tema, haz clic en el botón "Agregar" para la sección que deseas agregar.
+                Alternativamente, puedes ver un video tutorial para obtener orientación.</p>
+
+              <h3>Cómo agregar secciones</h3>
+              <ol>
+                <li>Revisa la lista de secciones preconstruidas disponibles para tu tema.</li>
+                <li>Haz clic en el botón "Agregar" junto a la sección que deseas incluir (por ejemplo, cajas de reseñas,
+                  cajas de beneficios).</li>
+                <li>Configura la configuración de la sección, como contenido y estilo.</li>
+                <li>Guarda los cambios y previsualiza la sección en tu página de producto.</li>
+              </ol>
+
+              <p>Como comerciante, agregar secciones personalizadas a tus páginas de productos te permite resaltar
+                beneficios clave, reseñas de clientes y ofertas de paquetes, influyendo directamente en las decisiones
+                de compra y mejorando las tasas de conversión.</p>
+
+              <img class="figure-img img-fluid shadow rounded" src="assets/images/add-section.png"
+                alt="Personalizar sección paso 2" />
+              <!--//section-->
+
+
+              <div class="callout-block callout-block-success">
+                <div class="content">
+                  <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                      <i class="fas fa-thumbs-up"></i>
+                    </span>
+                    ¿Te gusta nuestra aplicación?
+                  </h4>
+                  <p>
+                    ¡Agradeceríamos una reseña! Ayuda a otros comerciantes a descubrir
+                    Bundleza.
+                  </p>
+                </div>
+              </div>
+
+              <h3>Más módulos próximamente</h3>
+              <p>
+                Únete a nuestra comunidad de Discord y conecta con otros propietarios de tiendas para obtener acceso
+                temprano a nuevas funciones.
+              </p>
+            </section>
+            <!--//section-->
+
+        </article>
+
+        <!--//docs-article-->
+
+        <article class="docs-article" id="section-6">
+          <header class="docs-header">
+            <h1 class="docs-heading">Banner</h1>
+            <section class="docs-intro">
+              <p>
+                Aumenta tus conversiones con los Banners de Bundleza
+              </p>
+            </section>
+            <!--//docs-intro-->
+          </header>
+          <section class="docs-section" id="item-6-1">
+            <h2 class="section-heading">Gestión de banners</h2>
+            <p>
+              Gestiona todos tus banners desde el panel central. Visualiza, edita y monitorea el rendimiento de los
+              banners para optimizar tus estrategias promocionales.
+            </p>
+
+            <h3>Crea tu primer módulo de banner</h3>
+            <ol>
+              <li>Configura las configuraciones de tu banner</li>
+              <li>Personaliza estilos/colores</li>
+              <li>Guarda y agrega como una sección</li>
+            </ol>
+
+            <h3>Lista de banners</h3>
+            <p>
+              La lista de banners muestra todos tus banners creados con información clave y acciones disponibles. Busca
+              por nombre de banner para encontrar banners específicos rápidamente.
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/banner-table.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/banner-table.png" alt="Gestión de banners" title="Gestión de banners" /></a>
+              </div>
+            </div>
+            <div class="callout-block callout-block-warning">
+              <div class="callout-title">
+                <span class="callout-icon-holder me-1">
+                  <i class="fas fa-exclamation-triangle"></i>
+                </span>
+                Importante
+              </div>
+              <p>
+                Para editar cualquier banner, primero debes actualizar su estado a Borrador.
+              </p>
+            </div>
+
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  Solicitud de Reseña
+                </h4>
+                <p>
+                  ¿Te gusta nuestra aplicación? ¡Agradeceríamos una reseña!
+                </p>
+              </div>
+            </div>
+          </section>
+          <!--//section-->
+
+          <section class="docs-section" id="item-6-2">
+            <h2 class="section-heading">Crear nuevo banner</h2>
+            <div class="callout-block callout-block-warning">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                  Importante
+                </h4>
+                <p>
+                  Antes de crear un banner, debes ir a la sección y seleccionar tu tema y agregarlo a tu tema
+                </p>
+              </div>
+            </div>
+            <a href="assets/images/banner-select.png"><img class="figure-img img-fluid shadow rounded"
+                src="assets/images/banner-select.png" alt="Vista previa del banner"
+                title="Vista previa del banner" /></a>
+            <h2>Vista previa</h2>
+            <p>La página de creación de banners incluye una función de vista previa en vivo que te permite ver cómo se
+              verá tu banner en dispositivos de escritorio, móvil y tableta. Esto te ayuda a asegurarte de que el banner
+              esté optimizado para todos los tamaños de pantalla antes de guardarlo.</p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/banner-preview.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/banner-preview.png" alt="Vista previa del banner"
+                    title="Vista previa del banner" /></a>
+              </div>
+            </div>
+            <p>
+              Diseña y personaliza tu banner con plantillas, temas, programación y opciones de contenido para crear
+              promociones atractivas que aumenten las conversiones.
+            </p>
+
+            <h3>Plantillas</h3>
+            <p>
+              Elige una plantilla prediseñada para tu banner para comenzar rápidamente.
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/template.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/template.png" alt="Plantillas de banner" title="Plantillas de banner" /></a>
+              </div>
+            </div>
+
+            <h3>Tema</h3>
+            <p>
+              Selecciona entre temas como Black Friday, Navidad, Año Nuevo 2025, Modo compacto, San Valentín y más para
+              que coincidan con promociones estacionales. Cada tema incluye una vista previa para ver cómo se verá.
+            </p>
+            <ul>
+              <li><strong>Black Friday:</strong> Vista previa del tema Black Friday</li>
+              <li><strong>Navidad:</strong> Vista previa del tema Navidad</li>
+              <li><strong>Año Nuevo 2025:</strong> Vista previa del tema Año Nuevo 2025</li>
+              <li><strong>Modo compacto:</strong> Vista previa del tema Modo compacto</li>
+              <li><strong>San Valentín:</strong> Vista previa del tema San Valentín</li>
+            </ul>
+
+            <h3>Programar</h3>
+            <p>
+              Establece cuándo debe estar activo tu banner con fechas/horas de inicio y fin. Por ejemplo, comienza el
+              23/09/2025 a las 09:00 AM y termina el 23/09/2025 a las 09:00 AM. Recuerda, el banner comenzará cuando se
+              seleccione la hora de inicio.
+            </p>
+
+            <h3>Idioma</h3>
+            <p>
+              Personaliza el contenido del banner para diferentes idiomas para llegar a una audiencia global.
+            </p>
+
+            <h3>Contenido del banner</h3>
+            <p>
+              Diseña los textos para tu banner aquí:
+            </p>
+            <ul>
+              <li><strong>Texto principal:</strong> BLACK FRIDAY - Aparece prominentemente en el lado izquierdo del
+                banner.</li>
+              <li><strong>Llamada a la acción:</strong> BUNDLEZA50 - El código de descuento que los clientes pueden
+                usar, por ejemplo, SALE50.</li>
+              <li><strong>Etiqueta de cuenta regresiva:</strong> Cuenta regresiva - Texto sobre el temporizador de
+                cuenta regresiva.</li>
+              <li><strong>Anuncio de descuento:</strong> Ahorra hasta un 50% con el código: - por ejemplo, 'Ahorra hasta
+                {{50%}} en todo'.</li>
+              <li><strong>Botón de cierre:</strong> Define el comportamiento después de cerrar el banner.</li>
+              <li><strong>Intervalo de visualización:</strong> Define cuándo debe reaparecer el banner después de ser
+                cerrado (Mostrar siempre).</li>
+            </ul>
+
+            <h3>Diseño</h3>
+            <p>
+              Personaliza la apariencia de tu banner para que coincida con el diseño de tu marca:
+            </p>
+            <ul>
+              <li><strong>Banner:</strong> Texto del banner (izquierda), Color de acento del banner, Fondo del banner.
+              </li>
+              <li><strong>Cuenta regresiva:</strong> Texto, Texto del contador, Fondo del contador.</li>
+              <li><strong>Descuento:</strong> Texto del código (para el botón de copiar del código de descuento), Texto
+                del anuncio del código, Fondo del código, Radio del código (por ejemplo, 4).</li>
+            </ul>
+            <h4>Estilos</h4>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/style.png"><img class="banner style" src="assets/images/style.png"
+                    alt="estilo de banner" /></a>
+              </div>
+            </div>
+            <p>
+              Personaliza aún más los estilos del banner, incluidos los colores. Estas configuraciones permiten un
+              control preciso sobre los elementos visuales para crear una apariencia coherente y profesional.
+            </p>
+            <ul>
+              <li><strong>Colores de texto:</strong> Ajusta el color del texto principal, el temporizador de cuenta
+                regresiva y el texto del código de descuento para que coincidan con la paleta de tu marca. Por ejemplo,
+                usa el color principal de tu marca para los encabezados y un color contrastante para el texto
+                secundario.</li>
+              <li><strong>Colores de fondo:</strong> Establece fondos personalizados para el banner, la sección de
+                cuenta regresiva y el área del código de descuento. Elige colores sólidos, degradados o incluso fondos
+                transparentes para adaptarse a tu tema de diseño.</li>
+
+              <li><strong>Radio del borde:</strong> Establece el radio de las esquinas para elementos como la caja del
+                código de descuento o los botones. Un radio más alto crea esquinas redondeadas para una apariencia
+                moderna, mientras que 0px da bordes afilados para un estilo clásico.</li>
+
+            </ul>
+
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/create-banner.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/create-banner.png" alt="Crear nuevo banner" title="Crear nuevo banner" /></a>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  Éxito
+                </h4>
+                <p>
+                  El banner estará activo desde el 23/09/2025 a las 09:00 hasta el 23/09/2025 a las 09:00
+                </p>
+              </div>
+            </div>
+          </section>
+          <!--//section-->
+          <section class="docs-section" id="item-6-3">
+            <h2 class="section-heading">Agregando banner a tu tema</h2>
+            <p>
+              Para mostrar tus banners configurados en las páginas de tu tienda, debes agregar la sección de Banner de
+              Bundleza a tu tema de Shopify. Esto permite que los banners se muestren en páginas de productos, página de
+              inicio u otras plantillas.
+            </p>
+            <h3>Pasos para agregar la sección de banner</h3>
+            <ol>
+              <li><strong>Ve a la tienda en línea:</strong> Desde tu panel de Shopify, navega a <strong>Tienda en línea
+                  > Temas</strong>.</li>
+              <li><strong>Personaliza tu tema:</strong> Haz clic en el botón <strong>Personalizar</strong> junto a tu
+                tema en vivo.</li>
+              <li><strong>Selecciona una plantilla o sección:</strong> En el editor de temas, usa el selector de páginas
+                en la parte superior para elegir la plantilla de página (por ejemplo, Página de inicio, Página de
+                producto) o selecciona el Encabezado desde la barra lateral izquierda para agregar el banner al
+                encabezado del sitio.</li>
+              <li><strong>Agregar sección:</strong> En la barra lateral izquierda, haz clic en <strong>Agregar
+                  sección</strong> (o <strong>Agregar bloque</strong>), luego busca y selecciona <strong>Banner de
+                  Bundleza</strong> de la sección de Aplicaciones.
+              </li>
+              <li><strong>Configura la sección:</strong> Una vez agregada, selecciona el banner específico que deseas
+                mostrar desde el menú desplegable en la configuración de la sección.</li>
+              <li><strong>Guardar cambios:</strong> Haz clic en <strong>Guardar</strong> para aplicar los cambios a tu
+                tema.</li>
+            </ol>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1"><i class="fas fa-info-circle"></i></span>
+                  Consejo
+                </h4>
+                <p>
+                  Los banners se pueden agregar a varias páginas como la página de inicio para promociones, páginas de
+                  productos para ofertas especiales, o páginas de colecciones para banners específicos de categorías, o
+                  al encabezado para visibilidad en todo el sitio.
+                </p>
+              </div>
+            </div>
+          </section>
+        </article>
+        <!--//docs-article-->
+
+
+
+        <footer class="footer">
+          <div class="container text-center py-5">
+            <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+            <small class="copyright">Desarrollado<i class="fas fa-heart" style="color: #fb866a"></i> por
+              <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Bundleza</a>
+            </small>
+            <ul class="social-list list-unstyled pt-4 mb-0">
+              <li class="list-inline-item">
+                <a href="#"><i class="fa-brands fa-github fa-fw"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa-brands fa-x-twitter fa-fw"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa-brands fa-slack fa-fw"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa-brands fa-product-hunt fa-fw"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa-brands fa-facebook-f fa-fw"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa-brands fa-instagram fa-fw"></i></a>
+              </li>
+            </ul>
+
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <!--//docs-wrapper-->
+
+  <!-- Javascript -->
+  <script src="assets/plugins/popper.min.js"></script>
+  <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Page Specific JS -->
+  <script src="assets/plugins/smoothscroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+  <script src="assets/js/highlight-custom.js"></script>
+  <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+  <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+  <script src="assets/js/docs.js"></script>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/6784a716af5bfec1dbeaa295/1ihf2pcag';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+
+</html>

@@ -1,0 +1,2021 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <title>
+    Bundleza - 製品バンドル
+  </title>
+
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="バンドルザ - 製品バンドル" />
+  <meta name="author" content="Xiaoying Riley at 3rd Wave Media" />
+  <link rel="shortcut icon" href="favicon.ico" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome JS-->
+  <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css" />
+  <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css" />
+
+  <!-- Theme CSS -->
+  <link id="theme-style" rel="stylesheet" href="assets/css/theme.css" />
+
+  <style>
+    img {
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body class="docs-page">
+  <header class="header fixed-top">
+    <div class="branding docs-branding">
+      <div class="container-fluid position-relative py-2">
+        <div class="docs-logo-wrapper">
+          <button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+            type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="site-logo">
+            <a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="assets/images/coderdocs-logo.svg"
+                alt="ロゴ" /><span class="logo-text">バンドル<span class="text-alt">eza</span></span></a>
+          </div>
+        </div>
+        <!--//docs-logo-wrapper-->
+        <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+          <div class="top-search-box d-none d-lg-flex">
+            <form class="search-form">
+              <input type="text" placeholder="ドキュメントを検索..." name="search" class="form-control search-input" />
+              <button type="submit" class="btn search-btn" value="Search">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+
+          <ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+            <li class="list-inline-item">
+              <a href="#"><i class="fa-brands fa-github fa-fw"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#"><i class="fa-brands fa-x-twitter fa-fw"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#"><i class="fa-brands fa-slack fa-fw"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#"><i class="fa-brands fa-product-hunt fa-fw"></i></a>
+            </li>
+          </ul>
+          <label for="language-select" style="margin-right: 10px;"><i class="fas fa-globe"></i> </label>
+          <select id="language-select" onchange="window.location.href=this.value;"
+            style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; background-color: #fff; margin-right: 5px;">
+            <option value="docs-page-en.html">English</option>
+            <option value="docs-page-de.html">German</option>
+            <option value="docs-page-es.html">Spanish</option>
+            <option value="docs-page-fr.html">French</option>
+            <option value="docs-page-it.html">Italian</option>
+            <option value="docs-page-ja.html">Japanese</option>
+            <option value="docs-page-nl.html">Dutch</option>
+          </select>
+          <!--//social-list-->
+          <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderdocs-free-bootstrap-5-documentation-template-for-software-projects/"
+            class="btn btn-primary d-none d-lg-flex">ダウンロード</a>
+        </div>
+        <!--//docs-top-utilities-->
+      </div>
+      <!--//container-->
+    </div>
+    <!--//branding-->
+  </header>
+  <!--//header-->
+
+  <div class="docs-wrapper">
+    <div id="docs-sidebar" class="docs-sidebar" style="padding: 0 10px;">
+      <div class="top-search-box d-lg-none p-3">
+        <form class="search-form">
+          <input type="text" placeholder="ドキュメントを検索..." name="search" class="form-control search-input" />
+          <button type="submit" class="btn search-btn" value="Search">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+      <nav id="docs-nav" class="docs-nav navbar">
+        <ul class="section-items list-unstyled nav flex-column pb-3">
+          <li class="nav-item section-title">
+            <a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-map-signs"></i></span>導入</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link scrollto" href="#item-1-1" style="font-size: small; word-break: break-word;"><span
+                class="theme-icon-holder me-3"><i class="fas fa-play-circle"></i></span>はじめに</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link scrollto" href="#item-1-2" style="font-size: small; word-break: break-word;"><span
+                class="theme-icon-holder me-3"><i class="fas fa-download"></i></span>インストール</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link scrollto" href="#item-1-3" style="font-size: small; word-break: break-word;"><span
+                class="theme-icon-holder me-3"><i class="fas fa-cogs"></i></span>設定</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link scrollto" href="#item-1-3" style="font-size: small; word-break: break-word;"><span
+                class="theme-icon-holder me-3"><i class="fas fa-cogs"></i></span>設定</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link scrollto" href="#item-1-4" style="font-size: small; word-break: break-word;"><span
+                class="theme-icon-holder me-3"><i class="fas fa-th-large"></i></span>Bundlezaブロックまたはセクションの使用方法</a>
+          </li>
+
+          <li class="nav-item section-title mt-3">
+            <a class="nav-link scrollto" href="#section-2" data-bs-toggle="collapse" data-bs-target="#bundle-submenu"
+              aria-expanded="false" aria-controls="bundle-submenu"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-box"></i></span>バンドル <i class="fas fa-chevron-right ms-2 submenu-icon"></i></a>
+            <ul class="collapse list-unstyled" id="bundle-submenu">
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-2-1" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-list"></i></span>バンドル管理</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-2-2" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-edit"></i></span>バンドルの作成と更新</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-2-3" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus"></i></span>テーマへのバンドルの追加</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item section-title mt-3">
+            <a class="nav-link scrollto" href="#section-3" data-bs-toggle="collapse" data-bs-target="#upsell-submenu"
+              aria-expanded="false" aria-controls="upsell-submenu"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-arrow-up"></i></span>アップセル <i class="fas fa-chevron-right ms-2 submenu-icon"></i></a>
+            <ul class="collapse list-unstyled" id="upsell-submenu">
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-1" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-cog"></i></span>アップセル設定</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-2" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus-square"></i></span>テーマへのアップセルの追加</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-3" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-list"></i></span>シングルアップセル管理</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-4" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus"></i></span>シングルアップセルの作成</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-5" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-th-list"></i></span>マルチアップセル管理</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-6" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus-circle"></i></span>マルチアップセルの作成</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-3-7" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus-square"></i></span>テーマへのマルチアップセルの追加</a>
+              </li>
+
+            </ul>
+          </li>
+          <li class="nav-item section-title mt-3">
+            <a class="nav-link scrollto" href="#section-4" data-bs-toggle="collapse" data-bs-target="#gift-submenu"
+              aria-expanded="false" aria-controls="gift-submenu"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-gift"></i></span>ギフト <i class="fas fa-chevron-right ms-2 submenu-icon"></i></a>
+            <ul class="collapse list-unstyled" id="gift-submenu">
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-4-1" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-cogs"></i></span>ギフト管理</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-4-2" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-envelope"></i></span>ギフトの作成または更新</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-4-4" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus"></i></span>テーマへのギフトの追加</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item section-title mt-3">
+            <a class="nav-link scrollto" href="#section-5" data-bs-toggle="collapse" data-bs-target="#sections-submenu"
+              aria-expanded="false" aria-controls="sections-submenu"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-th-large"></i></span>セクション <i class="fas fa-chevron-right ms-2 submenu-icon"></i></a>
+            <ul class="collapse list-unstyled" id="sections-submenu">
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-5-1" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-download"></i></span>セクションのインポート方法</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-5-2" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-th"></i></span>製品ページセクション</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-5-3" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-store"></i></span>ショップセクション</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item section-title mt-3">
+            <a class="nav-link scrollto" href="#section-6" data-bs-toggle="collapse" data-bs-target="#banner-submenu"
+              aria-expanded="false" aria-controls="banner-submenu"><span class="theme-icon-holder me-2"><i
+                  class="fas fa-flag"></i></span>バナー <i class="fas fa-chevron-right ms-2 submenu-icon"></i></a>
+            <ul class="collapse list-unstyled" id="banner-submenu">
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-6-1" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-list"></i></span>バナー管理</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-6-2" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus"></i></span>新しいバナーの作成</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link scrollto" href="#item-6-3" style="font-size: small; word-break: break-word;"><span
+                    class="theme-icon-holder me-3"><i class="fas fa-plus-square"></i></span>テーマへのバナーの追加</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!--//docs-nav-->
+    </div>
+    <!--//docs-sidebar-->
+    <div class="docs-content">
+      <div class="container">
+        <article class="docs-article" id="section-1">
+          <header class="docs-header">
+            <h1 class="docs-heading">
+              導入
+              <span class="docs-time">最終更新: 3日前</span>
+            </h1>
+            <section class="docs-intro">
+              <p>
+                Bundlezaへようこそ - 未来を学びましょう。事前構築済み。
+                設定可能。Themebuilderで簡単。製品のバンドルをカスタム作成し、
+                レビューボックスやベネフィットボックスなどの事前構築済みセクションを製品ページ用に設定します。
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 mb-3">
+                  <a href="assets/images/welcome-overviews.png">
+                    <img class="figure-img img-fluid shadow rounded" src="assets/images/welcome-overviews.png"
+                      alt="Bundlezaモジュール概要" title="Bundlezaモジュール概要" />
+                  </a>
+                </div>
+              </div>
+
+              <h3 id="bundleza-modules">Bundlezaモジュール</h3>
+              <div class="row">
+                <div class="col-12 col-md-6 mb-4" id="bundleza-bundles">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/bundle.png" class="img-fluid mr-3"
+                        alt="Bundlezaバンドル" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Bundlezaバンドル</h5>
+                        <p class="card-text">製品のバンドルと数量割引を簡単に作成</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4" id="bundleza-sections">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/section.png" class="img-fluid mr-3"
+                        alt="Bundlezaセクション" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Bundlezaセクション</h5>
+                        <p class="card-text">ショップの事前構築済みセクションを簡単にカスタマイズ</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4" id="bundleza-upsell">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/upsell.png" class="img-fluid mr-3"
+                        alt="Bundlezaアップセル" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Bundlezaアップセル</h5>
+                        <p class="card-text">ポップアップ、ボックス、スライダーで製品アップグレードにより収益を増加</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4" id="bundleza-banner">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/banner.png" class="img-fluid mr-3"
+                        alt="Bundlezaバナー" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Bundlezaバナー</h5>
+                        <p class="card-text">ショップの魅力的なバナーを作成 - お知らせから割引プロモーションまで</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4" id="bundleza-gifts">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/gift.png" class="img-fluid mr-3"
+                        alt="Bundlezaギフト" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Bundlezaギフト</h5>
+                        <p class="card-text">ショップの魅力的なギフトを作成。柔軟にカスタマイズ可能で、あらゆる機会に最適</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4" id="bundleza-reviews">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/review.png" class="img-fluid mr-3"
+                        alt="Bundlezaレビュー" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">Bundlezaレビュー</h5>
+                        <p class="card-text">写真や動画付きの魅力的なレビューページを作成。ボックス、カルーセルスライダー、ストーリーとして利用可能</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="callout-block callout-block-info">
+                <div class="content">
+                  <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                      <i class="fas fa-info-circle"></i>
+                    </span>
+                    近日公開予定のモジュール
+                  </h4>
+                  <p>
+                    新機能の早期アクセスを得るために、<a href="https://discord.gg/bundleza"
+                      target="_blank">Discordコミュニティ</a>に参加し、他のショップオーナーとつながりましょう。
+                  </p>
+                </div>
+              </div>
+            </section>
+            <!--//docs-intro-->
+          </header>
+          <section class="docs-section" id="item-1-1">
+            <h2 class="section-heading">はじめに</h2>
+            <p>
+              Bundlezaへようこそ！このガイドは、バンドル割引オファー、アップセル製品、マルチアップセル製品、ギフト製品、バナー、カスタムセクションを作成できる強力なShopifyアプリをすばやく使い始めるのに役立ちます。
+            </p>
+
+            <h3>前提条件</h3>
+            <p>Bundlezaをインストールする前に、以下を確認してください：</p>
+            <ul>
+              <li>アクティブなShopifyストア（任意のプラン）</li>
+              <li>Shopifyダッシュボードへの管理者アクセス</li>
+              <li>ストアに在庫とバリアントのある製品が少なくとも1つ</li>
+            </ul>
+
+            <h3 id="item-1-2">インストール</h3>
+            <p>
+              ShopifyストアにBundlezaをインストールする手順：
+            </p>
+            <h4>ステップ1: Shopify管理者ダッシュボードにログイン</h4>
+            <p><a href="https://admin.shopify.com" target="_blank">admin.shopify.com</a>でShopify管理者ダッシュボードにログインします。</p>
+            <h4>ステップ2: Bundlezaの検索とインストール</h4>
+            <p>Shopify App StoreでBundlezaを検索：</p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 col-md-6 mb-3">
+                <a href="/assets/images/search-app.png"><img class="figure-img img-fluid shadow rounded"
+                    src="/assets/images/search-app.png" alt="Shopify App StoreでのBundleza検索"
+                    title="Shopify App Store検索" /></a>
+              </div>
+              <div class="col-12 col-md-6 mb-3">
+                <a href="assets/images/shopify-search.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/shopify-search.png" alt="Shopify App StoreでのBundlezaアプリページ"
+                    title="Bundlezaアプリページ" /></a>
+              </div>
+            </div>
+            <ol start="1">
+              <li>App Store検索バーに「Bundleza」と入力</li>
+              <li>検索結果でBundlezaアプリを見つける</li>
+              <li>Bundlezaアプリカードをクリックして詳細を表示</li>
+              <li>アプリの説明、機能、価格を確認</li>
+              <li><strong>アプリを追加</strong>をクリック</li>
+            </ol>
+
+            <h4>ステップ3: 権限の付与</h4>
+            <p>必要な権限を確認して承認：</p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/permisssion.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/permisssion.png" alt="Bundlezaアプリ権限画面" title="アプリ権限" /></a>
+              </div>
+            </div>
+            <ol start="1">
+              <li>要求された権限を注意深く確認</li>
+              <li>権限を付与するために<strong>アプリをインストール</strong>をクリック</li>
+              <li>インストールが完了するのを待つ</li>
+            </ol>
+
+
+
+
+
+            <h3>クイックスタートチェックリスト</h3>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/check-list.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/check-list.png" alt="クイックスタートチェックリスト" title="クイックスタートチェックリスト" /></a>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  ヒント
+                </h4>
+                <p>
+                  機能をテストするために、1つのバンドルと1つのアップセルオファーを作成することから始めましょう。快適になったら、より複雑な設定に拡張します。
+                </p>
+              </div>
+            </div>
+
+            <h3>ヘルプが必要ですか？</h3>
+            <p>セットアップ中に問題が発生した場合：</p>
+            <ul>
+              <li>各機能の詳細なドキュメントを確認</li>
+              <li>アプリダッシュボードからサポートチームに連絡</li>
+              <li>コミュニティフォーラムに参加してヒントとベストプラクティスを得る</li>
+              <li>視覚的なガイダンスのためのチュートリアルビデオを見る</li>
+            </ul>
+
+            <p>
+              これで、Bundlezaの強力な機能でストアの収益を向上させる準備が整いました！
+            </p>
+          </section>
+          <!--//section-->
+          <section id="item-1-4">
+            <h3>テーマでのBundlezaブロック/セクションの使用方法</h3>
+            <p>
+              これらの一般的な手順に従って、Bundlezaセクション（バンドル、アップセル、マルチアップセル、ギフト、バナー）をShopifyテーマに追加します。これにより、設定したモジュールを製品ページや他のテンプレートに表示できます。
+            </p>
+            <h3>ステップ1</h3>
+            <p>オンラインストアのカスタマイズに移動</p>
+            <img src="assets/images/customization-page.png" class="figure-img img-fluid shadow rounded" alt="カスタマイズページ"
+              style="max-width: 100%; max-height: 100%;">
+            <h3>ステップ2</h3>
+            <p>デフォルトの製品ページを選択</p>
+            <img src="assets/images/default-productaopage.png" class="figure-img img-fluid shadow rounded"
+              alt="製品ページの選択" style="max-width: 100%; max-height: 100%;">
+            <h3>ステップ3</h3>
+            <p>ブロックとセクションを選択</p>
+            <img src="assets/images/selectsectionandblock.png" class="figure-img img-fluid shadow rounded"
+              alt="製品ページの選択" style="max-width: 100%; max-height: 100%;">
+            <h3>ステップ4</h3>
+            <p>最終結果</p>
+            <p>ショップのバナー</p>
+            <img src="assets/images/banner-resutl.png" class="figure-img img-fluid shadow rounded" alt="バナー"
+              style="max-width: 100%; max-height: 100%;">
+            <p>ショップのブロック</p>
+            <img src="assets/images/blocs.png" class="figure-img img-fluid shadow rounded" alt="製品ページの選択"
+              style="max-width: 100%; max-height: 100%;">
+          </section>
+
+        </article>
+
+        <article class="docs-article" id="section-2">
+          <header class="docs-header">
+            <h1 class="docs-heading">バンドル</h1>
+            <section class="docs-intro">
+              <p>
+                Shopifyマーチャントとして、Bundlezaのバンドル機能は、平均注文値を大幅に向上させる魅力的な製品バンドルを作成するのに役立ちます。補完製品を戦略的に組み合わせ、魅力的な割引を提供することで、顧客がより多くのアイテムを購入するよう促し、収益を増加させながらショッピング体験を向上させます。
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 mb-3">
+                  <a href="assets/images/bundleza-management.png"><img class="figure-img img-fluid shadow rounded"
+                      src="assets/images/bundleza-management.png" alt="バンドル管理" title="バンドル管理" /></a>
+                </div>
+              </div>
+            </section>
+            <!--//docs-intro-->
+          </header>
+          <section class="docs-section" id="item-2-1">
+            <h2 class="section-heading">バンドル管理</h2>
+            <p>
+              バンドル管理ページは、作成したすべてのバンドルを監督するための中央ハブです。ここでは、バンドルの編集、削除、複製、ステータスの更新を行い、ストアのオファリングを整理し、最新の状態に保つことができます。
+            </p>
+
+            <h3>バンドル管理へのアクセス</h3>
+            <p>
+              Bundlezaダッシュボードから、バンドルセクションに移動してバンドル管理ページにアクセスします。
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/bundleza-menu.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/bundleza-menu.png" alt="バンドル管理" title="バンドル管理" /></a>
+              </div>
+            </div>
+
+            <h3>バンドルリストとアクション</h3>
+            <p>
+              バンドルリストには、作成したすべてのバンドルが主要な情報と利用可能なアクションとともに表示されます。各バンドルに対して以下のアクションを実行できます：
+            </p>
+            <ul>
+              <li><strong>編集：</strong>バンドルの詳細、製品、設定を変更。</li>
+              <li><strong>削除：</strong>ストアからバンドルを完全に削除。</li>
+              <li><strong>複製：</strong>類似オファーのクイックセットアップのためのバンドルのコピーを作成。</li>
+              <li><strong>ステータス更新：</strong>ドラフト（顧客から非表示）とアクティブ（ストアで表示）の間で切り替え。</li>
+            </ul>
+
+            <div class="callout-block callout-block-warning">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                  重要
+                </h4>
+                <p>
+                  任意のバンドルを編集するには、まずステータスをドラフトに更新する必要があります。
+                </p>
+              </div>
+            </div>
+
+            <h4>バンドルテーブル</h4>
+            <p>
+              バンドルテーブルには、作成したすべてのバンドルが以下の情報とともに表示されます：
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/bundle-table.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/bundle-table.png" alt="バンドルテーブル" title="バンドルテーブル" /></a>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  ヒント
+                </h4>
+                <p>
+                  ステータストグルを使用して、オフシーズンやオファーの更新時にバンドルを一時的に非表示にし、削除せずにします。
+                </p>
+              </div>
+            </div>
+            <div class="callout-block callout-block-warning">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                  重要
+                </h4>
+                <p>
+                  任意のバンドルを編集するには、まずステータスをドラフトに更新する必要があります。
+                </p>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  レビューリクエスト
+                </h4>
+                <p>
+                  Bundlezaが気に入ったら、Shopify App Storeでレビューをお願いします！
+                </p>
+              </div>
+            </div>
+          </section>
+          <!--//section-->
+
+          <section class="docs-section" id="item-2-2">
+            <h2 class="section-heading">バンドルの作成と更新</h2>
+            <p>
+              ストアの新しいバンドルオファーを作成するか、既存のバンドルを更新します。このページでは、基本的な詳細から高度なスタイリングと製品選択まで、バンドルのすべての側面を設定できます。
+            </p>
+            <h3>新しいバンドルの作成方法</h3>
+            <ol>
+              <li><strong>バンドル名を入力：</strong>顧客を引きつける説明的で魅力的な名前をバンドルに提供。</li>
+              <li><strong>選択タイプを選択：</strong>すべての製品、特定の製品、または特定のコレクションからバンドルに製品を含める方法を選択。</li>
+              <li><strong>設定を設定：</strong>バンドル設定、バリアントオファー、割引オプションを作成して魅力的な価格層を構築。</li>
+              <li><strong>スタイルをカスタマイズ：</strong>ストアのブランディングに合わせて色、フォント、レイアウトを調整。</li>
+              <li><strong>製品を選択：</strong>製品選択モーダルを使用してバンドルのメイン製品とバリアントを選択。</li>
+              <li><strong>バリアントオファーを設定：</strong>異なるバンドルバリアントの動的オファーを設定。</li>
+            </ol>
+            <h3>7. 各オファーのカスタム画像と無料ギフトを選択</h3>
+            <a href="assets/images/giftandimg-select.png"><img class="figure-img img-fluid shadow rounded"
+                src="assets/images/giftandimg-select.png" alt="製品選択モーダル" title="製品選択モーダル" /></a>
+            <p>
+              バンドルに無料ギフトを選択するには、「無料ギフト」から「ギフトを選択」ボタンを使用します。これにより、製品とそのバリアントを選択できるモーダルが開きます。
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/select-gift.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/select-gift.png" alt="製品選択モーダル" title="製品選択モーダル" /></a>
+
+              </div>
+            </div>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  ヒント
+                </h4>
+                <p>
+                  顧客からのフィードバックに基づいて最適化するために、複雑な設定を追加する前にシンプルなバンドルでパフォーマンスをテストします。
+                </p>
+              </div>
+            </div>
+
+            <h3>バンドル名</h3>
+            <p>
+              顧客を引きつける説明的で魅力的な名前をバンドルに提供。（必須）
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/bundle-name.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/bundle-name.png" alt="バンドル名設定" title="バンドル名設定" /></a>
+              </div>
+            </div>
+
+            <h3>選択タイプ</h3>
+            <p>
+              ストアの任意の製品、特定の製品、または特定のコレクションの製品をバンドルに含める方法を選択。
+            </p>
+            <ul>
+              <li><strong>すべての製品：</strong>ストアの任意の製品をバンドルに含める。</li>
+              <li><strong>特定の製品：</strong>個別の製品を手動で選択。</li>
+              <li><strong>特定のコレクション：</strong>選択したコレクションのすべての製品を含める。</li>
+            </ul>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/product-selection.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/product-selection.png" alt="選択タイプオプション" title="選択タイプオプション" /></a>
+              </div>
+            </div>
+
+            <h3>設定</h3>
+            <p>
+              価格、可用性、表示オプションを含むバンドルのコア設定を設定。
+            </p>
+
+            <h4>バンドル設定</h4>
+            <ul>
+              <li><strong>今日のみ：</strong>バンドルの特別な「今日のみ」プロモーションを有効化。</li>
+              <li><strong>バリアント比較価格：</strong>異なるバリアントの比較価格を表示。</li>
+              <li><strong>チェックアウトに直接：</strong>バンドルから直接チェックアウトを許可。</li>
+              <li><strong>バリアントピッカーを非表示：</strong>バンドルページのバリアント選択オプションを非表示。</li>
+            </ul>
+
+            <h4>バンドルバリアントオファー</h4>
+            <p>バンドルバリアントの動的オファーを設定。数量、割引タイプ（例:
+              固定金額、パーセンテージ、固定価格）、割引値を設定。オプションはデフォルトで選択可能で、さまざまな価格層を作成するために新しいオファーを複数追加できます。</p>
+            <ul>
+              <li><strong>数量：</strong>オファーのアイテム数を指定（完全にカスタマイズ可能）。</li>
+              <li><strong>割引タイプ：</strong>固定金額、パーセンテージ、または固定価格から選択。</li>
+              <li><strong>割引値：</strong>割引金額またはパーセンテージを設定（動的で調整可能）。</li>
+              <li>
+                <strong>デフォルト選択：</strong>顧客のプリ選択オファーとしてマーク。プリ選択の場合、「カートに追加」または「今すぐ購入」ボタンをクリックするとオファーが自動的にカートに追加されます。選択されていない場合、顧客はボックスをチェックして含める必要があります。
+              </li>
+            </ul>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  ヒント
+                </h4>
+                <p>
+                  すべての数量、割引タイプ、値は完全にカスタマイズ可能です。顧客に最適なものを探すためにさまざまなオファーを実験します。
+                </p>
+              </div>
+            </div>
+
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/bundle-settings.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/bundle-settings.png" alt="バンドル設定設定" title="バンドル設定設定" /></a>
+              </div>
+            </div>
+
+            <h3>スタイル</h3>
+            <p>
+              ストアのテーマに合わせてバンドルの視覚的外観をカスタマイズ。色、フォント、レイアウト、その他のスタイリング要素を調整。
+            </p>
+            <h4>タイトルスタイル</h4>
+            <ul>
+              <li><strong>テキストサイズ：</strong>バンドルタイトルのフォントサイズを設定（例: 18px）。</li>
+              <li><strong>フォントウェイト：</strong>フォントウェイトを選択（太字または通常）。</li>
+              <li><strong>色：</strong>タイトルテキストの色を選択。</li>
+            </ul>
+            <h4>サブタイトルスタイル</h4>
+            <ul>
+              <li><strong>テキストサイズ：</strong>サブタイトルのフォントサイズを設定（例: 16px）。</li>
+              <li><strong>フォントウェイト：</strong>フォントウェイトを選択（太字または通常）。</li>
+              <li><strong>色：</strong>サブタイトルテキストの色を選択。</li>
+            </ul>
+            <h4>価格色</h4>
+            <ul>
+              <li><strong>色：</strong>通常価格の色を設定。</li>
+              <li><strong>比較価格色：</strong>取り消し線付き比較価格の色を設定。</li>
+            </ul>
+            <h4>バッジ色</h4>
+            <ul>
+              <li><strong>背景：</strong>バッジの背景色。</li>
+              <li><strong>テキスト：</strong>バッジのテキスト色。</li>
+            </ul>
+            <h4>ラベル色</h4>
+            <ul>
+              <li><strong>背景：</strong>ラベルの背景色。</li>
+              <li><strong>テキスト：</strong>ラベルのテキスト色。</li>
+            </ul>
+            <h4>ギフト色</h4>
+            <ul>
+              <li><strong>背景：</strong>ギフト要素の背景色。</li>
+              <li><strong>テキスト：</strong>ギフト要素のテキスト色。</li>
+            </ul>
+            <h4>ボックス色</h4>
+            <ul>
+              <li><strong>ボーダー色：</strong>ボックスのボーダー色。</li>
+              <li><strong>ボックス色：</strong>ボックスの背景色。</li>
+              <li><strong>選択ボックス色：</strong>選択ボックスの背景色。</li>
+              <li><strong>ボックスボーダー幅：</strong>ボックスのボーダー幅（例: 1px）。</li>
+              <li><strong>ボックスボーダーラジアス：</strong>ボックスのコーナーラジアス（例: 0px）。</li>
+            </ul>
+            <h4>画像設定</h4>
+            <ul>
+              <li><strong>画像サイズ：</strong>製品画像のサイズを設定（例: 2）。</li>
+              <li><strong>半径：</strong>画像のコーナーラジアス（例: 0px）。</li>
+            </ul>
+            <h4>ギフト製品 - 画像設定</h4>
+            <ul>
+              <li><strong>画像サイズ：</strong>ギフト製品画像のサイズを設定（例: 2）。</li>
+              <li><strong>半径：</strong>ギフト画像のコーナーラジアス（例: 0px）。</li>
+            </ul>
+            <h4>追加オプション</h4>
+            <ul>
+              <li><strong>今日のみ：</strong>特別な「今日のみ」メッセージングを有効化。</li>
+              <li><strong>最も人気：</strong>バンドルを最も人気のあるものとしてマーク。</li>
+              <li><strong>シングル：</strong>シングル購入の標準価格。</li>
+              <li><strong>デュオ：</strong>デュオ購入の標準価格。</li>
+              <li><strong>🌐：</strong>国際化設定。</li>
+              <p>国際化設定により、バンドルテキストを1つのカスタム言語に翻訳するか、デフォルトの英語のままにします。</p>
+            </ul>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/bundle-styles.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/bundle-styles.png" alt="バンドルスタイルカスタマイズ" title="バンドルスタイルカスタマイズ" /></a>
+              </div>
+            </div>
+
+            <h3>製品選択: このバンドルを表示する場所</h3>
+            <p>
+              製品選択モーダルを使用してバンドルの製品を選択。メイン製品または特定のバリアントを選択できます。
+            </p>
+            <ul>
+              <li><strong>メイン製品：</strong>バンドルの主要製品を選択。</li>
+              <li><strong>バリアント：</strong>より正確な制御のための特定のバリアント（例: サイズ、色）を選択。</li>
+            </ul>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/product-modal.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/product-modal.png" alt="製品選択モーダル" title="製品選択モーダル" /></a>
+              </div>
+            </div>
+
+            <h3>バリアントオファー</h3>
+            <p>
+              バンドル内の製品に異なるオプションを選択できるようにバリアント固有のオファーを設定。
+            </p>
+            <ul>
+              <li><strong>バリアント選択：</strong>顧客がバンドルで製品バリアントを選択できるように有効化。</li>
+              <li><strong>価格調整：</strong>選択されたバリアントに基づいて異なる割引を適用。</li>
+              <li><strong>可用性ルール：</strong>バンドルで利用可能なバリアントのルールを設定。</li>
+            </ul>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/bundle-preview.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/bundle-preview.png" alt="バリアントオファー設定" title="バリアントオファー設定" /></a>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  注意
+                </h4>
+                <p>
+                  すべてのスタイル設定は動的で、ブランドに合わせて調整できます。デフォルトは開始点として提供されますが、すべてがマーチャント向けにカスタマイズ可能です。
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="docs-section" id="item-2-3">
+            <h2 class="section-heading">テーマへのバンドルの追加</h2>
+            <p>
+              作成したバンドルをストアの製品ページに表示するには、ShopifyテーマにBundlezaバンドルセクションを追加する必要があります。これにより、顧客が製品ページで直接バンドルオファーとやり取りできるようになります。
+            </p>
+            <h3>バンドルセクションの追加手順</h3>
+            <ol>
+              <li><strong>オンラインストアに移動：</strong>Shopify管理者から<strong>オンラインストア > テーマ</strong>に移動。</li>
+              <li><strong>テーマをカスタマイズ：</strong>ライブテーマの横にある<strong>カスタマイズ</strong>ボタンをクリック。</li>
+              <li><strong>製品ページを選択：</strong>テーマエディタでページセレクタを使用して製品ページテンプレートを選択（例: デフォルト製品）。</li>
+              <li>
+                <strong>セクションを追加：</strong>左側のサイドバーで<strong>セクションを追加</strong>をクリックし、Appsセクションから<strong>Bundlezaバンドル</strong>を検索して選択。
+              </li>
+              <li><strong>セクションを設定：</strong>追加したら、セクション設定のドロップダウンから表示する特定のバンドルを選択。</li>
+              <li><strong>変更を保存：</strong>テーマに変更を適用するために<strong>保存</strong>をクリック。</li>
+            </ol>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-2"><i class="fas fa-info-circle"></i></span>
+                  ヒント
+                </h4>
+                <p>
+                  Bundlezaバンドルセクションを複数の製品テンプレートやコレクションページにも追加して、より広い可視性を確保できます。ストアのデザインに適合することを確認するために配置をテストします。
+                </p>
+              </div>
+            </div>
+          </section>
+
+
+        </article>
+        <!--//docs-article-->
+
+        <article class="docs-article" id="section-3">
+          <header class="docs-header">
+            <h1 class="docs-heading">アップセル</h1>
+            <section class="docs-intro">
+              <p>
+                マーチャントとして、Bundlezaのアップセル機能は、顧客のショッピングジャーニーの戦略的なポイントでインテリジェントな製品推奨を表示することで収益を最大化するのに役立ちます。関連するアドオンやアップグレードを提案することで、平均注文値を増加させ、顧客満足度を向上させます。
+              </p>
+              <p>
+                <strong>アップセル</strong>メニューをクリックすると、<strong>アップセルを追加</strong>ページに移動します。まず、アップセルタイプを選択：
+              </p>
+              <div class="row">
+                <div class="col-12 col-md-6 mb-4">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/upsell.png" class="img-fluid mr-3"
+                        alt="製品シングルアップセル" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">製品シングルアップセル</h5>
+                        <p class="card-text">Shopifyの「カートに追加」ボタンの上に、関連製品をアップセルとして表示。</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                  <div class="card shadow-sm">
+                    <div class="card-body d-flex gap-2 align-items-center">
+                      <img src="https://bundleza-114feb79b169.herokuapp.com/upsell.png" class="img-fluid mr-3"
+                        alt="製品マルチアップセル" style="max-width: 150px; max-height: 150px;">
+                      <div>
+                        <h5 class="card-title">製品マルチアップセル</h5>
+                        <p class="card-text">Shopifyの「カートに追加」ボタンの上に、複数の関連製品をアップセルまたはバンドルとして表示。</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p>
+                それぞれの設定ページに進むために<strong>シングルアップセル</strong>または<strong>マルチアップセル</strong>をクリックします。
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 mb-3">
+                  <a href="assets/images/all-upsell.png"><img class="figure-img img-fluid shadow rounded"
+                      src="assets/images/all-upsell.png" alt="アップセル追加ページスクリーンショット" title="アップセル追加ページ" /></a>
+                </div>
+              </div>
+            </section>
+            <!--//docs-intro-->
+          </header>
+
+          <!--//section-->
+
+
+
+          <!--//section-->
+          <section class="docs-section" id="item-3-3">
+            <h2 class="section-heading">シングルアップセル管理</h2>
+            <p>
+              シングルアップセル管理ページは、作成したすべてのシングルアップセルオファーを監督するための中央ハブです。ここでは、アップセルの編集、削除、複製、ステータスの更新を行い、ストアのオファリングを整理し、最新の状態に保つことができます。
+            </p>
+            <h3>シングルアップセル管理へのアクセス</h3>
+            <p>
+              Bundlezaダッシュボードから、アップセルセクションに移動してシングルアップセル管理ページにアクセスします。
+            </p>
+            <h3>アップセルリストとアクション</h3>
+            <p>
+              アップセルリストには、作成したすべてのシングルアップセルが主要な情報と利用可能なアクションとともに表示されます。各アップセルに対して以下のアクションを実行できます：
+            </p>
+            <ul>
+              <li><strong>編集：</strong>アップセルの詳細、製品、設定を変更。</li>
+              <li><strong>削除：</strong>ストアからアップセルを完全に削除。</li>
+              <li><strong>複製：</strong>類似オファーのクイックセットアップのためのアップセルのコピーを作成。</li>
+              <li><strong>ステータス更新：</strong>ドラフト（顧客から非表示）とアクティブ（ストアで表示）の間で切り替え。</li>
+            </ul>
+            <div class="callout-block callout-block-warning">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                  重要
+                </h4>
+                <p>
+                  任意のアップセルを編集するには、まずステータスをドラフトに更新する必要があります。
+                </p>
+              </div>
+            </div>
+            <h4>アップセルテーブル</h4>
+            <p>
+              アップセルテーブルには、作成したすべてのシングルアップセルが以下の情報とともに表示されます：
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/upsell-list.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/upsell-list.png" alt="アップセルテーブル" title="アップセルテーブル" /></a>
+              </div>
+            </div>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  ヒント
+                </h4>
+                <p>
+                  ステータストグルを使用して、オフシーズンやオファーの更新時にアップセルを一時的に非表示にし、削除せずにします。
+                </p>
+              </div>
+            </div>
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  レビューリクエスト
+                </h4>
+                <p>
+                  Bundlezaが気に入ったら、Shopify App Storeでレビューをお願いします！
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="docs-section" id="item-3-4">
+            <h2 class="section-heading">シングルアップセルの作成</h2>
+            <p>
+              ストアの新しいシングルアップセルオファーを作成するか、既存のアップセルを更新します。このページでは、基本的な詳細から高度なスタイリングと製品選択まで、アップセルのすべての側面を設定できます。
+            </p>
+            <h3>新しいシングルアップセルの作成方法</h3>
+            <ol>
+              <li><strong>アップセル名を入力：</strong>顧客を引きつける説明的で魅力的な名前をアップセルに提供。</li>
+              <li><strong>可視性を設定：</strong>アップセルを表示する場所を選択（例: 特定の製品またはコレクション）。</li>
+              <li><strong>製品を選択：</strong>アップセルとして表示する製品を選択し、その詳細を設定。</li>
+              <li><strong>設定を設定：</strong>価格、割引、表示オプションを設定。</li>
+              <li><strong>スタイルをカスタマイズ：</strong>ストアのブランディングに合わせて色、フォント、レイアウトを調整。</li>
+              <li><strong>プレビューと保存：</strong>アップセル設定を確認し、ドラフトまたはアクティブとして保存。</li>
+            </ol>
+            <h3>バリアントまたは製品を選択</h3>
+            <a href="assets/images/seelctvarient.png"><img class="figure-img img-fluid shadow rounded"
+                src="assets/images/seelctvarient.png" alt="製品選択モーダル" title="製品選択モーダル" /></a>
+            <p>
+              アップセルの製品を選択するには、「バリアント/製品を選択」ボタンを使用します。これにより、製品とそのバリアントを選択できるモーダルが開きます。また、利便性のためにすべてのアップセルバリアント製品を選択するボタンもあります。
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/varientselect-modal.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/varientselect-modal.png" alt="製品選択モーダル" title="製品選択モーダル" /></a>
+              </div>
+            </div>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  ヒント
+                </h4>
+                <p>
+                  顧客からのフィードバックに基づいて最適化するために、複雑な設定を追加する前にシンプルなアップセルでパフォーマンスをテストします。
+                </p>
+              </div>
+            </div>
+            <h3>アップセル名</h3>
+            <p>
+              顧客を引きつける説明的で魅力的な名前をアップセルに提供。（必須）
+            </p>
+            <h3>可視性</h3>
+            <p>
+              アップセルを表示する場所を選択。オプションにはすべての製品、特定の製品、または特定のコレクションが含まれます。
+            </p>
+            <ul>
+              <li><strong>すべての製品：</strong>ストアの任意の製品にアップセルを表示。</li>
+              <li><strong>特定の製品：</strong>アップセル表示のために特定の製品を選択。</li>
+              <li><strong>特定のコレクション：</strong>選択したコレクションの製品にアップセルを表示。</li>
+            </ul>
+            <h3>製品選択: このアップセルを表示する場所</h3>
+            <p>
+              アップセルが表示される製品またはコレクションを選択。
+            </p>
+            <h3>設定</h3>
+            <p>
+              価格と表示オプションを含むアップセルのコア設定を設定。
+            </p>
+            <ul>
+              <li><strong>画像を表示：</strong>製品画像表示を有効または無効。</li>
+              <li><strong>チェックアウトにスキップ：</strong>アップセルから直接チェックアウトを許可。</li>
+              <li><strong>製品比較価格をストライクスルー：</strong>取り消し線付き比較価格を表示。</li>
+              <li><strong>注文ごとに制限：</strong>注文ごとのアップセル数量に制限を設定。</li>
+            </ul>
+            <h3>スタイル</h3>
+            <p>
+              ストアのテーマに合わせてアップセルの視覚的外観をカスタマイズ。色、フォント、レイアウト、その他のスタイリング要素を調整。
+            </p>
+            <h4>タイトルスタイル</h4>
+            <ul>
+              <li><strong>テキストサイズ：</strong>アップセルタイトルのフォントサイズを設定（例: 18px）。</li>
+              <li><strong>フォントウェイト：</strong>フォントウェイトを選択（太字または通常）。</li>
+              <li><strong>色：</strong>タイトルテキストの色を選択。</li>
+            </ul>
+            <h4>サブタイトルスタイル</h4>
+            <ul>
+              <li><strong>テキストサイズ：</strong>サブタイトルのフォントサイズを設定（例: 16px）。</li>
+              <li><strong>フォントウェイト：</strong>フォントウェイトを選択（太字または通常）。</li>
+              <li><strong>色：</strong>サブタイトルテキストの色を選択。</li>
+            </ul>
+            <h4>価格スタイル</h4>
+            <ul>
+              <li><strong>色：</strong>価格の色を設定。</li>
+              <li><strong>割引名：</strong>割引ラベルをカスタマイズ。</li>
+            </ul>
+            <h4>バッジスタイル</h4>
+            <ul>
+              <li><strong>背景：</strong>バッジの背景色。</li>
+              <li><strong>テキスト：</strong>バッジのテキスト色。</li>
+            </ul>
+            <h4>ボタンスタイル</h4>
+            <ul>
+              <li><strong>背景：</strong>ボタンの背景色。</li>
+              <li><strong>テキスト：</strong>ボタンのテキスト色。</li>
+            </ul>
+            <h4>画像設定</h4>
+            <ul>
+              <li><strong>画像を表示：</strong>画像表示を切り替え。</li>
+              <li><strong>代替テキスト：</strong>画像の代替テキストを設定。</li>
+            </ul>
+            <h3>製品を選択</h3>
+            <p>
+              アップセルとして表示する製品を選択。その名前、サブタイトル、バッジ、価格、その他の詳細を設定。
+            </p>
+            <ul>
+              <li><strong>アップセル名：</strong>例: Apple Watch Series 10</li>
+              <li><strong>サブタイトル：</strong>例: アップセル</li>
+              <li><strong>バッジ：</strong>例: ベストセラー</li>
+              <li><strong>価格テキスト：</strong>例: $20000.00</li>
+              <li><strong>割引名：</strong>例: アップセル割引</li>
+            </ul>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/create-upsell.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/create-upsell.png" alt="シングルアップセルの作成" title="シングルアップセルの作成" /></a>
+              </div>
+            </div>
+          </section>
+          <section class="docs-section" id="item-3-5">
+            <h2 class="section-heading">マルチアップセル管理</h2>
+            <p>
+              マルチアップセル管理ページは、作成したすべてのマルチアップセルオファーを監督するための中央ハブです。ここでは、アップセルの編集、削除、複製、ステータスの更新を行い、ストアのオファリングを整理し、最新の状態に保つことができます。
+            </p>
+            <h3>マルチアップセル管理へのアクセス</h3>
+            <p>
+              Bundlezaダッシュボードから、アップセルセクションに移動してマルチアップセル管理ページにアクセスします。
+            </p>
+            <h3>アップセルリストとアクション</h3>
+            <p>
+              アップセルリストには、作成したすべてのマルチアップセルが主要な情報と利用可能なアクションとともに表示されます。各アップセルに対して以下のアクションを実行できます：
+            </p>
+            <ul>
+              <li><strong>編集：</strong>アップセルの詳細、製品、設定を変更。</li>
+              <li><strong>削除：</strong>ストアからアップセルを完全に削除。</li>
+              <li><strong>複製：</strong>類似オファーのクイックセットアップのためのアップセルのコピーを作成。</li>
+              <li><strong>ステータス更新：</strong>ドラフト（顧客から非表示）とアクティブ（ストアで表示）の間で切り替え。</li>
+            </ul>
+            <div class="callout-block callout-block-warning">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                  重要
+                </h4>
+                <p>
+                  任意のアップセルを編集するには、まずステータスをドラフトに更新する必要があります。
+                </p>
+              </div>
+            </div>
+            <h4>アップセルテーブル</h4>
+            <p>
+              アップセルテーブルには、作成したすべてのマルチアップセルが以下の情報とともに表示されます：
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/multipleupsell-list.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/multipleupsell-list.png" alt="マルチアップセルテーブル" title="マルチアップセルテーブル" /></a>
+              </div>
+            </div>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  ヒント
+                </h4>
+                <p>
+                  ステータストグルを使用して、オフシーズンやオファーの更新時にアップセルを一時的に非表示にし、削除せずにします。
+                </p>
+              </div>
+            </div>
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  レビューリクエスト
+                </h4>
+                <p>
+                  Bundlezaが気に入ったら、Shopify App Storeでレビューをお願いします！
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="docs-section" id="item-3-6">
+            <h2 class="section-heading">マルチアップセルの作成</h2>
+            <p>
+              ストアの新しいマルチアップセルオファーを作成するか、既存のマルチアップセルを更新します。このページでは、基本的な詳細から高度なスタイリングと製品選択まで、マルチアップセルのすべての側面を設定できます。
+            </p>
+            <h3>新しいマルチアップセルの作成方法</h3>
+            <ol>
+              <li><strong>アップセル名を入力：</strong>顧客を引きつける説明的で魅力的な名前をアップセルに提供。</li>
+              <li><strong>マルチアップセルスタイルを選択：</strong>マルチアップセルを表示する方法を選択（通常、ボックスなど）。</li>
+              <li><strong>ブロック設定を設定：</strong>ブロックタイトル、フッターテキスト、その他の表示オプションを設定。</li>
+              <li><strong>可視性を設定：</strong>アップセルを表示する場所を選択（例: 特定の製品またはコレクション）。</li>
+              <li><strong>製品を選択：</strong>アップセルとして表示する製品を選択し、その詳細を設定。</li>
+              <li><strong>スタイルをカスタマイズ：</strong>ストアのブランディングに合わせて色、フォント、レイアウトを調整。</li>
+              <li><strong>プレビューと保存：</strong>アップセル設定を確認し、ドラフトまたはアクティブとして保存。</li>
+            </ol>
+            <h3>バリアントまたは製品を選択</h3>
+            <a href="assets/images/multipleupsell-proeuctselect.png"><img class="figure-img img-fluid shadow rounded"
+                src="assets/images/multipleupsell-proeuctselect.png" alt="製品選択モーダル" title="製品選択モーダル" /></a>
+            <p>
+              マルチアップセルの製品を選択するには、「アップセル製品を追加」ボタンを使用します。これにより、製品とそのバリアントを選択できるモーダルが開きます。また、利便性のためにすべてのアップセルバリアント製品を選択するボタンもあります。
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/varientselect-modal.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/varientselect-modal.png" alt="製品選択モーダル" title="製品選択モーダル" /></a>
+              </div>
+            </div>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  ヒント
+                </h4>
+                <p>
+                  顧客からのフィードバックに基づいて最適化するために、複雑な設定を追加する前にシンプルなマルチアップセルでパフォーマンスをテストします。
+                </p>
+              </div>
+            </div>
+            <h3>アップセル名</h3>
+            <p>
+              顧客に表示される製品ページで魅力的な名前をマルチアップセルに提供。
+            </p>
+            <h3>マルチアップセルスタイル</h3>
+            <p>
+              マルチアップセルを表示する方法を選択。オプションには通常（レイアウト1）、ボックス（レイアウト2）、テーマボタン（レイアウト3）、独自ボタン（レイアウト4）が含まれます。
+            </p>
+            <h3>カートに追加動作</h3>
+            <p>
+              テーマのカートに追加ボタンを使用するか、独自のカスタムボタンを使用するかを選択。
+            </p>
+            <h3>ブロック設定</h3>
+            <p>
+              アップセルのブロックの設定を設定。ブロックタイトル、フッターテキスト、アップセル間に+アイコンを表示するなどの表示オプションを含みます。
+            </p>
+            <ul>
+              <li><strong>ブロックタイトル：</strong>例: マルチアップセル</li>
+              <li><strong>フッターテキスト：</strong>例: 合計:</li>
+              <li><strong>アップセル間に+アイコンを表示：</strong>アップセルアイテムを視覚的に分離するために有効化。</li>
+            </ul>
+            <h3>可視性</h3>
+            <p>
+              アップセルを表示する場所を選択。オプションにはすべての製品、特定の製品、または特定のコレクションが含まれます。
+            </p>
+            <ul>
+              <li><strong>すべての製品：</strong>ストアの任意の製品にアップセルを表示。</li>
+              <li><strong>特定の製品：</strong>アップセル表示のために特定の製品を選択。</li>
+              <li><strong>特定のコレクション：</strong>選択したコレクションの製品にアップセルを表示。</li>
+            </ul>
+            <h3>製品選択: このマルチアップセルを表示する場所</h3>
+            <p>
+              アップセルを表示する場所を選択。オプションにはすべての製品、特定の製品、または特定のコレクションが含まれます。以下のオプションのいずれかを選択する必要があります:
+              すべての製品、特定の製品、または特定のコレクション。この選択は必須です。
+            </p>
+            <h3>チェックアウトにスキップ</h3>
+            <p>
+              アップセルから直接チェックアウトを許可するために有効化。
+            </p>
+            <h3>スタイル</h3>
+            <p>
+              ストアのテーマに合わせてマルチアップセルの視覚的外観をカスタマイズ。色、フォント、レイアウト、その他のスタイリング要素を調整。
+            </p>
+            <h4>ブロックタイトル</h4>
+            <ul>
+              <li><strong>テキストサイズ：</strong>フォントサイズを設定（例: 20px）。</li>
+              <li><strong>フォントウェイト：</strong>フォントウェイトを選択（太字または薄い）。</li>
+              <li><strong>テキスト配置：</strong>配置を設定（左）。</li>
+              <li><strong>色：</strong>タイトルテキストの色を選択。</li>
+            </ul>
+            <h4>製品タイトル</h4>
+            <ul>
+              <li><strong>テキストサイズ：</strong>フォントサイズを設定（例: 20px）。</li>
+              <li><strong>フォントウェイト：</strong>フォントウェイトを選択（太字または薄い）。</li>
+              <li><strong>色：</strong>製品タイトルテキストの色を選択。</li>
+            </ul>
+            <h4>サブタイトル</h4>
+            <ul>
+              <li><strong>テキストサイズ：</strong>フォントサイズを設定（例: 14px）。</li>
+              <li><strong>フォントウェイト：</strong>フォントウェイトを選択（薄い）。</li>
+              <li><strong>色：</strong>サブタイトルテキストの色を選択。</li>
+            </ul>
+            <h4>価格</h4>
+            <ul>
+              <li><strong>テキストサイズ：</strong>フォントサイズを設定（例: 14px）。</li>
+              <li><strong>フォントウェイト：</strong>フォントウェイトを選択（太字）。</li>
+              <li><strong>色：</strong>価格の色を選択。</li>
+            </ul>
+            <h4>比較価格</h4>
+            <ul>
+              <li><strong>テキストサイズ：</strong>フォントサイズを設定（例: 14px）。</li>
+              <li><strong>フォントウェイト：</strong>フォントウェイトを選択（薄い）。</li>
+              <li><strong>色：</strong>比較価格の色を選択。</li>
+            </ul>
+            <h4>バッジ色</h4>
+            <ul>
+              <li><strong>背景：</strong>バッジの背景色。</li>
+              <li><strong>テキスト：</strong>バッジのテキスト色。</li>
+            </ul>
+            <h4>チェックボックス色</h4>
+            <ul>
+              <li><strong>背景：</strong>チェックボックスの背景色。</li>
+              <li><strong>チェックマーク色：</strong>チェックマークの色。</li>
+            </ul>
+            <h4>ボックス色</h4>
+            <ul>
+              <li><strong>ボックス色：</strong>ボックスの背景色。</li>
+              <li><strong>ボックスボーダー色：</strong>ボックスのボーダー色。</li>
+              <li><strong>ボックスホバー色：</strong>ホバー時の背景色。</li>
+              <li><strong>ボックスボーダー幅：</strong>ボーダーの幅（例: 1px）。</li>
+              <li><strong>ボックスボーダーラジアス：</strong>コーナーラジアス（例: 0px）。</li>
+            </ul>
+            <h4>画像設定</h4>
+            <ul>
+              <li><strong>画像サイズ：</strong>製品画像のサイズを設定（例: 5）。</li>
+              <li><strong>半径：</strong>画像のコーナーラジアス（例: 0px）。</li>
+            </ul>
+
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 mb-3">
+                  <a href="assets/images/create-multipleupsell.png"><img class="figure-img img-fluid shadow rounded"
+                      src="assets/images/create-multipleupsell.png" alt="マルチアップセルの作成" title="マルチアップセルの作成" /></a>
+                </div>
+              </div>
+          </section>
+          <section class="docs-section" id="item-3-2">
+            <h2 class="section-heading">テーマへのアップセルの追加</h2>
+            <p>
+              設定したアップセルオファーをストアの製品ページに表示するには、Shopifyテーマに適切なBundlezaアップセルセクションを追加する必要があります。これにより、顧客ジャーニーの戦略的なポイントでアップセルプロンプトが表示されます。
+            </p>
+            <h3>アップセルセクションの追加手順</h3>
+            <ol>
+              <li><strong>オンラインストアに移動：</strong>Shopify管理者から<strong>オンラインストア > テーマ</strong>に移動。</li>
+              <li><strong>テーマをカスタマイズ：</strong>ライブテーマの横にある<strong>カスタマイズ</strong>ボタンをクリック。</li>
+              <li><strong>製品ページを選択：</strong>テーマエディタでページセレクタを使用して製品ページテンプレートを選択。</li>
+              <li>
+                <strong>セクションを追加：</strong>左側のサイドバーで<strong>セクションを追加</strong>をクリックし、Appsセクションから<strong>Bundlezaアップセル</strong>（アップセルタイプに基づいてシングルまたはマルチを選択）を検索して選択。
+              </li>
+              <li><strong>セクションを設定：</strong>追加したら、セクション設定のドロップダウンから表示する特定のアップセルを選択。</li>
+              <li><strong>変更を保存：</strong>変更を適用するために<strong>保存</strong>をクリック。</li>
+            </ol>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1"><i class="fas fa-info-circle"></i></span>
+                  ヒント
+                </h4>
+                <p>
+                  最大効果のためにアップセルセクションを「カートに追加」ボタンの上に配置します。クロスセリングの機会のためにカートページや他のテンプレートにも追加できます。
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="docs-section" id="item-3-7">
+            <h2 class="section-heading">テーマへのマルチアップセルの追加</h2>
+            <p>
+              設定したマルチアップセルオファーをストアの製品ページに表示するには、ShopifyテーマにBundlezaマルチアップセルセクションを追加する必要があります。これにより、顧客ジャーニーの戦略的なポイントで複数のアップセルプロンプトが表示されます。
+            </p>
+            <h3>マルチアップセルセクションの追加手順</h3>
+            <ol>
+              <li><strong>オンラインストアに移動：</strong>Shopify管理者から<strong>オンラインストア > テーマ</strong>に移動。</li>
+              <li><strong>テーマをカスタマイズ：</strong>ライブテーマの横にある<strong>カスタマイズ</strong>ボタンをクリック。</li>
+              <li><strong>製品ページを選択：</strong>テーマエディタでページセレクタを使用して製品ページテンプレートを選択。</li>
+              <li>
+                <strong>セクションを追加：</strong>左側のサイドバーで<strong>セクションを追加</strong>（または<strong>ブロックを追加</strong>）をクリックし、Appsセクションから<strong>Bundlezaマルチアップセル</strong>を検索して選択。
+              </li>
+              <li><strong>セクションを設定：</strong>追加したら、セクション設定のドロップダウンから表示する特定のマルチアップセルを選択。</li>
+              <li><strong>変更を保存：</strong>変更を適用するために<strong>保存</strong>をクリック。</li>
+            </ol>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1"><i class="fas fa-info-circle"></i></span>
+                  ヒント
+                </h4>
+                <p>
+                  最大効果のためにマルチアップセルセクションを「カートに追加」ボタンの上に配置します。クロスセリングの機会のためにカートページや他のテンプレートにも追加できます。
+                </p>
+              </div>
+            </div>
+          </section>
+
+        </article>
+        </article>
+        <!--//docs-article-->
+
+        <article class="docs-article" id="section-4">
+          <header class="docs-header">
+            <h1 class="docs-heading">ギフト</h1>
+            <section class="docs-intro">
+              <p>
+                Bundlezaギフトでコンバージョンを増加。補完アイテムを追加するよう顧客を促す魅力的なギフトモジュールを作成し、平均注文値を向上させ、ショッピング体験を向上させます。
+              </p>
+            </section>
+            <!--//docs-intro-->
+          </header>
+          <section class="docs-section" id="item-4-1">
+            <h2 class="section-heading">ギフト管理</h2>
+            <p>
+              ギフト管理ページは、作成したすべてのギフトモジュールを監督するための中央ハブです。ここでは、ギフトの編集、削除、複製、ステータスの更新を行い、ストアのオファリングを整理し、最新の状態に保つことができます。
+            </p>
+
+            <h3>ギフト管理へのアクセス</h3>
+            <p>
+              Bundlezaダッシュボードから、ギフトセクションに移動してギフト管理ページにアクセスします。
+            </p>
+
+            <h3>ギフトリストとアクション</h3>
+            <p>
+              ギフトリストには、作成したすべてのギフトが主要な情報と利用可能なアクションとともに表示されます。各ギフトに対して以下のアクションを実行できます：
+            </p>
+            <ul>
+              <li><strong>編集：</strong>ギフトの詳細、製品、設定を変更。</li>
+              <li><strong>削除：</strong>ストアからギフトを完全に削除。</li>
+              <li><strong>複製：</strong>類似オファーのクイックセットアップのためのギフトのコピーを作成。</li>
+              <li><strong>ステータス更新：</strong>ドラフト（顧客から非表示）とアクティブ（ストアで表示）の間で切り替え。</li>
+            </ul>
+
+            <div class="callout-block callout-block-warning">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                  重要
+                </h4>
+                <p>
+                  任意のギフトを編集するには、まずステータスをドラフトに更新する必要があります。
+                </p>
+              </div>
+            </div>
+
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/gift-table.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/gift-table.png" alt="ギフトテーブル" title="ギフトテーブル" /></a>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  ヒント
+                </h4>
+                <p>
+                  ステータストグルを使用して、オフシーズンやオファーの更新時にギフトを一時的に非表示にし、削除せずにします。
+                </p>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  レビューリクエスト
+                </h4>
+                <p>
+                  Bundlezaが気に入ったら、Shopify App Storeでレビューをお願いします！
+                </p>
+              </div>
+            </div>
+          </section>
+          <!--//section-->
+
+          <section class="docs-section" id="item-4-2">
+            <h2 class="section-heading">ギフトの作成と更新</h2>
+            <p>
+              ストアの新しいギフトモジュールを作成するか、既存のギフトを更新します。このページでは、基本的な詳細から高度なスタイリングと製品選択まで、ギフトのすべての側面を設定できます。
+            </p>
+
+            <h3>新しいギフトの作成方法</h3>
+            <ol>
+              <li><strong>ギフト名を入力：</strong>顧客を引きつける説明的で魅力的な名前をギフトに提供。</li>
+              <li><strong>可視性を設定：</strong>ギフトを表示する場所を選択（例: 特定の製品またはコレクション）。</li>
+              <li><strong>製品を選択：</strong>ギフトとして表示する製品を選択し、その詳細を設定。</li>
+              <li><strong>設定を設定：</strong>価格、割引、表示オプションを設定。</li>
+              <li><strong>スタイルをカスタマイズ：</strong>ストアのブランディングに合わせて色、フォント、レイアウトを調整。</li>
+              <li><strong>プレビューと保存：</strong>ギフト設定を確認し、ドラフトまたはアクティブとして保存。</li>
+            </ol>
+            <h3>バリアントまたは製品を選択</h3>
+            <a href="assets/images/giftselect.png"><img class="figure-img img-fluid shadow rounded"
+                src="assets/images/giftselect.png" alt="製品選択モーダル" title="製品選択モーダル" /></a>
+            <p>
+              ギフトの製品を選択するには、「バリアント製品を選択」ボタンを使用します。これにより、製品とそのバリアントを選択できるモーダルが開きます。また、利便性のためにすべてのギフトバリアント製品を選択するボタンもあります。
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/varientselect-modal.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/varientselect-modal.png" alt="製品選択モーダル" title="製品選択モーダル" /></a>
+              </div>
+            </div>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  ヒント
+                </h4>
+                <p>
+                  顧客からのフィードバックに基づいて最適化するために、複雑な設定を追加する前にシンプルなギフトでパフォーマンスをテストします。
+                </p>
+              </div>
+            </div>
+
+            <h3>ギフト名</h3>
+            <p>
+              顧客を引きつける説明的で魅力的な名前をギフトに提供。（必須）
+            </p>
+
+            <h3>可視性</h3>
+            <p>
+              ギフトを表示する場所を選択。オプションにはすべての製品、特定の製品、または特定のコレクションが含まれます。
+            </p>
+            <ul>
+              <li><strong>すべての製品：</strong>ストアの任意の製品にギフトを表示。</li>
+              <li><strong>特定の製品：</strong>ギフト表示のために特定の製品を選択。</li>
+              <li><strong>特定のコレクション：</strong>選択したコレクションの製品にギフトを表示。</li>
+            </ul>
+
+            <h3>製品選択: このギフトを表示する場所</h3>
+            <p>
+              ギフトを表示する場所を選択。オプションにはすべての製品、特定の製品、または特定のコレクションが含まれます。以下のオプションのいずれかを選択する必要があります:
+              すべての製品、特定の製品、または特定のコレクション。この選択は必須です。
+            </p>
+
+            <h3>設定</h3>
+            <p>
+              価格と表示オプションを含むギフトのコア設定を設定。
+            </p>
+            <ul>
+              <li><strong>画像を表示：</strong>製品画像表示を有効または無効。</li>
+              <li><strong>チェックアウトにスキップ：</strong>ギフトから直接チェックアウトを許可。</li>
+              <li><strong>製品比較価格をストライクスルー：</strong>取り消し線付き比較価格を表示。</li>
+              <li><strong>注文ごとに制限：</strong>注文ごとのギフト数量に制限を設定。</li>
+            </ul>
+
+            <h3>スタイル</h3>
+            <p>
+              ストアのテーマに合わせてギフトの視覚的外観をカスタマイズ。色、フォント、レイアウト、その他のスタイリング要素を調整。
+            </p>
+            <h4>タイトルスタイル</h4>
+            <ul>
+              <li><strong>テキストサイズ：</strong>ギフトタイトルのフォントサイズを設定（例: 18px）。</li>
+              <li><strong>フォントウェイト：</strong>フォントウェイトを選択（太字または通常）。</li>
+              <li><strong>色：</strong>タイトルテキストの色を選択。</li>
+            </ul>
+            <h4>サブタイトルスタイル</h4>
+            <ul>
+              <li><strong>テキストサイズ：</strong>サブタイトルのフォントサイズを設定（例: 16px）。</li>
+              <li><strong>フォントウェイト：</strong>フォントウェイトを選択（太字または通常）。</li>
+              <li><strong>色：</strong>サブタイトルテキストの色を選択。</li>
+            </ul>
+            <h4>価格スタイル</h4>
+            <ul>
+              <li><strong>色：</strong>価格の色を設定。</li>
+              <li><strong>割引名：</strong>割引ラベルをカスタマイズ。</li>
+            </ul>
+            <h4>バッジスタイル</h4>
+            <ul>
+              <li><strong>背景：</strong>バッジの背景色。</li>
+              <li><strong>テキスト：</strong>バッジのテキスト色。</li>
+            </ul>
+            <h4>ボタンスタイル</h4>
+            <ul>
+              <li><strong>背景：</strong>ボタンの背景色。</li>
+              <li><strong>テキスト：</strong>ボタンのテキスト色。</li>
+            </ul>
+            <h4>画像設定</h4>
+            <ul>
+              <li><strong>画像を表示：</strong>画像表示を切り替え。</li>
+              <li><strong>代替テキスト：</strong>画像の代替テキストを設定。</li>
+            </ul>
+
+            <h3>製品を選択</h3>
+            <p>
+              ギフトとして表示する製品を選択。その名前、サブタイトル、バッジ、価格、その他の詳細を設定。
+            </p>
+            <ul>
+              <li><strong>ギフト名：</strong>例: Apple Watch SE 2024</li>
+              <li><strong>サブタイトル：</strong>例: 100% 自然</li>
+              <li><strong>バッジ：</strong>例: ベストセラー</li>
+              <li><strong>価格テキスト：</strong>例: $0</li>
+              <li><strong>割引名：</strong>例: ギフト割引</li>
+            </ul>
+          </section>
+          <!--//section-->
+
+          <section class="docs-section" id="item-4-3">
+            <h2 class="section-heading">ギフトメッセージ</h2>
+            <p>
+              顧客が注文にパーソナライズされたギフトメッセージを追加できるようにします。
+              メッセージフィールドをカスタマイズし、文字制限を設定し、
+              領収書や梱包伝票でギフトメッセージがどのように表示されるかを制御します。
+            </p>
+
+            <h3>ギフトメッセージの設定方法</h3>
+            <ol>
+              <li>ギフトセクションのギフトメッセージサブセクションに移動。</li>
+              <li>関連製品または注文でギフトメッセージを有効化。</li>
+              <li>文字制限を設定し、フィールドを必須またはオプションにする。</li>
+              <li>領収書や梱包伝票でのメッセージ表示をカスタマイズ。</li>
+              <li>設定を保存。</li>
+            </ol>
+
+            <p>パーソナライズされたギフトメッセージは、購入に思いやりのあるタッチを追加し、ギフトのための好ましいストアにし、顧客ロイヤルティを増加させます。</p>
+          </section>
+          <!--//section-->
+          <section class="docs-section" id="item-4-4">
+            <h2 class="section-heading">テーマへのギフトの追加</h2>
+            <p>
+              設定したギフトモジュールをストアの製品ページに表示するには、ShopifyテーマにBundlezaギフトセクションを追加する必要があります。これにより、顧客ジャーニーの戦略的なポイントでギフトプロンプトが表示されます。
+            </p>
+            <h3>ギフトセクションの追加手順</h3>
+            <ol>
+              <li><strong>オンラインストアに移動：</strong>Shopify管理者から<strong>オンラインストア > テーマ</strong>に移動。</li>
+              <li><strong>テーマをカスタマイズ：</strong>ライブテーマの横にある<strong>カスタマイズ</strong>ボタンをクリック。</li>
+              <li><strong>製品ページを選択：</strong>テーマエディタでページセレクタを使用して製品ページテンプレートを選択。</li>
+              <li>
+                <strong>セクションを追加：</strong>左側のサイドバーで<strong>セクションを追加</strong>（または<strong>ブロックを追加</strong>）をクリックし、Appsセクションから<strong>Bundlezaギフト</strong>を検索して選択。
+              </li>
+              <li><strong>セクションを設定：</strong>追加したら、セクション設定のドロップダウンから表示する特定のギフトを選択。</li>
+              <li><strong>変更を保存：</strong>変更を適用するために<strong>保存</strong>をクリック。</li>
+            </ol>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1"><i class="fas fa-info-circle"></i></span>
+                  ヒント
+                </h4>
+                <p>
+                  最大効果のためにギフトセクションを「カートに追加」ボタンの上に配置します。ギフトの機会のためにカートページや他のテンプレートにも追加できます。
+                </p>
+              </div>
+            </div>
+          </section>
+        </article>
+        <!--//docs-article-->
+
+        <article class="docs-article" id="section-5">
+          <header class="docs-header">
+            <h1 class="docs-heading">セクション</h1>
+            <section class="docs-intro">
+              <p>
+                Shopifyストアのカスタムセクションを追加および管理します。
+                事前構築済み。設定可能。Themebuilderで簡単。製品のバンドルをカスタム作成し、
+                レビューボックスやベネフィットボックスなどの事前構築済みセクションを製品ページ用に設定します。
+              </p>
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 mb-3">
+                  <a href="assets/images/section-overview.png"><img class="figure-img img-fluid shadow rounded"
+                      src="assets/images/section-overview.png" alt="Bundlezaセクション概要" title="セクション概要" /></a>
+                </div>
+              </div>
+            </section>
+            <!--//docs-intro-->
+          </header>
+          <section class="docs-section" id="item-5-1">
+
+
+            <section class="docs-section" id="item-5-2">
+
+              <h3>テーマを選択</h3>
+              <p>
+                <strong>テーマを選択：</strong>製品ページにセクションを追加するためにShopifyテーマを選択します。
+              </p>
+
+              <h3>テーマを選択する手順</h3>
+              <ol>
+                <li>Bundlezaダッシュボードのセクションエリアに移動。</li>
+                <li>利用可能なオプションからアクティブなShopifyテーマを選択。</li>
+                <li>選択を確認してそのテーマのセクション追加を有効化。</li>
+              </ol>
+
+              <div class="simplelightbox-gallery row mb-3">
+                <div class="col-12 mb-3">
+                  <a href="assets/images/select-theme.png"><img class="figure-img img-fluid shadow rounded"
+                      src="assets/images/select-theme.png" alt="製品ページセクションのテーマを選択" title="テーマを選択" /></a>
+                </div>
+              </div>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-5-3">
+              <h2 class="section-heading">セクションを追加</h2>
+              <p>テーマを選択したら、追加したいセクションの「追加」ボタンをクリックします。または、ガイダンスのためにビデオチュートリアルを見ることもできます。</p>
+
+              <h3>セクションを追加する方法</h3>
+              <ol>
+                <li>テーマで利用可能な事前構築済みセクションのリストを確認。</li>
+                <li>含めたいセクション（例: レビューボックス、ベネフィットボックス）の横にある「追加」ボタンをクリック。</li>
+                <li>コンテンツとスタイリングなどのセクション設定を設定。</li>
+                <li>変更を保存し、製品ページでセクションをプレビュー。</li>
+              </ol>
+
+              <p>マーチャントとして、製品ページにカスタムセクションを追加することで、主要なベネフィット、顧客レビュー、バンドルオファーを強調し、購入決定に直接影響を与え、コンバージョンを改善します。</p>
+
+              <img class="figure-img img-fluid shadow rounded" src="assets/images/add-section.png"
+                alt="セクションをカスタマイズステップ2" />
+              <!--//section-->
+
+
+              <div class="callout-block callout-block-success">
+                <div class="content">
+                  <h4 class="callout-title">
+                    <span class="callout-icon-holder me-1">
+                      <i class="fas fa-thumbs-up"></i>
+                    </span>
+                    私たちのアプリが気に入りましたか？
+                  </h4>
+                  <p>
+                    レビューをお願いします！他のマーチャントがBundlezaを発見するのを助けてください。
+                  </p>
+                </div>
+              </div>
+
+              <h3>近日公開予定のモジュール</h3>
+              <p>
+                Discordコミュニティに参加し、他のショップオーナーとつながり、新しい機能の早期アクセスを得ましょう。
+              </p>
+            </section>
+            <!--//section-->
+
+        </article>
+
+        <!--//docs-article-->
+
+        <article class="docs-article" id="section-6">
+          <header class="docs-header">
+            <h1 class="docs-heading">バナー</h1>
+            <section class="docs-intro">
+              <p>
+                Bundlezaバナーでコンバージョンを向上させます
+              </p>
+            </section>
+            <!--//docs-intro-->
+          </header>
+          <section class="docs-section" id="item-6-1">
+            <h2 class="section-heading">バナー管理</h2>
+            <p>
+              中央ダッシュボードからすべてのバナーを管理。バナーを表示、編集、監視してプロモーション戦略を最適化します。
+            </p>
+
+            <h3>最初のバナーモジュールを作成</h3>
+            <ol>
+              <li>バナー設定を設定</li>
+              <li>スタイル/色をカスタマイズ</li>
+              <li>保存してセクションとして追加</li>
+            </ol>
+
+            <h3>バナーリスト</h3>
+            <p>
+              バナーリストには、作成したすべてのバナーが主要な情報と利用可能なアクションとともに表示されます。バナー名で検索して特定のバナーをすばやく見つけることができます。
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/banner-table.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/banner-table.png" alt="バナー管理" title="バナー管理" /></a>
+              </div>
+            </div>
+            <div class="callout-block callout-block-warning">
+              <div class="callout-title">
+                <span class="callout-icon-holder me-1">
+                  <i class="fas fa-exclamation-triangle"></i>
+                </span>
+                重要
+              </div>
+              <p>
+                任意のバナーを編集するには、まずステータスをドラフトに更新する必要があります。
+              </p>
+            </div>
+
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  レビューリクエスト
+                </h4>
+                <p>
+                  私たちのアプリが気に入りましたか？レビューをお願いします！
+                </p>
+              </div>
+            </div>
+          </section>
+          <!--//section-->
+
+          <section class="docs-section" id="item-6-2">
+            <h2 class="section-heading">新しいバナーの作成</h2>
+            <div class="callout-block callout-block-warning">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                  重要
+                </h4>
+                <p>
+                  バナーを作成する前に、セクションに移動してテーマに追加する必要があります
+                </p>
+              </div>
+            </div>
+            <a href="assets/images/banner-select.png"><img class="figure-img img-fluid shadow rounded"
+                src="assets/images/banner-select.png" alt="バナープレビュー" title="バナープレビュー" /></a>
+            <h2>プレビュー</h2>
+            <p>
+              バナー作成ページには、デスクトップ、モバイル、タブレットデバイスでバナーがどのように見えるかを確認できるライブプレビュー機能が含まれています。これにより、保存前にすべての画面サイズでバナーが最適化されていることを確認できます。
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/banner-preview.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/banner-preview.png" alt="バナープレビュー" title="バナープレビュー" /></a>
+              </div>
+            </div>
+            <p>
+              テンプレート、テーマ、スケジューリング、コンテンツオプションでバナーをデザインおよびカスタマイズして、コンバージョンを向上させる魅力的なプロモーションを作成します。
+            </p>
+
+            <h3>テンプレート</h3>
+            <p>
+              バナーの作成をすばやく開始するために、事前デザインされたテンプレートを選択。
+            </p>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/template.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/template.png" alt="バナーテンプレート" title="バナーテンプレート" /></a>
+              </div>
+            </div>
+
+            <h3>テーマ</h3>
+            <p>
+              ブラックフライデー、クリスマス、ニューイヤー2025、コンパクトモード、バレンタインなどから季節プロモーションに合わせてテーマを選択。各テーマにはどのように見えるかのプレビューが含まれます。
+            </p>
+            <ul>
+              <li><strong>ブラックフライデー：</strong>ブラックフライデーテーマのプレビュー</li>
+              <li><strong>クリスマス：</strong>クリスマステーマのプレビュー</li>
+              <li><strong>ニューイヤー2025：</strong>ニューイヤー2025テーマのプレビュー</li>
+              <li><strong>コンパクトモード：</strong>コンパクトモードテーマのプレビュー</li>
+              <li><strong>バレンタイン：</strong>バレンタインテーマのプレビュー</li>
+            </ul>
+
+            <h3>スケジュール</h3>
+            <p>
+              開始日時と終了日時を設定してバナーがアクティブになるタイミングを決定。例えば、2025-09-23 09:00 AMに開始し、2025-09-23 09:00
+              AMに終了。開始時間が選択されるとバナーが開始することを覚えておいてください。
+            </p>
+
+            <h3>言語</h3>
+            <p>
+              グローバルオーディエンスにリーチするために異なる言語でバナーコンテンツをカスタマイズ。
+            </p>
+
+            <h3>バナーコンテンツ</h3>
+            <p>
+              バナーのテキストをここでデザイン：
+            </p>
+            <ul>
+              <li><strong>メインテキスト：</strong>ブラックフライデー - バナーの左側に目立つように表示。</li>
+              <li><strong>コールトゥアクション：</strong>BUNDLEZA50 - 顧客が使用できる割引コード、例: SALE50。</li>
+              <li><strong>カウントダウンラベル：</strong>カウントダウン - カウントダウンタイマーの上にあるテキスト。</li>
+              <li><strong>割引告知：</strong>コードで最大50%オフ - 例: 'すべてで{{50%}}オフ'。</li>
+              <li><strong>閉じるボタン：</strong>閉じた後の動作を定義。</li>
+              <li><strong>表示間隔：</strong>閉じた後にバナーが再表示されるタイミングを定義（常に表示）。</li>
+            </ul>
+
+            <h3>デザイン</h3>
+            <p>
+              ブランドデザインに合わせてバナーの外観をカスタマイズ：
+            </p>
+            <ul>
+              <li><strong>バナー：</strong>バナーテキスト（左）、バナーアクセント色、バナー背景。</li>
+              <li><strong>カウントダウン：</strong>テキスト、カウンターテキスト、カウンターバックグラウンド。</li>
+              <li><strong>割引：</strong>割引コードのコピーボタンのテキスト（コードテキスト）、告知コードテキスト、コード背景、コード半径（例: 4）。</li>
+            </ul>
+            <h4>スタイル</h4>
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/style.png"><img class="banner style" src="assets/images/style.png"
+                    alt="バナースタイル" /></a>
+              </div>
+            </div>
+            <p>
+              視覚要素を正確に制御するためにバナーのスタイルをさらにカスタマイズし、色を含みます。
+              これらの設定により、ブランドパレットに合わせたメインテキスト、カウントダウンタイマー、割引コードテキストの色を調整できます。例えば、見出しにプライマリブランド色を使用し、二次テキストにコントラスト色を使用します。
+            </p>
+            <ul>
+              <li>
+                <strong>テキスト色：</strong>メインテキスト、カウントダウンタイマー、割引コードテキストの色をブランドパレットに合わせて調整。例えば、見出しにプライマリブランド色を使用し、二次テキストにコントラスト色を使用します。
+              </li>
+              <li><strong>背景色：</strong>バナー、カウントダウンセクション、割引コードエリアのカスタム背景を設定。デザインテーマに合わせてソリッドカラー、グラデーション、または透明背景を選択。</li>
+
+              <li>
+                <strong>ボーダーラジアス：</strong>割引コードボックスやボタンなどの要素のコーナーラジアスを設定。高い半径はモダンな丸みを帯びたコーナーを作成し、0pxはクラシックなシャープエッジを与えます。
+              </li>
+
+            </ul>
+
+            <div class="simplelightbox-gallery row mb-3">
+              <div class="col-12 mb-3">
+                <a href="assets/images/create-banner.png"><img class="figure-img img-fluid shadow rounded"
+                    src="assets/images/create-banner.png" alt="新しいバナーの作成" title="新しいバナーの作成" /></a>
+              </div>
+            </div>
+
+            <div class="callout-block callout-block-success">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  成功
+                </h4>
+                <p>
+                  バナーは2025-09-23 09:00から2025-09-23 09:00までアクティブになります
+                </p>
+              </div>
+            </div>
+          </section>
+          <!--//section-->
+          <section class="docs-section" id="item-6-3">
+            <h2 class="section-heading">テーマへのバナーの追加</h2>
+            <p>
+              設定したバナーをストアのページに表示するには、ShopifyテーマにBundlezaバナーセクションを追加する必要があります。これにより、製品ページ、ホームページ、または他のテンプレートでバナーが表示されます。
+            </p>
+            <h3>バナーセクションの追加手順</h3>
+            <ol>
+              <li><strong>オンラインストアに移動：</strong>Shopify管理者から<strong>オンラインストア > テーマ</strong>に移動。</li>
+              <li><strong>テーマをカスタマイズ：</strong>ライブテーマの横にある<strong>カスタマイズ</strong>ボタンをクリック。</li>
+              <li><strong>テンプレートまたはセクションを選択：</strong>テーマエディタでページセレクタを使用してページテンプレートを選択（例:
+                ホームページ、製品ページ）または左側のサイドバーからヘッダーを選択してバナーをサイトヘッダーに追加。</li>
+              <li>
+                <strong>セクションを追加：</strong>左側のサイドバーで<strong>セクションを追加</strong>（または<strong>ブロックを追加</strong>）をクリックし、Appsセクションから<strong>Bundlezaバナー</strong>を検索して選択。
+              </li>
+              <li><strong>セクションを設定：</strong>追加したら、セクション設定のドロップダウンから表示する特定のバナーを選択。</li>
+              <li><strong>変更を保存：</strong>変更を適用するために<strong>保存</strong>をクリック。</li>
+            </ol>
+            <div class="callout-block callout-block-info">
+              <div class="content">
+                <h4 class="callout-title">
+                  <span class="callout-icon-holder me-1"><i class="fas fa-info-circle"></i></span>
+                  ヒント
+                </h4>
+                <p>
+                  バナーはホームページでのプロモーション、製品ページでの特別オファー、コレクションページでのカテゴリ固有バナー、またはサイト全体の可視性のためのヘッダーに追加できます。
+                </p>
+              </div>
+            </div>
+          </section>
+        </article>
+        <!--//docs-article-->
+
+
+
+        <footer class="footer">
+          <div class="container text-center py-5">
+            <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+            <small class="copyright">開発<i class="fas fa-heart" style="color: #fb866a"></i> by
+              <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Bundleza</a>
+            </small>
+            <ul class="social-list list-unstyled pt-4 mb-0">
+              <li class="list-inline-item">
+                <a href="#"><i class="fa-brands fa-github fa-fw"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa-brands fa-x-twitter fa-fw"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa-brands fa-slack fa-fw"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa-brands fa-product-hunt fa-fw"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa-brands fa-facebook-f fa-fw"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa-brands fa-instagram fa-fw"></i></a>
+              </li>
+            </ul>
+
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <!--//docs-wrapper-->
+
+  <!-- Javascript -->
+  <script src="assets/plugins/popper.min.js"></script>
+  <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Page Specific JS -->
+  <script src="assets/plugins/smoothscroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+  <script src="assets/js/highlight-custom.js"></script>
+  <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+  <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+  <script src="assets/js/docs.js"></script>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/6784a716af5bfec1dbeaa295/1ihf2pcag';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+
+</html>
